@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Mate:700,600,500,400,300);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h3 {
+  font-family: Mate;
+}
+
+p,
+label,
+input,
+textarea,
+button,
+ul {
+  font-family: var(--font-raleway);
+}
+
+body {
+  background-color: #f5f1eb;
+  overflow-x: hidden;
+}
+
+.text-shadow {
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.75);
+}
+
+.x-scroll::-webkit-scrollbar {
+  height: 5px;
+}
+
+.x-scroll::-webkit-scrollbar-thumb {
+  background-color: #726d627e;
+  border-radius: 8px;
+}
+
+.x-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #5551487a;
+}
+
+.search-scroll-bar::-webkit-scrollbar {
+  padding: 4px;
+  width: 6px;
+}
+
+.search-scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #726d627e;
+  border-radius: 8px;
+}
+
+.search-scroll-bar::-webkit-scrollbar-thumb:hover {
+  background-color: #b7b0a17a;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --muted: 240 4.8% 95.9%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5% 64.9%;
+    --radius: 0.5rem;
+  }
+
+  /* for hiding the arrows on inputs */
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
