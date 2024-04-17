@@ -72,7 +72,7 @@ const NewsletterSignup = () => {
               name="consent"
               type="checkbox"
               required
-              className="checked-[#A87133] rounded-full rounded-full border-gray-300 text-[#A87133] focus:ring-[#A87133]"
+              className="checked-[#A87133] rounded-full border-gray-300 text-[#A87133] focus:ring-[#A87133]"
               style={{
                 width: 17.5,
                 height: 17.5,
