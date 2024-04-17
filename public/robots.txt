@@ -1,0 +1,12 @@
+# undefined
+User-agent: undefined
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.tazamaafricasafari.com/
+
+# Sitemaps
+Sitemap: https://www.tazamaafricasafari.com/sitemap.xml

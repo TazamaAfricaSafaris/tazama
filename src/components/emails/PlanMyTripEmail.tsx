@@ -1,18 +1,13 @@
-"use client";
 import {
   Body,
   Container,
   Head,
-  Heading,
   Hr,
   Html,
-  Img,
+  Preview,
   Section,
   Text,
-  Tailwind,
-  Row,
 } from "@react-email/components";
-import { Font } from "@react-email/font";
 import * as React from "react";
 
 interface EmailProps {
@@ -30,166 +25,126 @@ interface EmailProps {
   email: string;
 }
 
-export default function Email(props: EmailProps) {
-  const defaultTheme = require("tailwindcss/defaultTheme");
-  return (
-    <Tailwind
-      config={{
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Inter", ...defaultTheme.fontFamily.sans],
-              display: ["Lexend", ...defaultTheme.fontFamily.sans],
-            },
-          },
-        },
-      }}
-    >
-      <Head />
-      <Html>
-        <Font
-          fontFamily="Inter"
-          fallbackFontFamily="Verdana"
-          webFont={{
-            url: "https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2",
-            format: "woff2",
-          }}
-          fontWeight={400}
-          fontStyle="normal"
-        />
-        <Body style={main}>
-          <Container className="mx-auto  mb-10 h-full w-full max-w-[680px] bg-[#f6f1eb]">
-            <Row className="relative flex flex-col rounded-t-[5px] bg-black">
-              <Img
-                // width={146}
-                height={200}
-                width="full"
-                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1708503376/about/kdn3adaglqhebzttfttk.jpg"
-                className=" placeholder w-full rounded-t-md object-cover opacity-50"
-              />
+export const PlanMyTripEmail = (props: EmailProps) => (
+  <Html>
+    <Head />
+    <Preview>New Trip Enquiry!!</Preview>
+    <Body style={main}>
+      <Container style={container}>
+        <Section style={box}>
+          <Text style={title}>Guest Full Names</Text>
+          <Text style={paragraph}>
+            {`${props.firstName} ${props.lastName}`}
+          </Text>
+          <Hr style={hr} />
 
-              {/* <Text className="absolute  bottom-0 text-white text-xl pl-5">New Trip</Text> */}
-            </Row>
+          <Text style={title}>Email</Text>
 
-            <Section className="ml-[20px] mt-[20px] max-w-[600px]">
-              <Heading
-                as="h2"
-                className="text-xl font-bold leading-[21px] text-[#0c0d0e]"
-              >
-                You got new Inquiry
-              </Heading>
-              <Text className=" text-base leading-[27px] text-[#3c3f44]">
-                {`Summary of ${props.firstName} ${props.lastName} inquiry`}
-              </Text>
+          <Text style={paragraph}>{props.email}</Text>
 
-              <Row className="relative">
-                <Text className=" bg-[#a87133] p-3 text-lg font-medium leading-[27px] text-white">
-                  Guest Full Names
-                </Text>
-                <Text className="absolute top-[67px] mt-0  bg-[#c29c70] p-3 text-base text-zinc-900">{`${props.firstName} ${props.lastName}`}</Text>
-              </Row>
-              <Row className="relative mt-10">
-                <Text className=" bg-[#a87133] p-3 text-lg font-medium leading-[27px] text-white">
-                  Email
-                </Text>
-                <Text className="absolute top-[67px] mt-0 bg-[#c29c70] p-3 text-base text-zinc-900">
-                  {props.email}
-                </Text>
-              </Row>
+          <Hr style={hr} />
+          <Text style={title}>Type of trip the guest is interested in</Text>
+          <Text style={paragraph}>{props.tripType}</Text>
+          <Hr style={hr} />
 
-              <Row className="relative mt-10">
-                <Text className="  bg-[#a87133] p-3 text-lg font-medium leading-[27px] text-white">
-                  Type of trip the guest is interested in
-                </Text>
-                <Text className="absolute top-[67px] mt-0  bg-[#c29c70] p-3 text-base text-zinc-900">
-                  {props.tripType}
-                </Text>
-              </Row>
+          <Text style={title}>
+            {`${props.firstName} would like to add the following on this trip`}
+          </Text>
+          <Text style={paragraph}>{props.addOns}</Text>
+          <Hr style={hr} />
 
-              <Row className="relative mt-10">
-                <Text className="  bg-[#a87133] p-3 text-lg font-medium leading-[27px] text-white">
-                  {`${props.firstName} would like to add the following on this trip`}
-                </Text>
-                <Text className="absolute top-[67px] mt-0  bg-[#c29c70] p-3 text-base text-zinc-900">
-                  {props.addOns}
-                </Text>
-              </Row>
+          <Text style={title}>
+            How far the guest is on the planning Process
+          </Text>
+          <Text style={paragraph}>{props.planningProcess}</Text>
+          <Hr style={hr} />
 
-              <Row className="relative mt-10">
-                <Text className="  bg-[#a87133] p-3 text-lg font-medium leading-[27px] text-white">
-                  How far the guest is on the planning Process
-                </Text>
-                <Text className="absolute top-[67px] mt-0  bg-[#c29c70] p-3 text-base text-zinc-900">
-                  {props.planningProcess}
-                </Text>
-              </Row>
+          <Text style={title}>Number of guests</Text>
+          <Text style={paragraph}>{props.numberOfGuests}</Text>
+          <Hr style={hr} />
 
-              <Row className="relative mt-10">
-                <Text className="  bg-[#a87133] p-3 text-lg font-medium leading-[27px] text-white">
-                  Number of Guests
-                </Text>
-                <Text className="absolute top-[67px] mt-0  bg-[#c29c70] p-3 text-base text-zinc-900">
-                  {props.numberOfGuests}
-                </Text>
-              </Row>
+          <Text style={title}>Date of Travel</Text>
+          <Text style={paragraph}>{props.dateofTravel}</Text>
+          <Hr style={hr} />
 
-              <Row className="relative mt-10">
-                <Text className="  bg-[#a87133] p-3 text-lg font-medium leading-[27px] text-white">
-                  {`${props.firstName} wants to travel on the following date`}
-                </Text>
-                <Text className="absolute top-[67px] mt-0  bg-[#c29c70] p-3 text-base text-zinc-900">
-                  {props.dateofTravel}
-                </Text>
-              </Row>
-              <Row className="relative mt-10">
-                <Text className="  bg-[#a87133] p-3 text-lg font-medium leading-[27px] text-white">
-                  {`${props.firstName} has this budget fro this trip`}
-                </Text>
-                <Text className="absolute top-[67px] mt-0  bg-[#c29c70] p-3 text-base text-zinc-900">
-                  {props.budget}
-                </Text>
-              </Row>
+          <Text style={title}>Budget</Text>
+          <Text style={paragraph}>{props.budget}</Text>
+          <Hr style={hr} />
 
-              <Row className="relative mt-10">
-                <Text className="  bg-[#a87133] p-3 text-lg font-medium leading-[27px] text-white">
-                  {`${props.firstName} has this to say regardless on the extra plans for this trip`}
-                </Text>
-                <Text className="absolute top-[67px] mt-0  bg-[#c29c70] p-3 text-base text-zinc-900">
-                  {props.additionalPlans}
-                </Text>
-              </Row>
+          <Text style={title}>Trip Extra Plans</Text>
+          <Text style={paragraph}>{props.additionalPlans}</Text>
+          <Hr style={hr} />
 
-              <Row className="relative mt-10">
-                <Text className="  bg-[#a87133] px-3 text-lg font-medium leading-[27px] text-white">
-                  {`${props.firstName} has these specifics wildlife experiences he/she would want to see`}
-                </Text>
-                <Text className="absolute top-[67px] mt-0 bg-[#c29c70] p-3 text-base text-zinc-900">
-                  {props.mustSeePlans}
-                </Text>
-              </Row>
+          <Text style={title}>Specific Wildlidfe experiences</Text>
+          <Text style={paragraph}>{props.additionalComments}</Text>
+          <Hr style={hr} />
 
-              <Row className="relative mt-10">
-                <Text className="  bg-[#a87133] p-3 text-lg font-medium leading-[27px] text-white">
-                  Additional comments
-                </Text>
-                <Text className="absolute top-[67px] mt-0  bg-[#c29c70] p-3 text-base text-zinc-900">
-                  {props.additionalComments}
-                </Text>
-              </Row>
-              <Hr style={divider} className="mb-20" />
-            </Section>
-          </Container>
-        </Body>
-      </Html>
-    </Tailwind>
-  );
-}
+          <Text style={footer}>
+            Tazama Africa Safaris, Sakina, Arusha - Tanzania
+          </Text>
+        </Section>
+      </Container>
+    </Body>
+  </Html>
+);
+
+export default PlanMyTripEmail;
 
 const main = {
-  backgroundColor: "#f3f3f5",
-  // fontFamily: "Montserrat, sans-serif",
+  backgroundColor: "#f6f9fc",
+  fontFamily:
+    '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif',
 };
 
-const divider = {
-  margin: "0",
+const container = {
+  backgroundColor: "#ffffff",
+  margin: "0 auto",
+  padding: "20px  0 48px",
+  marginBottom: "64px",
+};
+
+const box = {
+  padding: "10 48px",
+  // paddingLeft: "10px"
+};
+
+const hr = {
+  borderColor: "#e6ebf1",
+  margin: "20px 0",
+};
+
+const paragraph = {
+  color: "#525f7f",
+
+  fontSize: "16px",
+  lineHeight: "24px",
+  textAlign: "left" as const,
+};
+
+const anchor = {
+  color: "#556cd6",
+};
+
+const title = {
+  fontSize: "20px",
+  fontWeight: "bold",
+};
+
+const button = {
+  backgroundColor: "#656ee8",
+  borderRadius: "5px",
+  color: "#fff",
+  fontSize: "16px",
+  fontWeight: "bold",
+  textDecoration: "none",
+  textAlign: "center" as const,
+  display: "block",
+  width: "100%",
+  padding: "10px",
+};
+
+const footer = {
+  color: "#8898aa",
+  fontSize: "12px",
+  lineHeight: "16px",
 };

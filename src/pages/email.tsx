@@ -1,21 +1,24 @@
 "use client";
 import React from "react";
+import CustomSafarisEmail from "~/components/emails/CustomSafaris";
 import PlanMyTripEmail from "~/components/emails/PlanMyTripEmail";
-
 import { Button } from "~/components/ui/button";
-// import { api } from "~/utils/api";
-
+import { api } from "~/lib/api";
+import Email from "~/components/emails/LemoshoEmail";
 const Index = () => {
-  //   const emailRouter = api.subscriber.send.useMutation();
-  //   const sendEmail = () => {
-  //     try {
-  //       emailRouter.mutateAsync();
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
   return (
     <section>
+     
+
+      {/* <CustomSafarisEmail
+        fullNames="Brighton MBoya"
+        phoneNumber="+250680321763"
+        peopleInTheGroup={12}
+        date="23/08/2123"
+        howFar="Still researching"
+        additionalComments="n/a"
+        email="Brighton@gmail.com"
+      /> */}
       <PlanMyTripEmail
         tripType="Kilimanjaro"
         addOns="Memorable Experience"
@@ -30,11 +33,11 @@ const Index = () => {
         lastName="Mboya"
         email="Brighton@gmail.com"
       />
-      <div className="flex items-center justify-center">
-        {/* <Button className="w-[100px]" onClick={sendEmail}>
+      {/* <div className="flex items-center justify-center">
+        <Button className="w-[100px]" onClick={sendEmail}>
           {emailRouter.isLoading ? "Sending..." : "Send"}
-        </Button> */}
-      </div>
+        </Button>
+      </div> */}
     </section>
   );
 };
