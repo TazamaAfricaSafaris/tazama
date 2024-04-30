@@ -9,7 +9,7 @@ import { env } from "~/env";
 import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
 import React from "react";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
@@ -39,6 +39,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         `}
       </style>
       <GoogleAnalytics gaId={env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+      {/* <GoogleTagManager gtmId={}/> */}
       <SpeedInsights />
       <PostHogProvider client={posthog}>
         <main className={`${raleway.variable}`}>

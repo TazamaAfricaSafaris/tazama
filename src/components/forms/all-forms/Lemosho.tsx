@@ -63,7 +63,9 @@ export default function LemoshoForm() {
         className=" mr-5 mt-5 flex w-full flex-col gap-8"
         onSubmit={handleSubmit(onSubmit)}
       >
-      <h3 className="py-5  text-2xl text-white w-full bg-primary text-center">Book Your Trip</h3>
+        <h3 className="w-full  bg-primary py-5 text-center text-2xl text-white">
+          Book Your Trip
+        </h3>
         <div className="lg:flex lg:space-x-10">
           <div className=" lg:w-[50%]">
             <Label>Full Names*</Label>
@@ -171,7 +173,7 @@ export default function LemoshoForm() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-[200px] rounded-lg bg-[#A87133] disabled:bg-lighter px-4 py-2 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
+            className="w-[200px] rounded-lg bg-[#A87133] px-4 py-2 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133] disabled:bg-lighter"
           >
             Submit Form
           </button>
