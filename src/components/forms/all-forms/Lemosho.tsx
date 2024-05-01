@@ -1,3 +1,4 @@
+"use client"
 import Input from "~/components/ui/input";
 import z from "zod";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -7,6 +8,8 @@ import { api } from "~/lib/api";
 import { useRouter } from "next/router";
 import { useToast } from "~/hooks/useToast";
 import { ToastAction } from "~/components/ui/Toast";
+import { sendGAEvent } from "@next/third-parties/google";
+
 
 export const lemoshoRouteSchema = z.object({
   fullNames: z.string().min(1),
@@ -49,6 +52,7 @@ export default function LemoshoForm() {
   const onSubmit: SubmitHandler<LemoshoSchema> = (data) => {
     try {
       mutateAsync(data);
+      sendGAEvent({ event: "form submitted", value: "New lemosho trip" });
     } catch (cause) {
       console.log(cause);
     }

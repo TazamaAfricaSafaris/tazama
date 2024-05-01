@@ -7,9 +7,6 @@ import LenoshoItenary from "~/components/itenaries/LemoshoItienary";
 import { Includes } from "~/data/lemosho";
 import LemoshoForm from "~/components/forms/all-forms/Lemosho";
 import PlanMyTrip from "~/components/forms/all-forms/plan-my-trip";
-import { GoogleTagManager } from "@next/third-parties/google";
-
-
 
 export default function Page() {
   return (
