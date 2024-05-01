@@ -8,7 +8,7 @@ import { api } from "~/lib/api";
 import { useRouter } from "next/router";
 import { useToast } from "~/hooks/useToast";
 import { ToastAction } from "~/components/ui/Toast";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 
 export const lemoshoRouteSchema = z.object({
@@ -52,7 +52,7 @@ export default function LemoshoForm() {
   const onSubmit: SubmitHandler<LemoshoSchema> = (data) => {
     try {
       mutateAsync(data);
-      sendGAEvent({ event: "form submitted", value: "New lemosho trip" });
+      sendGTMEvent({ event: "form submitted", value: "New lemosho trip" });
     } catch (cause) {
       console.log(cause);
     }
