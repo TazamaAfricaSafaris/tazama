@@ -26,7 +26,7 @@ export const env = createEnv({
     NEXT_PUBLIC_POSTHOG_HOST: z.string(),
     NEXT_PUBLIC_GOOGLE_ANALYTICS: z.string(),
     NEXT_PUBLIC_GOOGLE_SHEET_ID: z.string(),
-    // NEXT_PUBLIC_GOOGLE_TAG_ID: z.string(),
+    NEXT_PUBLIC_GOOGLE_TAG_ID: z.string(),
   },
 
   /**
@@ -46,7 +46,7 @@ export const env = createEnv({
     NEXT_PUBLIC_GOOGLE_SHEET_ID: process.env.NEXT_PUBLIC_GOOGLE_SHEET_ID,
     GOOGLE_SHEET_PRIVATE_KEY: process.env.GOOGLE_SHEET_PRIVATE_KEY,
     GOOGLE_SHEETS_CLIENT_EMAIL: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
-    // NEXT_PUBLIC_GOOGLE_TAG_ID: process.env.NEXT_PUBLIC_GOOGLE_TAG_ID,
+    NEXT_PUBLIC_GOOGLE_TAG_ID: process.env.NEXT_PUBLIC_GOOGLE_TAG_ID,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially

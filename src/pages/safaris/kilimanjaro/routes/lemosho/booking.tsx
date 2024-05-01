@@ -3,26 +3,18 @@ import { Button } from "~/components/ui/button";
 import { CLOUDINARY_URL } from "~/lib/constants";
 import BlogLayout from "~/components/ui/BlogLayout";
 import Link from "next/link";
-import BlurImage from "~/components/ui/BlurImage";
 import LenoshoItenary from "~/components/itenaries/LemoshoItienary";
 import { Includes } from "~/data/lemosho";
 import LemoshoForm from "~/components/forms/all-forms/Lemosho";
-import Head from "next/head";
-import Script from "next/script";
 import PlanMyTrip from "~/components/forms/all-forms/plan-my-trip";
-import useGoogleAdsConversion from "~/components/ads-snippets/lemosho-ad";
+import { GoogleTagManager } from "@next/third-parties/google";
+
+
 
 export default function Page() {
-  useGoogleAdsConversion();
   return (
     <>
-      <Head>
-        {/* <!-- Google tag (gtag.js) event --> */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-MQ1XVZCQDV"
-        ></Script>
-      </Head>
+      {/* <GoogleTagManager gtmId="GTM-XYZ" /> */}
       <BlogLayout title="Lemosho Route">
         <section className="mx-auto flex items-start  lg:mx-0 lg:gap-10">
           <div className="mx-auto lg:mx-0 lg:text-justify">

@@ -39,7 +39,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         `}
       </style>
       <GoogleAnalytics gaId={env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
-      {/* <GoogleTagManager gtmId={}/> */}
+      <GoogleTagManager gtmId={env.NEXT_PUBLIC_GOOGLE_TAG_ID} />
       <SpeedInsights />
       <PostHogProvider client={posthog}>
         <main className={`${raleway.variable}`}>
