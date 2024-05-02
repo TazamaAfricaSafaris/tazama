@@ -7,6 +7,7 @@ import { api } from "~/lib/api";
 import { useRouter } from "next/router";
 import { useToast } from "~/hooks/useToast";
 import { ToastAction } from "~/components/ui/Toast";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 export const customSafarisSchema = z.object({
   fullNames: z.string().min(1),
@@ -48,7 +49,7 @@ export default function CustomSafarisForm() {
 
   const onSubmit: SubmitHandler<ICustomSafarisSchema> = (data) => {
     try {
-      console.log("I am submitting");
+      sendGTMEvent({ event: "form submitted", value: "custom safari trip" });
       mutateAsync(data);
     } catch (cause) {
       console.log(cause);
