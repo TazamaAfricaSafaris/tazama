@@ -56,7 +56,7 @@ export default function CustomSafarisForm() {
     }
   };
 
-  console.log(errors);
+  // console.log(errors);
 
   return (
     <section

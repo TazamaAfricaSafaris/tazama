@@ -16,7 +16,7 @@ import NewsletterSignup from "./NewsletterSignup";
 export const Footer = () => {
   return (
     <>
-      <NewsletterSignup />
+      {/* <NewsletterSignup /> */}
       <footer className="border-t  border-t-[#E0DED9] px-8 py-10">
         {/* Container for footer content with responsive design for column and row layout */}
         <div className="flex-between flex flex-col items-center justify-between gap-y-4 lg:flex-row">

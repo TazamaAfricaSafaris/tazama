@@ -18,7 +18,7 @@ export default function BlogLayout({
   return (
     <React.Fragment>
       <HeadSEO title={title} keywords={Kilimanjaro_keywords} />
-      <div className="relative h-[60vh]">
+      <div className="relative h-[60vh]  w-screen">
         <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
           <img
             // src={`/assets/images/gallery/mount-kilimanjaro.webp`}
