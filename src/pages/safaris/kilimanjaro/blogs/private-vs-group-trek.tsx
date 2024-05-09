@@ -9,7 +9,9 @@ import BlurImage from "~/components/ui/BlurImage";
 export default function Page() {
   return (
     <>
-      <BlogLayout title="Private vs Group Trek">
+      <BlogLayout
+        title="WHAT IS RIGHT FOR ME - PRIVATE VS GROUP TREK"
+      >
         <section className="flex items-start lg:mx-0 lg:gap-10">
           <div className="mx-auto  lg:mx-0 lg:max-w-[60%] lg:text-justify">
             <div className="mb-10 py-8">

@@ -7,7 +7,7 @@ import BlurImage from "~/components/ui/BlurImage";
 
 export default function Page() {
   return (
-    <BlogLayout title="Recovering after climbing Kilimanjaro">
+    <BlogLayout title="Recovery Journey After climbing Kilimanjaro: How many days it takes to recover from climbing kilimanjaro">
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">

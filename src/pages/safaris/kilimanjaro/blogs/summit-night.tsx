@@ -7,7 +7,9 @@ import BlurImage from "~/components/ui/BlurImage";
 
 export default function Page() {
   return (
-    <BlogLayout title="Summit Night">
+    <BlogLayout
+      title="Your Summit Night on Kilimanjaro"
+    >
       <section className="mx-auto flex items-start justify-center lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">

@@ -7,7 +7,9 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <BlogLayout title="Best Sunglasses for Kilimanjaro">
+    <BlogLayout
+      title="The Essential Guide to The best Sunglasses for Climbing Mount Kilimanjaro"
+    >
       <section className="flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">

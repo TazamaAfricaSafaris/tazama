@@ -7,7 +7,7 @@ import { CLOUDINARY_URL } from "~/lib/constants";
 
 export default function Page() {
   return (
-    <BlogLayout title="Private toilets in Kilimanjaro">
+    <BlogLayout title="PRIVATE TOILET TENTS ON KILIMANJARO">
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
