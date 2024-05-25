@@ -142,13 +142,15 @@ const PlanMyTripForm = (props: Props) => {
           >
             Prev
           </Button>
-          <Button
-            // disabled={currentPage >= 5}
-            onClick={() => setCurrentPage(currentPage + 1)}
-            type="button"
-          >
-            Next
-          </Button>
+          {currentPage != 10 && (
+            <Button
+              // disabled={currentPage >= 5}
+              onClick={() => setCurrentPage(currentPage + 1)}
+              type="button"
+            >
+              Next
+            </Button>
+          )}
           {currentPage >= 10 && (
             <Button type="submit" disabled={isLoading}>
               {isLoading ? <Spinner /> : "Submit"}
