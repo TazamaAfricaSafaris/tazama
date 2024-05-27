@@ -9,11 +9,15 @@ import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
+import Link from "next/link";
 
 const AboutPage = () => {
   return (
     <>
-      <PrimaryHeader image="about.webp" title="Tazama Africa Tours | Design Your Dream Safari Experience" />
+      <PrimaryHeader
+        image="about.webp"
+        title="Tazama Africa Tours | Design Your Dream Safari Experience"
+      />
       <HeadSEO title="About Tazama" keywords={base_keywords} />
       <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
         <div className="">
@@ -34,6 +38,7 @@ const AboutPage = () => {
             environmentally sustainable practices and prioritize local, organic,
             and women-owned businesses whenever possible.
           </p>
+
           <p className="mb-3 mt-5 text-lg text-[#757371]">
             Whether you're conquering the slopes of Kilimanjaro or exploring the
             vast Serengeti plains, we pledge an experience that is genuine,
@@ -95,6 +100,22 @@ const AboutPage = () => {
             the beauty of our homeland. Tazama is more than a safari company—we
             are your gateway to a Tanzania you've never imagined, where luxury
             meets the untamed, and every moment is a story waiting to be told.
+          </p>
+          <h3 className="pt-[12px] text-3xl text-[#A87133]">
+            Partnering with SafariBookings.com
+          </h3>
+          <p className="mb-3 mt-1 text-lg text-[#757371]">
+            Tazana Africa is represented on SafariBookings.com.
+            <br />
+             For reviews and
+            and feedback you can visit{" "}
+            <Link
+              className="cursor-pointer text-primary"
+              target="_blank"
+              href="https://www.safaribookings.com"
+            >
+              www.safaribookings.com
+            </Link>
           </p>
         </div>
       </div>
