@@ -105,7 +105,7 @@ const AboutPage = () => {
             Partnering with SafariBookings.com
           </h3>
           <p className="mb-3 mt-1 text-lg text-[#757371]">
-            Tazana Africa is represented on SafariBookings.com.
+            Tazama Africa is represented on SafariBookings.com.
             <br />
              For reviews and
             and feedback you can visit{" "}
