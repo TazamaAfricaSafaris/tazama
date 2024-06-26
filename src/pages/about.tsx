@@ -19,7 +19,7 @@ const AboutPage = () => {
         title="Tazama Africa Tours | Design Your Dream Safari Experience"
       />
       <HeadSEO title="About Tazama" keywords={base_keywords} />
-      <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
+      <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
         <div className="">
           <h3 className="text-4xl text-[#A87133]">About Tazama</h3>
           <p className="mb-3 mt-5 text-lg text-[#757371]">
@@ -67,7 +67,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-7xl px-4">
+      <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
           <p className="mb-3 mt-5 text-lg text-[#757371]">
             At Tazama, we don't just offer safaris; we deliver bespoke

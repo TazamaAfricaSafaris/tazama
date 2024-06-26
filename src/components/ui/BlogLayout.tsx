@@ -49,7 +49,7 @@ export default function BlogLayout({
         </div>
       </div>
       <section className="lg:mx-auto lg:max-w-none">
-        <section className="mx-auto  max-w-7xl px-4 pb-10 md:px-0">
+        <section className="mx-auto  max-w-5xl px-4 pb-10 md:px-0">
           {children}
         </section>
       </section>
