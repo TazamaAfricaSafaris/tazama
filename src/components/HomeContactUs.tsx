@@ -1,82 +1,53 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export const HomeContactUs = () => {
   return (
     <>
-      <div className="mx-auto mt-10 w-full max-w-[82rem] px-10 py-10">
-        <div className="text-[#757371]">
-          <motion.h3
-            initial={{ opacity: 0, x: -10 }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.5,
-              },
-            }}
-            className="mb-2 text-xl font-bold"
+    <div className="flex flex-col md:flex-row-reverse gap-8 mt-20 items-center -mb-0.5">
+      <div className="w-full h-[32rem]">
+        <img src="/assets/images/gallery/contact-us.jpg" alt="Contact us, we'd love to hear from you" className="w-full h-full object-cover"/>
+      </div>
+      <div className="w-full pl-10 md:pl-10 lg:py-12 xl:pl-32">
+        <div className="text-darker/85">
+          <h3
+            className="mb-2 text-4xl lg:text-5xl"
           >
             Connect With Us
-          </motion.h3>
-          <motion.p
-            initial={{ opacity: 0, x: -10 }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.5,
-                delay: 0.2,
-              },
-            }}
-            className="font-raleway w-full md:w-2/3"
+          </h3>
+          <p
+            className="font-raleway w-full"
           >
             Your questions, feedback, and insights are valuable to us. Reach out
             to me directly through the contact details below, and we’ll get back
             to you at the earliest convenience
-          </motion.p>
+          </p>
 
           <ul className="my-10 flex flex-col gap-y-6">
-            <motion.li
-              initial={{ opacity: 0, x: -10 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 0.5,
-                  delay: 0.2,
-                },
-              }}
+            <li
             >
-              <h4 className="mb-2 text-sm font-bold md:text-lg">Email</h4>
+              <h4 className="text-2xl">Email</h4>
               <a
-                className="font-raleway text-lg font-light text-[#969492] hover:underline md:text-2xl"
+                className="text-darker/75 hover:underline md:text-2xl"
                 href="info@tazamaafricasafari.com"
               >
                 info@tazamaafricasafari.com
               </a>
-            </motion.li>
-            <motion.li
-              initial={{ opacity: 0, x: -10 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 0.5,
-                  delay: 0.4,
-                },
-              }}
+            </li>
+            <li
             >
-              <h4 className="mb-2 text-sm font-bold md:text-lg">Phone</h4>
+              <h4 className="text-2xl">Phone</h4>
               <a
-                className="font-raleway text-lg font-light text-[#969492] hover:underline md:text-2xl"
+                className="text-darker/75 hover:underline md:text-2xl"
                 href="tel:+255745100011"
               >
                 (255)745100011
               </a>
-            </motion.li>
+            </li>
           </ul>
         </div>
       </div>
+    </div>
     </>
   );
 };
