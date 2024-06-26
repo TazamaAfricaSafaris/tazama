@@ -9,7 +9,7 @@ export const HomeContactUs = () => {
         <img src="/assets/images/gallery/contact-us.jpg" alt="Contact us, we'd love to hear from you" className="w-full h-full object-cover"/>
       </div>
       <div className="w-full pl-10 md:pl-10 lg:py-12 xl:pl-32">
-        <div className="text-darker/85">
+        <div className="">
           <h3
             className="mb-2 text-4xl lg:text-5xl"
           >
