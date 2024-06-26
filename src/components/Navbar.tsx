@@ -46,6 +46,10 @@ const navSubContent = [
     link: "/blogs",
   },
   {
+    title: "Sustainability",
+    link: "/sustainability",
+  },
+  {
     title: "Photos and Videos",
     link: "/gallery",
   },
@@ -239,7 +243,7 @@ const Navbar = () => {
                           onClick={() => setNav(false)}
                           className="w-fit cursor-pointer pb-1 text-lg hover:underline"
                         >
-                          <h3>{subLink.title}</h3>
+                          <h3 className="font-raleway">{subLink.title}</h3>
                         </Link>
                       </motion.span>
                     ))}
