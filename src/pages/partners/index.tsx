@@ -18,13 +18,13 @@ const index = () => {
             </section>
 
             <section>
-                <ContentSection rank={0} image={'partners/kafika-house/kafika-house-img2.jpg'} title={'Kafika House'} reverse={false} description={'Kafika House is a residential rehabilitation center dedicated to helping children with correctable disabilities such as clubfoot, cleft lip and palate, fluorosis, burn scar contracture, masses, and neurological conditions like spina bifida and hydrocephalus.'} action='/partners/kafika-house' actionTitle='More on Kafika House'/>
+                <ContentSection rank={0} image={'partners/kafika-house-img2.jpg'} title={'Kafika House'} reverse={false} description={'Kafika House is a residential rehabilitation center dedicated to helping children with correctable disabilities such as clubfoot, cleft lip and palate, fluorosis, burn scar contracture, masses, and neurological conditions like spina bifida and hydrocephalus.'} action='/partners/kafika-house' actionTitle='More on Kafika House'/>
                 <br />
                 <br />
-                <ContentSection rank={0} image={'partners/rustic-pathways/rustic-pathways-img.jpg'} title={'Rustic Pathways'} reverse={true} description={"Rustic Pathways is an organization that organizes trips around the world for youth and students helping them to help push students' boundaries and their comfort zones through travel"} action='/partners/rustic-pathways' actionTitle='More on Rustic Pathways'/>
+                <ContentSection rank={0} image={'partners/rustic-pathways-img.jpg'} title={'Rustic Pathways'} reverse={true} description={"Rustic Pathways is an organization that organizes trips around the world for youth and students helping them to help push students' boundaries and their comfort zones through travel"} action='/partners/rustic-pathways' actionTitle='More on Rustic Pathways'/>
                 <br />
                 <br />
-                <ContentSection rank={0} image={'partners/seed-bombs/seed-bombs-img1.jpeg'} title={'Seedbombs Tanzania'} reverse={false} description={'Seedbombs Tanzania is an organization that brings people together to learn and engage directly with seeds and trees to promote a deeper appreciation for the natural world.'} action='/partners/seed-bombs-tanzania' actionTitle='More on Seed Bombs Tanzania'/>
+                <ContentSection rank={0} image={'partners/seed-bombs-img1.jpeg'} title={'Seedbombs Tanzania'} reverse={false} description={'Seedbombs Tanzania is an organization that brings people together to learn and engage directly with seeds and trees to promote a deeper appreciation for the natural world.'} action='/partners/seed-bombs-tanzania' actionTitle='More on Seed Bombs Tanzania'/>
             </section>
         </>
     )
