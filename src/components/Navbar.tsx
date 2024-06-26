@@ -98,7 +98,7 @@ const Navbar = () => {
         <Link href="/" onClick={() => setNav(false)}>
           <img
             className="z-[9999] w-20 sm:w-32 md:w-40"
-            src="assets/images/logos/tazama-gold.png"
+            src="/assets/images/logos/tazama-gold.png"
             alt=""
           />
         </Link>
@@ -156,7 +156,7 @@ const Navbar = () => {
                 <Link href="/" onClick={() => setNav(false)}>
                   <img
                     className="tazama w-24 sm:w-32 md:w-40"
-                    src="assets/images/logos/tazama-white.png"
+                    src="/assets/images/logos/tazama-white.png"
                     alt=""
                   />
                 </Link>
