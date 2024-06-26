@@ -46,6 +46,10 @@ const navSubContent = [
     link: "/blogs",
   },
   {
+    title: "Our Partners",
+    link: "/partners",
+  },
+  {
     title: "Sustainability",
     link: "/sustainability",
   },
