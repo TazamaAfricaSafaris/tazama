@@ -25,7 +25,7 @@ export const homePageContentData: contentSectionData[] = [
     rank: 2,
     reverse: false,
     image: "maasai.webp",
-    title: "LOCALLY OWNED & OPERATED",
+    title: "Locally Owned & Operated",
     description:
       "When you travel with us, we'll be with you every step of the way. From the minute you touch down on the runway our talented, dedicated, and passionate staff are there to make sure you have the trip of a lifetime. We can't wait to share our home with you.",
   },
