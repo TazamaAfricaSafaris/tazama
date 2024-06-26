@@ -6,11 +6,12 @@ import React from 'react'
 import PrimaryHeader from '~/components/PrimaryHeader'
 import WishlistTable from '~/components/WishlistTable'
 import HeadSEO from '~/components/ui/Head'
+import { base_keywords } from '~/lib/constants'
 
 const Page = () => {
   return (
     <>
-      <HeadSEO title={'Our Partners | Kafika House'} keywords={''} />
+      <HeadSEO title={'Our Partners | Kafika House'} keywords={base_keywords} />
       <PrimaryHeader title={'Kafika House'} image={'/partners/kafika-house/kafika-house-header.jpg'} />
       <div className='max-w-5xl mx-auto'>
         <section className='mt-20'>

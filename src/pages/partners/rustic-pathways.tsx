@@ -3,11 +3,12 @@ import Link from 'next/link'
 import React from 'react'
 import PrimaryHeader from '~/components/PrimaryHeader'
 import HeadSEO from '~/components/ui/Head'
+import { base_keywords } from '~/lib/constants'
 
 const Page = () => {
   return (
     <>
-      <HeadSEO title={'Our Partners | Rustic Pathways'} />
+      <HeadSEO title={'Our Partners | Rustic Pathways'} keywords={base_keywords} />
       <PrimaryHeader title={'Rustic Pathways'} image={'/partners/rustic-pathways/rustic-pathways-header.jpg'} />
 
       <div className='max-w-5xl mx-auto'>
