@@ -46,6 +46,14 @@ const navSubContent = [
     link: "/blogs",
   },
   {
+    title: "Our Partners",
+    link: "/partners",
+  },
+  {
+    title: "Sustainability",
+    link: "/sustainability",
+  },
+  {
     title: "Photos and Videos",
     link: "/gallery",
   },
@@ -90,7 +98,7 @@ const Navbar = () => {
         <Link href="/" onClick={() => setNav(false)}>
           <img
             className="z-[9999] w-20 sm:w-32 md:w-40"
-            src="assets/images/logos/tazama-gold.png"
+            src="/assets/images/logos/tazama-gold.png"
             alt=""
           />
         </Link>
@@ -148,7 +156,7 @@ const Navbar = () => {
                 <Link href="/" onClick={() => setNav(false)}>
                   <img
                     className="tazama w-24 sm:w-32 md:w-40"
-                    src="assets/images/logos/tazama-white.png"
+                    src="/assets/images/logos/tazama-white.png"
                     alt=""
                   />
                 </Link>
@@ -239,7 +247,7 @@ const Navbar = () => {
                           onClick={() => setNav(false)}
                           className="w-fit cursor-pointer pb-1 text-lg hover:underline"
                         >
-                          <h3>{subLink.title}</h3>
+                          <h3 className="font-raleway">{subLink.title}</h3>
                         </Link>
                       </motion.span>
                     ))}

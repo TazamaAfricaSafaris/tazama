@@ -4,9 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Amiora;
+  src: url("../fonts/Amiora.ttf") format(ttf);
+}
+
 h1,
-h3 {
-  font-family: Mate;
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-serif {
+  font-family: Amiora;
 }
 
 p,

@@ -10,7 +10,7 @@ const Page = () => {
 
   return (
     <>
-      <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+      <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
         <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
           Itinerary
         </h3>
