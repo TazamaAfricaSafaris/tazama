@@ -9,7 +9,7 @@ const Page = () => {
   return (
     <>
       <HeadSEO title={'Our Partners | Rustic Pathways'} keywords={base_keywords} />
-      <PrimaryHeader title={'Rustic Pathways'} image={'/partners/rustic-pathways/rustic-pathways-header.jpg'} />
+      <PrimaryHeader title={'Rustic Pathways'} image={'partners/rustic-pathways/rustic-pathways-header.jpg'} />
 
       <div className='max-w-5xl mx-auto'>
         <section className='mt-20'>

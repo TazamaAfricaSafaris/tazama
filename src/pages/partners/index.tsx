@@ -8,7 +8,7 @@ const index = () => {
     return (
         <>
             <HeadSEO title='Tazama Africa | Our Partners' keywords={base_keywords} />
-            <PrimaryHeader image="/partners/partners-header.jpg" title="Our Partners" />
+            <PrimaryHeader image="partners-header.jpg" title="Our Partners" />
 
             <section className='my-20 max-w-5xl mx-auto md:px-8 px-4 text-center'>
                 <h3 className='text-[2.5rem] text-primary'>Our Trusted Collaborators</h3>

@@ -16,12 +16,12 @@ const AboutPage = () => {
     <>
       <PrimaryHeader
         image="about.webp"
-        title="Tazama Africa Tours | Design Your Dream Safari Experience"
+        title="About Tazama"
       />
       <HeadSEO title="About Tazama" keywords={base_keywords} />
       <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
         <div className="">
-          <h3 className="text-4xl text-[#A87133]">About Tazama</h3>
+          <h3 className="text-4xl text-[#A87133]">Tazama Africa Tours | Design Your Dream Safari Experience</h3>
           <p className="mb-3 mt-5 text-lg text-[#757371]">
             TAZAMA specializes in curating unforgettable memories that will have
             you reminiscing with your loved ones for years to come. Boasting

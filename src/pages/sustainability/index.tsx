@@ -7,7 +7,7 @@ import Image from 'next/image'
 const Page = () => {
     return (
         <>
-            <PrimaryHeader title='Sustainability with Tazama' image='/sustainability/sustainability-header.jpg' />
+            <PrimaryHeader title='Sustainability with Tazama' image='sustainability/sustainability-header.jpg' />
             <div className='max-w-5xl mx-auto my-20'>
                 <div className="px-4 md:px-8 lg:px-4">
                     <h3 className='text-5xl text-center mb-6 text-primary'>Our Commitment to Sustainability</h3>
@@ -71,7 +71,7 @@ const Page = () => {
                                     <>
                                         <div className="relative h-[200px] w-full">
                                             <Image
-                                                src={`/assets/images/gallery/${item.img}`}
+                                                src={`${item.img}`}
                                                 alt=""
                                                 layout="fill"
                                                 className="object-cover group-hover:brightness-95"
@@ -96,7 +96,7 @@ export default Page
 const sustainabilityProjects = [
     {
         title: 'TazamaEdu',
-        img: 'tazama-edu/tazama-edu-img4.jpg',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720013053/tazamaedu/tazama-edu-img4_xqlrd9.jpg',
         link: '/sustainability/tazamaedu'
     },
     {

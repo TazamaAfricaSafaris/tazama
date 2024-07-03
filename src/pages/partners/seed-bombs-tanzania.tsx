@@ -10,7 +10,7 @@ const Page = () => {
   return (
     <>
       <HeadSEO title='Our Partners | Seed Bombs Tanzania' keywords={base_keywords} />
-      <PrimaryHeader title={'Seed Bombs Tanzania'} image={'/partners/seed-bombs/seed-bombs-header.jpg'} />
+      <PrimaryHeader title={'Seed Bombs Tanzania'} image={'partners/seed-bombs/seed-bombs-header.jpg'} />
 
       <div className='max-w-5xl mx-auto'>
         <section className='mt-20'>

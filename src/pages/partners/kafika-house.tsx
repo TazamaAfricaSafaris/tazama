@@ -15,7 +15,7 @@ const Page = () => {
       <PrimaryHeader title={'Kafika House'} image={'/partners/kafika-house/kafika-house-header.jpg'} />
       <div className='max-w-5xl mx-auto'>
         <section className='mt-20'>
-          <h3 className='text-5xl text-center mb-6 text-primary'>Our Partnership With Kafika House</h3>
+          <h3 className='text-5xl text-center mb-6 text-dark'>Our Partnership With Kafika House</h3>
           <p>
             At Tazama Africa Tours & Safari Ltd., we are deeply committed to making a positive impact on the communities we serve. One of the ways we do this is through our partnership with <Link href="https://kafikahouse.org/" className='underline underline-offset-4 font-semibold'>Kafika House</Link>, a residential rehabilitation center dedicated to helping children with correctable disabilities such as clubfoot, cleft lip and palate, fluorosis, burn scar contracture, masses, and neurological conditions like spina bifida and hydrocephalus.
           </p>
@@ -26,7 +26,7 @@ const Page = () => {
         </section>
 
         <section className="mt-20">
-          <h3 className='text-3xl mb-6 text-primary'>How Tazama is Helping</h3>
+          <h3 className='text-3xl mb-6 text-dark'>How Tazama is Helping</h3>
           <ul className=' list-disc'>
             {
               howTazamaHelps.map((item, index) => (
@@ -37,7 +37,7 @@ const Page = () => {
         </section>
 
         <section className="mt-20">
-          <h3 className='text-3xl mb-6 text-primary'>How You Can Support Kafika</h3>
+          <h3 className='text-3xl mb-6 text-dark'>How You Can Support Kafika</h3>
           <div className='flex flex-col md:flex-row gap-6'>
             <div className='w-full h-64 md:h-72 lg:h-[26rem]'>
               <Image src={"https://res.cloudinary.com/drhl0yu7y/image/upload/v1720010826/partners/kafika-house/kafika-house-img1_tcodvn.jpg"} alt='Employees at Kafika House helping children' className='w-full h-full object-cover' width={280} height={240} />
@@ -61,12 +61,12 @@ const Page = () => {
         </section>
 
         <section className='mt-20'>
-          <h3 className='text-3xl mb-6 text-primary'>Kafika House Wishlist</h3>
+          <h3 className='text-3xl mb-6 text-dark'>Kafika House Wishlist</h3>
           <WishlistTable />
         </section>
 
         <section className='my-20'>
-          <h3 className='text-3xl mb-4 text-primary'>Make a Difference Today : Support Kafika House</h3>
+          <h3 className='text-3xl mb-4 text-dark'>Make a Difference Today : Support Kafika House</h3>
           <p className='mb-4'>
             We believe that every child deserves a chance to lead a healthy, fulfilling life. Every day, we witness the incredible transformations that are possible when children with correctable disabilities receive the medical care they need. But we can't do it alone. We need your help to continue this life-changing work
           </p>
