@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
-import Image from "next/image"
 
 export type contentSectionData = {
   rank: number;
@@ -30,7 +29,7 @@ const ContentSection = (props: contentSectionData) => {
     <>
       <div className={`flex flex-col ${props.reverse ? "lg:flex-row" : "lg:flex-row-reverse"} gap-6 lg:items-start lg:mt-0 mt-10`}>
         <div className="w-full px-10 md:px-20 lg:py-12 lg:px-32 sticky lg:top-1">
-          <h3 className="text-5xl mb-4 font-light font-amiora capitalize text-primary">{props.title}</h3>
+          <h3 className="text-5xl mb-4 font-light font-amiora capitalize">{props.title}</h3>
           {renderDescription(props.description)}
           {
             props.action && (
@@ -45,7 +44,7 @@ const ContentSection = (props: contentSectionData) => {
           }
         </div>
         <div className={`w-full scroll-up h-72 md:h-96 lg:h-[95vh] xl:h-[85vh] overflow-hidden`}>
-          <Image width={300} height={300} src={`/assets/images/gallery/${props.image}`} alt="" className={`w-full h-full object-cover ${props.reverse ? "ml-10 md:ml-20 lg:ml-0" : "-ml-10 md:-ml-20 lg:ml-0"}`} />
+          <img src={`${props.image}`} alt="" className={`w-full h-full object-cover ${props.reverse ? "ml-10 md:ml-20 lg:ml-0" : "-ml-10 md:-ml-20 lg:ml-0"}`} />
         </div>
       </div>
     </>

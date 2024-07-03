@@ -18,7 +18,7 @@ export const homePageContentData: contentSectionData[] = [
     rank: 1,
     reverse: true,
     action: "/about",
-    image: "lioness.webp",
+    image: "https://res.cloudinary.com/drhl0yu7y/image/upload/v1720014575/home/lioness_o9ed35.webp",
     actionTitle: "Our Story",
     title: "Why Travel with Tazama",
     description: `Our outstanding guides and staff are experts who ensure your trip is seamless from start to finish. We offer authentic safaris, giving you up an up-close glimpse of these incredible ecosystems at the pace you'd prefer.\n
@@ -28,7 +28,7 @@ export const homePageContentData: contentSectionData[] = [
   {
     rank: 2,
     reverse: false,
-    image: "maasai.webp",
+    image: "https://res.cloudinary.com/drhl0yu7y/image/upload/v1720014575/home/maasai_umc8z9.webp",
     title: "Locally Owned & Operated",
     description:
       "When you travel with us, we'll be with you every step of the way. From the minute you touch down on the runway our talented, dedicated, and passionate staff are there to make sure you have the trip of a lifetime. We can't wait to share our home with you.",

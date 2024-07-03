@@ -28,7 +28,7 @@ export const HomeContactUs = () => {
             >
               <h4 className="text-2xl text-primary">Email</h4>
               <a
-                className="text-primary/75 hover:underline md:text-2xl"
+                className="black hover:underline md:text-2xl"
                 href="info@tazamaafricasafari.com"
               >
                 info@tazamaafricasafari.com
@@ -38,7 +38,7 @@ export const HomeContactUs = () => {
             >
               <h4 className="text-2xl text-primary">Phone</h4>
               <a
-                className="text-primary/75 hover:underline md:text-2xl"
+                className="text-darker hover:underline md:text-2xl"
                 href="tel:+255745100011"
               >
                 (255)745100011
