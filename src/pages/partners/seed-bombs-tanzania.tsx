@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link'
+import Image from 'next/image'
 import React from 'react'
 import PrimaryHeader from '~/components/PrimaryHeader'
 import HeadSEO from '~/components/ui/Head'
@@ -29,7 +30,7 @@ const Page = () => {
           </p>
         </section>
         <section className='my-20'>
-          <h4 className='text-4xl mb-4'>Our Partnership with Seed Bombs Tanzania</h4>
+          <h4 className='text-4xl mb-4 text-primary'>Our Partnership with Seed Bombs Tanzania</h4>
           <p>
             At Tazama Africa Safari, we are committed to combating deforestation and promoting reforestation in Tanzania. Our partnership with Seed Bombs Tanzania allows us to actively contribute to this cause while also involving our guests in meaningful environmental action.
           </p>
@@ -37,10 +38,10 @@ const Page = () => {
           <br />
           <div className='flex flex-col md:flex-row gap-8 relative'>
             <div className='w-full h-[28rem]'>
-              <img src="/assets/images/gallery/partners/seed-bombs/seed-bombs-img1.jpeg" alt="Students learning about seed bombs" className='w-full h-full object-cover' />
+              <Image width={198} height={198} src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1720011400/partners/seed-bombs/seed-bombs-img1_ovlnro.jpg" alt="Students learning about seed bombs" className='w-full h-full object-cover' />
             </div>
             <div className='w-full sticky lg:top-1'>
-              <h5 className='text-3xl mb-4'>How We Partner for Positive Impact</h5>
+              <h5 className='text-3xl mb-4 text-primary'>How We Partner for Positive Impact</h5>
               <ul>
                 <li className=' mb-2'><span className='font-semibold'>Guest Engagement</span>: As part of our reforestation efforts, we provide our guests with seed bombs from Seed Bombs Tanzania during their safari. We educate them about the impact of deforestation and the importance of reforestation. Guests are guided to throw these seed bombs in areas that require reforestation, ensuring they leave a positive impact by planting trees and contributing to the rejuvenation of Tanzania’s natural landscapes.</li>
                 <li><span className='font-semibold'>Staff Involvement</span>: Our partnership extends beyond our guests. We also provide seed bombs to our staff, encouraging them to plant these in their home communities. This initiative not only helps in reforestation but also fosters a sense of environmental responsibility among our team members.</li>
@@ -55,10 +56,10 @@ const Page = () => {
 
           <div className='flex flex-col md:flex-row-reverse gap-8'>
             <div className='w-full h-[28rem]'>
-              <img src="/assets/images/gallery/partners/seed-bombs/seed-bombs-img2.jpeg" alt="Students learning about seed bombs" className='w-full h-full object-cover' />
+              <Image width={198} height={198} src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1720011402/partners/seed-bombs/seed-bombs-img2_p3rgxp.jpg" alt="Students learning about seed bombs" className='w-full h-full object-cover' />
             </div>
             <div className='w-full'>
-              <h5 className='text-3xl mb-4'>Join Us in Supporting Seed Bombs Tanzania</h5>
+              <h5 className='text-3xl mb-4 text-primary'>Join Us in Supporting Seed Bombs Tanzania</h5>
               <p className='mb-2'>
                 We invite you to join us in supporting Seed Bombs Tanzania and their vital work. Your involvement can make a significant difference in combating deforestation and promoting sustainable practices. Here's how you can help:
               </p>

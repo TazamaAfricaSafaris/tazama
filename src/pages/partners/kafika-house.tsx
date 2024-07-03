@@ -40,7 +40,7 @@ const Page = () => {
           <h3 className='text-3xl mb-6 text-dark'>How You Can Support Kafika</h3>
           <div className='flex flex-col md:flex-row gap-6'>
             <div className='w-full h-64 md:h-72 lg:h-[26rem]'>
-              <Image src={"/assets/images/gallery/partners/kafika-house-img1.jpg"} alt='Employees at Kafika House helping children' className='w-full h-full object-cover' width={280} height={240} />
+              <Image src={"https://res.cloudinary.com/drhl0yu7y/image/upload/v1720010826/partners/kafika-house/kafika-house-img1_tcodvn.jpg"} alt='Employees at Kafika House helping children' className='w-full h-full object-cover' width={280} height={240} />
             </div>
             <div className='w-full'>
               <p>Your support can make a significant difference in the lives of children with disabilities. Here’s how you can help:</p>
@@ -72,10 +72,10 @@ const Page = () => {
           </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className='w-full h-80 '>
-              <Image src={"/assets/images/gallery/partners/kafika-house-img2.jpg"} alt='Employees at Kafika House helping children' className='w-full h-full object-cover' width={280} height={240} />
+              <Image src={"https://res.cloudinary.com/drhl0yu7y/image/upload/v1720010826/partners/kafika-house/kafika-house-img2_ex1cfi.jpg"} alt='Employees at Kafika House helping children' className='w-full h-full object-cover' width={280} height={240} />
             </div>
             <div className='w-full h-80'>
-              <Image src={"/assets/images/gallery/partners/kafika-house-img4.jpg"} alt='Employees at Kafika House helping children' className='w-full h-full object-cover' width={280} height={240} />
+              <Image src={"https://res.cloudinary.com/drhl0yu7y/image/upload/v1720010824/partners/kafika-house/kafika-house-img4_etdzpy.jpg"} alt='Employees at Kafika House helping children' className='w-full h-full object-cover' width={280} height={240} />
             </div>
           </div>
         </section>
