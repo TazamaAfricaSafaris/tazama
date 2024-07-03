@@ -14,7 +14,7 @@ const Page = () => {
 
       <div className='max-w-5xl mx-auto'>
         <section className='mt-20'>
-          <h3 className='text-5xl text-center mb-6 text-dark'>Our Partnership With Seed Bombs Tanzania</h3>
+          <h3 className='text-5xl text-center mb-6 text-primary'>Our Partnership With Seed Bombs Tanzania</h3>
           <p>
             <Link href='https://www.seedbombstanzania.org' className='underline underline-offset-4'>Seed Bombs Tanzania</Link> is a non-profit organization dedicated to reforestation and climate change mitigation in Tanzania. Their mission revolves around three core pillars:
           </p>

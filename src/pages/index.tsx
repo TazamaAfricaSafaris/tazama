@@ -71,7 +71,7 @@ export default function Page() {
       <div className="mx-auto max-w-6xl px-4 xl:px-8 ">
         <div className="mb-8 w-full px-4 py-4">
           <h3
-            className="mb-4 text-4xl lg:text-5xl"
+            className="mb-4 text-4xl lg:text-5xl text-primary"
           >
             Authentic & timeless adventures
           </h3>
@@ -93,12 +93,12 @@ export default function Page() {
         <div className="mx-auto max-w-6xl px-4 xl:px-8">
           <div className="mb-8 w-full px-4 py-4 ">
             <h3
-              className="mb-4 text-4xl lg:text-5xl text-dark"
+              className="mb-4 text-4xl lg:text-5xl text-primary"
             >
               Ascending Africa's Summits
             </h3>
             <p
-              className="font-raleway text-lg text-text-darker"
+              className="font-raleway text-lg text-text-primaryer"
             >
               Explore the summits of Africa with Tazama Africa Safaris as you climb the mountains Kilimanajaro and Meru to fulfill your desire to know what it's like to be at the top
             </p>

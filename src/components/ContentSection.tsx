@@ -30,7 +30,7 @@ const ContentSection = (props: contentSectionData) => {
     <>
       <div className={`flex flex-col ${props.reverse ? "lg:flex-row" : "lg:flex-row-reverse"} gap-6 lg:items-start lg:mt-0 mt-10`}>
         <div className="w-full px-10 md:px-20 lg:py-12 lg:px-32 sticky lg:top-1">
-          <h3 className="text-5xl mb-4 font-light font-amiora capitalize">{props.title}</h3>
+          <h3 className="text-5xl mb-4 font-light font-amiora capitalize text-primary">{props.title}</h3>
           {renderDescription(props.description)}
           {
             props.action && (

@@ -11,7 +11,7 @@ export const HomeContactUs = () => {
       <div className="w-full pl-10 md:pl-10 lg:py-12 xl:pl-32">
         <div className="">
           <h3
-            className="mb-2 text-4xl lg:text-5xl"
+            className="mb-2 text-4xl lg:text-5xl text-primary"
           >
             Connect With Us
           </h3>
@@ -26,9 +26,9 @@ export const HomeContactUs = () => {
           <ul className="my-10 flex flex-col gap-y-6">
             <li
             >
-              <h4 className="text-2xl">Email</h4>
+              <h4 className="text-2xl text-primary">Email</h4>
               <a
-                className="text-darker/75 hover:underline md:text-2xl"
+                className="text-primary/75 hover:underline md:text-2xl"
                 href="info@tazamaafricasafari.com"
               >
                 info@tazamaafricasafari.com
@@ -36,9 +36,9 @@ export const HomeContactUs = () => {
             </li>
             <li
             >
-              <h4 className="text-2xl">Phone</h4>
+              <h4 className="text-2xl text-primary">Phone</h4>
               <a
-                className="text-darker/75 hover:underline md:text-2xl"
+                className="text-primary/75 hover:underline md:text-2xl"
                 href="tel:+255745100011"
               >
                 (255)745100011

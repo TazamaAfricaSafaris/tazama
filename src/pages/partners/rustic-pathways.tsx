@@ -13,7 +13,7 @@ const Page = () => {
 
       <div className='max-w-5xl mx-auto'>
         <section className='mt-20'>
-          <h3 className='text-5xl text-center mb-6 text-dark'>Our Partnership With Rustic Pathways</h3>
+          <h3 className='text-5xl text-center mb-6 text-primary'>Our Partnership With Rustic Pathways</h3>
           <p><Link href={'https://www.rusticpathways.com'} className='underline underline-offset-4'>Rustic Pathways</Link> is renowned for leading iconic teen travel tours, meticulously designed to create extraordinary memories. Their itineraries are crafted with precision, purpose, passion, and adventure, ensuring that every travel moment is transformative. <Link href={'https://www.rusticpathways.com'} className='underline underline-offset-4'>Rustic Pathways</Link> empowers students to positively impact lives and communities around the world through education, travel, and philanthropy.</p>
           <br />
           <p><Link href={'https://www.rusticpathways.com'} className='underline underline-offset-4'>Rustic Pathways</Link> is committed to creating a world where:</p>

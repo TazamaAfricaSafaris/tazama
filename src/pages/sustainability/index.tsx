@@ -10,14 +10,14 @@ const Page = () => {
             <PrimaryHeader title='Sustainability with Tazama' image='/sustainability/sustainability-header.jpg' />
             <div className='max-w-5xl mx-auto my-20'>
                 <div className="px-4 md:px-8 lg:px-4">
-                    <h3 className='text-5xl text-center mb-6 text-dark'>Our Commitment to Sustainability</h3>
+                    <h3 className='text-5xl text-center mb-6 text-primary'>Our Commitment to Sustainability</h3>
                     <p>
                         At <Link href={'/about'} className='underline underline-offset-4'>Tazama Africa Safari</Link>, sustainability is not just a buzzword but a guiding principle embedded in every aspect of our operations. As a leading Tanzanian tour company, we recognize our responsibility to preserve the natural beauty of our environment, support our local communities, and operate in a manner that ensures long-term viability. We are proud of our efforts and remain committed to making a positive impact through our comprehensive sustainability initiatives.
                     </p>
                 </div>
 
                 <section className='mt-16 px-4 md:px-8 lg:px-4'>
-                    <h4 className="text-3xl text-dark mb-3">Environmental Sustainability</h4>
+                    <h4 className="text-3xl text-primary mb-3">Environmental Sustainability</h4>
                     <p>
                         ●	<span className='font-semibold'>Pollution Reduction</span>: We are dedicated to reducing pollution, particularly plastic waste, in our safari operations. To combat the pervasive issue of single-use plastics, we provide our guests and staff with reusable water bottles. This initiative significantly cuts down on plastic waste, ensuring that our tours do not contribute to the pollution of Tanzania's stunning landscapes.
                     </p>
@@ -29,7 +29,7 @@ const Page = () => {
                 <section>
                     <div className='flex flex-col md:flex-row gap-8'>
                         <div className='w-full px-4 md:py-8 md:px-8 lg:px-4'>
-                            <h4 className="text-3xl text-dark mb-3">Social Sustainability</h4>
+                            <h4 className="text-3xl text-primary mb-3">Social Sustainability</h4>
                             <p>
                                 ●	<span className='font-semibold'>Pollution Reduction</span>: We are dedicated to reducing pollution, particularly plastic waste, in our safari operations. To combat the pervasive issue of single-use plastics, we provide our guests and staff with reusable water bottles. This initiative significantly cuts down on plastic waste, ensuring that our tours do not contribute to the pollution of Tanzania's stunning landscapes.
                             </p>
@@ -52,14 +52,14 @@ const Page = () => {
                 </section>
                 <br /><br />
                 <section>
-                    <h4 className="text-3xl text-dark mb-3">Economic Sustainability</h4>
+                    <h4 className="text-3xl text-primary mb-3">Economic Sustainability</h4>
                     <p>
                         At Tazama Africa Safari, we believe in conducting our business responsibly and ethically. We adhere to principles of corporate governance, ensuring transparency and accountability in all our operations.
                     </p>
                 </section>
                 <br /><br />
                 <section>
-                    <h4 className='text-4xl text-dark mb-3'>The Impact of Our Efforts</h4>
+                    <h4 className='text-4xl text-primary mb-3'>The Impact of Our Efforts</h4>
                     <p>Our sustainability initiatives have had a profound impact on the environment, our communities, and the economy. By reducing plastic waste, supporting local businesses, providing educational opportunities, and ensuring responsible business practices, we are making a positive difference every day.</p>
                 </section>
                 <br /><br />
