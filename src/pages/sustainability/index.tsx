@@ -44,7 +44,9 @@ const Page = () => {
                             </p>
                         </div>
                         <div className='w-full max-md:h-80'>
-                            <img src="/assets/images/gallery/sustainability/sustainability-img3.jpg" alt="Sustainability" className='w-full h-full object-cover' />
+                            <Image
+                            width={300}
+                            height={300} src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1720012496/sustainability/sustainability-img3_cmb18m.jpg" alt="Sustainability" className='w-full h-full object-cover' />
                         </div>
                     </div>
                 </section>
@@ -99,12 +101,12 @@ const sustainabilityProjects = [
     },
     {
         title: 'Kafika House',
-        img: 'partners/kafika-house/kafika-house-img2.jpg',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720010826/partners/kafika-house/kafika-house-img2_ex1cfi.jpg',
         link: '/partners/kafika-house'
     },
     {
         title: 'Seed Bombs Tanzania',
-        img: 'partners/seed-bombs/seed-bombs-header.jpg',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720012717/partners/seed-bombs/seed-bombs-header_alg2df.jpg',
         link: '/partners/seed-bombs-tanzania'
     },
 ]

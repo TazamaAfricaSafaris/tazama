@@ -1,12 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
-import Link from 'next/link'
+import Image from 'next/image'
 import React from 'react'
-import ContentSection from '~/components/ContentSection'
 import PrimaryHeader from '~/components/PrimaryHeader'
+import HeadSEO from '~/components/ui/Head'
+import { base_keywords } from '~/lib/constants'
 
 const Page = () => {
     return (
         <>
+            <HeadSEO title='TazamaEdu' keywords={base_keywords} />
             <PrimaryHeader title='TazamaEdu' image='/tazama-edu/tazama-edu-header.jpg' />
             <div className='max-w-5xl mx-auto my-20'>
                 <h3 className='text-5xl mb-6 text-dark text-center'>Fostering Future Conservationists with TazamaEdu</h3>
@@ -29,7 +31,12 @@ const Page = () => {
                         </p>
                     </div>
                     <div className="w-full h-80 lg:h-[28rem]">
-                        <img src="/assets/images/gallery/tazama-edu/tazama-edu-img2.jpg" alt="" className='object-cover h-full w-full' />
+                        <Image
+                            width={300}
+                            height={300}
+                            src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1720013053/tazamaedu/tazama-edu-img2_msfx4p.jpg"
+                            alt="TazamaEdu"
+                            className='object-cover h-full w-full' />
                     </div>
                 </div>
                 <div className='mt-16'>
@@ -49,7 +56,13 @@ const Page = () => {
                         </p>
                     </div>
                     <div className="w-full h-80 lg:h-[28rem]">
-                        <img src="/assets/images/gallery/tazama-edu/tazama-edu-img4.jpg" alt="" className='object-cover h-full w-full' />
+                        <Image
+                            width={300}
+                            height={300}
+                            src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1720013053/tazamaedu/tazama-edu-img4_xqlrd9.jpg"
+                            alt=""
+                            className='object-cover h-full w-full'
+                        />
                     </div>
                 </div>
 
