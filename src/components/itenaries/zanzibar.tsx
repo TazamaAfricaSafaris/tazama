@@ -11,7 +11,7 @@ import Accordion from "../Accordion";
 
 export function EightDayTrips() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+    <div className="mx-auto max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
       <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
         Seven Days trip Itinerary
       </h3>
@@ -112,7 +112,7 @@ export function EightDayTrips() {
 
 export const NineDayTrip = () => {
   return (
-    <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+    <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
       <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
         Nine Days trip Itinerary
       </h3>
@@ -150,7 +150,7 @@ export const NineDayTrip = () => {
 
 export function TenDayTrips() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+    <div className="mx-auto max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
       <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
         Ten Days trip Itinerary
       </h3>
@@ -219,7 +219,7 @@ export function TenDayTrips() {
 
 export const TwelveDayTrip = () => {
   return (
-    <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+    <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
       <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
         Twelve Days trip Itinerary
       </h3>
@@ -252,7 +252,7 @@ export const TwelveDayTrip = () => {
 
 export const FourteenDayTrip = () => {
   return (
-    <div className="mx-auto mt-48 max-w-7xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
+    <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
       <h3 className="text-center text-4xl uppercase tracking-wider text-[#A87133]">
         Fourteen Days trip Itinerary
       </h3>

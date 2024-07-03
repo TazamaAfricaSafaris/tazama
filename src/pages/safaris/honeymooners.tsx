@@ -22,7 +22,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
       <HeadSEO title="HoneyMoon Safaris - Tazama Africa Safaris" keywords={base_keywords} />
       <PrimaryHeader image="honey-moon-trip.webp" title="Honeymooners" />
 
-      <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
+      <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
         <div className="">
           <h3 className="text-4xl text-[#A87133]">HoneyMoon Safaris</h3>
           <p className="mb-3 mt-5 text-xl text-[#757371]">
@@ -72,7 +72,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-7xl px-4">
+      <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
           <p className="mb-3 mt-5 text-xl text-[#757371]">
             We understand that every couple is unique, and so should be their
@@ -95,7 +95,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
       </div>
       <EnquireNow />
 
-      <section className="mx-auto  max-w-7xl px-4 pb-10 md:px-8">
+      <section className="mx-auto  max-w-5xl px-4 pb-10 md:px-8">
         <>
           {honeyMooners.map((data) => (
             <ItienaryViewer
