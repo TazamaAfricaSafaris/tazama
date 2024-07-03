@@ -119,11 +119,14 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-      <div className="mt-5 md:mb-[8rem]  lg:mb-[10rem] lg:mt-0">
+      <br />
+      <br />
+      <br />
+      <div className="flex flex-col gap-12 lg:mt-0">
         {array
           .sort(aboutPageContentData, "asc", "rank")
           .map((content: contentSectionData, index: number) => (
-            <section className="sm:-mb-72" key={index}>
+            <section key={index}>
               <ContentSection
                 rank={content.rank}
                 title={content.title}
