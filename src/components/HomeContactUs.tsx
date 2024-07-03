@@ -38,7 +38,7 @@ export const HomeContactUs = () => {
             >
               <h4 className="text-2xl text-primary">Phone</h4>
               <a
-                className="text-darker hover:underline md:text-2xl"
+                className="hover:underline md:text-2xl"
                 href="tel:+255745100011"
               >
                 (255)745100011
