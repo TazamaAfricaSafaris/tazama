@@ -45,7 +45,7 @@ const ContentSection = (props: contentSectionData) => {
           }
         </div>
         <div className={`w-full scroll-up h-72 md:h-96 lg:h-[95vh] xl:h-[85vh] overflow-hidden`}>
-          <Image width={300} src={`/assets/images/gallery/${props.image}`} alt="" className={`w-full h-full object-cover ${props.reverse ? "ml-10 md:ml-20 lg:ml-0" : "-ml-10 md:-ml-20 lg:ml-0"}`} />
+          <Image width={300} height={300} src={`/assets/images/gallery/${props.image}`} alt="" className={`w-full h-full object-cover ${props.reverse ? "ml-10 md:ml-20 lg:ml-0" : "-ml-10 md:-ml-20 lg:ml-0"}`} />
         </div>
       </div>
     </>

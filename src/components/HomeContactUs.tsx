@@ -6,7 +6,7 @@ export const HomeContactUs = () => {
     <>
     <div className="flex flex-col md:flex-row-reverse gap-8 mt-20 items-center -mb-0.5">
       <div className="w-full h-[32rem]">
-        <Image width={320} src="/assets/images/gallery/contact-us.jpg" alt="Contact us, we'd love to hear from you" className="w-full h-full object-cover"/>
+        <Image width={320} height={320} src="/assets/images/gallery/contact-us.jpg" alt="Contact us, we'd love to hear from you" className="w-full h-full object-cover"/>
       </div>
       <div className="w-full pl-10 md:pl-10 lg:py-12 xl:pl-32">
         <div className="">
