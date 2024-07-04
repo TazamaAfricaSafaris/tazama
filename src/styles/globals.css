@@ -78,6 +78,12 @@ body {
   animation: fadeIn 0.5s ease-out;
 }
 
+@layer utilities {
+  .animation-paused {
+    animation-play-state: paused;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

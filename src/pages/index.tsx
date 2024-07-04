@@ -12,6 +12,7 @@ import HeadSEO from "~/components/ui/Head";
 import Carousel, { CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "~/components/Carousel";
 import { allBlogs } from "~/blogs/all-blogs";
 import Link from "next/link";
+import PartnersMarquee from "~/components/PartnersMarquee";
 
 export const homePageContentData: contentSectionData[] = [
   {
@@ -116,6 +117,27 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <div className="mb-16">
+        <div className="mx-auto max-w-6xl px-4 xl:px-8 mb-2">
+          <div className="mx-auto mb-8 w-full px-4 py-4">
+            <h3
+              className="mb-3 text-4xl lg:text-5xl"
+            >
+              Our Partners
+            </h3>
+            <p
+              className="font-raleway text-lg"
+            >
+              We at Tazama Africa Safaris pride ourselves on collaborating with top-tier partners to ensure our guests receive the best experiences Africa has to offer.
+            </p>
+          </div>
+        </div>
+        <PartnersMarquee />
+      </div>
+      <br /><br /><br />
       <HomeContactUs />
     </>
   );
