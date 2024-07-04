@@ -122,7 +122,6 @@ export default function Page() {
       </div>
       <br />
       <br />
-      <br />
       <div className="mb-16">
         <div className="mx-auto max-w-6xl px-4 xl:px-8 mb-2">
           <div className="mx-auto mb-8 w-full px-4 py-4">
@@ -140,7 +139,7 @@ export default function Page() {
         </div>
         <PartnersMarquee />
       </div>
-      <br /><br />
+      <br />
       <br />
       <br />
       <div className="mt-10 max-w-6xl mx-auto px-4 xl:px-8 mb-20">
