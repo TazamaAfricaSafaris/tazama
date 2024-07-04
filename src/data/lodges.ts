@@ -35,7 +35,7 @@ export const lodges: Lodge[] = [
     },
     {
         title: 'Namiri Plains Camp',
-        img: 'namiri-plains/namiri-plains-header.jpg',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720093607/lodges/namiri-camps/gallery/4_ldzaaa.jpg',
         link: 'namiri-plains-camp',
         category: 'Safari'
     },
