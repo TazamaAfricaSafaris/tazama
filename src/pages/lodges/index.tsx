@@ -63,7 +63,7 @@ const Page = () => {
                                         <Link href={`/lodges/${lodge.link}`} key={index}>
                                             <div className='w-full'>
                                                 <div className='w-full h-80 md:h-96'>
-                                                    <img src={`/assets/images/gallery/lodges/${lodge.img}`} alt={lodge.title} className='w-full h-full object-cover'/>
+                                                    <img src={`${lodge.img}`} alt={lodge.title} className='w-full h-full object-cover'/>
                                                 </div>
                                                 <p className='mt-2 text-lg'>{lodge.title}</p>
                                             </div>
@@ -79,7 +79,7 @@ const Page = () => {
                                         <Link href={`/lodges/${lodge.link}`} key={index}>
                                             <div className='w-full'>
                                                 <div className='w-full h-80 md:h-96'>
-                                                    <img src={`/assets/images/gallery/lodges/${lodge.img}`} alt={lodge.title} className='w-full h-full object-cover'/>
+                                                    <img src={`${lodge.img}`} alt={lodge.title} className='w-full h-full object-cover'/>
                                                 </div>
                                                 <p className='mt-2 text-lg'>{lodge.title}</p>
                                             </div>

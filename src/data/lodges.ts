@@ -47,7 +47,7 @@ export const lodges: Lodge[] = [
     },
     {
         title: 'Nimali Central Serengeti Camps',
-        img: 'nimali-camp/nimali-camp-header.jpg',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720096139/lodges/nimali-camps/3_fct7pe.jpg',
         link: 'nimali-central-serengeti-camps',
         category: 'Safari'
     },
