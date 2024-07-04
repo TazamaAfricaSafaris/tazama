@@ -11,7 +11,7 @@ export interface Lodge {
 export const lodges: Lodge[] = [
     {
         title: 'Zuri Zanzibar Hotel & Resort',
-        img: 'zuri-zanzibar/zuri-zanzibar-header.webp',
+        img: 'assets/images/gallery/lodges/zuri-zanzibar/zuri-zanzibar-header.webp',
         link: 'zuri-zanzibar-hotel-and-resort',
         category: 'Beach',
     },

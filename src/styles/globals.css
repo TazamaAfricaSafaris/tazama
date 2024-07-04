@@ -64,6 +64,15 @@ body {
   background-color: #b7b0a17a;
 }
 
+iframe:focus {
+  outline: none;
+}
+
+iframe[seamless] {
+  display: block;
+}
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
