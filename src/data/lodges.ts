@@ -41,7 +41,7 @@ export const lodges: Lodge[] = [
     },
     {
         title: 'Tulia Beach Resort',
-        img: 'tulia-beach-resort/tulia-beach-resort.jpg',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720098478/lodges/tulia-beach-resort/gallery/3_i1rqdt.jpg',
         link: 'tulia-beach-resort',
         category: 'Beach'
     },
