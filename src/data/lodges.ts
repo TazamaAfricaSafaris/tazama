@@ -23,7 +23,7 @@ export const lodges: Lodge[] = [
     },
     {
         title: 'Upendo Beach Zanzibar',
-        img: 'upendo-beach-resort/upendo-beach-resort-header.jpg',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720099589/lodges/upendo-beach-zanzibar/6_dx1r30.jpg',
         link: 'upendo-beach-zanzibar',
         category: 'Beach'
     },
