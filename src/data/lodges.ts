@@ -29,27 +29,9 @@ export const lodges: Lodge[] = [
     },
     {
         title: 'Lemala Camps & Lodges (Nanyukie)',
-        img: 'lemala-camps/lemala-nanyukie-card.jpg',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720091588/lodges/lemala-camps/lemala-nanyukie-card_q7trjz.jpg',
         link: 'lemala-camps-and-lodges',
         category: 'Safari',
-        activities: [
-            {
-                title: "Game Drives",
-                description: "Explore the Serengeti on guided game drives, where you can witness the Big Five and other fascinating wildlife in their natural habitat."
-            },
-            {
-                title: "Bush Walks",
-                description: "Experience the smaller details of the Serengeti ecosystem on foot, led by knowledgeable guides."
-            },
-            {
-                title: "Bird Watching",
-                description: "Discover a diverse array of bird species that call the Serengeti home."
-            },
-            {
-                title: "Cultural Visits",
-                description: "Engage with the local Maasai communities and learn about their traditions and way of life."
-            }
-        ]
     },
     {
         title: 'Namiri Plains Camp',
