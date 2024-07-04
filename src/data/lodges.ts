@@ -17,7 +17,7 @@ export const lodges: Lodge[] = [
     },
     {
         title: 'Siringit Camp',
-        img: 'siringit-camps/siringit-camps.jpg',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720097340/lodges/siringit-camps/1_jvlzqc.jpg',
         link: 'siringit-camps',
         category: 'Safari'
     },
