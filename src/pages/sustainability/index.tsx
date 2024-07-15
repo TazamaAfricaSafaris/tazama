@@ -3,10 +3,13 @@ import React from 'react'
 import Link from "next/link"
 import PrimaryHeader from '~/components/PrimaryHeader'
 import Image from 'next/image'
+import HeadSEO from '~/components/ui/Head'
+import { base_keywords } from '~/lib/constants'
 
 const Page = () => {
     return (
         <>
+            <HeadSEO title='Tazama Africa Safari | Sustainability' keywords={base_keywords} />
             <PrimaryHeader title='Sustainability with Tazama' image='sustainability/sustainability-header.jpg' />
             <div className='max-w-5xl mx-auto my-20'>
                 <div className="px-4 md:px-8 lg:px-4">
@@ -31,22 +34,22 @@ const Page = () => {
                         <div className='w-full px-4 md:py-8 md:px-8 lg:px-4'>
                             <h4 className="text-3xl text-primary mb-3">Social Sustainability</h4>
                             <p>
-                                ●	<span className='font-semibold'>Pollution Reduction</span>: We are dedicated to reducing pollution, particularly plastic waste, in our safari operations. To combat the pervasive issue of single-use plastics, we provide our guests and staff with reusable water bottles. This initiative significantly cuts down on plastic waste, ensuring that our tours do not contribute to the pollution of Tanzania's stunning landscapes.
-                            </p>
-                            <p className="mt-3">
-                                ●	<span className='font-semibold'>Sustainable Safaris</span>: Our safaris are designed with sustainability at their core. We promote low-impact tourism activities. We strive to protect the natural habitats we explore, ensuring that wildlife can thrive for generations to come.
+                                ●	<span className='font-semibold'>Community Engagement</span>: We have built strong, supportive relationships with local communities around us. By sourcing products and services locally, we ensure that our growth directly benefits those who live in the areas we operate. For instance, we collaborate with local artisans, particularly women at the Maasai Market, purchasing gifts and accessories that reflect Tanzania's rich cultural heritage.
                             </p>
                             <p className='mt-3'>
-                                ●	<span className='font-semibold'>Pollution Reduction</span>: We are dedicated to reducing pollution, particularly plastic waste, in our safari operations. To combat the pervasive issue of single-use plastics, we provide our guests and staff with reusable water bottles. This initiative significantly cuts down on plastic waste, ensuring that our tours do not contribute to the pollution of Tanzania's stunning landscapes.
+                                ●	<span className='font-semibold'>Partnership with Kafika House</span>: Our partnership with Kafika House, a non-profit organization and residential rehabilitation center, exemplifies our commitment to social sustainability. Kafika House supports children with correctable disabilities, such as clubfoot, cleft lip and palate, fluorosis, burn scar contractures, and neurological conditions like spina bifida and hydrocephalus. By supporting Kafika House, we help improve the lives of these children, enabling them to lead healthier, more fulfilling lives.
                             </p>
                             <p className="mt-3">
-                                ●	<span className='font-semibold'>Sustainable Safaris</span>: Our safaris are designed with sustainability at their core. We promote low-impact tourism activities. We strive to protect the natural habitats we explore, ensuring that wildlife can thrive for generations to come.
+                                ●	<span className='font-semibold'>Local Employment</span>: We are dedicated to creating job opportunities for local residents. By hiring locally, we not only provide employment but also invest in the future of Tanzania's communities. This approach ensures that the benefits of tourism are felt broadly, fostering economic stability and growth.
+                            </p>
+                            <p className="mt-3">
+                                ●	<span className='font-semibold'>Educational Outreach - TazamaEdu</span>: Through our TazamaEdu initiative, we engage with local schools to foster a love and understanding of wildlife and nature among the youth. This program includes experiential learning trips to national parks, giving students firsthand experience with conservation efforts. By educating the next generation, we aim to cultivate future conservationists who will continue to protect and preserve Tanzania's natural treasures.
                             </p>
                         </div>
                         <div className='w-full max-md:h-80'>
                             <Image
-                            width={300}
-                            height={300} src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1720012496/sustainability/sustainability-img3_cmb18m.jpg" alt="Sustainability" className='w-full h-full object-cover' />
+                                width={300}
+                                height={300} src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1720012496/sustainability/sustainability-img3_cmb18m.jpg" alt="Sustainability" className='w-full h-full object-cover' />
                         </div>
                     </div>
                 </section>
