@@ -9,7 +9,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
     <>
       <HeadSEO title="Mount Meru" />
       <PrimaryHeader image={`mount-meru.webp`} title="Mount Meru" />
-      <div className="mx-auto  max-w-7xl px-4 md:px-8">
+      <div className="mx-auto  max-w-5xl px-4 md:px-8">
         <div className=" py-8">
           <h3 className="text-4xl text-[#A87133]">
             Welcome to Mount Meru: Tanzania's Hidden Gem

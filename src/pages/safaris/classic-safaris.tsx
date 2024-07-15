@@ -17,7 +17,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
       />
       <PrimaryHeader image="discovery.webp" title="Classic Safaris" />
 
-      <div className="mx-auto mt-10 max-w-7xl px-4 pt-[2rem]">
+      <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
         <div className="">
           <h3 className="text-4xl text-[#A87133]">Classic Safaris</h3>
           <p className="mb-3 mt-5 text-xl text-[#757371]">
@@ -70,7 +70,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-7xl px-4">
+      <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
           <p className="mb-3 mt-5 text-xl text-[#757371]">
             Our accommodations, ranging from comfortable mid-range lodges to

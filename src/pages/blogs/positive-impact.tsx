@@ -11,7 +11,7 @@ const ItenaryPage = () => {
   return (
     <>
       <PrimaryHeader image={`zanzibar.jpg`} title="Our Positive Impact" />
-      <div className="mx-auto  max-w-7xl px-4 md:px-8">
+      <div className="mx-auto  max-w-5xl px-4 md:px-8">
         <div className="mb-10 py-8">
           <h3 className="text-4xl text-[#A87133]">
             After sunset – the magic of twilight in the bush

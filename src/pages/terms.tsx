@@ -22,7 +22,7 @@ export default function Page({ post }: any) {
         title="Tazama Africa Tours & Safaris = East Africa Travel Specialists"
         keywords={base_keywords}
       />
-      <div className="mx-auto  max-w-7xl px-4 pt-20 text-lg text-[#757371] md:px-8">
+      <div className="mx-auto  max-w-5xl px-4 pt-20 text-lg text-[#757371] md:px-8">
         <article>
           <PostBody content={post.content} />
         </article>
