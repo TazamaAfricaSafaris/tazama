@@ -39,7 +39,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-7xl px-4 pt-[1rem]">
+      <div className="mx-auto mt-10 max-w-5xl px-4 pt-[1rem]">
         <div className="">
           <p className="mb-3 mt-5 text-lg text-[#757371]">
             Embark on the Migration Safari, an extraordinary journey with Tazama
@@ -88,7 +88,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-7xl px-4">
+      <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
           <p className="mb-3 mt-5 text-lg text-[#757371]">
             Your safari will take you into the heart of the action. From

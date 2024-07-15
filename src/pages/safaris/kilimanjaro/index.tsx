@@ -16,7 +16,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         image={`mount-kilimanjaro.webp`}
         title="Mount Kilimanjaro"
       />
-      <div className="mx-auto  max-w-7xl px-4 md:px-8 ">
+      <div className="mx-auto  max-w-5xl px-4 md:px-8 ">
         <div className=" py-8">
           <h3 className="text-4xl text-[#A87133]">
             The tallest Summit in Africa{" "}

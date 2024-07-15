@@ -8,7 +8,7 @@ const Page = () => {
     <>
       <HeadSEO title="Gorilla Trekking" />
       <PrimaryHeader image={`chimps.webp`} title="Gorilla Trekking" />
-      <div className="mx-auto  max-w-7xl px-4 md:px-8 py-10">
+      <div className="mx-auto  max-w-5xl px-4 md:px-8 py-10">
         <div className="mb-10">
           <p className="mb-3 mt-5 text-xl text-[#757371]">
             One of the lesser known experiences of East Africa is the

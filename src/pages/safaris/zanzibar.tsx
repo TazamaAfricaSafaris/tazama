@@ -37,7 +37,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           </div>
         </div>
       </div>
-      <div className="mx-auto  max-w-7xl px-4 md:px-8">
+      <div className="mx-auto  max-w-5xl px-4 md:px-8">
         <div className="mb-10 py-8">
           <h3 className="text-4xl text-[#A87133]">
             An Archipelago in the Indian ocean

@@ -13,7 +13,7 @@ const Page = () => {
         image={`adventure.webp`}
         title="Our discounted special offers."
       />
-      <div className="mx-auto  max-w-7xl px-4 md:px-8">
+      <div className="mx-auto  max-w-5xl px-4 md:px-8">
         <div id="offers" className="mb-10 py-8">
           <h3 className="text-4xl text-[#A87133]">
             Our Personal Tailored experiences
