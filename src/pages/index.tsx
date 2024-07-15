@@ -12,6 +12,8 @@ import HeadSEO from "~/components/ui/Head";
 import Carousel, { CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "~/components/Carousel";
 import { allBlogs } from "~/blogs/all-blogs";
 import Link from "next/link";
+import PartnersMarquee from "~/components/PartnersMarquee";
+import { Blog } from "./blogs";
 
 export const homePageContentData: contentSectionData[] = [
   {
@@ -36,6 +38,8 @@ export const homePageContentData: contentSectionData[] = [
 ];
 
 export default function Page() {
+  const homeBlogPosts = allBlogs.slice(-6)
+
   return (
     <>
       <HeadSEO
@@ -89,7 +93,7 @@ export default function Page() {
       <br />
       <br />
       <br />
-      <div className="px-4 xl:px-8 my-20 bg-[#e2dacd] py-10 lg:py-20 bg-fixed">
+      <div className="px-4 xl:px-8 my-20 bg-[#ece6dc86] py-10 lg:py-20 bg-fixed">
         <div className="mx-auto max-w-6xl px-4 xl:px-8">
           <div className="mb-8 w-full px-4 py-4 ">
             <h3
@@ -116,6 +120,61 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <div className="mb-16">
+        <div className="mx-auto max-w-6xl px-4 xl:px-8 mb-2">
+          <div className="mx-auto mb-8 w-full px-4 py-4">
+            <h3
+              className="mb-3 text-4xl lg:text-5xl text-primary"
+            >
+              Our Partners
+            </h3>
+            <p
+              className="font-raleway text-lg"
+            >
+              We at Tazama Africa Safaris pride ourselves on collaborating with top-tier partners to ensure our guests receive the best experiences Africa has to offer.
+            </p>
+          </div>
+        </div>
+        <PartnersMarquee />
+      </div>
+      <br />
+      <br />
+      <br />
+      <div className="mt-10 max-w-6xl mx-auto px-4 xl:px-8 mb-20">
+        <div className="flex justify-between flex-col md:flex-row mx-auto items-center md:items-end mb-4">
+          <div className="">
+            <h3
+              className="text-4xl lg:text-5xl mb-3 text-primary"
+            >
+              Latest From Tazama Africa
+            </h3>
+            <p className="max-w-2xl">Catch up to the latest posts we got for you, from packing lists, to tips on trekking.</p>
+          </div>
+          <br />
+          <Link href="/blogs" className="text-primary underline underline-offset-2 font-raleway">See more posts from Tazama</Link>
+        </div>
+        <Carousel
+          opts={{
+            align: "start"
+          }}
+          className="w-full max-w-5xl mx-auto lg:max-w-none"
+        >
+          <CarouselPrevious />
+          <CarouselContent>
+            {
+              homeBlogPosts.map((post, index) => (
+                <CarouselItem key={index} className="sm:basis-1/3 lg:basis-1/3 mb-2 lg:mr-6 xl:mr-0">
+                  <Blog name={post.name} link={post.url} imgUrl={post.imgUrl} shortDescription={post.shortDescription} category={post.category} />
+                </CarouselItem>
+              ))
+            }
+          </CarouselContent>
+          <CarouselNext />
+        </Carousel>
+      </div>
+      <br />
       <HomeContactUs />
     </>
   );

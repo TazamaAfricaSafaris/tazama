@@ -23,6 +23,10 @@ const navMainContent = [
     link: "/safaris",
   },
   {
+    title: "Lodges",
+    link: "/lodges"
+  },
+  {
     title: "Beach Holiday",
     link: "/safaris/zanzibar",
   },
