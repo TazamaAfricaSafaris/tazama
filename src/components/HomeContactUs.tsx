@@ -28,7 +28,7 @@ export const HomeContactUs = () => {
                 delay: 0.2,
               },
             }}
-            className="font-raleway w-full md:w-2/3"
+            className="w-full font-raleway md:w-2/3"
           >
             Your questions, feedback, and insights are valuable to us. Reach out
             to me directly through the contact details below, and we’ll get back
@@ -69,9 +69,9 @@ export const HomeContactUs = () => {
               <h4 className="mb-2 text-sm font-bold md:text-lg">Phone</h4>
               <a
                 className="font-raleway text-lg font-light text-[#969492] hover:underline md:text-2xl"
-                href="tel:+255745100011"
+                href="tel:+255744400043"
               >
-                (255)745100011
+                (255)744400043
               </a>
             </motion.li>
           </ul>
