@@ -20,7 +20,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
       <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
         <div className="">
           <h3 className="text-4xl text-[#A87133]">Classic Safaris</h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Welcome to the Classic Safari with Tazama Africa Safaris, a journey
             that encapsulates the essence of the African wilderness in a
             compact, yet comprehensive adventure. Perfect for those who wish to
@@ -29,7 +29,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             excursion into the heart of the natural world.
           </p>
 
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Envision a safari where every day is a journey through some of
             Africa's most renowned and wildlife-rich habitats. Our 5-day
             itinerary is thoughtfully crafted to showcase the diverse beauty of
@@ -40,7 +40,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             landscapes of Tarangire, this safari promises a parade of
             unforgettable moments.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             The Classic Safari is a celebration of nature's wonders. In the
             Serengeti, watch as the savannah comes alive with the Great
             Migration, a spectacle of life in its most unfiltered form. In the
@@ -72,7 +72,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
       <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Our accommodations, ranging from comfortable mid-range lodges to
             luxurious camps, are carefully selected to enhance your experience.
             Nestled in prime locations, they provide not just a place to rest,
