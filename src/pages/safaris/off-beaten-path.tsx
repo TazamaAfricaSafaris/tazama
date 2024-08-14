@@ -39,7 +39,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
       <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
         <div className="">
           <h3 className="text-4xl text-[#A87133]">Off the Beaten Path</h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Welcome to the Off the Beaten Path Safari with Tazama Africa
             Safaris, where we take you beyond the usual trails to explore
             Tanzania's hidden gems. This safari experience is tailored for those
@@ -47,14 +47,14 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             where the beauty of nature is raw and unspoiled.
           </p>
 
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Dive into a safari experience that’s far from ordinary. Our
             carefully crafted itinerary takes you to remote destinations,
             offering an intimate connection with the wild. You’ll traverse
             landscapes that few have witnessed, from secluded valleys and
             untouched forests to hidden waterways teeming with wildlife.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Experience the thrill of uncovering secret spots within well-known
             reserves or venturing into lesser-known parks where wildlife roams
             freely, away from the crowds. These off-the-beaten-path locations
@@ -83,7 +83,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
       <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             If you’re longing for an adventure that takes you to the heart of
             the wild, untouched by mass tourism, our Off the Beaten Path Safari
             is your gateway to a different kind of safari experience. It's an
