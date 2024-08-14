@@ -35,6 +35,7 @@ const navMainContent = [
     subItems: [
       { name: "Uganda", link: "/east-africa/uganda" },
       { name: "Kenya", link: "/east-africa/kenya" },
+      { name: "Tanzania", link: "/east-africa/tanzania" },
     ],
   },
 ];
