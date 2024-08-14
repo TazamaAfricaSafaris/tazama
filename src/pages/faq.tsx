@@ -13,7 +13,7 @@ const FAQPage = () => {
       <HeadSEO title="FAQ" keywords={base_keywords} />
       <PrimaryHeader image="faq.webp" title="Frequently Asked Questions" />
       <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
-        <p className="mx-auto max-w-4xl p-4 text-center text-xl text-[#757371]">
+        <p className="mx-auto py-4 text-lg text-[#757371]">
           Explore our FAQ section to find answers to common queries. This
           resource provides quick, reliable guidance for your most frequent
           questions.
