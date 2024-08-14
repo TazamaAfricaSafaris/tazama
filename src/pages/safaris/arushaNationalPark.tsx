@@ -40,7 +40,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
       <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
         <div className="">
           <h3 className="text-4xl text-[#A87133]">Arusha National Park</h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             We’ll pick you up from your accommodation in Arusha (Moshi is also
             possible at a small supplement) in the morning and drive for about
             45 min – 1 hour before we reach the entrance of Arusha National
@@ -55,7 +55,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             reservation.
           </p>
 
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             You’ll almost certainly see zebras, giraffes, baboons, buffalos, and
             colobus monkeys, and with a bit of luck maybe you’ll even spot an
             elephant or a leopard. The landscapes are stunning as well, with the
@@ -63,7 +63,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             the lakes, you’ll also be able to see hundreds or thousands of
             flamingos.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             After lunch You will spend the Rest of the day at Lake duluti
           </p>
         </div>
@@ -88,7 +88,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
       <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Activities: Walking and canoes
             <br />
             <br />
@@ -108,27 +108,27 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             hang around long enough for a photo. Monitor lizards, some of which
             can be as big as 2m, can be seen basking on old broken trees.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             The lake itself also provides the perfect habitat for water birds
             and Duluti is claimed to have up to 130 different species. The most
             common birds that can be seen include grey herons, fish eagles,
             cormorants, ospreys, egrets and kingfishers.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             The lake has abundant fish proven by many groups of cormorants that
             hang out together to fish. Many locals come to the lake at night to
             fish, which of course is making competition for food among the wild
             animals harder. You need a permit to fish…
           </p>
 
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Visitors to Lake Duluti can go canoeing to explore the lake for a
             different perspective. This is a great way to explore the marsh
             areas of the lake. Here, huge papyrus plants are a noisy, colourful
             nesting ground for many of the birds. Usually a canoe trip around
             the lake takes around 2-3 hours.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             If walking is your thing, then the hike around the crater is a
             ‘must’. A small path leads through the forest that provides enough
             shade that you can do the walk even in the hottest time of the day.
