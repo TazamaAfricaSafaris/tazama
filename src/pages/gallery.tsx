@@ -44,12 +44,12 @@ const GalleryPage = () => {
       <HeadSEO title="Gallery" keywords={base_keywords} />
       <PrimaryHeader image="gallery.webp" title="Glimpse of our Memories" />
 
-      <section className="flex flex-col items-center justify-center">
-        <div className="mb-10 py-8">
+      <section className="flex flex-col items-center justify-center max-w-5xl mx-auto mt-16">
+        <div className="mb-4 py-8">
           <h3 className="text-center text-4xl text-[#A87133]">
             Our Personal Tailored experiences
           </h3>
-          <p className="mb-3 mt-5 text-center text-lg text-[#757371]">
+          <p className="mt-5 text-[#757371]">
             Welcome to our diverse collection of meticulously crafted
             itineraries, each designed to offer you a unique and unforgettable
             travel experience. Our itineraries are thoughtfully curated to
@@ -57,8 +57,8 @@ const GalleryPage = () => {
             destination.
           </p>
         </div>
-        <div className="mt-10 lg:mt-[10px] ">
-          <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
+        <div>
+          <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:gap-0 md:grid md:grid-cols-2 lg:grid-cols-3">
             {honeyMooners.map((item) => (
               <MemoryImage src={item.src} key={item.id} />
             ))}

@@ -13,12 +13,12 @@ const Page = () => {
         image={`adventure.webp`}
         title="Our discounted special offers."
       />
-      <div className="mx-auto  max-w-5xl px-4 md:px-8">
-        <div id="offers" className="mb-10 py-8">
+      <div className="mx-auto mt-8 mb-12 max-w-5xl px-4 md:px-8">
+        <div id="offers" className="py-8">
           <h3 className="text-4xl text-[#A87133]">
             Our Personal Tailored experiences
           </h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Welcome to our diverse collection of meticulously crafted
             itineraries, each designed to offer you a unique and unforgettable
             travel experience. Our itineraries are thoughtfully curated to
