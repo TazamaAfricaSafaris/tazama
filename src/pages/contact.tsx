@@ -49,7 +49,7 @@ const ContactPage = () => {
         keywords={base_keywords}
       />
       <PrimaryHeader image="mount-kilimanjaro.webp" title="Contact Us" />
-      <div className="mx-auto">
+      <div className="mx-auto mt-14">
         <div className="text-center text-[#757371]">
           <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-xl ">
             We'd love to hear from you. Simply fill in the form below or reach
@@ -78,8 +78,8 @@ const ContactPage = () => {
         </div>
 
         <div className="mx-auto my-20 max-w-4xl px-4">
-          <h3 className="text-4xl">Contact Us</h3>
-          <p className=" mt-8 text-black md:mt-12">
+          <h3 className="text-4xl text-primary">Contact Us</h3>
+          <p className=" mt-8 text-black">
             Please complete the form below
           </p>
 
