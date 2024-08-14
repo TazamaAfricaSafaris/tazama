@@ -15,10 +15,10 @@ export default function Page() {
         <section className="flex items-start lg:mx-0 lg:gap-10">
           <div className="mx-auto  lg:mx-0 lg:max-w-[60%] lg:text-justify">
             <div className="mb-10 py-8">
-              <h3 className="mt-5 text-2xl font-bold text-primary">
+              <h3 className="mt-5 text-2xl text-primary">
                 Embracing the Private Tour Experience
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-[#757371]">
                 For those seeking a more tailored adventure, Tazama offers
                 luxurious private tours. These excursions offer the ultimate
                 personalized experience, allowing climbers to set their pace,
@@ -28,10 +28,10 @@ export default function Page() {
                 as you envisioned, with all the luxury and attention to detail
                 that sets Tazama apart.
               </p>{" "}
-              <h3 className="mt-5 text-2xl font-bold text-primary">
+              <h3 className="mt-5 text-2xl text-primary">
                 The Group Climb Advantage
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-[#757371]">
                 Group climbs on Kilimanjaro offer a unique blend of shared
                 challenge and collective triumph. They're not just about
                 reaching the summit; they're about the bonds formed on the way
@@ -41,10 +41,10 @@ export default function Page() {
                 are carefully managed to ensure safety and personal attention,
                 making your climb both intimate and inclusive.
               </p>{" "}
-              <h3 className="mt-5 text-2xl font-bold text-primary">
+              <h3 className="mt-5 text-2xl text-primary">
                 Choosing Your Path with Tazama
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-[#757371]">
                 Whether you're drawn to the camaraderie of a group climb or the
                 bespoke experience of a private tour, Tazama is here to make
                 your Kilimanjaro dream a reality. We understand the importance
@@ -64,10 +64,10 @@ export default function Page() {
                   blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
                 />
               </div>
-              <h3 className="mt-5 text-2xl font-bold text-primary">
+              <h3 className="mt-5 text-2xl text-primary">
                 Your Kilimanjaro Adventure Awaits
               </h3>
-              <p className="mb-3 mt-5 text-lg text-[#757371]">
+              <p className="mb-3 mt-5 text-[#757371]">
                 Climbing Kilimanjaro is an invitation to challenge yourself,
                 connect with nature, and become part of a community of
                 adventurers. Whether in the solidarity of a group or the

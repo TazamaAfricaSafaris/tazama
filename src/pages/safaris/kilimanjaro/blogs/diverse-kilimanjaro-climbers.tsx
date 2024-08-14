@@ -13,7 +13,7 @@ export default function Page() {
       <section className="flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="text-[#757371]">
               Conquering Mount Kilimanjaro, the rooftop of Africa, is a dream
               many adventurers from around the globe share. Tazama has been at
               the forefront of turning these dreams into reality, offering
@@ -24,10 +24,10 @@ export default function Page() {
               from a global community of climbers who've chosen Tazama as their
               gateway to the summit of Kilimanjaro.
             </p>{" "}
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               A Melting Pot of Cultures on the Slopes of Kilimanjaro
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="text-[#757371]">
               Mount Kilimanjaro, with its breathtaking landscapes and
               challenging treks, attracts thousands of climbers each year.
               Tazama has had the privilege of guiding adventurers from various
@@ -49,10 +49,10 @@ export default function Page() {
               personalized experiences and the skilled guidance provided by our
               expert team, making their Kilimanjaro journey unforgettable.
             </p>{" "}
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Personalization at the Heart of Every Climb
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="text-[#757371]">
               What sets Tazama apart is our dedication to personalization.
               Understanding that each climber has unique needs and expectations,
               we tailor every journey to suit individual preferences. Whether
@@ -63,10 +63,10 @@ export default function Page() {
               in the glowing testimonials we've received from our international
               clientele.
             </p>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Safety, Expertise, and Warm Hospitality
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="text-[#757371]">
               Safety is paramount on the slopes of Kilimanjaro, and Tazama's
               expert guides, with their deep knowledge of the mountain's terrain
               and weather patterns, ensure that climbers from all countries feel
@@ -85,10 +85,10 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Join the Global Tazama Family
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="text-[#757371]">
               As Tazama continues to welcome climbers from across the world,
               we're not just offering a climb; we're inviting you to become part
               of a global family that shares the love for adventure, the respect
