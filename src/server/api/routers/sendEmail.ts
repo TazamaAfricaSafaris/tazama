@@ -5,9 +5,9 @@ import PlanMyTripEmail from "~/components/emails/PlanMyTripEmail";
 import posthog from "posthog-js";
 import AppendNewLeads from "~/lib/google-sheets";
 import { format } from "date-fns";
-const resend = new Resend("re_dbr9K3ya_4Wq4Tx5SGiAgEA2vbKpdi8aW");
 import { env } from "~/env";
 
+const resend = new Resend(env.NEXT_PUBLIC_RESEND_KEY);
 export const emailRouter = createTRPCRouter({
   send: publicProcedure.input(planMyTripSchema).mutation(async ({ input }) => {
     try {
