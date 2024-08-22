@@ -50,17 +50,11 @@ const ContentSection = (props: contentSectionData) => {
     });
 
     tl.fromTo(textRef.current, {
-      y: -25,
+      y: -100,
       opacity: 0,
     }, {
       y: 0,
       opacity: 1,
-      scrollTrigger: {
-        trigger: containerRef.current,
-        scrub: true,
-        start: "top bottom",
-        
-      }
     });
 
   }, [containerRef, imageRef, textRef])
@@ -73,7 +67,7 @@ const ContentSection = (props: contentSectionData) => {
       >
         <div
           ref={textRef}
-          className="w-full px-8 md:px-10 lg:py-12 lg:px-32 sticky top-2"
+          className="w-full px-8 md:px-10 lg:py-20 lg:px-32"
         >
           <h3
             className="text-5xl mb-4 font-light font-amiora capitalize text-primary">

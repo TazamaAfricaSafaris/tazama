@@ -23,9 +23,7 @@ export const homePageContentData: contentSectionData[] = [
     image: "https://res.cloudinary.com/drhl0yu7y/image/upload/v1720014575/home/lioness_o9ed35.webp",
     actionTitle: "Our Story",
     title: "Why Travel with Tazama",
-    description: `Our outstanding guides and staff are experts who ensure your trip is seamless from start to finish. We offer authentic safaris, giving you up an up-close glimpse of these incredible ecosystems at the pace you'd prefer.\n
-        We partner with outfitters that share our passion of environmentally sustainable business practices and commit to buying local, organic and women-owned where possible.\n
-        Whether it's on the slopes of Kilimanjaro or the plains of the Serengeti, we promise to deliver an experience that is authentic, adventurous, and awe-inspiring! We can't wait to share our home with you.`,
+    description: `Our outstanding guides and staff are experts who ensure your trip is seamless from start to finish. We offer authentic safaris, giving you up an up-close glimpse of these incredible ecosystems at the pace you'd prefer. We partner with outfitters that share our passion of environmentally sustainable business practices and commit to buying local, organic and women-owned where possible. Whether it's on the slopes of Kilimanjaro or the plains of the Serengeti, we promise to deliver an experience that is authentic, adventurous, and awe-inspiring! We can't wait to share our home with you.`,
   },
   {
     rank: 2,
