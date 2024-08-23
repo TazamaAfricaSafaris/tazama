@@ -202,20 +202,18 @@ const Navbar = () => {
                       className="absolute bg-[#A87133] md:py-4 py-12 md:px-8 flex flex-col justify-center"
                     >
                       <button
-                        className="text-left text-lg text-white mb-8 w-full flex items-center space-x-2"
+                        className="text-left text-lg text-white mb-8 w-full flex items-center gap-x-2"
                         onClick={goBack}
                       >
-                        <span className="border border-white p-1 rounded-full">
-                          <MdChevronLeft size={24} />
-                        </span>
-                        <span className="text-2xl font-semibold">{navMainContent[activeIndex]?.title}</span>
+                          <MdChevronLeft size={26} />
+                        <span className="text-4xl font-serif mt-1">{navMainContent[activeIndex]?.title}</span>
                       </button>
                       <ul className="text-xl text-white space-y-4 px-12 md:px-11">
                         {navMainContent[activeIndex]?.subItems?.map(
                           (subItem, index) => (
                             <motion.li
                               initial={{ x: -20 }}
-                              className="w-full"
+                              className="w-full text-2xl"
                               animate={{
                                 x: 0,
                                 transition: {
