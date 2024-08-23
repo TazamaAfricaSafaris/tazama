@@ -36,9 +36,9 @@ const kenya = () => {
         }
       </section>
 
-      <section className='max-w-5xl my-20 mx-auto text-center'>
-        <p>Planning to visit Rwanda? Book with us via the form below</p>
-      </section>
+        <section className='max-w-5xl my-20 mx-auto text-center'>
+          <p>Planning to visit Rwanda? Book with us via the form below</p>
+        </section>
     </>
   )
 }

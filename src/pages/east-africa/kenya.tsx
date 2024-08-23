@@ -3,7 +3,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import PrimaryHeader from '~/components/PrimaryHeader'
-import ContentSection from '~/components/ContentSection'
+import ContentSection, { contentSectionData } from '~/components/ContentSection'
 import { kenyaContent } from '~/data/east-africa'
 import { array } from 'fast-web-kit'
 
@@ -31,7 +31,7 @@ const kenya = () => {
         {
           array
             .sort(kenyaContent, "asc", "rank")
-            .map(content => (
+            .map((content: contentSectionData) => (
               <ContentSection
                 key={content.rank}
                 rank={content.rank}
