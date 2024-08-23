@@ -37,3 +37,34 @@ export const kenyaContent: contentSectionData[] = [
         description: `Kenya is home to Africa’s second-highest peak, Mount Kenya, offering thrilling trekking adventures. Hiking safaris provide a challenging and rewarding experience for those seeking to explore Kenya’s breathtaking highlands. Trek to Point Lenana, Mount Kenya’s highest trekking peak, and enjoy stunning views of the surrounding landscapes and the dramatic volcanic formations.`
     }
 ]
+
+export const rwandaContent: contentSectionData[] = [
+    {
+        rank: 1,
+        image: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1724332853/east-africa/kenya/j8hffxali1o2z9e0ta1v.jpg',
+        reverse: false,
+        title: `Wildlife Safaris: Discover Rwanda’s Pristine Wilderness`,
+        description: `Though smaller in size compared to its neighbors, Rwanda offers an impressive array of wildlife, including mountain gorillas, lions, elephants, rhinos, and giraffes. Rwanda’s wildlife safaris take you through three main destinations: Volcanoes National Park, Nyungwe Forest National Park, and Akagera National Park. Each park offers unique ecosystems and wildlife experiences. Volcanoes National Park is famous for its thriving population of mountain gorillas, while Nyungwe Forest is a haven for biodiversity. Akagera National Park provides the more classic African safari experience, where you can encounter the Big Five in the savannah.`
+    },
+    {
+        rank: 2,
+        image: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v172.jpg',
+        reverse: true,
+        title: `Birding Safaris: A Paradise for Bird Enthusiasts`,
+        description: `Rwanda is a birdwatcher’s paradise with over 750 bird species, many of which are endemic to the Albertine Rift Valley. With its stunning landscapes and varied ecosystems, Rwanda offers year-round birding opportunities. Nyungwe National Park, a designated Important Bird Area, is home to more than 310 bird species, including 27 Albertine endemics like the Red-collared Mountain Babbler and Albertine Owlet. Whether you’re an experienced birder or a beginner, Rwanda’s diverse habitats provide an unforgettable birding safari.`
+    },
+    {
+        rank: 3,
+        image: '',
+        reverse: false,
+        title: `Hiking Safaris: Trek Through Rwanda’s Majestic Landscapes`,
+        description: `Rwanda is a dream destination for hikers and trekkers, with scenic trails suited for all experience levels. The most popular hikes take place at Mount Karisimbi and Mount Bisoke, both located within the volcanic Virungas range. Hikers are treated to stunning views, exotic plant species, and even glimpses of wildlife along the way. Nyungwe National Park is also an excellent destination for trekking, with a network of trails offering a close connection to nature.`
+    },
+    {
+        rank: 4,
+        image: '',
+        reverse: true,
+        title: `Cultural Safaris`,
+        description: `Rwanda’s cultural diversity is as captivating as its landscapes. The country’s three distinct ethnic groups—the Twa, Tutsi, and Hutu—each have their own unique traditions and ways of life. On a cultural safari, you’ll have the opportunity to engage with local communities through traditional dances, music, crafts, and cuisine. Activities like visiting local breweries, cattle farms, and even bee-keeping provide a deeper understanding of Rwanda’s way of life. No safari is complete without experiencing the country’s vibrant culture.`
+    }
+]
