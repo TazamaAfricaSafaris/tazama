@@ -42,7 +42,7 @@ const tanzania = () => {
           Whether you’re a nature lover, a cultural enthusiast, or an adventurer at heart, Tanzania has something to offer you. So pack your bags and get ready to embark on a journey to one of the most beautiful and diverse countries in the world – Tanzania awaits!
         </p>
         <br />
-        <p className='text-center'>Planning to visit Rwanda? Book with us via the form below</p>
+        <p className='text-center'>Planning to visit Tanzania? Book with us via the form below</p>
       </section>
     </>
   )
