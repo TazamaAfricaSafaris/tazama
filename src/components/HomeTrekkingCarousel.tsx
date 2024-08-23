@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useRef } from 'react'
 import Carousel, { CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './Carousel'
 import Image from 'next/image'
