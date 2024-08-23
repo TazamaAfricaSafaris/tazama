@@ -14,6 +14,7 @@ import { allBlogs } from "~/blogs/all-blogs";
 import Link from "next/link";
 import PartnersMarquee from "~/components/PartnersMarquee";
 import { Blog } from "./blogs";
+import HomeTrekkingCarousel from "~/components/HomeTrekkingCarousel";
 
 export const homePageContentData: contentSectionData[] = [
   {
@@ -78,7 +79,7 @@ export default function Page() {
             Authentic & timeless adventures
           </h3>
           <p
-            className="font-raleway text-lg"
+            className="font-raleway"
           >
             Start exploring some of sample itineraries and see where an
             adventure with Tazama Africa can take you.
@@ -91,7 +92,7 @@ export default function Page() {
       <br />
       <br />
       <br />
-      <div className="px-4 xl:px-8 my-20 bg-[#ece6dc86] py-10 lg:py-20 bg-fixed">
+      {/* <div className="px-4 xl:px-8 my-20 bg-[#ece6dc86] py-10 lg:py-20 bg-fixed">
         <div className="mx-auto max-w-6xl px-4 xl:px-8">
           <div className="mb-8 w-full px-4 py-4 ">
             <h3
@@ -100,7 +101,7 @@ export default function Page() {
               Ascending Africa's Summits
             </h3>
             <p
-              className="font-raleway text-lg text-text-primaryer"
+              className="font-raleway"
             >
               Explore the summits of Africa with Tazama Africa Safaris as you climb the mountains Kilimanajaro and Meru to fulfill your desire to know what it's like to be at the top
             </p>
@@ -117,7 +118,8 @@ export default function Page() {
             </Link>
           </div>
         </div>
-      </div>
+      </div> */}
+        <HomeTrekkingCarousel />
       <br />
       <br />
       <div className="mb-16">
@@ -129,7 +131,7 @@ export default function Page() {
               Our Partners
             </h3>
             <p
-              className="font-raleway text-lg"
+              className="font-raleway"
             >
               We at Tazama Africa Safaris pride ourselves on collaborating with top-tier partners to ensure our guests receive the best experiences Africa has to offer.
             </p>
