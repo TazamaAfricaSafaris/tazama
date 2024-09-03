@@ -142,7 +142,7 @@ export const honeyMooners = [
 
 export default function ItienaryViewer(props: ItienaryProps) {
   return (
-    <div className="mx-auto px-4 pt-10 md:pt-[80px]">
+    <div className="mx-auto px-4 pt-10 md:pt-[80px] relative">
       <section className="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-5 ">
         <div className="flex items-center justify-center pt-5">
           <ParallaxImg
@@ -151,7 +151,7 @@ export default function ItienaryViewer(props: ItienaryProps) {
             blurDataUrl={props.blurDataUrl!}
           />
         </div>
-        <div>
+        <div className="h-fit sticky top-0">
           <p className="pt-5 text-lg font-bold text-primary lg:text-xl">
             {props.title}
           </p>

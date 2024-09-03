@@ -20,7 +20,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
       <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
         <div className="">
           <h3 className="text-4xl text-[#A87133]">Family Safaris</h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Welcome to a family safari experience with Tazama Africa Safaris,
             where every journey is an enriching chapter in your family's
             storybook of adventures. We specialize in creating safaris that are
@@ -28,7 +28,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             experiences that bond families closer together.
           </p>
 
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Imagine a safari where each day is a new adventure, tailored to
             entertain and educate both you and your children. Our itineraries,
             available in mid-range and luxury tiers, are designed with family
@@ -37,7 +37,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             every family. Post-safari, we also offer an optional beach holiday,
             perfect for unwinding and reflecting on your wildlife adventures.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Each family safari is a mosaic of prolific game viewing in some of
             Africa's most concentrated wildlife areas and heartwarming cultural
             exchanges. Your children will be thrilled to engage with local Masai
@@ -68,7 +68,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
       <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Our accommodations have been carefully chosen for their exceptional
             family-friendly reputations. In these welcoming camps, your family
             will find comfort and a chance to bond over shared experiences.

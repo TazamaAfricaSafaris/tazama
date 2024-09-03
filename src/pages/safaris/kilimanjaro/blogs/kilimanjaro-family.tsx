@@ -13,7 +13,7 @@ export default function Page() {
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto  lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               The adventure of Climbing Mount Kilimanjaro isn't just about
               reaching the peak; it's about the joyous journey you undertake
               with your new mountain family. At Tazama, we understand that the
@@ -22,8 +22,8 @@ export default function Page() {
               porters. They are more than just crew members; they become your
               family, your cheerleaders, and the soul of your adventure
             </p>{" "}
-            <h3 className="mt-5 text-2xl font-bold text-primary">Your Crew</h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <h3 className="mt-5 text-2xl text-primary">Your Crew</h3>
+            <p className="mb-3 mt-5 text-[#757371]">
               Climbing the highest mountain in Africa is a transformative
               experience, reshaping your view of the world and yourself. But
               what truly elevates this journey are the people you share it
@@ -33,10 +33,10 @@ export default function Page() {
               to life, not just with their invaluable support but with their
               vibrant spirit, singing, and dancing their way into your heart.
             </p>{" "}
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               A Symphony of Joy and Togetherness
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               On Kilimanjaro, every day is a celebration, a testament to the
               human spirit's resilience and joy. Our guides and porters embody
               this spirit, turning the climb into a festive journey. With songs
@@ -47,10 +47,10 @@ export default function Page() {
               soundtrack of your adventure, a harmonious backdrop to the
               stunning vistas and challenging ascents.
             </p>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Summit Celebrations: A Collective Triumph
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               Reaching the summit of Kilimanjaro is a monumental achievement, a
               moment of triumph that calls for jubilant celebration. Who better
               to share this pinnacle of joy with than your mountain family? Our
@@ -69,10 +69,10 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               An All-Singing, All-Dancing Adventure
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               At Tazama, we believe that the essence of adventure lies in the
               connections we make and the experiences we share. Our Tanzanian
               team goes above and beyond to foster a sense of unity and
@@ -81,10 +81,10 @@ export default function Page() {
               journey together. It's an invitation to let go, immerse yourself
               in the moment, and be part of something truly magical.
             </p>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Join Our Jubilant Kilimanjaro Family
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               Choosing Tazama for your Kilimanjaro climb means not just
               embarking on an epic journey to the Roof of Africa but also
               becoming part of a vibrant, joyful family. Our commitment to

@@ -37,12 +37,12 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           </div>
         </div>
       </div>
-      <div className="mx-auto  max-w-5xl px-4 md:px-8">
+      <div className="mx-auto max-w-6xl px-4 md:px-8 mt-12">
         <div className="mb-10 py-8">
           <h3 className="text-4xl text-[#A87133]">
             An Archipelago in the Indian ocean
           </h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Welcome to the epitome of serenity and adventure, where the
             crystalline waters of the Indian Ocean caress the shores of
             Tanzania's untouched beaches. Our beach holiday page serves as your
@@ -51,7 +51,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             promises an unparalleled fusion of opulence and excitement, steeped
             in a tapestry of rich culture and captivating history.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Zanzibar, renowned as the spice island, has beckoned explorers,
             mariners, and merchants for centuries, its shores laden with the
             intoxicating aromas of cloves, nutmeg, and cinnamon. Today, the
@@ -84,7 +84,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         subText="- Leonie Trubshoe, Australia"
         quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
       />
-      <div className="mt-10 flex flex-col items-center justify-center">
+      <div className="mt-10 flex flex-col items-center justify-center mb-12">
         {/* @ts-ignore */}
         <Gallery images={images} />
       </div>
