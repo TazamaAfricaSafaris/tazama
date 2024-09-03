@@ -50,6 +50,9 @@ const config = {
     domains: ["res.cloudinary.com", "images.unsplash.com"],
   },
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
+  transpilePackages: [
+    'gsap'
+  ]
 };
 
 export default withMDX(config);

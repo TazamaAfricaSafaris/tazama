@@ -11,11 +11,11 @@ export default function Page() {
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Recovery Journey After climbing Kilimanjaro: How many days it
               takes to recover from climbing kilimanjaro
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               The ascent of Mount Kilimanjaro is an adventure that tests your
               limits, not just during the climb but also in the days that follow
               as your body recovers from this monumental feat. With Tazama, your
@@ -23,20 +23,20 @@ export default function Page() {
               care, and support that extends beyond the descent, ensuring a
               recovery as memorable as the climb itself
             </p>{" "}
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Post-Kilimanjaro: The Unseen Challenge
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               Climbing the towering heights of Kilimanjaro is a testament to
               human endurance, and the recovery period is a crucial part of this
               epic journey. The descent from the peak might mark the end of the
               climb, but it heralds the beginning of a different kind of
               challenge: recovery.
             </p>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               The Aftermath: Physical Echoes of the Climb
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               As you revel in the glory of having reached the summit, your body
               begins to whisper tales of the trek. Symptoms such as headache,
               nausea, dizziness, and shortness of breath may linger, while the
@@ -44,10 +44,10 @@ export default function Page() {
               Recovery is not just about resting; it's about listening and
               responding to your body's needs.
             </p>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               The Path to Recovery: A Holistic Approach
             </h3>
-            <ul className="list-disc pl-10 text-lg text-[#757371]">
+            <ul className="list-disc pl-10 text-[#757371]">
               <li>
                 <span className="text-primary">Choosing the Right Route:</span>{" "}
                 Opting for a longer route on Kilimanjaro not only increases your
@@ -86,10 +86,10 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Every Climber's Journey is Unique and Personal
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               Recovery varies from one climber to another, influenced by
               physical fitness, mental fortitude, and the body's inherent
               ability to heal. Some may find themselves bouncing back in a
@@ -97,10 +97,10 @@ export default function Page() {
               Remember, some physical reminders of your journey may linger, a
               testament to your courage and determination.
             </p>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Embracing Recovery with Tazama
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               With Tazama, your post-Kilimanjaro experience is as meticulously
               planned as your ascent. Our commitment to your well-being ensures
               that your recovery is supported every step of the way, from

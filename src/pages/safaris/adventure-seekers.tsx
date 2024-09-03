@@ -37,14 +37,14 @@ const Page = ({ images }: { images: ImageProps[] }) => {
       <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
         <div className="">
           <h3 className="text-4xl text-[#A87133]">Adventure Seekers</h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Step into a world where every day is an exhilarating new chapter
             with Tazama Africa Safaris, your gateway to Africa's untamed beauty
             and thrilling adventures. Our safaris are designed for those who
             crave the pulse of adventure and the joy of discovery.
           </p>
 
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Your journey with us is a tapestry of diverse experiences. Imagine
             tracking the Big Five during a wildlife safari in the heart of the
             Serengeti, feeling your heart race as you witness nature's raw
@@ -54,7 +54,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             adventure, blending wildlife encounters with rich cultural
             immersions.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             The adventure extends beyond the typical safari. Feel the rush of
             adrenaline as you partake in activities like hot air ballooning over
             vast savannas, trekking through lush landscapes, or navigating the
@@ -83,7 +83,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
       <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-16 mt-5 text-[#757371]">
             For those intrigued by culture, we offer immersive experiences that
             bring you face-to-face with local traditions and lifestyles.
             Participate in authentic cultural exchanges, learning from the
@@ -110,9 +110,8 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         subText="- Leonie Trubshoe, Australia"
         quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
       />
-      <div className="mt-10 flex flex-col items-center justify-center">
+      <div className="mt-16 mb-10 flex flex-col items-center justify-center">
         <div className="mt-10 lg:mt-[10px] ">
-          {/* @ts-ignore */}
           <Gallery images={images} />
         </div>
       </div>

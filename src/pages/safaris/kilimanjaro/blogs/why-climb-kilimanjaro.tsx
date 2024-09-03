@@ -13,7 +13,7 @@ export default function Page() {
       <section className="mx-auto flex items-start lg:mx-0 lg:gap-10">
         <div className="mx-auto lg:mx-0 lg:max-w-[60%] lg:text-justify">
           <div className="mb-10 py-8">
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               Climbing Mount Kilimanjaro is more than an adventure; it's a
               profound exploration of personal limits and a testament to the
               human spirit's resilience. At Tazama, we've witnessed countless
@@ -23,10 +23,10 @@ export default function Page() {
               Kilimanjaro beckons and how it has become a pivotal chapter in the
               lives of many.
             </p>{" "}
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Kilimanjaro
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               Mount Kilimanjaro stands as a beacon for those yearning to conquer
               one of the world's Seven Summits. Its allure lies not just in its
               majestic height but in its accessibility. Kilimanjaro challenges
@@ -37,10 +37,10 @@ export default function Page() {
               With Tazama, you embark on a journey tailored to your spirit of
               adventure, ensuring an unforgettable ascent.
             </p>{" "}
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               A Microcosm of the World's Beauty
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               Ascending Kilimanjaro is like traversing the globe's climates
               within a single trek. From lush rainforests buzzing with life to
               the haunting beauty of the alpine desert, each zone is a world
@@ -49,10 +49,10 @@ export default function Page() {
               immortalized in the photographs and memories of those who venture
               through its realms.
             </p>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Wildlife and Wilderness
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               Kilimanjaro is not only a climber's paradise but a sanctuary for
               diverse wildlife and unique flora. The mountain's unique
               ecosystems host species that enchant nature enthusiasts and add an
@@ -71,10 +71,10 @@ export default function Page() {
                 blurDataURL={`${CLOUDINARY_URL}kilimanjaro/glossugv7zlnlgp3oie4.blurDataUrl`}
               />
             </div>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               The Triumph of Personal Achievement
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               Climbing Kilimanjaro is a celebration of personal milestones and
               human endurance. It's a quest that people undertake to mark
               significant life events or to challenge their own limits. Reaching
@@ -83,10 +83,10 @@ export default function Page() {
               perspectives, inspires new beginnings, and imprints a sense of
               achievement that lasts a lifetime.
             </p>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Contributing to the Conservation and Community
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               By choosing Kilimanjaro as your adventure, you contribute to the
               conservation of this magnificent mountain and the well-being of
               the local community. Tazama's commitment to sustainable tourism
@@ -95,10 +95,10 @@ export default function Page() {
               guides, and local businesses. Your climb becomes a part of a
               larger story of positive impact.
             </p>
-            <h3 className="mt-5 text-2xl font-bold text-primary">
+            <h3 className="mt-5 text-2xl text-primary">
               Your Kilimanjaro Journey with Tazama
             </h3>
-            <p className="mb-3 mt-5 text-lg text-[#757371]">
+            <p className="mb-3 mt-5 text-[#757371]">
               With Tazama, climbing Kilimanjaro is not just about reaching the
               summit; it's about embracing each step, each breath, and each
               moment of this life-changing journey. Our luxury expeditions

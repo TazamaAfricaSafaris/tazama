@@ -34,7 +34,7 @@ const Page = () => {
                 </div>
 
                 <section className='max-w-5xl mx-auto mt-16'>
-                    <h4 className="text-4xl mb-3">Tazama Africa Safaris collection of accommodations for your adventure</h4>
+                    <h4 className="text-4xl mb-3 text-primary">Tazama Africa Safaris collection of accommodations for your adventure</h4>
                     <p className='max-w-5xl mb-6'>
                         Featuring Tanzania’s most pristine wilderness and beach settings, this coveted collection is designed for friends and families who want to celebrate their most precious connections surrounded by nothing but nature.
                     </p>

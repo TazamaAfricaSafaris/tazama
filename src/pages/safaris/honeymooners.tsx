@@ -24,8 +24,8 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
       <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
         <div className="">
-          <h3 className="text-4xl text-[#A87133]">HoneyMoon Safaris</h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <h3 className="text-4xl text-[#A87133]">Honeymoon Safaris</h3>
+          <p className="mb-3 mt-5 text-[#757371]">
             Welcome to your first adventure as a newlywed couple with Tazama
             Africa Safaris. Imagine a honeymoon that not only celebrates your
             love but also immerses you in the heartbeat of Africa, where wild
@@ -33,7 +33,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             elements into a tapestry of unforgettable memories for you.
           </p>
 
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Your journey begins with the raw beauty of Tanzania's wildlife. The
             untamed expanse of the Serengeti and the wildlife-rich Ngorongoro
             Crater offer a front-row seat to nature's grandeur. Picture
@@ -42,7 +42,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             These moments in the wild create a bond with nature that mirrors the
             deep connection you share as a couple.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5 text-[#757371]">
             Transitioning from the thrilling safaris, your adventure mellows
             into the tranquil embrace of Zanzibar's enchanting beaches. Here,
             the pace slows, and the romantic ambience of secluded resorts sets
@@ -74,7 +74,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
       <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-10 mt-5 text-[#757371]">
             We understand that every couple is unique, and so should be their
             honeymoon experience. That's why we tailor each journey to fit your
             dreams. Whether you desire more time amidst the wild, crave endless
@@ -93,9 +93,10 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           </p>
         </div>
       </div>
+
       <EnquireNow />
 
-      <section className="mx-auto  max-w-5xl px-4 pb-10 md:px-8">
+      <section className="mx-auto max-w-5xl px-4 pb-10 md:px-8">
         <>
           {honeyMooners.map((data) => (
             <ItienaryViewer
