@@ -7,7 +7,7 @@ import AppendNewLeads from "~/lib/google-sheets";
 import { env } from "~/env";
 import { format } from "date-fns";
 
-const resend = new Resend("re_dbr9K3ya_4Wq4Tx5SGiAgEA2vbKpdi8aW");
+const resend = new Resend(env.NEXT_PUBLIC_RESEND_KEY);
 
 const contactEmailSchema = z.object({
   email: z.string(),

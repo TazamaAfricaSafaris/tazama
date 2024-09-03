@@ -68,8 +68,8 @@ const ContactPage = () => {
           </p>
           <p className=" text-xl">
             Phone:&nbsp;
-            <a href="tel:+255745100011" className="hover:underline">
-              (255)745100011
+            <a href="tel:+255744400043" className="hover:underline">
+              (255)744400043
             </a>
           </p>
           <p className="mt-10 text-lg md:text-xl">
