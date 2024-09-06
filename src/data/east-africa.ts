@@ -61,7 +61,7 @@ export const rwandaContent: contentSectionData[] = [
   },
   {
     rank: 3,
-    image: "https://res.cloudinary.com/drhl0yu7y/image/upload/v1724403365/east-africa/rwanda/mount-bisoke-hike-1024x408_qi6wi3.jpg",
+    image: "https://res.cloudinary.com/drhl0yu7y/image/upload/v1724403803/east-africa/rwanda/bisoke_o90tcb.jpg",
     reverse: false,
     title: `Hiking Safaris: Trek Through Rwanda’s Majestic Landscapes`,
     description: `Rwanda is a dream destination for hikers and trekkers, with scenic trails suited for all experience levels. The most popular hikes take place at Mount Karisimbi and Mount Bisoke, both located within the volcanic Virungas range. Hikers are treated to stunning views, exotic plant species, and even glimpses of wildlife along the way. Nyungwe National Park is also an excellent destination for trekking, with a network of trails offering a close connection to nature.`,
