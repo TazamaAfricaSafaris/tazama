@@ -13,11 +13,11 @@ import Link from "next/link";
 import BlurImage from "~/components/ui/BlurImage";
 import { allBlogs } from "~/blogs/all-blogs";
 import { Blog } from "~/pages/blogs";
+import { kilimanjaroRoutes } from "~/data/kilimanjaro-routes";
+import Image from "next/image";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
-
   const trekkingBlogs = allBlogs.filter((blog) => blog.category === "Trekking")
-
 
   return (
     <>
@@ -155,9 +155,9 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           </p>
         </div>
 
-        <div className="mb-10 py-8">
+        <div className="mt-20">
           <h3 className="text-4xl text-[#A87133]">Why Trek with Tazama</h3>
-          <p className="mb-3 mt-5">
+          <p className="">
             When it comes to embarking on the adventure of a lifetime, we
             understand that choosing the right trekking company is crucial.
             Here's why Tazama stands out from the rest:
@@ -230,17 +230,41 @@ const Page = ({ images }: { images: ImageProps[] }) => {
               Customized itineraries to ensure a dream trekking experience.
             </li>
           </ul>
+        </div>
 
-          <div className="mt-5 flex flex-col items-center justify-center bg-light py-10 text-center text-white">
-            <div className="mt-5 ">
-              <Button className="rounded-md bg-[#A87133] px-2 text-white md:px-6 md:py-6 md:text-lg">
-                <Link href="/safaris/kilimanjaro/routes">
-                  View all Kilimanjaro routes
+        <div className="mt-24 mb-20">
+          <h3 className="text-4xl text-primary">Kilimanjaro Routes</h3>
+          <p>
+            Ready to explore the diverse routes that lead to the Roof of Africa? Tazama offers expertly guided adventures on Kilimanjaro’s most iconic trails. Whether you're drawn to the scenic Lemosho, the challenging Machame, or the historic Marangu Route, each path offers a unique journey to the summit. Our dedication to safety, personalized service, and environmental care ensures that every climber experiences Kilimanjaro in a meaningful way. Choose your route, answer the call of the mountain, and conquer Kilimanjaro with Tazama.
+          </p>
+          <br />
+          <br />
+          <div className='grid grid-cols-2 lg:grid-cols-3 gap-8'>
+            {
+              kilimanjaroRoutes.map((route, index) => (
+                <Link href={route.href} key={index}>
+                  <div className='w-full relative h-fit'>
+                    <div className='w-full h-80 md:h-96 overflow-hidden group'>
+                      <img
+                        src={`${route.imageSrc}`}
+                        alt={route.title}
+                        className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-150'
+                      />
+                    </div>
+                    <div className="absolute bottom-0 px-2 py-4 text-white bg-gradient-to-t via-neutral-900/70 from-neutral-900/70 w-full">
+                      <p className='text-xl'>{route.title}</p>
+                      <p className="line-clamp-2 text-sm text-white/80">{route.description}</p>
+                    </div>
+                  </div>
                 </Link>
-              </Button>
-            </div>
+              ))
+            }
           </div>
-          <p className="mb-3 mt-5">
+
+          <br />
+          <br />
+
+          <p>
             Choose Tazama Africa for your Kilimanjaro trek and embark on a
             journey of a lifetime with confidence and peace of mind. With our
             unwavering commitment to safety, responsible travel, high-quality
@@ -249,7 +273,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           </p>
         </div>
 
-        <h4 className="mt-6 text-4xl text-primary">Our Guides and Blogs</h4>
+        <h4 className="mt-0 text-4xl text-primary">Our Guides and Blogs</h4>
         <section className="mx-auto mt-5 mb-28 w-full items-center gap-4 lg:flex-row  lg:items-start lg:gap-4">
           <Carousel
             opts={{
