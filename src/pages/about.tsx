@@ -1,8 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { aboutPageContentData } from "~/data/about-data";
 import ContentSection, {
-  contentSectionData,
+  type contentSectionData,
 } from "~/components/ContentSection";
 import { array } from "fast-web-kit";
 import QuoteSection from "~/components/QuoteSection";
@@ -10,6 +11,7 @@ import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
 import Link from "next/link";
+import { HomeContactUs } from "~/components/HomeContactUs";
 
 const AboutPage = () => {
   return (
@@ -19,17 +21,17 @@ const AboutPage = () => {
         title="About Tazama"
       />
       <HeadSEO title="About Tazama" keywords={base_keywords} />
-      <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
+      <div className="mx-auto mt-20 max-w-5xl px-4 pt-[2rem]">
         <div className="">
-          <h3 className="text-4xl text-[#A87133]">Tazama Africa Tours | Design Your Dream Safari Experience</h3>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <h3 className="text-5xl text-[#A87133]">Design Your Dream Safari Experience</h3>
+          <p className="mb-3 mt-5 ">
             TAZAMA specializes in curating unforgettable memories that will have
             you reminiscing with your loved ones for years to come. Boasting
             over 15 years of expertise in the safari industry, we've mastered
             the art of crafting seamless journeys.
           </p>
 
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 ">
             Our exceptional guides and dedicated staff are seasoned experts,
             ensuring every aspect of your trip is flawlessly executed. Because
             every trip is as unique as you, a journey with us brings you up
@@ -39,7 +41,7 @@ const AboutPage = () => {
             and women-owned businesses whenever possible.
           </p>
 
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 ">
             Whether you're conquering the slopes of Kilimanjaro or exploring the
             vast Serengeti plains, we pledge an experience that is genuine,
             thrilling, and awe-inspiring! Join us as we eagerly unveil the
@@ -49,7 +51,7 @@ const AboutPage = () => {
         <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
           <div className="relative h-[400px] w-full lg:w-[50%] ">
             <Image
-              src="/assets/images/gallery/honey-moon-trip.webp"
+              src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1728461374/about/IMG_0561_ykqjjm.jpg"
               className="object-cover"
               layout="fill"
               alt="cover-img"
@@ -58,7 +60,7 @@ const AboutPage = () => {
 
           <div className="relative h-[400px] w-full lg:w-[50%]">
             <Image
-              src="/assets/images/gallery/classic-safaris.webp"
+              src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1728461701/about/classic-safaris_whilv4.webp"
               className="object-cover"
               layout="fill"
               alt="cover-img"
@@ -69,7 +71,7 @@ const AboutPage = () => {
 
       <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 ">
             At Tazama, we don't just offer safaris; we deliver bespoke
             adventures tailored to the dreams of each traveler. With over 15
             years of experience under our belt, we have perfected the recipe for
@@ -104,10 +106,10 @@ const AboutPage = () => {
           <h3 className="pt-[12px] text-3xl text-[#A87133]">
             Partnering with SafariBookings.com
           </h3>
-          <p className="mb-3 mt-1 text-lg text-[#757371]">
+          <p className="mb-3 mt-1 ">
             Tazama Africa is represented on SafariBookings.com.
             <br />
-             For reviews and
+            For reviews and
             and feedback you can visit{" "}
             <Link
               className="cursor-pointer text-primary"
@@ -120,6 +122,11 @@ const AboutPage = () => {
         </div>
       </div>
       <br />
+      <br />
+      <QuoteSection
+        subText="- Leonie Trubshoe, Australia"
+        quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
+      />
       <br />
       <br />
       <div className="flex flex-col gap-12 lg:mt-0">
@@ -139,10 +146,16 @@ const AboutPage = () => {
             </section>
           ))}
       </div>
-      <QuoteSection
-        subText="- Leonie Trubshoe, Australia"
-        quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
-      />
+
+      {/* <div className="max-w-6xl mx-auto lg:text-center my-24 px-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non aspernatur, dicta aliquid exercitationem voluptatum? Quos nulla pariatur consequuntur sapiente id ullam quisquam, laboriosam non harum! Aliquam autem dolor ratione.
+        </p>
+      </div> */}
+
+      <br />
+      <br />
+      <HomeContactUs />
     </>
   );
 };
