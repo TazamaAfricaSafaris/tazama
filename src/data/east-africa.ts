@@ -68,7 +68,7 @@ export const rwandaContent: contentSectionData[] = [
   },
   {
     rank: 4,
-    image: "https://res.cloudinary.com/drhl0yu7y/image/upload/v1724403479/east-africa/rwanda/rwanda_drummers_vsizsh.jpg",
+    image: "https://res.cloudinary.com/drhl0yu7y/image/upload/v1728588168/east-africa/rwanda/intore-dancers-performance-visit-rwanda_2x1_xa4ocu.jpg",
     reverse: true,
     title: `Cultural Safaris`,
     description: `Rwanda’s cultural diversity is as captivating as its landscapes. The country’s three distinct ethnic groups—the Twa, Tutsi, and Hutu—each have their own unique traditions and ways of life. On a cultural safari, you’ll have the opportunity to engage with local communities through traditional dances, music, crafts, and cuisine. Activities like visiting local breweries, cattle farms, and even bee-keeping provide a deeper understanding of Rwanda’s way of life. No safari is complete without experiencing the country’s vibrant culture.`,
