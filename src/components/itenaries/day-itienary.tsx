@@ -41,7 +41,7 @@ export const honeyMooners = [
   {
     id: 3,
     title: "Day 2 - Ngorongoro Crater",
-    public_id: "honeymoon/blaoxccrbsa3bzefmq8h",
+    public_id: "honeymoon/Honeymoon_Safari_Sababu_Safaris_joa2iw",
     imgs: [
       "https://images.unsplash.com/photo-1568050878862-c8b4bdc99bc3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fGhvbmV5bW9vbiUyMHNhZmFyaXN8ZW58MHx8MHx8fDA%3D",
       "https://images.unsplash.com/photo-1522075095137-d9848901097e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fGhvbmV5bW9vbiUyMHNhZmFyaXN8ZW58MHx8MHx8fDA%3D",
@@ -54,12 +54,12 @@ export const honeyMooners = [
   {
     id: 4,
     title: "Day 3 - Empakai Crater Hike",
-    public_id: "honeymoon/lzrgopsdtphonriuq3bt",
+    public_id: "honeymoon/empakai-crater-ngorongoro-highlands-tanzania_bh46xq",
     desc: `This morning we’ll adventure outside the vehicle into the highlands of the Ngorongoro Conservation Area. 
     Trekking the Empakai Crater and its enchanting waterfall in Tanzania offers not just a day of natural wonder 
     but a panoramic vista of the region's majesty. As you traverse the rugged trails into the heart of the crater, verdant landscapes surround you, revealing diverse wildlife along the way. The crater's rim frames a stunning view, presenting the distant, snow-capped peak of Kilimanjaro and the graceful 
     silhouette of Mount Lengai in the horizon. 
-    <br/>
+  
     The hidden gem within this natural amphitheater is the magnificent Empakai Waterfall, where the cascading waters 
     add a touch of tranquility to the picturesque surroundings. Standing at the base of the falls provides a serene
     moment to absorb the sheer beauty of nature's spectacle, leaving an enduring impression on all who venture into 
@@ -108,7 +108,7 @@ export const honeyMooners = [
   {
     id: 7,
     title: "Day 7 - 9 Zanzibar",
-    public_id: "honeymoon/uwyfpsmmmtfdeiwt5frb",
+    public_id: "honeymoon/Zanzibar-Honeymoon-Guide-2-1024x1014_y2nw8k",
     desc: `
   With idyllic beaches at your doorstep, indulge in leisurely days under the sun, 
   perhaps embarking on a mesmerizing sunset dhow cruise or savoring a private dinner by the water's edge. 
@@ -126,7 +126,7 @@ export const honeyMooners = [
   {
     id: 8,
     title: "Day 10 - Zanzibar - Home",
-    public_id: "honeymoon/blaoxccrbsa3bzefmq8h",
+    public_id: "honeymoon/cb29a826-4a96-477a-8b2e-d828c0f7d97b_tvgrjs",
     desc: `
     Today you’ll be transferred to Karume International Airport to catch your international flight back home. 
 

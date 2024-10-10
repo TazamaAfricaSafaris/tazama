@@ -8,6 +8,7 @@ import EnquireNow from "~/components/EnquireNow";
 import ItienaryViewer from "~/components/itenaries/day-itienary";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
+import BlurImage from "~/components/ui/BlurImage";
 
 export const MemoryImage = ({ src }: { src: string }) => {
   return (
@@ -25,7 +26,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
       <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
         <div className="">
           <h3 className="text-4xl text-[#A87133]">Honeymoon Safaris</h3>
-          <p className="mb-3 mt-5 text-[#757371]">
+          <p className="mb-3 mt-5">
             Welcome to your first adventure as a newlywed couple with Tazama
             Africa Safaris. Imagine a honeymoon that not only celebrates your
             love but also immerses you in the heartbeat of Africa, where wild
@@ -33,7 +34,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             elements into a tapestry of unforgettable memories for you.
           </p>
 
-          <p className="mb-3 mt-5 text-[#757371]">
+          <p className="mb-3 mt-5">
             Your journey begins with the raw beauty of Tanzania's wildlife. The
             untamed expanse of the Serengeti and the wildlife-rich Ngorongoro
             Crater offer a front-row seat to nature's grandeur. Picture
@@ -42,7 +43,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             These moments in the wild create a bond with nature that mirrors the
             deep connection you share as a couple.
           </p>
-          <p className="mb-3 mt-5 text-[#757371]">
+          <p className="mb-3 mt-5">
             Transitioning from the thrilling safaris, your adventure mellows
             into the tranquil embrace of Zanzibar's enchanting beaches. Here,
             the pace slows, and the romantic ambience of secluded resorts sets
@@ -55,18 +56,14 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
         <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
           <div className="relative h-[400px] w-full lg:w-[50%] ">
-            <CloudinaryImage
-              public_id={images[0]!.public_id}
-              format={images[0]!.format}
-              blurDataUrl={images[0]!.blurDataUrl!}
+            <BlurImage 
+            src={"https://res.cloudinary.com/drhl0yu7y/image/upload/v1728590923/honeymoon/7-days-Tanzania-Honeymoon-Safari-750x450_bcuo1x.jpg"}              
             />
           </div>
 
           <div className="relative h-[400px] w-full lg:w-[50%]">
-            <CloudinaryImage
-              public_id={images[2]!.public_id}
-              format={images[2]!.format}
-              blurDataUrl={images[2]!.blurDataUrl!}
+            <BlurImage 
+              src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1728591080/honeymoon/10-days-tanzania-adventure-zanzibar-honeymoon-private-safari_f5kumm.jpg"
             />
           </div>
         </div>
@@ -74,7 +71,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
       <div className="mx-auto mt-10 max-w-5xl px-4">
         <div className="">
-          <p className="mb-10 mt-5 text-[#757371]">
+          <p className="mb-10 mt-5">
             We understand that every couple is unique, and so should be their
             honeymoon experience. That's why we tailor each journey to fit your
             dreams. Whether you desire more time amidst the wild, crave endless
