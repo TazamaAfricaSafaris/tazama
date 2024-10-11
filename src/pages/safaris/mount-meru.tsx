@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import PrimaryHeader from "~/components/PrimaryHeader";
 import useFetchImages from "~/hooks/useFetchImages";
 import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
@@ -10,17 +11,17 @@ const Page = ({ images }: { images: ImageProps[] }) => {
       <HeadSEO title="Mount Meru" />
       <PrimaryHeader image={`mount-meru.webp`} title="Mount Meru" />
       <div className="mx-auto  max-w-5xl px-4 md:px-8">
-        <div className=" py-8">
-          <h3 className="text-4xl text-[#A87133]">
+        <div className="mt-20 py-8">
+          <h3 className="text-5xl text-[#A87133]">
             Welcome to Mount Meru: Tanzania's Hidden Gem
           </h3>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5">
             Embark on a journey to Mount Meru, Tanzania's lesser-known but
             equally captivating peak. Nestled in the heart of Arusha National
             Park, Mount Meru offers a thrilling trekking experience amidst
             breathtaking landscapes and diverse wildlife.
           </p>
-          <p className="mb-3 mt-5 text-xl text-[#757371]">
+          <p className="mb-3 mt-5">
             As the second highest mountain in Tanzania, standing proudly at 4565
             m / 14,977 ft, Mount Meru offers a captivating trekking experience
             that's second to none. Serving as an ideal acclimatization trek
@@ -50,14 +51,13 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 
         <div className="pb-10">
           {/* <h3 className="text-4xl text-[#A87133]">Sundowners in nature</h3> */}
-          <p className="mb-3 text-xl text-[#757371]">
+          <p className="mb-3">
             Completed in either 3 or 4 days, the experience offers a diverse
             range of landscapes, flora and fauna. Accompanied by a park ranger,
             it’s a trekking experience that is physically challenging and truly
             unique.
           </p>
         </div>
-        {/* @ts-ignore */}
         <Gallery images={images} />
       </div>
     </>
