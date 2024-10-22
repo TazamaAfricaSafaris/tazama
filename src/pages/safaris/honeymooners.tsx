@@ -1,9 +1,11 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
+/* eslint-disable react/no-unescaped-entities */
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { honeyMooners } from "~/components/itenaries/day-itienary";
 import Image from "next/legacy/image";
 import useFetchImages from "~/hooks/useFetchImages";
-import { ImageProps } from "~/lib/generateBlurPlaceHolder";
-import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
+import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import EnquireNow from "~/components/EnquireNow";
 import ItienaryViewer from "~/components/itenaries/day-itienary";
 import HeadSEO from "~/components/ui/Head";
@@ -13,7 +15,7 @@ import BlurImage from "~/components/ui/BlurImage";
 export const MemoryImage = ({ src }: { src: string }) => {
   return (
     <div className="relative h-[200px] w-[300px] md:h-[300px] md:w-[80%] lg:w-[400px]">
-      <Image src={src} layout="fill" className="rounded-sm object-cover" />
+      <Image src={src} layout="fill" className="rounded-sm object-cover" alt="" />
     </div>
   );
 };
