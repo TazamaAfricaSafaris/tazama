@@ -161,6 +161,9 @@ dependencies:
   react-icons:
     specifier: ^4.12.0
     version: 4.12.0(react@18.2.0)
+  react-plock:
+    specifier: ^3.2.0
+    version: 3.2.0(react@18.2.0)
   remark:
     specifier: ^15.0.1
     version: 15.0.1
@@ -8112,6 +8115,14 @@ packages:
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
+
+  /react-plock@3.2.0(react@18.2.0):
+    resolution: {integrity: sha512-SH/1O6P8GdkjdzmgTb3G+Qb+yhVj14I3Xo1mSupPfA912j58Pb/iCYrhpUagYUS5oz3zx1E7+4cPTk2alLDZ3A==}
+    peerDependencies:
+      react: ^18.2.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /react-remove-scroll-bar@2.3.4(@types/react@18.2.47)(react@18.2.0):
     resolution: {integrity: sha512-63C4YQBUt0m6ALadE9XV56hV8BgJWDmmTPY758iIJjfQKt2nYwoUrPk0LXRXcB/yIj82T1/Ixfdpdk68LwIB0A==}
