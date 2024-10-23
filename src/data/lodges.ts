@@ -51,4 +51,10 @@ export const lodges: Lodge[] = [
         link: 'nimali-central-serengeti-camps',
         category: 'Safari'
     },
+    {
+        title: 'Konokono Beach Resort & Spa',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1729687202/lodges/konokono-lodge/Screenshot_2024-10-23_153806_ib3uts.png',
+        link: 'konokono-beach-resort',
+        category: 'Beach'
+    },
 ]
