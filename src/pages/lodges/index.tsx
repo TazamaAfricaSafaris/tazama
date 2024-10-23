@@ -4,6 +4,7 @@ import React from 'react'
 import ContentSection from '~/components/ContentSection'
 import PrimaryHeader from '~/components/PrimaryHeader'
 import { Tab, Tabs } from '~/components/Tabs'
+import HeadSEO from '~/components/ui/Head'
 import { lodges } from '~/data/lodges'
 
 const Page = () => {
@@ -23,6 +24,7 @@ const Page = () => {
 
     return (
         <>
+            <HeadSEO title='Our Lodges'/>
             <PrimaryHeader title={'Lodges'} image={'lodges/lemala-camps/lemala-nanyukie-header.jpg'} />
             <div className='mx-auto my-20'>
                 <div className='flex flex-col gap-y-16'>
