@@ -2,7 +2,9 @@ import type { AppType } from "next/app";
 import Layout from "~/components/ui/Layout";
 import { api } from "~/lib/api";
 import { Analytics } from "@vercel/analytics/react";
+
 import { Raleway } from "next/font/google";
+import localFont from "next/font/local"
 
 import "~/styles/globals.css";
 import { env } from "~/env";
@@ -17,6 +19,11 @@ export const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
 });
+
+export const amiora = localFont({
+  src: '../fonts/Amiora.ttf',
+  variable: '--font-amiora'
+})
 
 if (typeof window !== "undefined") {
   // checks that we are client-side
@@ -35,6 +42,17 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         {`
           :root {
             --font-raleway: ${raleway.variable};
+            --font-amiora: ${amiora.variable};
+          }
+          
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6,
+          .font-serif {
+            font-family: ${amiora.style.fontFamily};
           }
         `}
       </style>
