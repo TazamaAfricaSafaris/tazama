@@ -41,7 +41,7 @@ const GalleryPage = ({ images }: { images: ImageProps[] }) => {
 
 export default GalleryPage;
 
-function MasonryGallery({ images }: { images: ImageProps[] }) {
+export function MasonryGallery({ images }: { images: ImageProps[] }) {
   return (
     <Masonry
       items={images}
