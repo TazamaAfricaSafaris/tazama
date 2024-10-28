@@ -62,5 +62,11 @@ export const lodges: Lodge[] = [
         img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1729843950/lodges/matemwe-retreat/matemwe-retreat-guest-suite_yogzka.jpg',
         link: 'matemwe-retreat',
         category: 'Beach',
+    },
+    {
+        title: 'The Nest Boutique Resort',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730108115/lodges/the-nest/the-nest-boutique-resort-2_frfhar.jpg',
+        link: 'the-nest-boutique-resort',
+        category: 'Beach'
     }
 ]
