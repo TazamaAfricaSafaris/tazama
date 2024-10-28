@@ -1,10 +1,14 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
+import HeadSEO from "~/components/ui/Head"
+import { base_keywords } from "~/lib/constants"
 
 const Page = () => {
     return (
         <>
+            <HeadSEO title='Tazama Africa Safari | Konokono Beach Resort & Spa' keywords={base_keywords} />
+
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
                     <Image
