@@ -57,4 +57,10 @@ export const lodges: Lodge[] = [
         link: 'konokono-beach-resort',
         category: 'Beach'
     },
+    {
+        title: 'Matemwe Retreat',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1729843950/lodges/matemwe-retreat/matemwe-retreat-guest-suite_yogzka.jpg',
+        link: 'matemwe-retreat',
+        category: 'Beach',
+    }
 ]
