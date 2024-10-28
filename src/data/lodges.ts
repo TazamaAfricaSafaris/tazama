@@ -68,5 +68,11 @@ export const lodges: Lodge[] = [
         img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730108115/lodges/the-nest/the-nest-boutique-resort-2_frfhar.jpg',
         link: 'the-nest-boutique-resort',
         category: 'Beach'
+    },
+    {
+        title: 'Lake Natron Camp',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730116842/lodges/lake-natron-camp/_G8A1129_HDR_bd3xi1.jpg',
+        link: 'lake-natron-camp',
+        category: 'Safari'
     }
 ]
