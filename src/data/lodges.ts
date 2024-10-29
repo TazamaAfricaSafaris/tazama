@@ -86,5 +86,11 @@ export const lodges: Lodge[] = [
         img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730193689/lodges/manyaras-secret/ManyarasSecret_2020_1164-1536x1024_klqe6n.jpg',
         link: 'manyaras-secret',
         category: 'Safari'
+    },
+    {
+        title: 'Elephant Springs Camps',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730202291/lodges/elephant-springs/gallery/ES_Swimming_Pool_2-scaled_tyybzb.jpg',
+        link: 'elephants-springs',
+        category: 'Safari'
     }
 ]
