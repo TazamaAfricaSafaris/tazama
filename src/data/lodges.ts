@@ -80,5 +80,11 @@ export const lodges: Lodge[] = [
         img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730192116/lodges/gibbs-farm/gibbs-farm_401024-310_bldzlv.jpg',
         link: 'gibbs-farm',
         category: 'Safari'
+    },
+    {
+        title: 'Manyara\'s Secret',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730193689/lodges/manyaras-secret/ManyarasSecret_2020_1164-1536x1024_klqe6n.jpg',
+        link: 'manyaras-secret',
+        category: 'Safari'
     }
 ]
