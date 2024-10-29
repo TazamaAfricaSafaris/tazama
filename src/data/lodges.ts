@@ -74,5 +74,11 @@ export const lodges: Lodge[] = [
         img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730116842/lodges/lake-natron-camp/_G8A1129_HDR_bd3xi1.jpg',
         link: 'lake-natron-camp',
         category: 'Safari'
+    },
+    {
+        title: 'Gibb\'s Farm',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730192116/lodges/gibbs-farm/gibbs-farm_401024-310_bldzlv.jpg',
+        link: 'gibbs-farm',
+        category: 'Safari'
     }
 ]
