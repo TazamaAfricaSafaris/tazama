@@ -104,5 +104,11 @@ export const lodges: Lodge[] = [
         img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730209772/lodges/sametu-camp/SC_Swimming_Pool_3-1_kbkjx3.jpg',
         link: 'sametu-camp',
         category: 'Safari'
+    },
+    {
+        title: 'Katambuga House',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730283901/lodges/katambuga_house/Katambuga_House_loung_sff4rg.jpg',
+        link: 'katambuga-house',
+        category: 'Safari'
     }
 ]
