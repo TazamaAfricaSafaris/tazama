@@ -92,5 +92,17 @@ export const lodges: Lodge[] = [
         img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730202291/lodges/elephant-springs/gallery/ES_Swimming_Pool_2-scaled_tyybzb.jpg',
         link: 'elephants-springs',
         category: 'Safari'
+    },
+    {
+        title: 'Lion\'s Paw',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730205397/lodges/lions-paw/LP_Lounge_Bar_10-min-scaled_o2kfqj.webp',
+        link: 'lions-paw',
+        category: 'Safari'
+    },
+    {
+        title: 'Sametu Camp',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730209772/lodges/sametu-camp/SC_Swimming_Pool_3-1_kbkjx3.jpg',
+        link: 'sametu-camp',
+        category: 'Safari'
     }
 ]
