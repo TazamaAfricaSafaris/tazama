@@ -110,5 +110,11 @@ export const lodges: Lodge[] = [
         img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730283901/lodges/katambuga_house/Katambuga_House_loung_sff4rg.jpg',
         link: 'katambuga-house',
         category: 'Safari'
+    },
+    {
+        title: 'Roho ya Selous',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730286554/lodges/roho_ya_selous/Roho_ya_Selous_The_lounge_and_Bar_area_flwshq.jpg',
+        link: 'roho-ya-selous',
+        category: 'Safari'
     }
 ]
