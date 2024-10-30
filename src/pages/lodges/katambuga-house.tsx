@@ -5,9 +5,6 @@ import Image from 'next/image'
 import HeadSEO from '~/components/ui/Head'
 import { base_keywords } from '~/lib/constants'
 import Link from 'next/link'
-import useFetchImages from '~/hooks/useFetchImages'
-import { MasonryGallery } from '../gallery'
-import { type ImageProps } from '~/lib/generateBlurPlaceHolder'
 
 const Page = () => {
     return (
