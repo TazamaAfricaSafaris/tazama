@@ -122,5 +122,11 @@ export const lodges: Lodge[] = [
         img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730364059/lodges/jabali_ridge/Jabali_Ridge_View_From_the_Bedroom_zpeyrg.jpg',
         link: 'jabali-ridge',
         category: 'Safari'
+    },
+    {
+        title: 'Faru Faru Lodge',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730366198/lodges/farufaru/Singita_Faru_Faru_Lodge_Exterior_josbxi.jpg',
+        link: 'farufaru',
+        category: 'Safari'
     }
 ]
