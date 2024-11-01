@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import PrimaryHeader from '~/components/PrimaryHeader'
+import SafariCarousel from '~/components/safari-carousel'
 import HeadSEO from '~/components/ui/Head'
 import { base_keywords } from '~/lib/constants'
 
@@ -67,7 +68,7 @@ const Page = () => {
                     <br /><br />
                     <h4 className='text-4xl mb-3 text-primary'>Dining</h4>
                     <p>
-                    Indulge in a culinary journey at Tulia Beach Resort's restaurants, where expert chefs prepare a variety of international and local dishes using fresh, local ingredients. The resort offers a dining experience for every palate, from casual beachside snacks to fine dining.
+                        Indulge in a culinary journey at Tulia Beach Resort's restaurants, where expert chefs prepare a variety of international and local dishes using fresh, local ingredients. The resort offers a dining experience for every palate, from casual beachside snacks to fine dining.
                     </p>
                     <br /><br />
                     <h4 className='text-4xl mb-3 text-primary'>Activities</h4>
@@ -81,7 +82,24 @@ const Page = () => {
                     </ul>
                 </section>
                 <br /><br />
-                <div>
+
+                <div className="w-full px-4 my-6">
+                    <h3
+                        className="text-4xl text-primary mb-3"
+                    >
+                        Our Safari Itenaries
+                    </h3>
+                    <p>
+                        Explore some of sample itineraries and see where an
+                        adventure with Tazama Africa can take you.
+                    </p>
+                </div>
+                <section className="flex flex-col items-center justify-center">
+                    <SafariCarousel />
+                </section>
+
+                <br /><br />
+                <div className='mt-16'>
                     <h4 className='text-4xl mb-3 text-primary'>Gallery</h4>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                         {
