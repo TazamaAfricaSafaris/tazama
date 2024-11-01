@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import PrimaryHeader from '~/components/PrimaryHeader'
+import SafariCarousel from '~/components/safari-carousel'
 
 const Page = () => {
     const imageIds = [
@@ -76,13 +77,30 @@ const Page = () => {
                     </p>
                 </section>
                 <br /><br />
-                <div>
+
+                <div className="w-full px-4 my-6">
+                    <h3
+                        className="text-4xl text-primary mb-3"
+                    >
+                        Our Safari Itenaries
+                    </h3>
+                    <p>
+                        Explore some of sample itineraries and see where an
+                        adventure with Tazama Africa can take you.
+                    </p>
+                </div>
+                <section className="flex flex-col items-center justify-center">
+                    <SafariCarousel />
+                </section>
+
+                <br /><br />
+                <div className='mt-16'>
                     <h4 className='text-4xl mb-3 text-primary'>Gallery</h4>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                         {
                             imageIds.map(img => (
                                 <div key={img} className="w-full h-60">
-                                    <Image width={320} height={320} src={`${img}`} alt={`Lemala Image ${img}`} className='w-full h-full object-cover' loading='lazy'/>
+                                    <Image width={320} height={320} src={`${img}`} alt={`Lemala Image ${img}`} className='w-full h-full object-cover' loading='lazy' />
                                 </div>
                             ))
                         }
