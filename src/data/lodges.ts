@@ -128,5 +128,11 @@ export const lodges: Lodge[] = [
         img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730366198/lodges/farufaru/Singita_Faru_Faru_Lodge_Exterior_josbxi.jpg',
         link: 'farufaru',
         category: 'Safari'
+    },
+    {
+        title: 'Four Seasons Safari Lodge',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730455373/lodges/four-seasons/SBT_061_original_q1ejsr.jpg',
+        link: 'four-seasons-safari-lodge',
+        category: 'Safari'
     }
 ]
