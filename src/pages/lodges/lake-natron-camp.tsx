@@ -8,6 +8,7 @@ import useFetchImages from '~/hooks/useFetchImages'
 
 import { ImageProps } from '~/lib/generateBlurPlaceHolder'
 import { MasonryGallery } from '../gallery'
+import SafariCarousel from '~/components/safari-carousel'
 
 const Page = ({ images }: { images: ImageProps[] }) => {
     return (
@@ -104,8 +105,26 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                     </div>
                 </section>
 
-                <br /><br /><br />
-                <section>
+                <br /><br />
+
+                <div className="w-full px-4 my-6">
+                    <h3
+                        className="text-4xl text-primary mb-3"
+                    >
+                        Our Safari Itenaries
+                    </h3>
+                    <p>
+                        Explore some of sample itineraries and see where an
+                        adventure with Tazama Africa can take you.
+                    </p>
+                </div>
+                <section className="flex flex-col items-center justify-center">
+                    <SafariCarousel />
+                </section>
+
+                <br /><br />
+
+                <section className='mt-16'>
                     <h4 className="text-4xl mb-4 text-primary">Gallery </h4>
                     <MasonryGallery images={images} />
                 </section>
