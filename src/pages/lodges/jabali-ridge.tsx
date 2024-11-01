@@ -10,6 +10,8 @@ import { MasonryGallery } from "../gallery"
 import useFetchImages from "~/hooks/useFetchImages"
 import { type ImageProps } from "~/lib/generateBlurPlaceHolder"
 
+import SafariCarousel from '~/components/safari-carousel'
+
 const activities = [
     {
         title: "Game Drives",
@@ -92,8 +94,25 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                         ))}
                     </ul>
                 </section>
-                <br />
-                <section>
+                <br /><br />
+
+                <div className="w-full px-4 my-6">
+                    <h3
+                        className="text-4xl text-primary mb-3"
+                    >
+                        Our Safari Itenaries
+                    </h3>
+                    <p>
+                        Explore some of sample itineraries and see where an
+                        adventure with Tazama Africa can take you.
+                    </p>
+                </div>
+                <section className="flex flex-col items-center justify-center">
+                    <SafariCarousel />
+                </section>
+
+                <br /><br />
+                <section className='mt-16'>
                     <h4 className="text-4xl text-primary mb-3">Gallery</h4>
                     <MasonryGallery images={images} />
                 </section>

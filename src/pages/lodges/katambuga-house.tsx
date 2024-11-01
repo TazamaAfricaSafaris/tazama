@@ -5,6 +5,7 @@ import Image from 'next/image'
 import HeadSEO from '~/components/ui/Head'
 import { base_keywords } from '~/lib/constants'
 import Link from 'next/link'
+import SafariCarousel from '~/components/safari-carousel'
 
 const Page = () => {
     return (
@@ -116,6 +117,26 @@ const Page = () => {
                         />
                     </div>
                 </div>
+
+                <br /><br />
+
+                <div className="w-full px-4 my-6">
+                    <h3
+                        className="text-4xl text-primary mb-3"
+                    >
+                        Our Safari Itenaries
+                    </h3>
+                    <p>
+                        Explore some of sample itineraries and see where an
+                        adventure with Tazama Africa can take you.
+                    </p>
+                </div>
+                <section className="flex flex-col items-center justify-center">
+                    <SafariCarousel />
+                </section>
+
+                <br /><br />
+
             </div>
         </>
     )
