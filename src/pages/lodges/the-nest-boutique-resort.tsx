@@ -8,6 +8,7 @@ import { Masonry } from "react-plock"
 import { MasonryGallery } from '../gallery'
 import useFetchImages from '~/hooks/useFetchImages'
 import { type ImageProps } from '~/lib/generateBlurPlaceHolder'
+import SafariCarousel from '~/components/safari-carousel'
 
 const Page = ({ images }: { images: ImageProps[] }) => {
     return (
@@ -63,11 +64,27 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                         </div>
                     </div>
                 </section>
-                <br /><br /><br />
+                <br /><br />
 
-                <section>
+                <div className="w-full px-4 my-6">
+                    <h3
+                        className="text-4xl text-primary mb-3"
+                    >
+                        Our Safari Itenaries
+                    </h3>
+                    <p>
+                        Explore some of sample itineraries and see where an
+                        adventure with Tazama Africa can take you.
+                    </p>
+                </div>
+                <section className="flex flex-col items-center justify-center">
+                    <SafariCarousel />
+                </section>
+
+                <br /><br />
+                <section className='mt-16'>
                     <h4 className='text-4xl text-primary mb-3'>Gallery</h4>
-                    <MasonryGallery images={images}/>
+                    <MasonryGallery images={images} />
                 </section>
             </div>
         </>
@@ -79,10 +96,10 @@ export default Page
 export async function getStaticProps() {
     const images = await useFetchImages({ folderName: "lodges/the-nest/gallery" });
     return {
-      props: {
-        images,
-      },
+        props: {
+            images,
+        },
     };
-  }
+}
 
 //   https://res.cloudinary.com/drhl0yu7y/image/upload/v1730110390/lodges/the-nest/gallery/the-nest-kite-beach-resort_aoulip.jpg
