@@ -93,8 +93,8 @@ const Page = () => {
                         Itinerary
                     </h3>
 
-                    <div className='mt-10 flex flex-col items-start gap-4 md:flex-row md:gap-8 relative'>
-                        <aside className="w-full md:w-1/2 sticky top-4">
+                    <div className='mt-10 flex flex-col-reverse items-start gap-4 md:flex-row md:gap-8 relative'>
+                        <aside className="w-full md:w-1/2 md:sticky md:top-4">
                             <div className="flex flex-col-reverse items-start gap-2 md:gap-5">
                                 <Link href="/contact" className='border-primary border px-6 py-3 w-full font-raleway text-center hover:bg-primary hover:text-white transition-colors rounded-md text-primary'>
                                     Request Custom Itenary
@@ -141,7 +141,7 @@ const Page = () => {
                 </section>
 
                 <section className='mt-20'>
-                    <div className='flex flex-col md:flex-row space-x-8'>
+                    <div className='flex flex-col md:flex-row gap-8'>
                         <div className='w-full'>
                             <div className='flex flex-row items-center space-x-4'>
                                 <div className='w-8 h-8 bg-primary flex items-center justify-center rounded-full'>
