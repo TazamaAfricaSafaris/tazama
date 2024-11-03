@@ -83,3 +83,61 @@ export const fiveDayRwandaItenary: accordion[] = [
     list2: ["Breakfast & lunch with non-alcoholic beverages"],
   },
 ];
+
+export const sixDayRwandaSafari: accordion[] = [
+  {
+    question: "Day 1: Welcome to Kigali - A Grand Beginning",
+    answer: "Arrive at Kigali International Airport, greeted by our team for a luxurious stay at The Retreat. Enjoy a culinary experience at Fusion Restaurant, known for its exceptional dishes, and relax in your Superior King Suite to rest for the adventure ahead.",
+    listHeader: "Location & Accommodation",
+    list: [
+      "Location: Kigali, Rwanda",
+      "Hotel/Lodge: The Retreat – Superior King Suite"
+    ],
+    listHeader2: "Meals",
+    list2: ["All meals, with a selection of beverages, wines, spirits, and liqueurs."]
+  },
+  {
+    question: "Day 2: Journey to Nyungwe National Park - Canopy Walk Experience",
+    answer: "After breakfast, fly to Rusizi, Kamembe, and settle into One & Only Nyungwe House. Enjoy lunch and embark on a canopy walk in Nyungwe National Park for breathtaking rainforest views. Return to the lodge for dinner and rest.",
+    listHeader: "Location & Accommodation",
+    list: [
+      "Location: Nyungwe National Park, Southwest Rwanda",
+      "Hotel/Lodge: One & Only Nyungwe House – Canopy Tree House King"
+    ],
+    listHeader2: "Meals",
+    list2: ["All meals, including premium beverages."]
+  },
+  {
+    question: "Day 3: Chimpanzee Trekking & Tea Tour",
+    answer: "Begin with breakfast, then set out for chimpanzee trekking in Nyungwe National Park. Afterward, enjoy lunch and a guided tea tour to experience Rwanda's tea culture. Reflect on the day over dinner in the lodge’s serene surroundings.",
+    listHeader: "Accommodation",
+    list: ["Hotel/Lodge: One & Only Nyungwe House – Canopy Tree House King"],
+    listHeader2: "Meals",
+    list2: ["All meals, including a variety of premium beverages."]
+  },
+  {
+    question: "Day 4: Transfer to Volcanoes National Park via Kigali",
+    answer: "After breakfast, visit the Kigali Genocide Memorial and Inema Art Center. Enjoy lunch at Boho Restaurant, then transfer to One & Only Gorilla’s Nest in Musanze. Dinner awaits amidst views that build anticipation for the next day’s adventure.",
+    listHeader: "Location & Accommodation",
+    list: [
+      "Location: Musanze, near Volcanoes National Park, Rwanda",
+      "Hotel/Lodge: One & Only Gorilla’s Nest – Forest Treehouse"
+    ],
+    listHeader2: "Meals",
+    list2: ["All meals, with a selection of premium wines and spirits."]
+  },
+  {
+    question: "Day 5: Gorilla Trekking & Dian Fossey Gorilla Fund Visit",
+    answer: "After breakfast, join expert trackers for a mountain gorilla trek in Volcanoes National Park. Afterward, enjoy lunch, then visit the Dian Fossey Gorilla Fund to learn about conservation efforts. End the day with a relaxing dinner.",
+    listHeader: "Accommodation",
+    list: ["Hotel/Lodge: One & Only Gorilla’s Nest – Forest Treehouse"],
+    listHeader2: "Meals",
+    list2: ["All meals, with premium beverage options."]
+  },
+  {
+    question: "Day 6: Farewell Rwanda",
+    answer: "Enjoy a final breakfast before checking out. Drive back to Kigali, reflecting on the incredible experiences. Say goodbye to Rwanda, taking with you cherished memories of its wildlife and rich traditions.",
+    listHeader2: "Meals",
+    list2: ["Breakfast at One & Only Gorilla’s Nest"]
+  }
+];
