@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from "next/link"
 import { fourDayGorillaTrekking } from '~/data/rwanda'
 import Accordion from '~/components/Accordion'
+import RateTable from '~/components/RatesTable'
 
 const Page = () => {
     return (
@@ -86,104 +87,64 @@ const Page = () => {
                     <h3 className="text-center text-4xl mb-4 tracking-wider text-[#A87133]">
                         Tour Rates / Prices
                     </h3>
-                    <div className="max-w-4xl mx-auto">
-                        <div className="rounded-lg mb-6 overflow-auto">
-                            <p className="rounded-t-md w-full text-xl bg-lighter/25 border-x border-t border-dark/40 px-4 py-3">High-End: Singita Kwitonda Lodge – Musanze, Volcanoes National Park</p>
-                            <table className="w-full text-left border-collapse">
-                                <thead>
-                                    <tr className="font-raleway">
-                                        <th className="border border-dark/40 p-4">Season</th>
-                                        <th className="border border-dark/40 p-4">Solo Traveler</th>
-                                        <th className="border border-dark/40 p-4">2 People Sharing</th>
-                                        <th className="border border-dark/40 p-4">4 People Sharing</th>
-                                        <th className="border border-dark/40 p-4">6 People Sharing</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className='font-raleway'>
-                                        <td className="border border-dark/40 p-4">High Season</td>
-                                        <td className="border border-dark/40 p-4">$23,096</td>
-                                        <td className="border border-dark/40 p-4">$21,577</td>
-                                        <td className="border border-dark/40 p-4">$20,999</td>
-                                        <td className="border border-dark/40 p-4">$20,510</td>
-                                    </tr>
-                                    <tr className='font-raleway'>
-                                        <td className="border border-dark/40 p-4">Low Season</td>
-                                        <td className="border border-dark/40 p-4">$19,273</td>
-                                        <td className="border border-dark/40 p-4">$17,740</td>
-                                        <td className="border border-dark/40 p-4">$17,217</td>
-                                        <td className="border border-dark/40 p-4">$16,675</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div className=" rounded-lg mb-6 overflow-auto">
-                            <p className="rounded-t-lg text-lg bg-lighter/25 border-x border-t border-dark/40 px-4 py-3">Luxury: The Bishop’s House Rwanda – Musanze, Volcanoes National Park</p>
-                            <table className="w-full text-left border-collapse">
-                                <thead>
-                                    <tr className="font-raleway">
-                                        <th className="border border-dark/40 p-4">Season</th>
-                                        <th className="border border-dark/40 p-4">Solo Traveler</th>
-                                        <th className="border border-dark/40 p-4">2 People Sharing</th>
-                                        <th className="border border-dark/40 p-4">4 People Sharing</th>
-                                        <th className="border border-dark/40 p-4">6 People Sharing</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className='font-raleway'>
-                                        <td className="border border-dark/40 p-4">High Season</td>
-                                        <td className="border border-dark/40 p-4">$11,123</td>
-                                        <td className="border border-dark/40 p-4">$8,734</td>
-                                        <td className="border border-dark/40 p-4">$8,260</td>
-                                        <td className="border border-dark/40 p-4">$7,900</td>
-                                    </tr>
-                                    <tr className='font-raleway'>
-                                        <td className="border border-dark/40 p-4">Low Season</td>
-                                        <td className="border border-dark/40 p-4">$11,123</td>
-                                        <td className="border border-dark/40 p-4">$8,734</td>
-                                        <td className="border border-dark/40 p-4">$8,260</td>
-                                        <td className="border border-dark/40 p-4">$7,900</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div className=" rounded-lg mb-6 overflow-auto">
-                            <p className="rounded-t-lg text-lg bg-lighter/25 border-x border-t border-dark/40 px-4 py-3">Mid-range: Five Volcanoes Boutique Hotel – Musanze, Volcanoes National Park</p>
-                            <table className="w-full text-left border-collapse">
-                                <thead>
-                                    <tr className="font-raleway">
-                                        <th className="border border-dark/40 p-4">Season</th>
-                                        <th className="border border-dark/40 p-4">Solo Traveler</th>
-                                        <th className="border border-dark/40 p-4">2 People Sharing</th>
-                                        <th className="border border-dark/40 p-4">4 People Sharing</th>
-                                        <th className="border border-dark/40 p-4">6 People Sharing</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className='font-raleway'>
-                                        <td className="border border-dark/40 p-4">High Season</td>
-                                        <td className="border border-dark/40 p-4">$9,383</td>
-                                        <td className="border border-dark/40 p-4">$6,763</td>
-                                        <td className="border border-dark/40 p-4">$6,349</td>
-                                        <td className="border border-dark/40 p-4">$5,937</td>
-                                    </tr>
-                                    <tr className='font-raleway'>
-                                        <td className="border border-dark/40 p-4">Low Season</td>
-                                        <td className="border border-dark/40 p-4">$8,544</td>
-                                        <td className="border border-dark/40 p-4">$6,237</td>
-                                        <td className="border border-dark/40 p-4">$5,768</td>
-                                        <td className="border border-dark/40 p-4">$5,402</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    <RateTable title={'High-End: Singita Kwitonda Lodge – Musanze, Volcanoes National Park'} rates={highEndRates} />
+                    <RateTable title={'Luxury: The Bishop’s House Rwanda – Musanze, Volcanoes National Park'} rates={luxuryRates} />
+                    <RateTable title={'Mid-range: Five Volcanoes Boutique Hotel – Musanze, Volcanoes National Park'} rates={midRangeRates} />
                 </section>
             </div>
         </>
     )
 }
+
+const highEndRates = [
+    {
+      season: 'High Season',
+      solo: '$23,096',
+      twoSharing: '$21,577',
+      fourSharing: '$20,999',
+      sixSharing: '$20,510',
+    },
+    {
+      season: 'Low Season',
+      solo: '$19,273',
+      twoSharing: '$17,740',
+      fourSharing: '$17,217',
+      sixSharing: '$16,675',
+    },
+  ];
+
+  const luxuryRates = [
+    {
+      season: 'High Season',
+      solo: '$11,123',
+      twoSharing: '$8,734',
+      fourSharing: '$8,260',
+      sixSharing: '$7,900',
+    },
+    {
+      season: 'Low Season',
+      solo: '$11,123',
+      twoSharing: '$8,734',
+      fourSharing: '$8,260',
+      sixSharing: '$7,900',
+    },
+  ];
+
+  const midRangeRates = [
+    {
+      season: 'High Season',
+      solo: '$9,383',
+      twoSharing: '$6,763',
+      fourSharing: '$6,349',
+      sixSharing: '$5,937',
+    },
+    {
+      season: 'Low Season',
+      solo: '$8,544',
+      twoSharing: '$6,237',
+      fourSharing: '$5,768',
+      sixSharing: '$5,402',
+    },
+  ];
 
 export default Page
