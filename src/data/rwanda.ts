@@ -141,3 +141,61 @@ export const sixDayRwandaSafari: accordion[] = [
     list2: ["Breakfast at One & Only Gorilla’s Nest"]
   }
 ];
+
+export const rwandaGorillaSafari: accordion[] = [
+  {
+    question: "Day 1: Arrival in Kigali and Hotel Transfer",
+    answer: "Arrive at Kigali International Airport, complete immigration procedures, and meet your guide in the waiting area. After a briefing, transfer to your hotel in Kigali City, check in, and enjoy the rest of the day at leisure.",
+    listHeader: "Journey & Accommodation",
+    list: [
+      "Journey Time: Less than 30 Minutes",
+      "Overnight Accommodations:",
+      "Standard: Inside Afrika Boutique Hotel – or similar",
+      "Midrange: Hotel Mille Collines – or similar"
+    ],
+    listHeader2: "Meal Plan",
+    list2: ["Bed and Breakfast"]
+  },
+  {
+    question: "Day 2: Kigali City Tour and Transfer to Volcanoes National Park",
+    answer: "After an early breakfast, explore the highlights of Kigali City, including the Kandt House, Mount Kigali, the Natural History Museum, the Presidential Museum, and the Kigali Genocide Memorial. Following the tour, transfer to Volcanoes National Park for lunch and a cultural tour.",
+    listHeader: "Itinerary & Cultural Visit",
+    list: [
+      "Journey Time: Approx. 3 Hours",
+      "Pickup Time: 08:30 am",
+      "Iby’Iwacu Cultural Tour: Community walks, visiting a replica of the King’s house, experiencing traditional dances, folktales, and local brewing practices."
+    ],
+    listHeader2: "Overnight Accommodations & Meal Plan",
+    list2: [
+      "Standard: Davinci Gorilla Lodge – or similar",
+      "Midrange: Ingagi Parkview Lodge – or similar",
+      "Meal Plan: Full Board"
+    ]
+  },
+  {
+    question: "Day 3: Gorilla Tracking Experience with Leisurely Afternoon",
+    answer: "Begin with an early breakfast before heading to the Park headquarters for registration and a briefing on your gorilla tracking experience. After a trek through the Virunga slopes, enjoy observing and photographing these majestic gorillas. Upon return, relax at the lodge for the afternoon.",
+    listHeader: "Itinerary",
+    list: [
+      "Pickup Time: 05:30 am",
+      "Gorilla tracking through the Virunga slopes"
+    ],
+    listHeader2: "Overnight Accommodations & Meal Plan",
+    list2: [
+      "Standard: Davinci Gorilla Lodge – or similar",
+      "Midrange: Ingagi Parkview Lodge – or similar",
+      "Meal Plan: Full Board"
+    ]
+  },
+  {
+    question: "Day 4: Transfer to Kigali Airport and Departure",
+    answer: "Enjoy breakfast and a leisurely morning at the lodge. Depending on your travel arrangements, depart Volcanoes National Park and transfer to Kigali Airport for your onward flight.",
+    listHeader: "Journey & Timing",
+    list: [
+      "Journey Time: Approx. 3 Hours",
+      "Pickup Time: Flexible"
+    ],
+    listHeader2: "Meal Plan",
+    list2: ["Breakfast Only"]
+  }
+];
