@@ -59,7 +59,7 @@ const Page = () => {
                 <section>
                     <h3 className="text-5xl text-center mb-8 text-primary">Uganda Gorilla Safari Fly In</h3>
                     <p>
-                        Uganda, famously known as "The Pearl of Africa" by Winston Churchill, boasts a landscape that ranges from the dry savannah in the north to lush mountains and dense forests in the central and western regions. Home to incredible biodiversity, Uganda is renowned for its endangered mountain gorillas in Bwindi Impenetrable Forest and the unique wildlife of Queen Elizabeth National Park, where you may spot the rare tree-climbing lions and colorful flamingos. For adventure seekers, activities like white-water rafting, kayaking, hiking, and horse riding are plentiful, while vibrant Kampala offers lively cultural spots, bars, and restaurants.
+                        Uganda boasts a landscape that ranges from the dry savannah in the north to lush mountains and dense forests in the central and western regions. Home to incredible biodiversity, Uganda is renowned for its endangered mountain gorillas in Bwindi Impenetrable Forest and the unique wildlife of Queen Elizabeth National Park, where you may spot the rare tree-climbing lions and colorful flamingos. For adventure seekers, activities like white-water rafting, kayaking, hiking, and horse riding are plentiful, while vibrant Kampala offers lively cultural spots, bars, and restaurants.
                     </p>
 
                     <div className="flex items-center justify-center gap-4 my-8">
