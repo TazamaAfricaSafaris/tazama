@@ -43,7 +43,7 @@ const Page = () => {
                     <Image
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
-                        src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730203838/lodges/lions-paw/LP_Double_1-min-scaled_dgq0vu.webp"
+                        src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711559/east-africa/uganda/uganda-gorilla-safari/26022685797_fb352d1d64_k_eqveca.webp"
                         layout="fill"
                     />
 
@@ -65,7 +65,7 @@ const Page = () => {
                     <div className="flex items-center justify-center gap-4 my-8">
                         <div className="relative w-full h-72">
                             <Image
-                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730205339/lodges/lions-paw/LP_Lounge_Bar_5-scaled_hcj8ny.webp"
+                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730718010/east-africa/uganda/uganda-gorilla-safari/1-day-shoe-bill-birding-tour-mabamba-swamp_yz9z4z.jpg"
                                 alt=""
                                 layout="fill"
                                 objectFit="cover"
@@ -74,7 +74,7 @@ const Page = () => {
                         </div>
                         <div className="relative w-full h-72">
                             <Image
-                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730204863/lodges/lions-paw/LP_Lounge_Bar_8-1-scaled_tzqfeq.webp"
+                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730718213/east-africa/uganda/uganda-gorilla-safari/52037422427_838c3bc3be_h_px4gov.webp"
                                 alt=""
                                 layout="fill"
                                 objectFit="cover"
@@ -107,7 +107,7 @@ const Page = () => {
                                     >
                                         <>
                                             <Image
-                                                src="/assets/images/gallery/discovery.webp"
+                                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711559/east-africa/uganda/uganda-gorilla-safari/26022685797_fb352d1d64_k_eqveca.webp"
                                                 layout="fill"
                                                 className="object-cover  opacity-30 group-hover:scale-110 transition-transform"
                                                 alt=''

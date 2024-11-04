@@ -63,7 +63,7 @@ const uganda = () => {
                         {
                             itenaries.map(itenary => (
                                 <CarouselItem className="md:basis-1/2 lg:basis-1/3" key={itenary.link}>
-                                    <Link href={`rwanda/${itenary.link}`}>
+                                    <Link href={`uganda/${itenary.link}`}>
                                         <div className='bg-light w-full h-80 md:h-96 relative overflow-hidden'>
                                             <Image
                                                 src={itenary.img}
