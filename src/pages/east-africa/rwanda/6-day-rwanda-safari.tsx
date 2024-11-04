@@ -6,7 +6,6 @@ import Link from "next/link"
 import { sixDayRwandaSafari } from '~/data/rwanda'
 import Accordion from '~/components/Accordion'
 import { IoMdCheckmark, IoMdClose } from 'react-icons/io'
-import RateTable from '~/components/RatesTable'
 
 const Page = () => {
     return (
@@ -175,7 +174,6 @@ const Page = () => {
                 </section>
                 <section className='my-16'>
                     <h3 className='text-4xl text-primary mb-8'>Preparing for Your Journey</h3>
-                    <RateTable title={'Option 1: Mid-range)'} rates={midRangeRates} />
                     <p>Accommodations: Hotel Des Mille Collines, Mantis Kivu Marina Bay Hotel, and Five Volcanoes Boutique Hotel (Classic and Deluxe Rooms)</p>
                     <p><span className='italic'>Note: </span> Price for 2 or more people are base on sharing a twin/double bedroom</p>
                 </section>
@@ -211,23 +209,6 @@ const itenaryExcludes = [
     "Tips and gratuities",
     "Personal expenses such as telephone calls, drinks throughout the trip, mini bar, travel insurance, etc",
 ]
-
-const midRangeRates = [
-    {
-        season: 'High Season',
-        solo: '$9,998',
-        twoSharing: '$7,207 each',
-        fourSharing: '$6,779 each',
-        sixSharing: '$6,366 each',
-    },
-    {
-        season: 'Low Season',
-        solo: '$9,372',
-        twoSharing: '$6,878 each',
-        fourSharing: '$6,386 each',
-        sixSharing: '$ 5,939 each',
-    },
-];
 
 
 export default Page

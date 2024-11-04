@@ -5,7 +5,6 @@ import Image from 'next/image'
 import Link from "next/link"
 import { fiveDayRwandaItenary } from '~/data/rwanda'
 import Accordion from '~/components/Accordion'
-import RateTable from '~/components/RatesTable'
 import { IoMdCheckmark, IoMdClose } from 'react-icons/io'
 
 const Page = () => {
@@ -88,9 +87,6 @@ const Page = () => {
                     <h3 className="text-center text-4xl mb-4 tracking-wider text-[#A87133]">
                         Tour Rates / Prices
                     </h3>
-                    <RateTable title={'Option 1: Mid-range (Hotel Des Mille Collines & Five Volcanoes Boutique Hotel)'} rates={midRangeRates} />
-                    <RateTable title={'Option 2: Luxury (Kigali Serena Hotel & The Bishop’s House Rwanda)'} rates={luxuryRates} />
-                    <RateTable title={'Option 3: High-End (The Retreat & Singita Kwitonda Lodge)'} rates={highEndRates} />
                 </section>
 
                 <section className='mt-20'>
@@ -131,58 +127,6 @@ const Page = () => {
         </>
     )
 }
-
-const midRangeRates = [
-    {
-        season: 'High Season',
-        solo: '$7,982',
-        twoSharing: '$5,798 each',
-        fourSharing: '$5,449 each',
-        sixSharing: '$5,096 each',
-    },
-    {
-        season: 'Low Season',
-        solo: '$7,336',
-        twoSharing: '$4,324 each',
-        fourSharing: '$4,982 each',
-        sixSharing: '$4,638 each',
-    },
-];
-
-const luxuryRates = [
-    {
-        season: 'High Season',
-        solo: '$9,992',
-        twoSharing: '$7,208 each',
-        fourSharing: '$6,859 each',
-        sixSharing: '$6,505 each',
-    },
-    {
-        season: 'Low Season',
-        solo: '$9,992',
-        twoSharing: '$7,208 each',
-        fourSharing: '$6,859 each',
-        sixSharing: '$6,505 each',
-    },
-];
-
-
-const highEndRates = [
-    {
-        season: 'High Season',
-        solo: '$19,655',
-        twoSharing: '$17,619 each',
-        fourSharing: '$17,188 each',
-        sixSharing: '$16,794 each',
-    },
-    {
-        season: 'Low Season',
-        solo: '$16,469',
-        twoSharing: '$14,624 each',
-        fourSharing: '$14,193 each',
-        sixSharing: '$13,798 each',
-    },
-];
 
 const itenaryIncludes = [
     "Meet and greet assistant at Kigali International Airport",
