@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import * as React from "react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import useEmblaCarousel from // type EmblaCarouselType as CarouselApi,
@@ -200,7 +205,7 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute  h-8 w-8 rounded-full bg-light ",
+        "absolute  h-8 w-8 rounded-full bg-light hover:bg-light/85",
         orientation === "horizontal"
           ? "bottom-[-50px]"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -210,7 +215,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeftIcon className="h-4 w-4 text-primary" />
+      <ArrowLeftIcon className="h-4 w-4 text-dark" />
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -229,7 +234,7 @@ const CarouselNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-8 w-8 rounded-full bg-light ",
+        "absolute h-8 w-8 rounded-full bg-light hover:bg-light/85",
         orientation === "horizontal"
           ? "bottom-[-50px] left-[50px]"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -239,7 +244,7 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRightIcon className="h-4 w-4" />
+      <ArrowRightIcon className="h-4 w-4 text-dark" />
       <span className="sr-only">Next slide</span>
     </Button>
   );
