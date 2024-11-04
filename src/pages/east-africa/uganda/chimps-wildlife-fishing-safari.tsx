@@ -3,9 +3,7 @@ import HeadSEO from '~/components/ui/Head'
 
 import Image from 'next/image'
 import Link from "next/link"
-import { fiveDayRwandaItenary } from '~/data/rwanda'
 import Accordion from '~/components/Accordion'
-import RateTable from '~/components/RatesTable'
 import { IoMdCheckmark, IoMdClose } from 'react-icons/io'
 import { ugandaChimpsWildlifeFishingSafari } from '~/data/uganda'
 
