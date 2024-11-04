@@ -16,7 +16,7 @@ const Page = () => {
                     <Image
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
-                        src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730203838/lodges/lions-paw/LP_Double_1-min-scaled_dgq0vu.webp"
+                        src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730715249/east-africa/rwanda/4-day-gorilla-trekking/53149383712_46eac76bb4_k_dnvega.webp"
                         layout="fill"
                     />
 
@@ -49,7 +49,7 @@ const Page = () => {
                                     >
                                         <>
                                             <Image
-                                                src="/assets/images/gallery/discovery.webp"
+                                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730707076/east-africa/rwanda/4-day-gorilla-trekking/35303680765_e4d19f5a46_k_jqahjx.webp"
                                                 layout="fill"
                                                 className="object-cover  opacity-30 group-hover:scale-110 transition-transform"
                                                 alt=''

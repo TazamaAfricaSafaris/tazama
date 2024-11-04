@@ -17,7 +17,7 @@ const Page = () => {
                     <Image
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
-                        src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730203838/lodges/lions-paw/LP_Double_1-min-scaled_dgq0vu.webp"
+                        src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730710201/east-africa/rwanda/6-day-rwanda-safari/40185985184_8a3cd7cad6_k_ud0kay.webp"
                         layout="fill"
                     />
 
@@ -44,7 +44,7 @@ const Page = () => {
                     <div className="flex max-sm:flex-row items-center justify-center gap-4 mt-8">
                         <div className='relative w-full h-72'>
                             <Image
-                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730121765/lodges/gibbs-farm/Gibbs-Farm-a-sense-of-purpose-1024x683_zbhxoa.jpg"
+                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730716950/east-africa/rwanda/6-day-rwanda-safari/49198225732_18ad9dfe0d_k_lizfem.webp"
                                 alt=""
                                 layout='fill'
                                 objectFit='cover'
@@ -53,7 +53,7 @@ const Page = () => {
                         </div>
                         <div className='relative w-full h-72'>
                             <Image
-                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730121819/lodges/gibbs-farm/Gibbs-Farm-a-sense-of-wellbeing-1024x683_fsq0jt.jpg"
+                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730717093/east-africa/rwanda/6-day-rwanda-safari/Birds-and-plant-species-of-Nyungwe-National-park-Visit-rwanda-Tour_h0rwun.jpg"
                                 alt=""
                                 layout='fill'
                                 objectFit='cover'
@@ -171,11 +171,6 @@ const Page = () => {
                     <p className='mt-2'>
                         <span className='italic'>Note:</span> Inclusions for the exclusive One & Only Nyungwe House, One & Only Gorilla’s Nest, and the luxury Bishop’s House Rwanda encompass all meals, a selection of alcoholic and non-alcoholic beverages, as well as laundry services, subject to reasonable limits
                     </p>
-                </section>
-                <section className='my-16'>
-                    <h3 className='text-4xl text-primary mb-8'>Preparing for Your Journey</h3>
-                    <p>Accommodations: Hotel Des Mille Collines, Mantis Kivu Marina Bay Hotel, and Five Volcanoes Boutique Hotel (Classic and Deluxe Rooms)</p>
-                    <p><span className='italic'>Note: </span> Price for 2 or more people are base on sharing a twin/double bedroom</p>
                 </section>
                 <section className='mt-8'>
                     <h3 className='text-4xl text-primary'>Preparing for Your Journey</h3>
