@@ -44,7 +44,7 @@ const Page = () => {
                     <Image
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
-                        src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730203838/lodges/lions-paw/LP_Double_1-min-scaled_dgq0vu.webp"
+                        src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730709645/east-africa/rwanda/rwanda-gorilla-trekking/49197853001_362e5dca1e_k_lpuofw.webp"
                         layout="fill"
                     />
 
@@ -66,7 +66,7 @@ const Page = () => {
                     <div className="flex items-center justify-center gap-4 my-8">
                         <div className="relative w-full h-72">
                             <Image
-                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730205339/lodges/lions-paw/LP_Lounge_Bar_5-scaled_hcj8ny.webp"
+                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730714623/east-africa/rwanda/rwanda-gorilla-trekking/40185955594_7a7f6358b8_k_fui6lh.webp"
                                 alt=""
                                 layout="fill"
                                 objectFit="cover"
@@ -75,7 +75,7 @@ const Page = () => {
                         </div>
                         <div className="relative w-full h-72">
                             <Image
-                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730204863/lodges/lions-paw/LP_Lounge_Bar_8-1-scaled_tzqfeq.webp"
+                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730714781/east-africa/rwanda/rwanda-gorilla-trekking/48685332787_91fdc97c30_k_kffffx.webp"
                                 alt=""
                                 layout="fill"
                                 objectFit="cover"
@@ -104,7 +104,7 @@ const Page = () => {
                                     >
                                         <>
                                             <Image
-                                                src="/assets/images/gallery/discovery.webp"
+                                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730709645/east-africa/rwanda/rwanda-gorilla-trekking/49197853001_362e5dca1e_k_lpuofw.webp"
                                                 layout="fill"
                                                 className="object-cover  opacity-30 group-hover:scale-110 transition-transform"
                                                 alt=''
