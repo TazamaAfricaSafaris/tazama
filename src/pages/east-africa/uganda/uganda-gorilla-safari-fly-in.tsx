@@ -9,6 +9,7 @@ import { IoMdCheckmark, IoMdClose } from "react-icons/io";
 
 import Accordion from '~/components/Accordion'
 import { ugandaGorillaSafariFlyIn } from '~/data/uganda'
+import CallToAction from '~/components/CallToAction';
 
 const itenaryIncludes = [
     "Gorilla trekking permit per person",
@@ -169,7 +170,9 @@ const Page = () => {
                     </div>
                 </section>
             </div>
-
+            
+            <br /><br /><br />
+            <CallToAction />
         </>
     )
 }
