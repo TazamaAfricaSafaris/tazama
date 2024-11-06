@@ -23,7 +23,7 @@ export default function PlanMyTrip() {
         <Button
           className={`menu-trigger flex items-center gap-2
   rounded-md
-          bg-[#A87133] px-2  text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2`}
+          bg-[#A87133] px-2  text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-5`}
           onClick={() => {
             // sending the event that a user has opened up this form
             posthog.capture("opened-form", { property: "Plan My Trip Form" });
