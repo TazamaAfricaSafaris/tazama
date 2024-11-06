@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
+import CallToAction from "~/components/CallToAction";
 
 const Page = () => {
   return (
@@ -64,6 +65,9 @@ const Page = () => {
           ))}
         </div>
       </div>
+
+      <br /><br /><br /> <br />
+      <CallToAction />
     </>
   );
 };

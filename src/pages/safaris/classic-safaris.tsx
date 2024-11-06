@@ -7,6 +7,7 @@ import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
+import CallToAction from "~/components/CallToAction";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
   return (
@@ -102,6 +103,9 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           <Gallery images={images} />
         </div>
       </div>
+
+      <br /><br /><br /> <br />
+      <CallToAction />
     </>
   );
 };
