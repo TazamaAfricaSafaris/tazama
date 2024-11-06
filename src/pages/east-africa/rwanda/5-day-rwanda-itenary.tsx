@@ -6,6 +6,7 @@ import Link from "next/link"
 import { fiveDayRwandaItenary } from '~/data/rwanda'
 import Accordion from '~/components/Accordion'
 import { IoMdCheckmark, IoMdClose } from 'react-icons/io'
+import CallToAction from '~/components/CallToAction'
 
 const Page = () => {
     return (
@@ -124,6 +125,9 @@ const Page = () => {
                     <p>Recommended packing includes waterproof hiking boots, durable hiking pants, a waterproof jacket, gloves, gaiters, thick socks, and long-sleeved tops to prepare for varying trek conditions</p>
                 </section>
             </div>
+
+            <br /><br /><br />
+            <CallToAction />
         </>
     )
 }
