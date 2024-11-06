@@ -6,6 +6,7 @@ import HeadSEO from '~/components/ui/Head'
 import { base_keywords } from '~/lib/constants'
 import Link from 'next/link'
 import SafariCarousel from '~/components/safari-carousel'
+import CallToAction from '~/components/CallToAction'
 
 const Page = () => {
     return (
@@ -138,6 +139,7 @@ const Page = () => {
                 <br /><br />
 
             </div>
+            <CallToAction />
         </>
     )
 }

@@ -11,6 +11,7 @@ import useFetchImages from "~/hooks/useFetchImages"
 import { type ImageProps } from "~/lib/generateBlurPlaceHolder"
 
 import SafariCarousel from '~/components/safari-carousel'
+import CallToAction from '~/components/CallToAction'
 
 const activities = [
     {
@@ -117,6 +118,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                     <MasonryGallery images={images} />
                 </section>
             </div>
+            <CallToAction />
         </>
     )
 }

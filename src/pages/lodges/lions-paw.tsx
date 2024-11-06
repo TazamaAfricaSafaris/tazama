@@ -6,6 +6,7 @@ import { base_keywords } from '~/lib/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import SafariCarousel from '~/components/safari-carousel'
+import CallToAction from '~/components/CallToAction'
 
 const activities = [
     {
@@ -154,6 +155,8 @@ const Page = () => {
 
                 <br /><br />
             </div>
+
+            <CallToAction />
         </>
     )
 }

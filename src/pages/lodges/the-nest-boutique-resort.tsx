@@ -87,6 +87,8 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                     <MasonryGallery images={images} />
                 </section>
             </div>
+
+            <CallToAction />
         </>
     )
 }
