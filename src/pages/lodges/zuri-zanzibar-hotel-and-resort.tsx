@@ -9,6 +9,8 @@ import { MasonryGallery } from "../gallery"
 import useFetchImages from "~/hooks/useFetchImages"
 import { type ImageProps } from "~/lib/generateBlurPlaceHolder"
 
+import CallToAction from '~/components/CallToAction'
+
 const Page = ({ images }: { images: ImageProps[] }) => {
 
     const activities = [
@@ -74,10 +76,11 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                 </section>
                 <br /><br />
                 <div className="w-full mx-auto relative overflow-hidden mt-20">
-                <MasonryGallery images={images} />
+                    <MasonryGallery images={images} />
                 </div>
-                <br /><br />
+                <br /><br /><br />
             </div>
+                <CallToAction />
         </>
     )
 }
