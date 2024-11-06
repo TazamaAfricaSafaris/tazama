@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from "next/link"
 import { fourDayGorillaTrekking } from '~/data/rwanda'
 import Accordion from '~/components/Accordion'
+import CallToAction from '~/components/CallToAction'
 
 const Page = () => {
     return (
@@ -82,6 +83,9 @@ const Page = () => {
                     </div>
                 </section>
             </div>
+
+            <br /><br /><br />
+            <CallToAction />
         </>
     )
 }

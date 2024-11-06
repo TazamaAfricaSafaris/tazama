@@ -9,6 +9,7 @@ import { IoMdCheckmark, IoMdClose } from "react-icons/io";
 
 import Accordion from '~/components/Accordion'
 import { rwandaGorillaSafari } from '~/data/rwanda';
+import CallToAction from '~/components/CallToAction';
 
 const itenaryIncludes = [
     "Transport in an enclosed 4WD Toyota Land Cruiser",
@@ -167,6 +168,8 @@ const Page = () => {
                 </section>
             </div>
 
+            <br /><br /><br />
+            <CallToAction />
         </>
     )
 }
