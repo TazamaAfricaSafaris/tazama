@@ -3,6 +3,7 @@ import { tagmanager } from 'googleapis/build/src/apis/tagmanager'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import CallToAction from '~/components/CallToAction'
 import PrimaryHeader from '~/components/PrimaryHeader'
 import WishlistTable from '~/components/WishlistTable'
 import HeadSEO from '~/components/ui/Head'
@@ -88,6 +89,9 @@ const Page = () => {
           <button className='bg-primary text-white px-6 py-2 mt-4 rounded-md'>Visit Kafika House</button>
         </div>
       </section>
+      
+      <br /><br /><br />
+      <CallToAction />
     </>
 
   )
