@@ -65,8 +65,9 @@ export const Footer = () => {
         <div className="w-full mb-8">
           <div className="flex flex-col md:flex-row items-end gap-8">
             <div className="w-full max-w-xl">
-              <h3 className="text-3xl mb-4 text-primary">Some title to collect email</h3>
-              <p className="max-w-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores dignissimos necessitatibus odit exercitationem nostrum.</p>
+              <h3 className="text-3xl mb-4 text-primary">Stay Updated on Exclusive Adventures</h3>
+              <p className="max-w-md">Sign up to get the latest travel tips, exclusive destination highlights, and early access to new adventures. Join our community and never miss out!
+              </p>
             </div>
             <form
               method="POST"
@@ -130,7 +131,7 @@ export const Footer = () => {
             <ul className="grid gap-1">
               {lodges.map(lodge => (
                 <li key={lodge.link}>
-                  <Link href={lodge.link} className="hover:underline hover:underline-offset-2">{lodge.title}</Link>
+                  <Link href={`/lodges/${lodge.link}`} className="hover:underline hover:underline-offset-2">{lodge.title}</Link>
                 </li>
               ))}
             </ul>
