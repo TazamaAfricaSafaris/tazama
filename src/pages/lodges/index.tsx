@@ -6,6 +6,7 @@ import PrimaryHeader from '~/components/PrimaryHeader'
 import { Tab, Tabs } from '~/components/Tabs'
 import HeadSEO from '~/components/ui/Head'
 import { lodges } from '~/data/lodges'
+import { base_keywords } from '~/lib/constants'
 
 const Page = () => {
 
@@ -24,7 +25,7 @@ const Page = () => {
 
     return (
         <>
-            <HeadSEO title='Our Lodges'/>
+            <HeadSEO title='Our Lodges' keywords={base_keywords}/>
             <PrimaryHeader title={'Lodges'} image={'lodges/lemala-camps/lemala-nanyukie-header.jpg'} />
             <div className='mx-auto my-20'>
                 <div className='flex flex-col gap-y-16'>
