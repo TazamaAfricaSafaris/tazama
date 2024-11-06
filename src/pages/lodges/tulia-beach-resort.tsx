@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import React from 'react'
+import CallToAction from '~/components/CallToAction'
 import PrimaryHeader from '~/components/PrimaryHeader'
 import SafariCarousel from '~/components/safari-carousel'
 import HeadSEO from '~/components/ui/Head'
@@ -113,6 +114,8 @@ const Page = () => {
                 </div>
                 <br />
             </div>
+
+            <CallToAction />
         </>
     )
 }

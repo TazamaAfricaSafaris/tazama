@@ -9,6 +9,7 @@ import useFetchImages from '~/hooks/useFetchImages'
 import { MasonryGallery } from '../gallery'
 import { type ImageProps } from '~/lib/generateBlurPlaceHolder'
 import SafariCarousel from '~/components/safari-carousel'
+import CallToAction from '~/components/CallToAction'
 
 const Page = ({ images }: { images: ImageProps[] }) => {
     return (
@@ -101,6 +102,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                 <MasonryGallery images={images} />
 
             </div>
+            <CallToAction />
         </>
     )
 }

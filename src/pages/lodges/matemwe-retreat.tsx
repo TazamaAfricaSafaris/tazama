@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import SafariCarousel from '~/components/safari-carousel'
+import CallToAction from '~/components/CallToAction'
 
 const Page = () => {
     const activities = [
@@ -128,7 +129,8 @@ const Page = () => {
 
                 <br /><br />
             </section>
-
+            
+            <CallToAction />
         </>
     )
 }
