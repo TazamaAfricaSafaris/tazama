@@ -1,53 +1,25 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export const HomeContactUs = () => {
   return (
     <>
-      <div className="-mb-0.5 mt-20 flex flex-col items-center gap-8 md:flex-row-reverse">
-        <div className="h-[32rem] w-full">
-          <Image
-            width={320}
-            height={320}
-            src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1720012250/home/contact-us_fxohwj.jpg"
-            alt="Contact us, we'd love to hear from you"
-            className="h-full w-full object-cover"
-          />
-        </div>
-        <div className="w-full pl-10 md:pl-10 lg:py-12 xl:pl-32">
-          <div className="">
-            <h3 className="mb-2 text-4xl text-primary lg:text-5xl">
-              Connect With Us
-            </h3>
-            <p className="w-full font-raleway">
-              Your questions, feedback, and insights are valuable to us. Reach
-              out to me directly through the contact details below, and we’ll
-              get back to you at the earliest convenience
-            </p>
+      <section className="bg-lighter relative bg-cover bg-center py-32 mt-36">
+        <div className="bg-gradient-to-b from-lightest to-transparent py-12 absolute top-0 left-0 w-full z-10"></div>
+        <div className="max-w-5xl z-10 relative top-0 left-0 w-full mx-auto flex flex-col items-center justify-center p-4 gap-8 md:p-10 xl:px-20 text-white">
+          <h1 className="text-6xl leading-none text-center">Let’s Plan Your Perfect Escape!</h1>
+          <p className="text-lg text-center">
+            Whether you’re looking for a guided safari or a serene retreat, we’re here to help make it happen. Reach out to discuss options and get answers to all your travel questions.
+          </p>
 
-            <ul className="my-10 flex flex-col gap-y-6">
-              <li>
-                <h4 className="text-2xl text-primary">Email</h4>
-                <a
-                  className="black hover:underline md:text-2xl"
-                  href="info@tazamaafricasafari.com"
-                >
-                  info@tazamaafricasafari.com
-                </a>
-              </li>
-              <li>
-                <h4 className="text-2xl text-primary">Phone</h4>
-                <a
-                  className="hover:underline md:text-2xl"
-                  href="tel:+255744400043"
-                >
-                  (255)744400043
-                </a>
-              </li>
-            </ul>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
+            <Link href="/contact" className="border border-white rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-white hover:text-primary hover:font-medium transition-colors duration-200">Contact Us</Link>
           </div>
         </div>
-      </div>
+        <br />
+        <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730973516/DSC09836_kipash.webp" alt="" layout="fill" objectFit="cover" className="w-full h-full brightness-[0.5]" />
+      </section>
     </>
   );
 };
