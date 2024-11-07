@@ -61,7 +61,7 @@ export const Footer = () => {
   return (
     <>
       {/* <NewsletterSignup /> */}
-      <footer className="border-t  border-t-[#E0DED9] px-8 py-10 max-w-6xl mx-auto">
+      <footer className="border-t  border-t-[#E0DED9] px-8 pt-20 pb-10 max-w-6xl mx-auto">
         <div className="w-full mb-8">
           <div className="flex flex-col md:flex-row items-end gap-8">
             <div className="w-full max-w-xl">
