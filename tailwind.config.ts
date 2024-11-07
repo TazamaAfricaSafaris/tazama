@@ -8,6 +8,7 @@ export default {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
         raleway: ["var(--font-raleway)"],
+        amiora: ["var(--font-amiora)"],
       },
       container: {
         center: true,
