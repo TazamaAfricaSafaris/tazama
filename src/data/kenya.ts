@@ -152,3 +152,45 @@ export const fourDaysAndBeyondInKenya: accordion[] = [
       list2: ["Breakfast"]
     }
   ];
+
+  export const threeDayAmboseliSafari: accordion[] = [
+    {
+      question: "Day 1 & 2: Amboseli National Park",
+      answer: "Start your safari adventure with an introduction to Amboseli National Park, one of Kenya’s premier parks. As you explore, Mt Kilimanjaro provides a stunning backdrop to your encounters with elephants, lions, cheetahs, hyenas, wildebeest, and more. Every time the summit clears of clouds, it’s an ideal moment for a memorable photo with Amboseli’s wildlife against the iconic mountain.",
+      listHeader: "Activities Day 1",
+      list: [
+        "Morning: Executive meet and assist, Jomo Kenyatta International Airport",
+        "Morning: Transfer to airstrip, Wilson Airstrip",
+        "Mid-morning: Transfer to airstrip, Amboseli Airport",
+        "Afternoon: Afternoon game drive, Amboseli National Park"
+      ],
+      listHeader2: "Meal Plan",
+      list2: ["Lunch & Dinner (Day 1), Breakfast, Lunch & Dinner (Day 2)"]
+    },
+    {
+      question: "Day 2: Amboseli National Park",
+      answer: "Continue exploring Amboseli’s diverse wildlife on guided game drives, with the iconic Mt Kilimanjaro as a backdrop. There will be opportunities to see more of the park's wildlife, and your guide will help you capture some breathtaking views and sightings.",
+      listHeader: "Activities Day 2",
+      list: [
+        "Morning & Afternoon: Guided game drive through Amboseli National Park",
+        "Evening: Evening at leisure, Amboseli National Park",
+        "Optional Late Afternoon: Guided nature walk, Amboseli National Park",
+        "Optional Mid-Day: Masai cultural visit, Amboseli National Park"
+      ],
+      listHeader2: "Meal Plan",
+      list2: ["Breakfast, Lunch & Dinner"]
+    },
+    {
+      question: "Day 3: Nairobi City",
+      answer: "As your safari comes to a close, enjoy a final morning game drive in Amboseli before your return journey to Nairobi. We hope you've had a truly memorable adventure and look forward to welcoming you on another safari in the future.",
+      listHeader: "Activities Day 3",
+      list: [
+        "Morning: Morning game drive, Amboseli National Park",
+        "Mid-morning: Transfer to Nairobi, Nairobi city",
+        "Drop-off: Jomo Kenyatta International Airport"
+      ],
+      listHeader2: "Meal Plan",
+      list2: ["Breakfast"]
+    }
+  ];
+  
