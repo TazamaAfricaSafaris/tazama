@@ -11,6 +11,8 @@ export type accordion = {
   listHeader?: string;
   list2?: string[];
   listHeader2?: string;
+  list3?: string[];
+  listHeader3?: string;
   default?: boolean;
 };
 
