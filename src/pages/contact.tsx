@@ -49,18 +49,18 @@ const ContactPage = () => {
         keywords={base_keywords}
       />
       <PrimaryHeader image="contact.webp" title="Contact Us" />
-      <div className="mx-auto mt-36">
+      <div className="mx-auto mt-36 max-sm:mt-28">
         <div className="text-center">
-          <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-5xl leading-[3.7rem] font-serif text-primary">
+          <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-5xl max-sm:text-3xl leading-[3.7rem] font-serif text-primary">
             We'd love to hear from you. Simply fill in the form below or reach
             out directly to us through one of our contacts listed below.
           </p>
 
-          <p className="text-2xl">
+          <p className="text-2xl max-sm:text-lg">
             Email:&nbsp;
             <a href="mailto:info@tazamaafricasafari.com">info@tazamaafricasafari.com</a>
           </p>
-          <p className="text-2xl mt-2">
+          <p className="text-2xl mt-2 max-sm:text-lg">
             Phone:&nbsp;
             <a href="tel:+255744400043">
               (255)744400043

@@ -95,21 +95,24 @@ const Page = () => {
                     </p>
 
                     <div className="flex items-center justify-center gap-4 mt-8">
-                        <Image
-                            src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1729691364/lodges/konokono-lodge/Screenshot_2024-10-23_164815_pt1yw4.png"
-                            alt=""
-                            width={380}
-                            height={283}
-                            className="w-full object-cover h-full"
-                        />
-                        <Image
-                            src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1729691478/lodges/konokono-lodge/Screenshot_2024-10-23_164846_rjp2vz.png"
-                            alt=""
-                            width={388}
-                            height={289}
-                            objectFit="cover"
-                            className="w-full object-cover h-full"
-                        />
+                        <div className="h-[288px] w-full relative">
+                            <Image
+                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1731319246/lodges/konokono-lodge/161544875_nuk97e.jpg"
+                                alt=""
+                                layout="fill"
+                                objectFit="cover"
+                                className="w-full object-cover h-full"
+                            />
+                        </div>
+                        <div className="h-[288px] w-full relative">
+                            <Image
+                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1731319346/lodges/konokono-lodge/images_zuxlpj.jpg"
+                                alt=""
+                                layout="fill"
+                                objectFit="cover"
+                                className="w-full object-cover h-full"
+                            />
+                        </div>
                     </div>
                 </section>
                 <br /><br />
