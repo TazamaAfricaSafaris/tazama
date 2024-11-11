@@ -194,3 +194,45 @@ export const fourDaysAndBeyondInKenya: accordion[] = [
     }
   ];
   
+  export const threeDayMasaiMaraSafari: accordion[] = [
+    {
+        question: "Day 1 & 2: Mara Triangle Conservancy",
+        answer: "Nestled within the Masai Mara National Reserve, the Mara Triangle offers an exclusive and intimate safari experience with stunning landscapes and abundant wildlife. Famous for the Great Migration, where millions of wildebeest and zebras cross the Mara River, this area offers breathtaking views and thrilling game drives with chances to see lions, elephants, cheetahs, leopards, and more. The Triangle is less crowded, giving you a truly immersive safari.",
+        listHeader: "Activities Day 1",
+        list: [
+          "Morning: Executive meet and assist, Jomo Kenyatta International Airport",
+          "Morning: Transfer to airstrip, Wilson Airstrip",
+          "Transfer to airstrip, Keekorok Airstrip",
+          "Around Lunchtime: Lunch & Leisure, Masai Mara National Reserve",
+          "Afternoon: Guided game drive, Masai Mara National Reserve to spot big cats, elephants, and more",
+          "Optional Evening: Evening at leisure, Masai Mara National Reserve"
+        ],
+        listHeader2: "Meal Plan", 
+        list2: ["Lunch & Dinner (Day 1), Breakfast, Lunch & Dinner (Day 2)"]
+      },
+      {
+        question: "Day 2: Mara Triangle Conservancy",
+        answer: "Continue your exploration of the Masai Mara National Reserve with guided game drives that offer a close look at the park's incredible wildlife and landscapes. With an expert guide, you’ll experience the Mara's diversity of flora and fauna from the comfort of your safari vehicle.",
+        listHeader: "Activities Day 2",
+        list: [
+          "Morning & Afternoon: Guided game drive through Masai Mara National Reserve",
+          "Evening: Evening at leisure, Masai Mara National Reserve",
+          "Optional Early Morning: Hot-air balloon safari over the Mara for panoramic views and unique wildlife sightings",
+          "As per preference: Masai cultural visit, Masai Mara National Reserve"
+        ],
+        listHeader2: "Meal Plan",
+        list2: ["Breakfast, Lunch & Dinner"]
+      },
+      {
+        question: "Day 3: Nairobi City",
+        answer: "Enjoy a final morning game drive in the Masai Mara before your return journey to Nairobi. We hope your safari has been a memorable adventure and look forward to seeing you again in the future.",
+        listHeader: "Activities Day 3",
+        list: [
+          "Morning: Morning game drive, Masai Mara National Reserve",
+          "Mid-morning: Transfer to airstrip, Masai Mara National Reserve",
+          "We'll transfer you to the airport for your departure"
+        ],
+        listHeader2: "Meal Plan",
+        list2: ["Breakfast"]
+      }
+  ]
