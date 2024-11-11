@@ -74,7 +74,7 @@ export const Footer = () => {
               className="mx-auto w-full"
               onSubmit={onSubmit}
             >
-              <div className="flex items-end gap-4">
+              <div className="flex max-sm:flex-col items-end gap-4">
                 <Input
                   required
                   type="email"
@@ -90,7 +90,7 @@ export const Footer = () => {
                   onClick={() => {
                     posthog.capture("contact-form", { property: "Contact form" });
                   }}
-                  className="w-fit h-fit rounded-lg bg-[#A87133] px-6 py-3 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
+                  className="w-fit max-sm:w-full h-fit rounded-lg bg-[#A87133] px-6 py-3 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
                 >
                   Send
                 </button>
