@@ -111,3 +111,44 @@ export const fourDaysAndBeyondInKenya: accordion[] = [
     }
   ];
   
+  export const fiveDaysTemboSafariAmboseliandTsavo: accordion[] = [
+    {
+      question: "Day 1 & 2: Amboseli National Park",
+      answer: "Begin your safari journey with us as we introduce you to Amboseli National Park. Known for its stunning views of Mt Kilimanjaro and close encounters with elephants, Amboseli offers some of the best wildlife experiences in Kenya. Capture unforgettable moments with elephants, lions, cheetahs, and more, all set against the breathtaking backdrop of Africa's highest peak.",
+      listHeader: "Activities Day 1 & 2",
+      list: [
+        "Day 1 Morning: Airport meet and greet, Jomo Kenyatta International Airport",
+        "Day 1 Morning: Transfer by Road, Jomo Kenyatta International Airport to Amboseli National Park",
+        "Day 2 Morning & Afternoon: Guided game drive through Amboseli National Park",
+        "Day 2 Evening: Leisure, Amboseli National Park"
+      ],
+      listHeader2: "Meal Plan",
+      list2: ["Lunch & Dinner (Day 1), Breakfast, Lunch & Dinner (Day 2)"]
+    },
+    {
+      question: "Day 3 & 4: Tsavo East National Park",
+      answer: "Explore the vast and rugged landscapes of Tsavo East, one of Kenya's largest parks, famous for its 'red' elephants and unique wildlife. You'll encounter lions, cheetahs, Somali ostriches, and perhaps even the rare hirola antelope. Nearly 500 bird species have also been recorded here, making it a birdwatcher’s paradise.",
+      listHeader: "Activities Day 3 & 4",
+      list: [
+        "Day 3 Morning: Transfer by Air, Amboseli National Park to Tsavo East National Park",
+        "Day 3 Mid-morning: Transfer by Road, Airstrip to Tsavo East National Park",
+        "Day 3 Afternoon: Guided game drive through Tsavo East National Park",
+        "Day 4 Morning & Afternoon: Guided game drive through Tsavo East National Park",
+        "Day 4 Evening: Leisure, Tsavo East National Park"
+      ],
+      listHeader2: "Meal Plan",
+      list2: ["Breakfast, Lunch & Dinner (both days)"]
+    },
+    {
+      question: "Day 5: Nairobi City",
+      answer: "As your safari draws to a close, enjoy a final morning in Tsavo East before returning to Nairobi. We hope you leave with cherished memories of this remarkable adventure and look forward to welcoming you back on safari in the future.",
+      listHeader: "Activities Day 5",
+      list: [
+        "Mid-morning: Transfer by Road, Tsavo East National Park to Airstrip",
+        "Mid-Day: Transfer by Air, Tsavo East National Park to Wilson Airstrip",
+        "Afternoon: Transfer by Road, Wilson Airstrip to Jomo Kenyatta International Airport"
+      ],
+      listHeader2: "Meal Plan",
+      list2: ["Breakfast"]
+    }
+  ];
