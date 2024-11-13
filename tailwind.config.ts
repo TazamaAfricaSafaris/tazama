@@ -5,9 +5,24 @@ export default {
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-2px)" },
+        },
+        float2: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(2px)" },
+        },
+      },
+      animation: {
+        float: "float 4s ease-in-out infinite",
+        float2: "float2 4s ease-in-out infinite",
+      },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
         raleway: ["var(--font-raleway)"],
+        amiora: ["var(--font-amiora)"],
       },
       container: {
         center: true,
@@ -52,13 +67,13 @@ export default {
       },
     },
     animation: {
-      marquee: 'marquee 50s linear infinite',
+      marquee: "marquee 50s linear infinite",
     },
     keyframes: {
       marquee: {
-        from: { transform: 'translateX(0)' },
-        to: { transform: 'translateX(-100%)' },
-      }
+        from: { transform: "translateX(0)" },
+        to: { transform: "translateX(-100%)" },
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],

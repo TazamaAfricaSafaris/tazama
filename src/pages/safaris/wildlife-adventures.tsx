@@ -3,6 +3,7 @@ import PrimaryHeader from "~/components/PrimaryHeader";
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
+import CallToAction from "~/components/CallToAction";
 
 const honeyMooners = [
   {
@@ -219,6 +220,9 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+
+      <br /><br /><br /> <br />
+      <CallToAction />
     </>
   );
 };

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link'
 import React from 'react'
+import CallToAction from '~/components/CallToAction'
 import PrimaryHeader from '~/components/PrimaryHeader'
 import HeadSEO from '~/components/ui/Head'
 import { base_keywords } from '~/lib/constants'
@@ -41,6 +42,9 @@ const Page = () => {
 
         </section>
       </div>
+
+      <br /><br /><br />
+      <CallToAction />
     </>
   )
 }

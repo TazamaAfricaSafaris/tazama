@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import React from 'react'
+import CallToAction from '~/components/CallToAction'
 import PrimaryHeader from '~/components/PrimaryHeader'
+import SafariCarousel from '~/components/safari-carousel'
 import HeadSEO from '~/components/ui/Head'
 import { base_keywords } from '~/lib/constants'
 
@@ -18,38 +20,38 @@ const Page = () => {
     ]
 
     const activities = [
-      {
-          title: "Game Drives",
-          description: "Experience thrilling game drives led by expert guides, where you can see the Big Five and other iconic wildlife. Morning, afternoon, and night drives are available."
-      },
-      {
-          title: "Bush Walks",
-          description: "Experience the smaller details of the Serengeti ecosystem on foot, led by knowledgeable guides."
-      },
-      {
-          title: "Bird Watching",
-          description: "Spot a variety of bird species in their natural habitat. The Serengeti is a birdwatcher's paradise with over 500 species."
-      },
-      {
-          title: "Hot Air Balloon Safaris",
-          description: "Take to the skies for a unique perspective of the Serengeti. Enjoy a sunrise hot air balloon ride followed by a champagne breakfast in the bush."
-      },
-      {
-          title: "Photographic Safaris",
-          description: "Capture stunning photos of wildlife and landscapes with the guidance of professional photographers."
-      },
-      {
-          title: "Sundowner Experiences",
-          description: "Enjoy evening cocktails at scenic spots, watching the sunset over the Serengeti."
-      },
-  ]
+        {
+            title: "Game Drives",
+            description: "Experience thrilling game drives led by expert guides, where you can see the Big Five and other iconic wildlife. Morning, afternoon, and night drives are available."
+        },
+        {
+            title: "Bush Walks",
+            description: "Experience the smaller details of the Serengeti ecosystem on foot, led by knowledgeable guides."
+        },
+        {
+            title: "Bird Watching",
+            description: "Spot a variety of bird species in their natural habitat. The Serengeti is a birdwatcher's paradise with over 500 species."
+        },
+        {
+            title: "Hot Air Balloon Safaris",
+            description: "Take to the skies for a unique perspective of the Serengeti. Enjoy a sunrise hot air balloon ride followed by a champagne breakfast in the bush."
+        },
+        {
+            title: "Photographic Safaris",
+            description: "Capture stunning photos of wildlife and landscapes with the guidance of professional photographers."
+        },
+        {
+            title: "Sundowner Experiences",
+            description: "Enjoy evening cocktails at scenic spots, watching the sunset over the Serengeti."
+        },
+    ]
 
     return (
         <>
             <HeadSEO title='Tazama Africa Safari | Nimali Central Serengeti Camps' keywords={base_keywords} />
             <PrimaryHeader title="Nimali Central Serengeti Camps" image='lodges/nimali-camps/nimali-camp-header.jpg' />
             <div className='my-20 max-w-5xl mx-auto md:px-8 px-4'>
-            <section>
+                <section>
                     <h3 className="text-5xl text-center mb-4 text-primary">Nimali Central Serengeti Camps</h3>
                     <p>
                         Immerse yourself in the heart of the Serengeti at Nimali Central Serengeti Camps. This luxurious tented camp offers an authentic safari experience with elegant accommodations and exceptional wildlife viewing opportunities.
@@ -76,13 +78,30 @@ const Page = () => {
                     </ul>
                 </section>
                 <br /><br />
-                <div>
+
+                <div className="w-full px-4 my-6">
+                    <h3
+                        className="text-4xl text-primary mb-3"
+                    >
+                        Our Safari Itenaries
+                    </h3>
+                    <p>
+                        Explore some of sample itineraries and see where an
+                        adventure with Tazama Africa can take you.
+                    </p>
+                </div>
+                <section className="flex flex-col items-center justify-center">
+                    <SafariCarousel />
+                </section>
+
+                <br /><br />
+                <div className='mt-16'>
                     <h4 className='text-4xl text-primary mb-3'>Gallery</h4>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                         {
                             imageIds.map(img => (
                                 <div key={img} className="w-full h-60">
-                                    <Image width={280} height={280} src={`${img}`} className='w-full h-full object-cover' alt='Namiri Plains Image'/>
+                                    <Image width={280} height={280} src={`${img}`} className='w-full h-full object-cover' alt='Namiri Plains Image' />
                                 </div>
                             ))
                         }
@@ -90,6 +109,8 @@ const Page = () => {
                 </div>
                 <br />
             </div>
+
+            <CallToAction />
         </>
     )
 }

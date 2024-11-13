@@ -5,6 +5,7 @@ import React from 'react'
 import PrimaryHeader from '~/components/PrimaryHeader'
 import HeadSEO from '~/components/ui/Head'
 import { base_keywords } from '~/lib/constants'
+import CallToAction from '~/components/CallToAction'
 
 const Page = () => {
   return (
@@ -72,6 +73,9 @@ const Page = () => {
           </div>
         </section>
       </div>
+
+      <br /><br /><br />
+      <CallToAction />
     </>
   )
 }

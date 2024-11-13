@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import React from 'react'
+import CallToAction from '~/components/CallToAction'
 import PrimaryHeader from '~/components/PrimaryHeader'
+import SafariCarousel from '~/components/safari-carousel'
 import HeadSEO from '~/components/ui/Head'
 import { base_keywords } from '~/lib/constants'
 
@@ -56,12 +58,12 @@ const Page = () => {
                     <br /><br />
                     <h4 className='text-4xl text-primary mb-3'>Accommodation</h4>
                     <p>
-                    Namiri Plains Camp features spacious tents designed for comfort and luxury. Each tent includes an en-suite bathroom, comfortable furnishings, and a private deck with panoramic views of the Serengeti.
+                        Namiri Plains Camp features spacious tents designed for comfort and luxury. Each tent includes an en-suite bathroom, comfortable furnishings, and a private deck with panoramic views of the Serengeti.
                     </p>
                     <br /><br />
                     <h4 className='text-4xl text-primary mb-3'>Dining</h4>
                     <p>
-                    Enjoy gourmet meals prepared by skilled chefs, featuring fresh and locally sourced ingredients. Dining at Namiri Plains Camp is a memorable experience, with options for bush breakfasts, picnic lunches, and candlelit dinners.
+                        Enjoy gourmet meals prepared by skilled chefs, featuring fresh and locally sourced ingredients. Dining at Namiri Plains Camp is a memorable experience, with options for bush breakfasts, picnic lunches, and candlelit dinners.
                     </p>
                     <br /><br />
                     <h4 className='text-4xl text-primary mb-3'>Activities</h4>
@@ -75,13 +77,30 @@ const Page = () => {
                     </ul>
                 </section>
                 <br /><br />
-                <div>
+
+                <div className="w-full px-4 my-6">
+                    <h3
+                        className="text-4xl text-primary mb-3"
+                    >
+                        Our Safari Itenaries
+                    </h3>
+                    <p>
+                        Explore some of sample itineraries and see where an
+                        adventure with Tazama Africa can take you.
+                    </p>
+                </div>
+                <section className="flex flex-col items-center justify-center">
+                    <SafariCarousel />
+                </section>
+
+                <br /><br />
+                <div className='mt-16'>
                     <h4 className='text-4xl text-primary mb-3'>Gallery</h4>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
                         {
                             imageIds.map(img => (
                                 <div key={img} className="w-full h-60">
-                                    <Image width={280} height={280} src={`${img}`} className='w-full h-full object-cover' alt='Namiri Plains Image'/>
+                                    <Image width={280} height={280} src={`${img}`} className='w-full h-full object-cover' alt='Namiri Plains Image' />
                                 </div>
                             ))
                         }
@@ -89,6 +108,8 @@ const Page = () => {
                 </div>
                 <br />
             </div>
+
+            <CallToAction />
         </>
     )
 }
