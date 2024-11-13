@@ -48,40 +48,28 @@ const ContactPage = () => {
         title="Contact Tazama Africa for your Dream Safari Experience"
         keywords={base_keywords}
       />
-      <PrimaryHeader image="mount-kilimanjaro.webp" title="Contact Us" />
-      <div className="mx-auto mt-14">
-        <div className="text-center text-[#757371]">
-          <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-xl ">
+      <PrimaryHeader image="contact.webp" title="Contact Us" />
+      <div className="mx-auto mt-36 max-sm:mt-28">
+        <div className="text-center">
+          <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-5xl max-sm:text-3xl leading-[3.7rem] font-serif text-primary">
             We'd love to hear from you. Simply fill in the form below or reach
             out directly to us through one of our contacts listed below.
           </p>
 
-          <p className=" text-xl ">
+          <p className="text-2xl max-sm:text-lg">
             Email:&nbsp;
-            <a
-              href="mailto:info@tazamaafricasafari.com"
-              className="hover:underline"
-            >
-              {" "}
-              info@tazamaafricasafari.com
-            </a>
+            <a href="mailto:info@tazamaafricasafari.com">info@tazamaafricasafari.com</a>
           </p>
-          <p className=" text-xl">
+          <p className="text-2xl mt-2 max-sm:text-lg">
             Phone:&nbsp;
-            <a href="tel:+255744400043" className="hover:underline">
+            <a href="tel:+255744400043">
               (255)744400043
             </a>
-          </p>
-          <p className="mt-10 text-lg md:text-xl">
-            You can also send us a message by filling the form below
           </p>
         </div>
 
         <div className="mx-auto my-20 max-w-4xl px-4">
           <h3 className="text-4xl text-primary">Contact Us</h3>
-          <p className=" mt-8 text-black">
-            Please complete the form below
-          </p>
 
           <form
             // action="https://formsubmit.co/jaff@tazamaafricasafari.com"

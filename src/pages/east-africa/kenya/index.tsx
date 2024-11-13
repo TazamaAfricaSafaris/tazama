@@ -3,13 +3,21 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import PrimaryHeader from '~/components/PrimaryHeader'
-import ContentSection, { contentSectionData } from '~/components/ContentSection'
+import ContentSection, { type contentSectionData } from '~/components/ContentSection'
+
+import Carousel, { CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '~/components/Carousel'
 import { kenyaContent } from '~/data/east-africa'
 import { array } from 'fast-web-kit'
+
+import Link from 'next/link'
+import Image from 'next/image'
+import HeadSEO from '~/components/ui/Head'
+import { base_keywords } from '~/lib/constants'
 
 const kenya = () => {
   return (
     <>
+      <HeadSEO title='Tazama Africa Safaris | Kenya' keywords={`kenya, Kenaya ${base_keywords}`}/>
       <PrimaryHeader title='Kenya' image='kenya/kenya.jpg' />
       <div className='max-w-5xl mx-auto my-20'>
         <p className='text-left leading-relaxed'>
@@ -44,6 +52,36 @@ const kenya = () => {
         }
       </section>
 
+      <section className='max-w-5xl my-20 mx-auto px-4'>
+        <h4 className="text-4xl text-primary">Our Itenaries</h4>
+        <br />
+        <Carousel className='w-full max-w-sm md:max-w-none'>
+          <CarouselPrevious />
+          <CarouselContent>
+            {
+              itenaries.map(itenary => (
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3" key={itenary.link}>
+                  <Link href={`kenya/${itenary.link}`}>
+                    <div className='bg-black w-full h-80 md:h-96 relative overflow-hidden'>
+                      <Image
+                        src={itenary.img}
+                        alt=""
+                        layout="fill"
+                        objectFit="cover"
+                        className='w-full h-full object-cover brightness-90'
+                      />
+                    </div>
+                    <p className='mt-2 text-xl z-10'>{itenary.title}</p>
+                  </Link>
+                </CarouselItem>
+              ))
+            }
+          </CarouselContent>
+          <CarouselNext />
+        </Carousel>
+      </section>
+
+
       <section className='max-w-5xl my-20 mx-auto text-center'>
         <p className='mb-8'>
           Kenya offers an array of activities to make your safari memorable. You can hike Mount Kenya, witness the Wildebeest Migration, scuba dive in the Indian Ocean, sail the Lamu Archipelago, enjoy bird watching, take a hot air balloon ride over the Maasai Mara, or embark on game drives across the country’s famed parks. Kenya truly has something for everyone.
@@ -55,3 +93,31 @@ const kenya = () => {
 }
 
 export default kenya
+
+const itenaries = [
+  {
+    link: '3-days-amboseli-safari',
+    title: '3 Days Amboseli Fly-in Safari',
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731333470/east-africa/kenya/3-day-amboseli-safari/adore-africa-kenya-amboseli-slider-03_zf7oup.jpg'
+  },
+  {
+    link: '3-days-masai-mara-safari',
+    title: '3 Days Masai Mara Fly-in Safari',
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731335119/east-africa/kenya/3-day-masai-mara-safari/wildebeest-zebra-maasai-mara-national-reserve-kenya-africa_kk6cpk.webp'
+  },
+  {
+    link: '4-days-and-beyond-luxury-safari',
+    title: '4 Days and Beyond Luxury Safari',
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731329695/east-africa/kenya/4-days-and-beyond-luxury-safari/Masai-Mara-National-Reserve_zdzfci.jpg'
+  },
+  {
+    link: '5-days-kenya-safari-amboseli-and-tsavo',
+    title: '5 Days Kenya Safari – Amboseli and Tsavo',
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731332122/east-africa/kenya/5-days-kenya-safari/Tsavo-West-leopards_o8fnib.jpg'
+  },
+  {
+    link: '6-day-amboseli-maasai-mara-fly-in',
+    title: '6 Day Amboseli-Maasai Mara Fly-in Safari',
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731328470/east-africa/kenya/6-day-amboselu-maasai-safari/_copyright_beverly_joubert_oldonyo_wildlife_kenya_5717_gr6dpt.webp'
+  },
+]

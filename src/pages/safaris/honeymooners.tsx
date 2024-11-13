@@ -1,19 +1,22 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
+/* eslint-disable react/no-unescaped-entities */
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { honeyMooners } from "~/components/itenaries/day-itienary";
 import Image from "next/legacy/image";
 import useFetchImages from "~/hooks/useFetchImages";
-import { ImageProps } from "~/lib/generateBlurPlaceHolder";
-import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
+import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import EnquireNow from "~/components/EnquireNow";
 import ItienaryViewer from "~/components/itenaries/day-itienary";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
 import BlurImage from "~/components/ui/BlurImage";
+import CallToAction from "~/components/CallToAction";
 
 export const MemoryImage = ({ src }: { src: string }) => {
   return (
     <div className="relative h-[200px] w-[300px] md:h-[300px] md:w-[80%] lg:w-[400px]">
-      <Image src={src} layout="fill" className="rounded-sm object-cover" />
+      <Image src={src} layout="fill" className="rounded-sm object-cover" alt="" />
     </div>
   );
 };
@@ -56,13 +59,13 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
         <div className="mt-5 flex flex-col items-center justify-center space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
           <div className="relative h-[400px] w-full lg:w-[50%] ">
-            <BlurImage 
-            src={"https://res.cloudinary.com/drhl0yu7y/image/upload/v1728590923/honeymoon/7-days-Tanzania-Honeymoon-Safari-750x450_bcuo1x.jpg"}              
+            <BlurImage
+              src={"https://res.cloudinary.com/drhl0yu7y/image/upload/v1728590923/honeymoon/7-days-Tanzania-Honeymoon-Safari-750x450_bcuo1x.jpg"}
             />
           </div>
 
           <div className="relative h-[400px] w-full lg:w-[50%]">
-            <BlurImage 
+            <BlurImage
               src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1728591080/honeymoon/10-days-tanzania-adventure-zanzibar-honeymoon-private-safari_f5kumm.jpg"
             />
           </div>
@@ -108,6 +111,9 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           ))}
         </>
       </section>
+
+      <br /><br /><br /> <br />
+      <CallToAction />
     </>
   );
 };

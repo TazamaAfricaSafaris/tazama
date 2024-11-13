@@ -1,21 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from 'next/image'
 import React from 'react'
 import PrimaryHeader from '~/components/PrimaryHeader'
+import SafariCarousel from '~/components/safari-carousel'
 import HeadSEO from '~/components/ui/Head'
 import { base_keywords } from '~/lib/constants'
 
-const Page = () => {
+import { MasonryGallery } from "../gallery"
+import useFetchImages from "~/hooks/useFetchImages"
+import { type ImageProps } from "~/lib/generateBlurPlaceHolder"
 
-    const imageIds = [
-        'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720099589/lodges/upendo-beach-zanzibar/7_pngrlc.jpg',
-        'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720099589/lodges/upendo-beach-zanzibar/6_dx1r30.jpg',
-        'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720099588/lodges/upendo-beach-zanzibar/4_ukld0f.jpg',
-        'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720099587/lodges/upendo-beach-zanzibar/3_xc1894.jpg',
-        'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720099587/lodges/upendo-beach-zanzibar/2_g7wf7o.jpg',
-        'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720099587/lodges/upendo-beach-zanzibar/5_nkqja5.jpg',
-        'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720099586/lodges/upendo-beach-zanzibar/1_l0ygea.jpg',
-    ]
+import CallToAction from '~/components/CallToAction'
+
+const Page = ({ images }: { images: ImageProps[] }) => {
 
     const activities = [
         {
@@ -64,13 +60,39 @@ const Page = () => {
                     </ul>
                 </section>
                 <br /><br />
-                <div className="w-full h-[40rem] mx-auto relative overflow-hidden">
-                    <iframe src="https://www.zurizanzibar.com/gallery/photos/" loading='lazy' className='w-full h-full absolute left-0 -top-24'></iframe>
+                <div className="w-full px-4 my-6">
+                    <h3
+                        className="text-4xl text-primary mb-3"
+                    >
+                        Our Safari Itenaries
+                    </h3>
+                    <p>
+                        Explore some of sample itineraries and see where an
+                        adventure with Tazama Africa can take you.
+                    </p>
                 </div>
-                <br />
+                <section className="flex flex-col items-center justify-center">
+                    <SafariCarousel />
+                </section>
+                <br /><br />
+                <div className="w-full mx-auto relative overflow-hidden mt-20">
+                    <MasonryGallery images={images} />
+                </div>
+                <br /><br /><br />
             </div>
+                <CallToAction />
         </>
     )
 }
 
 export default Page
+
+export async function getStaticProps() {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const images = await useFetchImages({ folderName: "lodges/zuri" });
+    return {
+        props: {
+            images,
+        },
+    };
+}

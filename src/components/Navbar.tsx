@@ -115,6 +115,7 @@ const Navbar = () => {
         </Link>
         <div className="flex items-center gap-1 sm:gap-2">
           <PlanMyTrip />
+          <Link href="/contact" className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2 font-raleway animate-float max-sm:hidden">Contact Us</Link>
           <AnimatePresence>
             {searchModal ? (
               <motion.div
@@ -278,7 +279,7 @@ const Navbar = () => {
                               className="hover:text-[#e0e0e0]"
                               onClick={() => showSubItems(index)}
                             >
-                              <h3>{mainLink.title}</h3>
+                              <h3 className="text-3xl">{mainLink.title}</h3>
                             </button>
                           ) : (
                             <Link
@@ -286,7 +287,7 @@ const Navbar = () => {
                               className="hover:text-[#e0e0e0]"
                               onClick={() => setNav(false)}
                             >
-                              <h3>{mainLink.title}</h3>
+                              <h3 className="text-3xl">{mainLink.title}</h3>
                             </Link>
                           )}
                         </motion.span>
@@ -319,7 +320,7 @@ const Navbar = () => {
                             <Link
                               href={subLink.link}
                               onClick={() => setNav(false)}
-                              className="w-fit cursor-pointer pb-1 text-lg hover:underline"
+                              className="w-fit cursor-pointer pb-1 md:text-lg hover:underline"
                             >
                               <h3 className="font-raleway">{subLink.title}</h3>
                             </Link>
@@ -328,7 +329,7 @@ const Navbar = () => {
                       </div>
 
                       <Link
-                        className="rounded-md border border-white  px-6 py-2 font-raleway transition duration-150 ease-in hover:bg-white hover:text-[#A87133]"
+                        className="rounded-md border border-white mt-4 px-6 py-2 font-raleway transition duration-150 ease-in hover:bg-white hover:text-[#A87133]"
                         href="/contact"
                         onClick={() => setNav(false)}
                       >

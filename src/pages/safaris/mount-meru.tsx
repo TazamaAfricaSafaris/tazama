@@ -4,6 +4,7 @@ import useFetchImages from "~/hooks/useFetchImages";
 import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import HeadSEO from "~/components/ui/Head";
+import CallToAction from "~/components/CallToAction";
 
 const Page = ({ images }: { images: ImageProps[] }) => {
   return (
@@ -60,6 +61,9 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         </div>
         <Gallery images={images} />
       </div>
+
+      <br /><br /><br /> <br />
+      <CallToAction />
     </>
   );
 };

@@ -2,6 +2,7 @@ import PrimaryHeader from "~/components/PrimaryHeader";
 
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
+import CallToAction from "~/components/CallToAction";
 
 const Page = () => {
   return (
@@ -70,6 +71,9 @@ const Page = () => {
           </ul>
         </div>
       </div>
+
+      <br /><br /><br /> <br />
+      <CallToAction />
     </>
   );
 };
