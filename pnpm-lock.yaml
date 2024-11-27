@@ -80,6 +80,9 @@ dependencies:
   '@trpc/server':
     specifier: ^10.45.1
     version: 10.45.1
+  '@typeform/embed-react':
+    specifier: ^4.2.0
+    version: 4.2.0(react@18.2.0)
   '@types/mdx':
     specifier: ^2.0.11
     version: 2.0.11
@@ -2602,6 +2605,22 @@ packages:
     resolution: {integrity: sha512-KOzBEVaHW9IxEedUP9E50y0tYxAuvlzyjn80Bpemw4rcNbT4WtJnhkFPUY+qDJl7Crt3B/oY2qMgSxVWi9toLg==}
     dev: false
 
+  /@typeform/embed-react@4.2.0(react@18.2.0):
+    resolution: {integrity: sha512-ZMMoRvDNRw9NawG/fF8gNoyo1HNUVC6UQvWQBagC5EcBjvMbArNSiEIcKsFVJeMw5j5DeSBVqY7WOTPje3ZjMQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      '@typeform/embed': 5.2.0
+      fast-deep-equal: 3.1.3
+      react: 18.2.0
+    dev: false
+
+  /@typeform/embed@5.2.0:
+    resolution: {integrity: sha512-V4VZEgBStq60Vhu4ruszOoGcyrZfu4les6h8ODcIen51xy69RKlk4uAI5V61VKa3ckJwfqiLyf1n0oHfo04G5A==}
+    engines: {node: '>=10'}
+    dev: false
+
   /@types/acorn@4.0.6:
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
     dependencies:
@@ -3164,6 +3183,7 @@ packages:
 
   /acorn-import-assertions@1.9.0(acorn@8.11.3):
     resolution: {integrity: sha512-cmMwop9x+8KFhxvKrKfPYmN6/pKTYYHBqLa0DfvVZcKMJWNyWLnaqND7dx/qn66R7ewM1UX5XMaDVP5wlVTaVA==}
+    deprecated: package has been renamed to acorn-import-attributes
     peerDependencies:
       acorn: ^8
     dependencies:

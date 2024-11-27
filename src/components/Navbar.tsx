@@ -3,7 +3,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { MdChevronLeft } from "react-icons/md";
 import Link from "next/link";
-import PlanMyTrip from "~/components/forms/all-forms/plan-my-trip";
+
+import { PopupButton } from "@typeform/embed-react"
 
 const navMainContent = [
   {
@@ -114,7 +115,9 @@ const Navbar = () => {
           />
         </Link>
         <div className="flex items-center gap-1 sm:gap-2">
-          <PlanMyTrip />
+          <PopupButton id={"https://form.typeform.com/to/unyR7Ewo"} className="menu-trigger animate-float2 flex items-center gap-2 rounded-md bg-[#A87133] px-2  text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2">
+            Plan My Trip
+          </PopupButton>
           <Link href="/contact" className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2 font-raleway animate-float max-sm:hidden">Contact Us</Link>
           <AnimatePresence>
             {searchModal ? (
@@ -206,7 +209,7 @@ const Navbar = () => {
                         className="text-left text-lg text-white mb-8 w-full flex items-center gap-x-2"
                         onClick={goBack}
                       >
-                          <MdChevronLeft size={26} />
+                        <MdChevronLeft size={26} />
                         <span className="text-4xl font-serif mt-1">{navMainContent[activeIndex]?.title}</span>
                       </button>
                       <ul className="text-xl text-white space-y-4 px-12 md:px-11">
