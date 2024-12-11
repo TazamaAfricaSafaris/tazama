@@ -46,8 +46,12 @@ const config = {
         port: "",
         pathname: "/my-account/**",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+      },
     ],
-    domains: ["res.cloudinary.com", "images.unsplash.com"],
+    domains: ["res.cloudinary.com", "images.unsplash.com", "cdn.sanity.io"],
   },
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   transpilePackages: [
