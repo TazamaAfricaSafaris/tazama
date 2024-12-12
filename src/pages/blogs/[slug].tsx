@@ -1,14 +1,16 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 // ./src/pages/[slug].tsx
 
-import { QueryParams, SanityDocument } from "next-sanity";
-import dynamic from "next/dynamic";
-import { GetStaticPaths } from "next";
+import type { QueryParams, SanityDocument } from "next-sanity";
+
+import type { GetStaticPaths } from "next";
 
 import { getClient } from "../../sanity/lib/client";
 import { token } from "../../sanity/lib/token";
 import { POSTS_SLUG_QUERY, POST_QUERY } from "../../sanity/lib/queries";
 import Post from "~/components/Post";
+import HeadSEO from "~/components/ui/Head";
 
 type PageProps = {
     post: SanityDocument;
@@ -18,8 +20,17 @@ type PageProps = {
 };
 
 export default function SinglePost(props: PageProps) {
-    console.log(props.post)
-    return <Post post={props.post} />
+    const seo = props.post.seo
+    return (
+        <>
+            <HeadSEO 
+                title={seo.metaTitle}
+                keywords={seo.seoKeywords}
+                description={seo.metaDescription}
+            />
+            <Post post={props.post} />
+        </>
+    )
 }
 
 export const getStaticProps = async ({ params = {}, draftMode = false }) => {
