@@ -115,10 +115,10 @@ const Navbar = () => {
           />
         </Link>
         <div className="flex items-center gap-1 sm:gap-2">
-          <PopupButton id={"https://form.typeform.com/to/unyR7Ewo"} className="menu-trigger animate-float2 flex items-center gap-2 rounded-md bg-[#A87133] px-2  text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2">
+          <PopupButton id={"https://form.typeform.com/to/unyR7Ewo"} className="menu-trigger animate-float2 flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 max-sm:text-sm text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2">
             Plan My Trip
           </PopupButton>
-          <Link href="/contact" className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2 font-raleway animate-float max-sm:hidden">Contact Us</Link>
+          <Link href="/contact" className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2 max-sm:text-sm font-raleway animate-float max-sm:hidden">Contact Us</Link>
           <AnimatePresence>
             {searchModal ? (
               <motion.div
@@ -134,7 +134,7 @@ const Navbar = () => {
                 className={`absolute left-0 top-0 h-screen w-full bg-[#000000]`}
               >
                 <button
-                  className="absolute right-4 top-4 flex items-center gap-2 px-4 py-1 text-white md:right-8 md:top-0 md:gap-3 md:px-4 md:py-6"
+                  className="absolute right-4 top-4 flex items-center gap-2 px-4 py-1 text-white md:right-8 md:top-0 md:gap-3 md:px-4 md:py-6 max-sm:text-sm"
                   onClick={toggleSearchModal}
                 >
                   <span className="">Close</span>
@@ -145,7 +145,7 @@ const Navbar = () => {
           </AnimatePresence>
 
           <button
-            className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2"
+            className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2 max-sm:text-sm"
             onClick={toggleNav}
           >
             <span className="menu-trigger">Menu</span>

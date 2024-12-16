@@ -53,8 +53,8 @@ export const Footer = () => {
     e.preventDefault();
     mutateAsync({
       email: email,
-      message: "We can't wait to here from you Tazama",
-      fullNames: ""
+      message: "New Email Submission",
+      fullNames: "See email"
     });
   };
 
