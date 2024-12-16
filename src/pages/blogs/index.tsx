@@ -50,7 +50,7 @@ export function Blog({ name, link, imgUrl, shortDescription, category }: BlogPro
   );
 }
 
-export default function Page (props: PageProps) {
+export default function Page(props: PageProps) {
   const [query, setQuery] = useState<string>("");
   // Filter blogs based on query
   const filteredBlogs = allBlogs.filter((blog) =>
@@ -59,8 +59,8 @@ export default function Page (props: PageProps) {
 
   return (
     <>
-      <HeadSEO title="Tazama Africa Safaris | Blog" keywords={base_keywords}/>
-      <PrimaryHeader title="Latest From Tazama" image="safari.webp"/>
+      <HeadSEO title="Tazama Africa Safaris | Blog" keywords={base_keywords} />
+      <PrimaryHeader title="Latest From Tazama" image="safari.webp" />
       <div className="mt-20 flex items-center justify-center ">
         <Input
           placeholder="Filter Blogs..."
