@@ -11,6 +11,7 @@ import { token } from "../../sanity/lib/token";
 import { POSTS_SLUG_QUERY, POST_QUERY } from "../../sanity/lib/queries";
 import Post from "~/components/Post";
 import HeadSEO from "~/components/ui/Head";
+import { base_keywords } from "~/lib/constants";
 
 type PageProps = {
     post: SanityDocument;
@@ -24,9 +25,9 @@ export default function SinglePost(props: PageProps) {
     return (
         <>
             <HeadSEO 
-                title={props.post.seo.metaTitle}
-                keywords={props.post.seo.seoKeywords}
-                description={props.post.seo.metaDescription}
+                title={props.post.seo ? props.post.seo.metaTitle : "Tazama Africa | Blog Post"}
+                keywords={props.post.seo ? props.post.seo.seoKeywords : base_keywords}
+                description={props.post.seo ? props.post.seo.metaDescription : "A blog post from Tazama Africa Safaris"}
             />
             <Post post={props.post} />
         </>
