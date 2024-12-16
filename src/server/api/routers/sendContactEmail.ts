@@ -1,6 +1,6 @@
 import { createTRPCRouter, publicProcedure } from "../trpc";
 import { Resend } from "resend";
-import ContactEmail from "~/components/emails/ContactUs";
+import TazamaContactUs from "~/components/email-template";
 import posthog from "posthog-js";
 import z from "zod";
 import AppendNewLeads from "~/lib/google-sheets";
@@ -20,14 +20,14 @@ export const ContactEmailRouter = createTRPCRouter({
     .input(contactEmailSchema)
     .mutation(async ({ input }) => {
       try {
-        const response = await resend.emails.send({
+        await resend.emails.send({
           from: "james@tazamaafricasafari.com",
           to: "info@tazamaafricasafari.com",
           cc: "jaff@tazamaafricasafari.com",
           subject: "New Tazama Contact Form",
-          react: ContactEmail({
+          react: TazamaContactUs({
+            fullName: input.fullNames,
             email: input.email,
-            fullNames: input.fullNames,
             message: input.message,
           }),
         });
