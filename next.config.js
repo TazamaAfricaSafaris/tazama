@@ -47,7 +47,6 @@ const config = {
         pathname: "/my-account/**",
       },
       {
-        protocol: "https",
         hostname: "cdn.sanity.io",
       },
     ],
