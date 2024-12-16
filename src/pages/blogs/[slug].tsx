@@ -24,9 +24,9 @@ export default function SinglePost(props: PageProps) {
     return (
         <>
             <HeadSEO 
-                title={seo.metaTitle}
-                keywords={seo.seoKeywords}
-                description={seo.metaDescription}
+                title={props.post.seo.metaTitle}
+                keywords={props.post.seo.seoKeywords}
+                description={props.post.seo.metaDescription}
             />
             <Post post={props.post} />
         </>
