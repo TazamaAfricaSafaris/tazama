@@ -27,7 +27,7 @@ export default function SinglePost(props: PageProps) {
             <HeadSEO 
                 title={props.post.seo ? props.post.seo.metaTitle : "Tazama Africa | Blog Post"}
                 keywords={props.post.seo ? props.post.seo.seoKeywords : base_keywords}
-                description={props.post.seo ? props.post.seo.metaDescription : "A blog post from Tazama Africa Safaris"}
+                description={props.post.seo ? props.post.seo.metaDescription : "A blog post from Tazama Africa Safaris."}
             />
             <Post post={props.post} />
         </>
