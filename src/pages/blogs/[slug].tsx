@@ -21,13 +21,12 @@ type PageProps = {
 };
 
 export default function SinglePost(props: PageProps) {
-    const seo = props.post.seo
     return (
         <>
             <HeadSEO 
-                title={props.post.seo ? props.post.seo.metaTitle : "Tazama Africa | Blog Post"}
-                keywords={props.post.seo ? props.post.seo.seoKeywords : base_keywords}
-                description={props.post.seo ? props.post.seo.metaDescription : "A blog post from Tazama Africa Safaris."}
+                title={"Tazama Africa | Blog Post"}
+                keywords={base_keywords}
+                description={"A blog post from Tazama Africa Safaris."}
             />
             <Post post={props.post} />
         </>
