@@ -5,6 +5,21 @@ import BlurImage from "~/components/ui/BlurImage";
 import Input from "~/components/ui/input";
 import { useState } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
+import HeadSEO from "~/components/ui/Head";
+import { base_keywords } from "~/lib/constants";
+
+import type { SanityDocument } from "next-sanity";
+
+import { getClient } from "../../sanity/lib/client";
+import { token } from "../../sanity/lib/token";
+import { POSTS_QUERY } from "../../sanity/lib/queries";
+import BlogPosts from "~/components/BlogPosts";
+
+type PageProps = {
+  posts: SanityDocument[];
+  draftMode: boolean;
+  token: string;
+};
 
 interface BlogProps {
   name: string;
@@ -35,15 +50,17 @@ export function Blog({ name, link, imgUrl, shortDescription, category }: BlogPro
   );
 }
 
-const Page = () => {
+export default function Page(props: PageProps) {
   const [query, setQuery] = useState<string>("");
   // Filter blogs based on query
   const filteredBlogs = allBlogs.filter((blog) =>
     blog.name.toLowerCase().includes(query.toLowerCase()),
   );
+
   return (
     <>
-      <PrimaryHeader title="Latest From Tazama" image="safari.webp"/>
+      <HeadSEO title="Tazama Africa Safaris | Blog" keywords={base_keywords} />
+      <PrimaryHeader title="Latest From Tazama" image="safari.webp" />
       <div className="mt-20 flex items-center justify-center ">
         <Input
           placeholder="Filter Blogs..."
@@ -54,14 +71,26 @@ const Page = () => {
         />
       </div>
       <main className="mt-10 flex-col md:flex md:items-center md:justify-center">
-        <section className="flex flex-col items-center md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3">
+        {/* <section className="flex flex-col items-center md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3">
           {filteredBlogs.map((blog, index) => (
             <Blog key={index} name={blog.name} imgUrl={blog.imgUrl} link={blog.url} shortDescription={blog.shortDescription} category={blog.category} />
           ))}
-        </section>
+        </section> */}
+        <BlogPosts posts={props.posts} />
       </main>
     </>
   );
 };
 
-export default Page;
+export const getStaticProps = async ({ draftMode = false }) => {
+  const client = getClient(draftMode ? token : undefined);
+  const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY);
+
+  return {
+    props: {
+      posts,
+      draftMode,
+      token: draftMode ? token : "",
+    },
+  };
+};
