@@ -7,6 +7,15 @@ export const POSTS_QUERY = groq`
   *[_type == "post" && defined(slug)]{
     title,
     slug,
+    mainImage{
+      asset->{
+        url
+      },
+      alt
+    },
+    categories[]->{
+      title
+    },
     author->{
       name,
       "imageUrl": image.asset->url
