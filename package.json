@@ -82,6 +82,7 @@
     "resend": "^3.2.0",
     "sanity": "3",
     "sanity-plugin-seo": "^1.2.5",
+    "sanity-plugin-vercel-deploy": "^3.3.4",
     "styled-components": "6",
     "superjson": "^2.2.1",
     "tailwind-merge": "^2.2.0",
