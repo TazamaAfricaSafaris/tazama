@@ -61,7 +61,7 @@ export default function Page(props: PageProps) {
     <>
       <HeadSEO title="Tazama Africa Safaris | Blog" keywords={base_keywords} />
       <PrimaryHeader title="Latest From Tazama" image="safari.webp" />
-      <div className="mt-20 flex items-center justify-center ">
+      {/* <div className="mt-20 flex items-center justify-center ">
         <Input
           placeholder="Filter Blogs..."
           value={query}
@@ -69,8 +69,12 @@ export default function Page(props: PageProps) {
           type="search"
           className="max-w-[80%] md:w-[300px] lg:w-[400px]"
         />
+      </div> */}
+      <main className="mt-20 flex-col md:flex md:items-center md:justify-center">
+      <div className="text-center">
+        <h2 className="text-primary text-3xl md:text-5xl">Guides, blogs, etc. Check out what we at <br /> Tazama Africa have for you!</h2>
+        <br />
       </div>
-      <main className="mt-10 flex-col md:flex md:items-center md:justify-center">
         {/* <section className="flex flex-col items-center md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3">
           {filteredBlogs.map((blog, index) => (
             <Blog key={index} name={blog.name} imgUrl={blog.imgUrl} link={blog.url} shortDescription={blog.shortDescription} category={blog.category} />

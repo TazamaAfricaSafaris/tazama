@@ -3,18 +3,20 @@ import { HomeContactUs } from "~/components/HomeContactUs";
 import SafariCarousel from "~/components/safari-carousel";
 import PrimaryHeader from "~/components/PrimaryHeader";
 
+import { getClient } from "~/sanity/lib/client";
+import { token } from "~/sanity/lib/token";
+import { POSTS_QUERY } from "~/sanity/lib/queries";
+import BlogPosts from "~/components/BlogPosts";
+
 import ContentSection, {
-  contentSectionData,
+  type contentSectionData,
 } from "~/components/ContentSection";
-import Image from "next/legacy/image";
 import { array } from "fast-web-kit";
 import HeadSEO from "~/components/ui/Head";
-import Carousel, { CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "~/components/Carousel";
-import { allBlogs } from "~/blogs/all-blogs";
 import Link from "next/link";
 import PartnersMarquee from "~/components/PartnersMarquee";
-import { Blog } from "./blogs";
 import HomeTrekkingCarousel from "~/components/HomeTrekkingCarousel";
+import { SanityDocument } from "next-sanity";
 
 export const homePageContentData: contentSectionData[] = [
   {
@@ -36,8 +38,15 @@ export const homePageContentData: contentSectionData[] = [
   },
 ];
 
-export default function Page() {
-  const homeBlogPosts = allBlogs.slice(-6)
+type PageProps = {
+  posts: SanityDocument[];
+  draftMode: boolean;
+  token: string;
+};
+
+export default function Page(props: PageProps) {
+
+  const slicedPosts = props.posts.slice(0,6)
 
   return (
     <>
@@ -92,33 +101,6 @@ export default function Page() {
       <br />
       <br />
       <br />
-      {/* <div className="px-4 xl:px-8 my-20 bg-[#ece6dc86] py-10 lg:py-20 bg-fixed">
-        <div className="mx-auto max-w-6xl px-4 xl:px-8">
-          <div className="mb-8 w-full px-4 py-4 ">
-            <h3
-              className="mb-4 text-4xl lg:text-5xl text-primary"
-            >
-              Ascending Africa's Summits
-            </h3>
-            <p
-              className="font-raleway"
-            >
-              Explore the summits of Africa with Tazama Africa Safaris as you climb the mountains Kilimanajaro and Meru to fulfill your desire to know what it's like to be at the top
-            </p>
-          </div>
-          <div className="flex flex-col md:flex-row gap-6 max-w-6xl px-4 mx-auto">
-            <Link href={'/safaris/kilimanjaro'} className="w-full border border-white overflow-hidden rounded-md h-72 relative group">
-              <Image src={"/assets/images/gallery/mount-kilimanjaro.webp"} layout="fill" className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:scale-105" alt="Travel to Mount Kilimanjaro" />
-              <p className="w-full absolute bottom-0 left-0 bg-gradient-to-t from-orange-950/35 to-transparent text-white p-4 text-xl">Mount Kilimanjaro</p>
-            </Link>
-
-            <Link href={'/safaris/mount-meru'} className="w-full border border-white overflow-hidden rounded-md h-72 relative group">
-              <Image src={"/assets/images/gallery/mount-meru.webp"} layout="fill" className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:scale-105" alt="Travel to Mount Kilimanjaro" />
-              <p className="w-full absolute bottom-0 left-0 bg-gradient-to-t from-orange-950/35 to-transparent text-white p-4 text-xl">Mount Meru </p>
-            </Link>
-          </div>
-        </div>
-      </div> */}
         <HomeTrekkingCarousel />
       <br />
       <br />
@@ -155,27 +137,23 @@ export default function Page() {
           <br />
           <Link href="/blogs" className="text-primary underline underline-offset-2 font-raleway">See more posts from Tazama</Link>
         </div>
-        <Carousel
-          opts={{
-            align: "start"
-          }}
-          className="w-full max-w-5xl mx-auto lg:max-w-none"
-        >
-          <CarouselPrevious />
-          <CarouselContent>
-            {
-              homeBlogPosts.map((post, index) => (
-                <CarouselItem key={index} className="sm:basis-1/3 lg:basis-1/3 mb-2 lg:mr-6 xl:mr-0">
-                  <Blog name={post.name} link={post.url} imgUrl={post.imgUrl} shortDescription={post.shortDescription} category={post.category} />
-                </CarouselItem>
-              ))
-            }
-          </CarouselContent>
-          <CarouselNext />
-        </Carousel>
+        <BlogPosts posts={slicedPosts} />
       </div>
       <br />
       <HomeContactUs />
     </>
   );
 }
+
+export const getStaticProps = async ({ draftMode = false }) => {
+  const client = getClient(draftMode ? token : undefined);
+  const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY);
+
+  return {
+    props: {
+      posts,
+      draftMode,
+      token: draftMode ? token : "",
+    },
+  };
+};
