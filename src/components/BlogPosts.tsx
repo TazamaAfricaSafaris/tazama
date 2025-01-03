@@ -1,3 +1,4 @@
+"use client"
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
@@ -7,18 +8,19 @@
 import type { SanityDocument } from "next-sanity";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
-export default function BlogPosts({ posts }: { posts: SanityDocument[] }) {
+export default function BlogPosts({ posts }: { posts: SanityDocument[]}) {
 
   return (
-    <main className="container mx-auto flex flex-col items-center md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3 max-w-6xl mb-20">
+    <main className="container mx-auto grid md:grid-cols-2 gap-5 lg:grid-cols-3 max-w-6xl mb-20">
       {posts?.length > 0 ? (
         posts.map((post) => (
           <Link
             key={post._id}
             // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
             href={`/blogs/${post.slug.current}`}
-            className="group p-0"
+            className="group p-0 mt-4"
           >
             <div className="w-full border h-64 relative overflow-hidden p-0">
               <Image
@@ -26,9 +28,11 @@ export default function BlogPosts({ posts }: { posts: SanityDocument[] }) {
                 objectFit="cover"
                 src={post.mainImage.asset.url}
                 alt={post.mainImage.alt}
-                className="group-hover:scale-105 transition-transform"
+                // placeholder="blur"
+                // blurData
+                className="group-hover:scale-105 transition-transform object-cover w-full h-full"
               />
-              <div className="absolute z-10 bottom-1 left-1 flex gap-1">
+              <div className="absolute z-10 bottom-2 left-2 flex gap-1">
                 {post.categories.map((category: any, index: number) => (
                   <p
                     key={index}
@@ -40,7 +44,7 @@ export default function BlogPosts({ posts }: { posts: SanityDocument[] }) {
               </div>
             </div>
             <div className="py-4 px-2 grid gap-3">
-              <p>{post.title}</p>
+              <h4 className="text-2xl line-clamp-2 text-dark">{post.title}</h4>
               <p>By {post.author.name}</p>
             </div>
             <div className="border border-darker w-1/3 mx-auto mt-2 group-hover:w-3/4 transition-all"></div>
