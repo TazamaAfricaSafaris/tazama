@@ -61,7 +61,7 @@ const Page = () => {
 
       <br /><br />
 
-      <div className="max-w-5xl mx-auto my-20">
+      <div className="max-w-5xl mx-auto my-20 max-lg:px-4">
         <h3 className="text-primary text-4xl mb-2">Our Trekking Offers</h3>
         <p>
           Prepare to embark on an extraordinary journey through the heart of Tanzania's wilderness, where every step brings you closer to the summit of Kilimanjaro
@@ -115,7 +115,7 @@ const Page = () => {
         <div className="grid gap-4 md:grid-cols-2 mt-16">
           <div>
             <h4 className="text-primary text-3xl">Includes</h4>
-            <ul className="list-disc list-inside">
+            <ul className="list-disc list-inside max-lg:pl-4">
               {
                 trekkingOffersIncludes.map(include => <li key={include}>{include}</li>)
               }
@@ -123,7 +123,7 @@ const Page = () => {
           </div>
           <div>
             <h4 className="text-primary text-3xl">Excludes</h4>
-            <ul className="list-disc list-inside">
+            <ul className="list-disc list-inside max-lg:pl-4">
               {
                 trekkingOffersExcludes.map(include => <li key={include}>{include}</li>)
               }
@@ -182,7 +182,7 @@ const Page = () => {
           <div className="grid gap-4 md:grid-cols-2 mt-16">
             <div>
               <h4 className="text-primary text-3xl">Includes</h4>
-              <ul className="list-disc list-inside">
+              <ul className="list-disc list-inside max-lg:pl-4">
                 {
                   safariOffersIncludes.map(include => <li key={include}>{include}</li>)
                 }
@@ -190,7 +190,7 @@ const Page = () => {
             </div>
             <div>
               <h4 className="text-primary text-3xl">Excludes</h4>
-              <ul className="list-disc list-inside">
+              <ul className="list-disc list-inside max-lg:pl-4">
                 {
                   safariOffersExcludes.map(include => <li key={include}>{include}</li>)
                 }
