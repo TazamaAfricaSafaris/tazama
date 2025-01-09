@@ -70,7 +70,7 @@ const ContentSection = (props: contentSectionData) => {
           className="w-full px-8 md:px-10 lg:py-20 lg:px-32"
         >
           <h3
-            className="text-5xl mb-4 font-light font-amiora capitalize text-primary">
+            className="text-5xl mb-4 font-light font-serif capitalize text-primary">
             {props.title}
           </h3>
           {renderDescription(props.description)}
