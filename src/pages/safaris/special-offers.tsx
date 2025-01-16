@@ -88,7 +88,7 @@ const Page = () => {
 
       <div className="max-w-5xl mx-auto my-20 max-lg:px-4 mt-20">
         <h3
-          className="text-primary text-5xl mb-2 flex items-center gap-4 after:border after:border-dark/75 after:max-w-20 after:w-full after:bg-dark/75"
+          className="my-4 text-5xl text-primary flex items-center md:gap-4 gap-2 after:border after:border-dark/75 after:max-w-14 md:after:max-w-24  after:w-full after:bg-dark/75"
         >
           Our Trekking Offers
         </h3>
@@ -120,7 +120,7 @@ const Page = () => {
         </div>
 
         <br />
-        <h4 className="text-primary text-3xl mb-2">Trekking options with prices</h4>
+        <h4 className="text-primary text-4xl mb-2">Trekking options with prices</h4>
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="font-raleway text-center bg-primary text-lightest">
@@ -140,7 +140,7 @@ const Page = () => {
           </tbody>
         </table>
         <p className="text-center mx-auto w-full mt-4">Prices are per person in USD based on a private trek</p>
-        <Link href="https://forms.gle/6uWCYUxxd7QPQUEa9" className="border border-primary text-primary py-2 px-4 rounded-md hover:bg-primary hover:text-white transition-colors font-raleway mx-auto flex items-center text-center w-fit mt-2">
+        <Link href="https://forms.gle/6uWCYUxxd7QPQUEa9" className="border border-primary text-primary py-2 px-4 rounded-md hover:bg-primary hover:text-white transition-colors font-raleway mx-auto flex items-center text-center w-fit mt-4">
           Book this Trip
         </Link>
 
@@ -164,7 +164,7 @@ const Page = () => {
         </div>
 
         <div className=" mt-20">
-          <h3 className="my-4 text-5xl text-primary flex items-center gap-4 after:border after:border-dark/75 after:max-w-20 after:w-full after:bg-dark/75">Our Safari Offers</h3>
+          <h3 className="my-4 text-5xl text-primary flex items-center md:gap-4 gap-2 after:border after:border-dark/75 after:max-w-24 after:w-full after:bg-dark/75">Our Safari Offers</h3>
 
           <div className="flex flex-col gap-8">
             {
