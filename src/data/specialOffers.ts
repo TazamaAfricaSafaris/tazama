@@ -1,12 +1,21 @@
-interface SafariOfferTtype {
+interface SafariOfferType {
     title: string
-    image: string | string[]
+    image: string
     price: number
     days: {
         title: string
         description: string
     }[]
 }
+
+export const services = [
+    "Bespoke Safari Adventures",
+    "Mount Kilimanjaro Treks",
+    "Beach Holidays",
+    "Gorilla & Chimp Trekking",
+    "Cultural Immersion and Community Engagement",
+    "Sustainable & Eco-friendly Travel"
+]
 
 export const safariOffers: SafariOfferType[] = [
     {
