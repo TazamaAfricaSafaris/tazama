@@ -66,6 +66,7 @@
     "gsap": "^3.12.5",
     "imagemin": "^8.0.1",
     "imagemin-jpegtran": "^7.0.0",
+    "lenis": "^1.1.20",
     "next": "^14.1.4",
     "next-sanity": "^7.1.4",
     "next-sanity-image": "^6.1.1",
