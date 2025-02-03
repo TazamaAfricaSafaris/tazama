@@ -13,6 +13,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import HeadSEO from '~/components/ui/Head'
 import { base_keywords } from '~/lib/constants'
+import CallToAction from '~/components/CallToAction'
 
 const kenya = () => {
   return (
@@ -88,6 +89,9 @@ const kenya = () => {
         </p>
         <p>Planning to visit Kenya? Book with us via the form below</p>
       </section>
+
+      <br /><br /><br />
+      <CallToAction />
     </>
   )
 }
