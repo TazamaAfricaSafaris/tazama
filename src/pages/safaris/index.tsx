@@ -4,11 +4,12 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
+import { base_keywords } from "~/lib/constants";
 
 const Page = () => {
   return (
     <>
-      <HeadSEO title="Safaris" />
+      <HeadSEO title="Safaris" keywords={base_keywords}/>
       <PrimaryHeader
         image={`maasai.webp`}
         title="Unique Tailored Safaris
@@ -97,6 +98,8 @@ const Page = () => {
           ))}
         </div>
       </div>
+
+
     </>
   );
 };

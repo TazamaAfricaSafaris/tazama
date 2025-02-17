@@ -3,6 +3,9 @@ import Layout from "~/components/ui/Layout";
 import { api } from "~/lib/api";
 import { Analytics } from "@vercel/analytics/react";
 
+import { ReactLenis, type LenisRef } from 'lenis/react';
+import { cancelFrame, frame } from 'framer-motion';
+
 import { Raleway } from "next/font/google";
 import localFont from "next/font/local"
 
@@ -10,7 +13,7 @@ import "~/styles/globals.css";
 import { env } from "~/env";
 import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -36,10 +39,33 @@ if (typeof window !== "undefined") {
 }
 
 const MyApp: AppType = ({ Component, pageProps }) => {
+  const lenisRef = useRef<LenisRef>(null)
+
+  useEffect(() => {
+    function update(data: { timestamp: number }) {
+      const time = data.timestamp
+      lenisRef.current?.lenis?.raf(time)
+    }
+
+    frame.update(update, true)
+
+    return () => cancelFrame(update)
+  }, [])
+
   return (
-    <React.Fragment>
-      <style jsx global>
-        {`
+    <ReactLenis
+    options={{
+      autoRaf: false,
+      duration: 1.5,          // Scroll animation duration (seconds)
+      smoothWheel: true,      // Enable smooth mouse wheel scrolling
+      infinite: false,
+    }}
+    ref={lenisRef}
+    root
+    >
+      <React.Fragment>
+        <style jsx global>
+          {`
           :root {
             --font-raleway: ${raleway.variable};
             --font-amiora: ${amiora.variable};
@@ -55,19 +81,20 @@ const MyApp: AppType = ({ Component, pageProps }) => {
             font-family: ${amiora.style.fontFamily};
           }
         `}
-      </style>
-      <GoogleAnalytics gaId={env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
-      <GoogleTagManager gtmId={env.NEXT_PUBLIC_GOOGLE_TAG_ID} />
-      <SpeedInsights />
-      <PostHogProvider client={posthog}>
-        <main className={`${raleway.variable}`}>
-          <Layout>
-            <Component {...pageProps} />
-            <Analytics />
-          </Layout>
-        </main>
-      </PostHogProvider>
-    </React.Fragment>
+        </style>
+        <GoogleAnalytics gaId={env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        <GoogleTagManager gtmId={env.NEXT_PUBLIC_GOOGLE_TAG_ID} />
+        <SpeedInsights />
+        <PostHogProvider client={posthog}>
+          <main className={`${raleway.variable}`}>
+            <Layout>
+              <Component {...pageProps} />
+              <Analytics />
+            </Layout>
+          </main>
+        </PostHogProvider>
+      </React.Fragment>
+    </ReactLenis>
   );
 };
 

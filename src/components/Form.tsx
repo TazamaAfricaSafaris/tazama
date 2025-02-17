@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 import React from "react"
 
 type input = {
@@ -11,17 +12,15 @@ type input = {
 }
 
 export const Input: React.FunctionComponent<input> = React.memo((props: input) => (
-    <div className="w-full flex flex-col gap-2">
-        <label htmlFor={props.name} className="font-now text-[#484848]">{props.label}</label>
+    <div className="input-container">
         <input
-            id={props.name}
-            type={props.type}
-            name={props.name}
-            autoComplete="off"
-            // required={props.required}
-            onChange={props.onChange}
-            placeholder={props.placeholder}
-            className="px-4 py-3 rounded-lg border-none shadow-sm font-now focus:ring-[#A87133] placeholder:text-gray-300"
+            type="text"
+            id="input"
+            required
+            className="ring-0 focus:ring-0"
+
         />
+        <label className="label">{props.label}</label>
+        <div className="underline"></div>
     </div>
 ))
