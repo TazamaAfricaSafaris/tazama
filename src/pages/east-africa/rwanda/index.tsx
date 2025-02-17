@@ -5,6 +5,7 @@ import { array } from 'fast-web-kit'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import CallToAction from '~/components/CallToAction'
 import Carousel, { CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '~/components/Carousel'
 import ContentSection from '~/components/ContentSection'
 import PrimaryHeader from '~/components/PrimaryHeader'
@@ -74,6 +75,9 @@ const kenya = () => {
       <section className='max-w-5xl my-20 mx-auto text-center px-4'>
         <p>Planning to visit Rwanda? Book with us via the form below</p>
       </section>
+
+      <br /><br /><br />
+      <CallToAction />
     </>
   )
 }

@@ -10,11 +10,12 @@ import { ugandaContent } from '~/data/east-africa'
 import Image from "next/image"
 import HeadSEO from '~/components/ui/Head'
 import { base_keywords } from '~/lib/constants'
+import CallToAction from '~/components/CallToAction'
 
 const uganda = () => {
     return (
         <>
-            <HeadSEO title='Tazama Africa Safaris | Uganda' keywords={base_keywords}/>
+            <HeadSEO title='Tazama Africa Safaris | Uganda' keywords={base_keywords} />
             <PrimaryHeader title='Uganda' image={'chimps.webp'} />
             <section className='max-w-5xl mx-auto '>
                 <div className='my-20'>
@@ -86,6 +87,9 @@ const uganda = () => {
             <section className='max-w-5xl my-20 mx-auto text-center'>
                 <p>Planning to visit Uganda? Book with us via the form below</p>
             </section>
+
+            <br /><br /><br />
+            <CallToAction />
         </>
     )
 }
@@ -94,13 +98,13 @@ export default uganda
 
 const itenaries = [
     {
-      link: 'chimps-wildlife-fishing-safari',
-      title: 'Chimps, Wildlife and Fishing Safari',
-      img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711197/east-africa/uganda/chimps-wildlife-fishing-safari/49198076118_4fa0090611_k_bbsmqo.jpg'
+        link: 'chimps-wildlife-fishing-safari',
+        title: 'Chimps, Wildlife and Fishing Safari',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711197/east-africa/uganda/chimps-wildlife-fishing-safari/49198076118_4fa0090611_k_bbsmqo.jpg'
     },
     {
-      link: 'uganda-gorilla-safari-fly-in',
-      title: '4 Day Gorilla Trekking',
-      img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711559/east-africa/uganda/uganda-gorilla-safari/26022685797_fb352d1d64_k_eqveca.webp'
+        link: 'uganda-gorilla-safari-fly-in',
+        title: '4 Day Gorilla Trekking',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711559/east-africa/uganda/uganda-gorilla-safari/26022685797_fb352d1d64_k_eqveca.webp'
     },
-  ]
+]
