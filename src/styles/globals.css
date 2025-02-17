@@ -111,3 +111,83 @@ iframe[seamless] {
     -moz-appearance: textfield;
   }
 }
+
+.input-container {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+.input-container input {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #b3b3b3;
+  padding: 8px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container textarea {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #a4a4a4;
+  padding: 8px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #909090;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input:focus,
+.input-container input:valid {
+  @apply border-black;
+}
+
+.input-container textarea:focus,
+.input-container textarea:valid {
+  @apply border-black;
+}
+
+.input-container input:focus ~ .label,
+.input-container input:valid ~ .label {
+  top: -16px;
+  font-size: 14px;
+  @apply text-primary
+}
+
+.input-container textarea:focus ~ .label,
+.input-container textarea:valid ~ .label {
+  top: -16px;
+  font-size: 14px;
+  @apply text-primary
+}
+
+.input-container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  @apply bg-primary;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-container input:focus ~ .underline,
+.input-container input:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+.input-container textarea:focus ~ .underline,
+.input-container textarea:valid ~ .underline {
+  transform: scaleX(1);
+}
