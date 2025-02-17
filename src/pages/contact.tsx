@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 import { Toaster } from "~/components/ui/toaster";
 import { useToast } from "~/hooks/useToast";
 import { ToastAction } from "~/components/ui/Toast";
-import TazamaContactUs from "~/components/email-template";
+import { Textarea } from "~/components/ui/textarea";
 
 const ContactPage = () => {
   const [email, setEmail] = React.useState<string>("");
@@ -71,47 +71,48 @@ const ContactPage = () => {
           </p>
         </div>
 
-        <div className="mx-auto my-20 max-w-4xl px-4">
-          <h3 className="text-4xl text-primary">Contact Us</h3>
+        <div className="mx-auto my-14 max-w-2xl px-4 text-center">
+          <p className="text-lg">
+            Please fill in the form below to get in touch with us and our team will get back to you as soon as possible.
+          </p>
+        </div>
 
+        <div className="mx-auto my-20 max-w-4xl px-4">
           <form
             // action="https://formsubmit.co/jaff@tazamaafricasafari.com"
             method="POST"
             className="mx-auto mt-8 flex w-full flex-col gap-8"
             onSubmit={onSubmit}
           >
-            <Input
-              required
-              type="text"
-              name="fullName"
-              value={fullNames}
-              label="Full Names*"
-              placeholder="Enter your full Names"
-              onChange={(e) => setFullNames(e.target.value)}
-            />
-
-            <Input
-              required
-              type="email"
-              name="email"
-              value={email}
-              label="Email Address*"
-              placeholder="Enter your email address"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-
-            <div className="flex w-full flex-col gap-2">
-              <label htmlFor="message" className="text-[#484848]">
-                Message*
-              </label>
-              <textarea
-                className=" h-36 rounded-lg border-none px-4 py-3 shadow-sm placeholder:text-gray-300 focus:ring-[#A87133]"
-                placeholder="Write your message here"
+            <div className="flex flex-col gap-10 mt-2">
+              <Input
                 required
-                name="Message"
+                type="text"
+                name="fullName"
+                value={fullNames}
+                label="Full Names*"
+                placeholder="Enter your full Names"
+                onChange={(e) => setFullNames(e.target.value)}
+              />
+
+              <Input
+                required
+                type="email"
+                name="email"
+                value={email}
+                label="Email Address*"
+                placeholder="Enter your email address"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+
+              <Textarea
+                required
+                name="message"
                 value={message}
-                onChange={(e) => setMessage(e.target.value)}
-              ></textarea>
+                label="Message*"
+                onChange={(e) => setMessage(e.target.value)} type={""}
+                placeholder={""}
+              />
             </div>
 
             {/* Hidden components necessary for submititng the form to the email */}
@@ -142,7 +143,7 @@ const ContactPage = () => {
               onClick={() => {
                 posthog.capture("contact-form", { property: "Contact form" });
               }}
-              className=" w-[10rem] rounded-lg bg-[#A87133] px-4 py-2 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
+              className=" w-fit rounded-lg bg-primary px-4 py-2 text-white border hover:border-primary hover:bg-transparent hover:text-primary transition-all duration-300"
             >
               Submit Form
             </button>
