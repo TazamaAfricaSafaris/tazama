@@ -168,7 +168,7 @@ export function Question4({
 
       <Input
         className="mt-5 py-[30px] lg:w-[500px]"
-        placeholder="Type your answer here... "
+        label="Type your answer here... "
         {...register("numberOfGuests")}
       />
     </QuestionWrapper>
@@ -236,7 +236,7 @@ export function Question6({
 
       <Input
         className="mt-5 py-[30px] lg:w-[500px]"
-        placeholder="Type your answer here... "
+        label="Type your answer here... "
         {...register("dateofTravel")}
       />
     </QuestionWrapper>
@@ -259,7 +259,7 @@ export function Question7({
 
       <Input
         className="mt-5 py-[30px] lg:w-[500px]"
-        placeholder="Type your answer here... "
+        label="Type your answer here... "
         {...register("additionalPlans")}
       />
     </QuestionWrapper>
@@ -279,7 +279,7 @@ export function Question8({
 
       <Input
         className="mt-5 py-[30px] lg:w-[500px]"
-        placeholder="Type your answer here... "
+        label="Type your answer here... "
         {...register("mustSeePlans")}
       />
     </QuestionWrapper>
@@ -297,7 +297,7 @@ export function Question9({
 
       <Input
         className="mt-5 py-[30px] lg:w-[500px]"
-        placeholder="Type your answer here... "
+        label="Type your answer here... "
         {...register("additionalComments")}
       />
     </QuestionWrapper>
