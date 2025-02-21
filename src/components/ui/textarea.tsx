@@ -5,10 +5,10 @@ import React from "react"
 type textarea = {
     value?: any
     name: string
-    type: string
+    type?: string
     label: string
     required?: boolean
-    placeholder: string
+    placeholder?: string
     onChange(event: React.ChangeEvent<HTMLTextAreaElement>): void
 }
 

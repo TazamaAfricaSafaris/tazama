@@ -36,14 +36,20 @@ const ContactPage = () => {
     },
   });
 
-  const onSubmit = (e: ChangeEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Prevent page reload
+  
+    console.log("Email:", email);
+    console.log("Full Names:", fullNames);
+    console.log("Message:", message);
+  
     mutateAsync({
-      email: email,
-      message: message,
-      fullNames: fullNames,
+      email,
+      message,
+      fullNames,
     });
   };
+
   return (
     <>
       <Toaster />
@@ -52,7 +58,7 @@ const ContactPage = () => {
         keywords={base_keywords}
       />
       <PrimaryHeader image="contact.webp" title="Contact Us" />
-      <div className="mx-auto mt-36 max-sm:mt-28">
+      <div className="mx-auto mt-36 max-sm:mt-28 px-8">
         <div className="text-center">
           <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-5xl max-sm:text-3xl leading-[3.7rem] font-serif text-primary">
             We'd love to hear from you. Simply fill in the form below or reach
@@ -80,7 +86,7 @@ const ContactPage = () => {
         <div className="mx-auto my-20 max-w-4xl px-4">
           <form
             // action="https://formsubmit.co/jaff@tazamaafricasafari.com"
-            method="POST"
+            // method="POST"
             className="mx-auto mt-8 flex w-full flex-col gap-8"
             onSubmit={onSubmit}
           >
@@ -91,7 +97,7 @@ const ContactPage = () => {
                 name="fullName"
                 value={fullNames}
                 label="Full Names*"
-                placeholder="Enter your full Names"
+                placeholder=""
                 onChange={(e) => setFullNames(e.target.value)}
               />
 
@@ -101,7 +107,7 @@ const ContactPage = () => {
                 name="email"
                 value={email}
                 label="Email Address*"
-                placeholder="Enter your email address"
+                placeholder=""
                 onChange={(e) => setEmail(e.target.value)}
               />
 
@@ -110,8 +116,7 @@ const ContactPage = () => {
                 name="message"
                 value={message}
                 label="Message*"
-                onChange={(e) => setMessage(e.target.value)} type={""}
-                placeholder={""}
+                onChange={(e) => setMessage(e.target.value)}
               />
             </div>
 
