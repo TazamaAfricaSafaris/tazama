@@ -38,11 +38,7 @@ const ContactPage = () => {
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
-  
-    console.log("Email:", email);
-    console.log("Full Names:", fullNames);
-    console.log("Message:", message);
-  
+
     mutateAsync({
       email,
       message,
@@ -148,9 +144,9 @@ const ContactPage = () => {
               onClick={() => {
                 posthog.capture("contact-form", { property: "Contact form" });
               }}
-              className=" w-fit rounded-lg bg-primary px-4 py-2 text-white border hover:border-primary hover:bg-transparent hover:text-primary transition-all duration-300"
+              className={`w-fit rounded-lg ${isLoading ? "bg-primary/75" : "bg-primary"} px-4 py-2 text-white border hover:border-primary hover:bg-transparent hover:text-primary transition-all duration-300`}
             >
-              Submit Form
+              {isLoading ? "Loading..." : "Submit Form"}
             </button>
           </form>
         </div>
