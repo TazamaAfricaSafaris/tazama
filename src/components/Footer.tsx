@@ -81,7 +81,6 @@ export const Footer = () => {
                   name="email"
                   value={email}
                   label="Email Address*"
-                  placeholder="Enter your email address"
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <button
