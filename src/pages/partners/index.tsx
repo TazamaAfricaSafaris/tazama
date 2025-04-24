@@ -3,6 +3,7 @@ import PrimaryHeader from '../../components/PrimaryHeader'
 import HeadSEO from '../../components/ui/Head'
 import { base_keywords } from '../../lib/constants'
 import ContentSection from '~/components/ContentSection'
+import CallToAction from '~/components/CallToAction'
 
 const index = () => {
     return (
@@ -38,7 +39,11 @@ const index = () => {
                     actionTitle='More on Rustic Pathways' />
                 <br />
                 <br />
+                <br />
+                <br />
             </section>
+
+            <CallToAction />
         </>
     )
 }
