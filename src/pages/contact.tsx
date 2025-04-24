@@ -16,10 +16,62 @@ import { Textarea } from "~/components/ui/textarea";
 const ContactPage = () => {
   const [email, setEmail] = React.useState<string>("");
   const [fullNames, setFullNames] = React.useState("");
-
   const [message, setMessage] = React.useState<string>("");
+  
+  // Add validation states
+  const [errors, setErrors] = React.useState({
+    email: "",
+    fullNames: "",
+    message: "",
+  });
+  const [formValid, setFormValid] = React.useState(false);
+
   const router = useRouter();
   const { toast } = useToast();
+
+  // Validate form on input change
+  React.useEffect(() => {
+    validateForm();
+  }, [email, fullNames, message]);
+
+  const validateForm = () => {
+    const newErrors = {
+      email: "",
+      fullNames: "",
+      message: "",
+    };
+    let isValid = true;
+
+    // Validate email
+    if (!email) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = "Email is invalid";
+      isValid = false;
+    }
+
+    // Validate full names
+    if (!fullNames) {
+      newErrors.fullNames = "Full name is required";
+      isValid = false;
+    } else if (fullNames.length < 3) {
+      newErrors.fullNames = "Name must be at least 3 characters";
+      isValid = false;
+    }
+
+    // Validate message
+    if (!message) {
+      newErrors.message = "Message is required";
+      isValid = false;
+    } else if (message.length < 10) {
+      newErrors.message = "Message must be at least 10 characters";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    setFormValid(isValid);
+  };
 
   const { isLoading, mutateAsync } = api.contactEmail.send.useMutation({
     onSuccess: () => {
@@ -38,6 +90,19 @@ const ContactPage = () => {
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevent page reload
+    
+    // Validate form before submission
+    validateForm();
+    
+    if (!formValid) {
+      toast({
+        variant: "destructive",
+        title: "Form validation failed",
+        description: "Please check the form for errors and try again",
+        duration: 3000,
+      });
+      return;
+    }
 
     mutateAsync({
       email,
@@ -81,39 +146,52 @@ const ContactPage = () => {
 
         <div className="mx-auto my-20 max-w-4xl px-4">
           <form
-            // action="https://formsubmit.co/jaff@tazamaafricasafari.com"
-            // method="POST"
             className="mx-auto mt-8 flex w-full flex-col gap-8"
             onSubmit={onSubmit}
           >
             <div className="flex flex-col gap-10 mt-2">
-              <Input
-                required
-                type="text"
-                name="fullName"
-                value={fullNames}
-                label="Full Names*"
-                placeholder=""
-                onChange={(e) => setFullNames(e.target.value)}
-              />
+              <div>
+                <Input
+                  required
+                  type="text"
+                  name="fullName"
+                  value={fullNames}
+                  label="Full Names*"
+                  placeholder=""
+                  onChange={(e) => setFullNames(e.target.value)}
+                />
+                {errors.fullNames && (
+                  <p className="text-red-500 text-sm mt-1">{errors.fullNames}</p>
+                )}
+              </div>
 
-              <Input
-                required
-                type="email"
-                name="email"
-                value={email}
-                label="Email Address*"
-                placeholder=""
-                onChange={(e) => setEmail(e.target.value)}
-              />
+              <div>
+                <Input
+                  required
+                  type="email"
+                  name="email"
+                  value={email}
+                  label="Email Address*"
+                  placeholder=""
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                {errors.email && (
+                  <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                )}
+              </div>
 
-              <Textarea
-                required
-                name="message"
-                value={message}
-                label="Message*"
-                onChange={(e) => setMessage(e.target.value)}
-              />
+              <div>
+                <Textarea
+                  required
+                  name="message"
+                  value={message}
+                  label="Message*"
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+                {errors.message && (
+                  <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                )}
+              </div>
             </div>
 
             {/* Hidden components necessary for submititng the form to the email */}
