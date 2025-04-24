@@ -38,13 +38,6 @@ const index = () => {
                     actionTitle='More on Rustic Pathways' />
                 <br />
                 <br />
-                <ContentSection
-                    rank={0}
-                    image={'https://res.cloudinary.com/drhl0yu7y/image/upload/v1720011400/partners/seed-bombs/seed-bombs-img1_ovlnro.jpg'}
-                    title={'Seedbombs Tanzania'} reverse={false}
-                    description={'Seedbombs Tanzania is an organization that brings people together to learn and engage directly with seeds and trees to promote a deeper appreciation for the natural world.'}
-                    action='/partners/seed-bombs-tanzania'
-                    actionTitle='More on Seed Bombs Tanzania' />
             </section>
         </>
     )
