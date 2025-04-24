@@ -75,7 +75,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                         </div>
                         <div className="relative w-full h-72">
                             <Image
-                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730282928/lodges/katambuga_house/Katambuga_House_exterior_1_wy92tx.jpg"
+                                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730290490/lodges/roho_ya_selous/gallery/Roho_ya_Selous_Sunset_barbecue_v2kvcw.jpg"
                                 alt=""
                                 layout="fill"
                                 objectFit="cover"
