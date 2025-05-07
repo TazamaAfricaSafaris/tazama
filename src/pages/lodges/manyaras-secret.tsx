@@ -14,7 +14,11 @@ import CallToAction from "~/components/CallToAction"
 const Page = ({ images }: { images: ImageProps[] }) => {
     return (
         <>
-            <HeadSEO title="Tazama Africa Safari | Manyara's secret" keywords={base_keywords} />
+            <HeadSEO 
+                title="Manyara's Secret | Tazama Africa Safari" 
+                keywords={`${base_keywords}, Manyara's Secret lodge, Lake Manyara accommodation, boutique safari lodge, tree house accommodation Tanzania, birdwatching lodge Tanzania, eco-friendly safari stay, luxury tree lodge, forest safari experience, unique safari accommodation, Lake Manyara National Park`}
+                description="Discover Manyara's Secret, a unique tree house-style lodge offering an intimate safari experience near Lake Manyara National Park. Enjoy exceptional birdwatching, wildlife viewing, and a magical forest setting in this hidden gem."
+            />
 
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white overflow-hidden">

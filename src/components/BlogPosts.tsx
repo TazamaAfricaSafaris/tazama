@@ -10,10 +10,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function BlogPosts({ posts }: { posts: SanityDocument[]}) {
+export default function BlogPosts({ posts }: { posts: SanityDocument[] }) {
 
   return (
-    <main className="container mx-auto grid md:grid-cols-2 gap-5 lg:grid-cols-3 max-w-6xl mb-20">
+    <main className="container mx-auto grid md:grid-cols-6 gap-5 lg:grid-cols-3 max-w-6xl mb-20">
       {posts?.length > 0 ? (
         posts.map((post) => (
           <Link
@@ -22,14 +22,12 @@ export default function BlogPosts({ posts }: { posts: SanityDocument[]}) {
             href={`/blogs/${post.slug.current}`}
             className="group p-0 mt-4"
           >
-            <div className="w-full border h-64 relative overflow-hidden p-0">
+            <div className="w-full h-64 relative overflow-hidden p-0">
               <Image
                 fill
                 objectFit="cover"
                 src={post.mainImage.asset.url}
                 alt={post.mainImage.alt}
-                // placeholder="blur"
-                // blurData
                 className="group-hover:scale-105 transition-transform object-cover w-full h-full"
               />
               <div className="absolute z-10 bottom-2 left-2 flex gap-1">
@@ -43,11 +41,11 @@ export default function BlogPosts({ posts }: { posts: SanityDocument[]}) {
                 ))}
               </div>
             </div>
-            <div className="py-4 px-2 grid gap-3">
-              <h4 className="text-2xl line-clamp-2 text-dark">{post.title}</h4>
+            <div className="pt-4 h-36 flex flex-col justify-between gap-3">
+              <h4 className="text-3xl line-clamp-2 text-dark">{post.title}</h4>
               <p>By {post.author.name}</p>
             </div>
-            <div className="border border-darker w-1/3 mx-auto mt-2 group-hover:w-3/4 transition-all"></div>
+            {/* <div className="border border-darker w-1/3 mx-auto mt-2 group-hover:w-3/4 transition-all"></div> */}
           </Link>
         ))
       ) : (

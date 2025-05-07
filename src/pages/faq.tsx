@@ -10,7 +10,11 @@ const FAQPage = () => {
 
   return (
     <>
-      <HeadSEO title="FAQ" keywords={base_keywords} />
+      <HeadSEO 
+            title="Frequently Asked Questions | Tazama Africa Safari & Kilimanjaro Treks" 
+            keywords={`${base_keywords}, safari FAQ, Kilimanjaro trekking questions, Tanzania travel tips, safari planning guide, Kilimanjaro preparation, Tanzania safari information, wildlife safari questions, mountain climbing FAQ, African safari preparation, Tanzania travel advice`}
+            description="Find answers to your questions about Tanzania safaris and Kilimanjaro treks. Our comprehensive FAQ covers everything from trip planning and packing tips to wildlife viewing and climbing preparation."
+          />
       <PrimaryHeader image="faq.webp" title="Frequently Asked Questions" />
       <div className="mx-auto mt-48 max-w-5xl px-4 py-20 md:px-8 lg:mt-5 lg:py-10">
         <p className="mx-auto py-4 text-lg text-[#757371]">

@@ -14,7 +14,11 @@ import CallToAction from '~/components/CallToAction'
 const Page = ({ images }: { images: ImageProps[] }) => {
     return (
         <>
-            <HeadSEO title='Tazama Africa Safari | Konokono Beach Resort & Spa' keywords={base_keywords} />
+            <HeadSEO 
+                title="Gibb's Farm | Tazama Africa Safari" 
+                keywords={`${base_keywords}, Gibb's Farm Tanzania, Ngorongoro luxury lodge, farm-to-table Tanzania, coffee plantation stay, historic lodge Tanzania, Karatu accommodation, organic farm lodge, cultural safari experience, sustainable luxury lodge, Ngorongoro Crater accommodation`}
+                description="Experience the charm of Gibb's Farm, a historic farm lodge offering luxury accommodation near Ngorongoro Crater. Enjoy farm-to-table dining, coffee plantation tours, and a perfect sanctuary between safari adventures."
+            />
 
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">

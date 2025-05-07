@@ -35,7 +35,11 @@ const activities = [
 const Page = () => {
     return (
         <>
-            <HeadSEO title='Tazama Africa Safari | Konokono Beach Resort & Spa' keywords={base_keywords} />
+            <HeadSEO
+                title="Sametu Camp | Authentic Safari Experience in Eastern Serengeti"
+                keywords={`${base_keywords}, Sametu Camp Tanzania, eastern Serengeti accommodation, authentic safari camp, migration viewing camp, big cat territory, off-the-beaten-track safari, luxury mobile camp, wildlife photography location, exclusive safari experience, Serengeti National Park`}
+                description="Experience the untamed wilderness at Sametu Camp, an authentic safari camp in the eastern Serengeti. Enjoy exceptional big cat sightings, Great Migration views, and an intimate safari experience away from the crowds in this pristine location."
+            />
 
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">

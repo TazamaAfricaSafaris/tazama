@@ -11,7 +11,11 @@ import CallToAction from '~/components/CallToAction'
 const Page = () => {
     return (
         <>
-            <HeadSEO title="Tazama Africa Safari | Katambuga House" keywords={base_keywords} />
+            <HeadSEO 
+                title="Katambuga House | Tazama Africa Safari" 
+                keywords={`${base_keywords}, Katambuga House, Arusha accommodation, safari starting point, luxury villa Tanzania, exclusive safari lodge, private safari accommodation, family safari lodge, pre-safari stay, post-safari relaxation, northern Tanzania accommodation`}
+                description="Begin or end your safari journey at Katambuga House, an exclusive private villa near Arusha. Enjoy personalized service, elegant accommodations, and beautiful gardens in this perfect gateway to Tanzania's northern safari circuit."
+            />
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white overflow-hidden">
                     <Image

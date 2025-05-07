@@ -5,15 +5,19 @@ import Link from "next/link";
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
+import CallToAction from "~/components/CallToAction";
 
 const Page = () => {
   return (
     <>
-      <HeadSEO title="Safaris" keywords={base_keywords}/>
+      <HeadSEO 
+        title="Tanzania Safaris | Tazama Africa Safari Adventures" 
+        keywords={`${base_keywords}, Tanzania safari, Serengeti safari, Ngorongoro Crater, wildlife viewing, Big Five, game drives, luxury safari, Tanzania national parks, African wildlife, safari experiences, Tarangire, sustainable safari`}
+        description="Experience the ultimate Tanzania safari with Tazama Africa. Our expertly guided tours through Serengeti, Ngorongoro, and other iconic parks offer unforgettable wildlife encounters while supporting conservation and local communities."
+      />
       <PrimaryHeader
         image={`maasai.webp`}
-        title="Unique Tailored Safaris
-"
+        title="Unique Tailored Safaris"
       />
       <div className="mx-auto max-w-5xl px-4 md:px-8">
         <div id="offers" className="mb-10 pt-16">
@@ -98,8 +102,10 @@ const Page = () => {
           ))}
         </div>
       </div>
-
-
+      <br />
+      <br />
+      <br />
+      <CallToAction />
     </>
   );
 };
