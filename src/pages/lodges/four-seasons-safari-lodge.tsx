@@ -16,7 +16,11 @@ import CallToAction from "~/components/CallToAction"
 const Page = ({ images }: { images: ImageProps[] }) => {
     return (
         <>
-            <HeadSEO title="Tazama Africa Safari | Four Seasons Safari Lodge" keywords={base_keywords} />
+            <HeadSEO 
+                title="Four Seasons Safari Lodge Serengeti | Tazama Africa Safari" 
+                keywords={`${base_keywords}, Four Seasons Serengeti, luxury safari lodge, Serengeti accommodation, infinity pool safari lodge, spa safari Tanzania, five-star safari accommodation, wildlife viewing lodge, Serengeti luxury stay, family safari lodge, exclusive Tanzania accommodation`}
+                description="Experience unparalleled luxury at Four Seasons Safari Lodge Serengeti. Enjoy pristine infinity pools, exceptional dining, and world-class service while witnessing spectacular wildlife from the heart of Tanzania's most famous national park."
+            />
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white overflow-hidden">
                     <Image

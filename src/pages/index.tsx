@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable react/no-unescaped-entities */
 import { HomeContactUs } from "~/components/HomeContactUs";
 import SafariCarousel from "~/components/safari-carousel";
@@ -14,9 +18,11 @@ import ContentSection, {
 import { array } from "fast-web-kit";
 import HeadSEO from "~/components/ui/Head";
 import Link from "next/link";
+import Image from "next/image";
 import PartnersMarquee from "~/components/PartnersMarquee";
 import HomeTrekkingCarousel from "~/components/HomeTrekkingCarousel";
 import { SanityDocument } from "next-sanity";
+import Carousel, { CarouselPrevious, CarouselContent, CarouselItem, CarouselNext } from "~/components/Carousel";
 
 export const homePageContentData: contentSectionData[] = [
   {
@@ -46,13 +52,14 @@ type PageProps = {
 
 export default function Page(props: PageProps) {
 
-  const slicedPosts = props.posts.slice(0,6)
+  const slicedPosts = props.posts.slice(0, 6)
 
   return (
     <>
       <HeadSEO
         title="Tazama Africa Safaris - East Africa Safaris"
         keywords="African safaris, luxuruy safaris, personalized safaris, Serengeti, Kilimanjaro, memorable safaris"
+        description="Tazama Africa Safaris is a leading provider of authentic and timeless African safaris. We offer personalized safaris, connecting you with the best of Africa. Whether you're a seasoned explorer or a first-timer, we have the perfect safari for you. Book your trip today!"
       />
       <PrimaryHeader
         image="home.webp"
@@ -101,7 +108,7 @@ export default function Page(props: PageProps) {
       <br />
       <br />
       <br />
-        <HomeTrekkingCarousel />
+      <HomeTrekkingCarousel />
       <br />
       <br />
       <div className="mb-16">
@@ -137,7 +144,54 @@ export default function Page(props: PageProps) {
           <br />
           <Link href="/blogs" className="text-primary underline underline-offset-2 font-raleway">See more posts from Tazama</Link>
         </div>
-        <BlogPosts posts={slicedPosts} />
+        <Carousel
+          opts={{
+            align: "start"
+          }}
+          className="w-full max-w-5xl mx-auto lg:max-w-none"
+        >
+          <CarouselPrevious />
+          <CarouselContent>
+            {
+              slicedPosts.map((post, index) => (
+                <CarouselItem key={index} className="sm:basis-1/3 lg:basis-1/3 mb-2 lg:mr-6 xl:mr-0">
+                  <Link
+                    key={post._id}
+                    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+                    href={`/blogs/${post.slug.current}`}
+                    className="group p-0 mt-4"
+                  >
+                    <div className="w-full h-64 relative overflow-hidden p-0">
+                      <Image
+                        fill
+                        objectFit="cover"
+                        src={post.mainImage.asset.url}
+                        alt={post.mainImage.alt}
+                        className="group-hover:scale-105 transition-transform object-cover w-full h-full"
+                      />
+                      <div className="absolute z-10 bottom-2 left-2 flex gap-1">
+                        {post.categories.map((category: any, index: number) => (
+                          <p
+                            key={index}
+                            className="bg-amber-50/80 border border-darker px-2 text-sm line-clamp-2 rounded-3xl"
+                          >
+                            {category.title}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="pt-4 h-36 flex flex-col justify-between gap-3">
+                      <h4 className="text-3xl line-clamp-2 text-dark">{post.title}</h4>
+                      <p>By {post.author.name}</p>
+                    </div>
+                    {/* <div className="border border-darker w-1/3 mx-auto mt-2 group-hover:w-3/4 transition-all"></div> */}
+                  </Link>
+                </CarouselItem>
+              ))
+            }
+          </CarouselContent>
+          <CarouselNext />
+        </Carousel>
       </div>
       <br />
       <HomeContactUs />

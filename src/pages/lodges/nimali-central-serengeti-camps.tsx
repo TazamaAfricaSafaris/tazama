@@ -48,7 +48,11 @@ const Page = () => {
 
     return (
         <>
-            <HeadSEO title='Tazama Africa Safari | Nimali Central Serengeti Camps' keywords={base_keywords} />
+            <HeadSEO 
+                title="Nimali Central Serengeti | Luxury Safari Camp in Tanzania" 
+                keywords={`${base_keywords}, Nimali Central Serengeti, luxury tented camp, Serengeti migration camp, big cat safari, central Serengeti accommodation, wildlife viewing Tanzania, exclusive safari experience, boutique safari camp, Serengeti National Park lodging, eco-friendly safari accommodation`}
+                description="Stay at Nimali Central Serengeti, an intimate luxury camp in the heart of Tanzania's most famous national park. Enjoy exceptional wildlife viewing, elegant tented suites, and personalized service in this prime location for witnessing the Great Migration."
+            />
             <PrimaryHeader title="Nimali Central Serengeti Camps" image='lodges/nimali-camps/nimali-camp-header.jpg' />
             <div className='my-20 max-w-5xl mx-auto md:px-8 px-4'>
                 <section>

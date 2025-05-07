@@ -34,7 +34,11 @@ const activities = [
 const Page = () => {
     return (
         <>
-            <HeadSEO title="Tazama Africa Safari | Manyara's secret" keywords={base_keywords} />
+            <HeadSEO
+                title="Lion's Paw Camp | Tazama Africa Safari"
+                keywords={`${base_keywords}, Lion's Paw Camp Tanzania, Serengeti luxury tented camp, migration viewing accommodation, big cat safari lodge, exclusive safari camp, wildlife photography lodge, eco-friendly safari accommodation, authentic safari experience, Serengeti central accommodation`}
+                description="Experience the heart of the Serengeti at Lion's Paw Camp, a luxury tented camp offering exceptional wildlife viewing, personalized service, and authentic safari experiences in one of Africa's most iconic wildlife destinations."
+            />
 
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white overflow-hidden">
@@ -161,4 +165,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default Page;
