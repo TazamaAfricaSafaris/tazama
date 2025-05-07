@@ -1,3 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable react/no-unescaped-entities */
 import PrimaryHeader from "~/components/PrimaryHeader";
 import useFetchImages from "~/hooks/useFetchImages";
@@ -5,19 +11,33 @@ import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
 import HeadSEO from "~/components/ui/Head";
 import { Kilimanjaro_keywords } from "~/lib/constants";
+import Image from "next/image";
 
 import Carousel, { CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "~/components/Carousel";
 
-import { Button } from "~/components/ui/button";
 import Link from "next/link";
-import BlurImage from "~/components/ui/BlurImage";
 import { allBlogs } from "~/blogs/all-blogs";
 import { Blog } from "~/pages/blogs";
 import { kilimanjaroRoutes } from "~/data/kilimanjaro-routes";
-import Image from "next/image";
 
-const Page = ({ images }: { images: ImageProps[] }) => {
-  const trekkingBlogs = allBlogs.filter((blog) => blog.category === "Trekking")
+import { getClient } from "~/sanity/lib/client";
+import type { SanityDocument } from "next-sanity";
+import { token } from "~/sanity/lib/token";
+import { POSTS_QUERY } from "~/sanity/lib/queries";
+
+type PostsType = {
+  posts: SanityDocument[];
+  draftMode: boolean;
+  token: string;
+};
+
+const Page = ({ images, posts }: { images: ImageProps[], posts: SanityDocument[] }) => {
+  const trekkingBlogs = posts.filter((blog) =>
+    blog.categories &&
+    (Array.isArray(blog.categories)
+      ? blog.categories.some(category => category.title === "Trekking")
+      : blog.categories.title === "Trekking")
+  );
 
   return (
     <>
@@ -286,7 +306,37 @@ const Page = ({ images }: { images: ImageProps[] }) => {
               {
                 trekkingBlogs.map((post, index) => (
                   <CarouselItem key={index} className="sm:basis-1/3 lg:basis-1/3 mb-2 lg:mr-6 xl:mr-0">
-                    <Blog name={post.name} link={post.url} imgUrl={post.imgUrl} shortDescription={post.shortDescription} category={post.category} />
+                    <Link
+                      key={post._id}
+                      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+                      href={`/blogs/${post.slug.current}`}
+                      className="group p-0 mt-4"
+                    >
+                      <div className="w-full h-64 relative overflow-hidden p-0">
+                        <Image
+                          fill
+                          objectFit="cover"
+                          src={post.mainImage.asset.url}
+                          alt={post.mainImage.alt}
+                          className="group-hover:scale-105 transition-transform object-cover w-full h-full"
+                        />
+                        <div className="absolute z-10 bottom-2 left-2 flex gap-1">
+                          {post.categories.map((category: any, index: number) => (
+                            <p
+                              key={index}
+                              className="bg-amber-50/80 border border-darker px-2 text-sm line-clamp-2 rounded-3xl"
+                            >
+                              {category.title}
+                            </p>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="pt-4 h-36 flex flex-col justify-between gap-3">
+                        <h4 className="text-3xl line-clamp-2 text-dark">{post.title}</h4>
+                        <p>By {post.author.name}</p>
+                      </div>
+                      {/* <div className="border border-darker w-1/3 mx-auto mt-2 group-hover:w-3/4 transition-all"></div> */}
+                    </Link>
                   </CarouselItem>
                 ))
               }
@@ -295,7 +345,6 @@ const Page = ({ images }: { images: ImageProps[] }) => {
           </Carousel>
         </section>
 
-        {/* @ts-ignore */}
         <div className="my-10">
           <h4 className="text-4xl text-primary">Our Gallery</h4>
           <Gallery images={images} />
@@ -307,11 +356,36 @@ const Page = ({ images }: { images: ImageProps[] }) => {
 };
 
 export default Page;
-export async function getStaticProps() {
+
+
+export async function getStaticProps({ draftMode = false }) {
   const images = await useFetchImages({ folderName: "kilimanjaro" });
+  const client = getClient(draftMode ? token : undefined);
+  const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY);
+
   return {
     props: {
       images,
+      posts,
+      draftMode,
+      token: draftMode ? token : "",
     },
   };
 }
+
+/*
+
+export const getStaticProps = async ({ draftMode = false }) => {
+  const client = getClient(draftMode ? token : undefined);
+  const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY);
+
+  return {
+    props: {
+      posts,
+      draftMode,
+      token: draftMode ? token : "",
+    },
+  };
+};
+
+*/

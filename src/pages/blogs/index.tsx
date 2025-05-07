@@ -80,6 +80,7 @@ export default function Page(props: PageProps) {
             <Blog key={index} name={blog.name} imgUrl={blog.imgUrl} link={blog.url} shortDescription={blog.shortDescription} category={blog.category} />
           ))}
         </section> */}
+        <br />
         <BlogPosts posts={props.posts} />
       </main>
     </>
