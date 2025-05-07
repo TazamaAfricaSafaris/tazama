@@ -59,6 +59,7 @@ export default function Page(props: PageProps) {
       <HeadSEO
         title="Tazama Africa Safaris - East Africa Safaris"
         keywords="African safaris, luxuruy safaris, personalized safaris, Serengeti, Kilimanjaro, memorable safaris"
+        description="Tazama Africa Safaris is a leading provider of authentic and timeless African safaris. We offer personalized safaris, connecting you with the best of Africa. Whether you're a seasoned explorer or a first-timer, we have the perfect safari for you. Book your trip today!"
       />
       <PrimaryHeader
         image="home.webp"

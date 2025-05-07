@@ -12,7 +12,11 @@ import { base_keywords } from '~/lib/constants'
 const Page = () => {
   return (
     <>
-      <HeadSEO title={'Our Partners | Kafika House'} keywords={base_keywords} />
+      <HeadSEO 
+            title='Kafika House | Tazama Africa Safari Community Partner' 
+            keywords={`${base_keywords}, Kafika House Tanzania, children's rehabilitation center, disability support Africa, correctable disabilities, community support Tanzania, medical tourism, social responsibility, charitable travel, volunteer opportunities Tanzania, disability awareness`}
+            description="Learn about Tazama Africa Safari's partnership with Kafika House, a rehabilitation center helping children with correctable disabilities in Tanzania. Discover how we support their mission and how you can contribute to this life-changing work."
+          />
       <PrimaryHeader title={'Kafika House'} image={'/partners/kafika-house/kafika-house-header.jpg'} />
       <div className='max-w-5xl mx-auto'>
         <section className='mt-20'>
