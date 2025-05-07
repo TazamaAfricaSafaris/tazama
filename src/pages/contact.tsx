@@ -116,7 +116,8 @@ const ContactPage = () => {
       <Toaster />
       <HeadSEO
         title="Contact Tazama Africa for your Dream Safari Experience"
-        keywords={base_keywords}
+        keywords={`${base_keywords}, Tanzania safari contact, book safari Tanzania, safari planning, Kilimanjaro trek booking, Tanzania travel inquiry, safari consultation, wildlife tour contact, African adventure planning, Tanzania tour operator, safari travel agent`}
+        description="Contact Tazama Africa Safari to plan your dream Tanzania safari or Kilimanjaro trek. Our expert team is ready to help you create a personalized adventure through Africa's most spectacular landscapes and wildlife experiences."
       />
       <PrimaryHeader image="contact.webp" title="Contact Us" />
       <div className="mx-auto mt-36 max-sm:mt-28 px-8">

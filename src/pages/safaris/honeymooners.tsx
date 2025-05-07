@@ -23,7 +23,11 @@ export const MemoryImage = ({ src }: { src: string }) => {
 const Page = ({ images }: { images: ImageProps[] }) => {
   return (
     <>
-      <HeadSEO title="HoneyMoon Safaris - Tazama Africa Safaris" keywords={base_keywords} />
+      <HeadSEO 
+            title="Luxury Honeymoon Safaris in Tanzania | Tazama Africa"
+            keywords={`${base_keywords}, Tanzania honeymoon safari, romantic safari, luxury honeymoon Africa, Zanzibar beach honeymoon, safari and beach package, romantic getaway Tanzania, exclusive honeymoon experience, private safari tour, couples safari, luxury accommodation Tanzania`}
+            description="Begin your marriage with Tazama's romantic honeymoon safaris, combining thrilling wildlife encounters in Tanzania with serene Zanzibar beach relaxation for the perfect balance of adventure and luxury."
+          />
       <PrimaryHeader image="honey-moon-trip.webp" title="Honeymooners" />
 
       <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">

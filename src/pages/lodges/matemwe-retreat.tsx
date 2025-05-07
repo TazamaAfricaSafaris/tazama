@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import SafariCarousel from '~/components/safari-carousel'
 import CallToAction from '~/components/CallToAction'
+import HeadSEO from '~/components/ui/Head'
+import { base_keywords } from '~/lib/constants'
 
 const Page = () => {
     const activities = [
@@ -35,6 +37,11 @@ const Page = () => {
 
     return (
         <>
+            <HeadSEO 
+                title="Matemwe Retreat | Exclusive Beach Villas in Zanzibar" 
+                keywords={`${base_keywords}, Matemwe Retreat Zanzibar, private beach villas, luxury Zanzibar accommodation, exclusive beach resort, ocean view villas, private plunge pools, Mnemba Atoll diving, romantic beach getaway, seafood dining Zanzibar, boutique beach retreat`}
+                description="Indulge in ultimate privacy at Matemwe Retreat, featuring exclusive beach villas with private plunge pools and panoramic Indian Ocean views. Experience personalized service, exceptional dining, and world-class diving at nearby Mnemba Atoll."
+            />
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
                     <Image

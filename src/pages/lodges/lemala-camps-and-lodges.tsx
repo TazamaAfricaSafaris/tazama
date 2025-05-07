@@ -4,6 +4,8 @@ import React from 'react'
 import CallToAction from '~/components/CallToAction'
 import PrimaryHeader from '~/components/PrimaryHeader'
 import SafariCarousel from '~/components/safari-carousel'
+import HeadSEO from '~/components/ui/Head'
+import { base_keywords } from '~/lib/constants'
 
 const Page = () => {
     const imageIds = [
@@ -39,6 +41,11 @@ const Page = () => {
 
     return (
         <>
+            <HeadSEO 
+                title='Lemala Camps and Lodges | Tazama Africa Safari' 
+                keywords={`${base_keywords}, Lemala safari camps, luxury tented camps Tanzania, Serengeti accommodation, Ngorongoro luxury lodges, wildlife viewing camps, boutique safari accommodation, migration camps Tanzania, eco-friendly safari lodges, exclusive Tanzania camps, authentic safari experience`}
+                description="Experience the wilderness in style with Lemala Camps and Lodges. These intimate, luxury tented camps and lodges offer exceptional wildlife viewing, gourmet dining, and authentic safari experiences in Tanzania's most spectacular locations."
+            />
             <PrimaryHeader title="Lemala Camps and Lodge" image='lodges/lemala-camps/lemala-nanyukie-bonfire.jpg' />
 
             <div className='my-20 max-w-5xl mx-auto md:px-8 px-4'>
@@ -113,4 +120,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default Page;

@@ -53,7 +53,11 @@ const Page = () => {
 
     return (
         <>
-            <HeadSEO title='Tazama Africa Safari | Tulia Beach Resort' keywords={base_keywords} />
+            <HeadSEO 
+                title="Tulia Beach Resort | All-Inclusive Luxury in Zanzibar" 
+                keywords={`${base_keywords}, Tulia Beach Resort Zanzibar, all-inclusive beach resort, luxury Zanzibar accommodation, beachfront villas Tanzania, infinity pool resort, water sports Zanzibar, family beach resort, honeymoon destination, fine dining Zanzibar, exclusive beach experience`}
+                description="Relax at Tulia Beach Resort, an all-inclusive luxury retreat on Zanzibar's pristine coastline. Enjoy spacious beachfront villas, exceptional cuisine, and a wide range of activities from water sports to cultural excursions in this tropical paradise."
+            />
             <PrimaryHeader title="Tulia Beach Resort" image='lodges/tulia-beach-resort/tulia-beach-resort.jpg' />
             <div className='my-20 max-w-5xl mx-auto md:px-8 px-4'>
                 <section>

@@ -14,7 +14,11 @@ import CallToAction from '~/components/CallToAction'
 const Page = ({ images }: { images: ImageProps[] }) => {
     return (
         <>
-            <HeadSEO title='Tazama Africa Safari | The Nest Boutique' keywords={base_keywords} />
+            <HeadSEO 
+                title="The Nest Boutique Resort | Luxury Beachfront Retreat in Zanzibar" 
+                keywords={`${base_keywords}, The Nest Boutique Resort, Zanzibar luxury accommodation, beachfront boutique hotel, design hotel Zanzibar, private beach resort, ocean view suites, fine dining Zanzibar, water sports resort, honeymoon destination Tanzania, exclusive beach getaway`}
+                description="Escape to The Nest Boutique Resort in Zanzibar, an exclusive beachfront retreat offering stylish accommodations, personalized service, and exceptional dining. The perfect destination for romantic getaways and post-safari relaxation."
+            />
 
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white overflow-hidden">

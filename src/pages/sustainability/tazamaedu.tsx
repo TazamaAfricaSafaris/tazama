@@ -8,7 +8,11 @@ import { base_keywords } from '~/lib/constants'
 const Page = () => {
     return (
         <>
-            <HeadSEO title='TazamaEdu' keywords={base_keywords} />
+            <HeadSEO 
+                title='TazamaEdu | Tazama Africa Safari Educational Initiative' 
+                keywords={`${base_keywords}, TazamaEdu, conservation education, youth education Tanzania, wildlife education, experiential learning, national park visits, environmental stewardship, conservation program, domestic tourism, underprivileged youth support`} 
+                description="TazamaEdu is Tazama Africa Safari's educational initiative fostering the next generation of conservationists in Tanzania through immersive national park experiences, bridging the gap between academic knowledge and real-world conservation efforts."
+            />
             <PrimaryHeader title='TazamaEdu' image='/tazama-edu/tazama-edu-header.jpg' />
             <div className='max-w-5xl mx-auto my-20'>
                 <h3 className='text-5xl mb-6 text-primary text-center'>Fostering Future Conservationists with TazamaEdu</h3>
