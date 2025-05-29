@@ -25,7 +25,7 @@ export default function Layout({ children }: Props) {
           >
             <div className="flex items-center gap-4 text-white">
               <FaWhatsapp color="#fff" size={24} />
-              <p>
+              <p className="max-md:hidden">
                 Chat with us on Whatsapp
               </p>
             </div>
