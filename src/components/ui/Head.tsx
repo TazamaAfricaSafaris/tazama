@@ -62,7 +62,7 @@ export default function HeadSEO({
         id="seona-js-plugin"
       ></script>
 
-      <script src="/lightbox-form.js"></script>
+      {/* <script src="/lightbox-form.js"></script> */}
     </Head>
   );
 }
