@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import Head from "next/head";
+import Script from "next/script";
 
 export default function HeadSEO({
   title,
@@ -18,7 +20,7 @@ export default function HeadSEO({
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta
         name="description"
-        content={description ? description :"Explore East Africa with custom-designed safaris and tours from Tazama Africa"}
+        content={description ? description : "Explore East Africa with custom-designed safaris and tours from Tazama Africa"}
       />
       <link rel="shortcut icon" href="/assets/images/logos/favicon.ico" />
       {/* Open Graph stuff */}
@@ -59,6 +61,8 @@ export default function HeadSEO({
         defer
         id="seona-js-plugin"
       ></script>
+
+      <script src="/lightbox-form.js"></script>
     </Head>
   );
 }
