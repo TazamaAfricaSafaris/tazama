@@ -46,6 +46,10 @@ const navMainContent = [
 
 const navSubContent = [
   {
+    title: "Our safari tours",
+    link: "/tours",
+  },
+  {
     title: "FAQ",
     link: "/faq",
   },
@@ -323,7 +327,7 @@ const Navbar = () => {
                             <Link
                               href={subLink.link}
                               onClick={() => setNav(false)}
-                              className="w-fit cursor-pointer pb-1 md:text-lg hover:underline"
+                              className="w-fit cursor-pointer pb-1 md:text-lg hover:underline hover:underline-offset-4"
                             >
                               <h3 className="font-raleway">{subLink.title}</h3>
                             </Link>

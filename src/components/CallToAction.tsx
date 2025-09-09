@@ -4,18 +4,15 @@ import { useState } from "react";
 import {
     Dialog,
     DialogContent,
-    DialogHeader,
     DialogTrigger,
-    DialogPortal,
 } from "~/components/ui/dialog";
-import PlanMyTripForm from "~/components/forms/all-forms/plan-my-trip/AllQuestions";
-import { raleway } from "~/pages/_app";
 
 import Link from "next/link";
 import Image from "next/image";
+import { AnimatePresence, motion } from "framer-motion";
 
 const CallToAction = () => {
-    const [dialopOpen, setDialopOpen] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     return (
         <>
@@ -28,27 +25,33 @@ const CallToAction = () => {
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
-                        <Link href="/safaris" className="border border-primary bg-primary hover:border-white rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-transparent hover:text-white transition-colors duration-200">Explore More</Link>
+                        <Link href="/safaris" className="border border-primary bg-primary hover:border-white rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-transparent hover:text-white transition-colors duration-200 cursor-pointer">Explore More</Link>
 
-                        <Dialog onOpenChange={setDialopOpen} open={dialopOpen}>
-                            <DialogTrigger
-                                asChild
-                            >
-                                <button className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary hover:text-white transition-colors duration-200">
-                                    Plan Your Trip
-                                </button>
+                        <Dialog>
+                            <DialogTrigger asChild>
+                                <p className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary hover:text-white transition-colors duration-200 cursor-pointer">
+                                    Plan My Trip
+                                </p>
                             </DialogTrigger>
-                            <DialogPortal>
-                                <DialogContent
-                                    className={`h-screen bg-lightest font-raleway sm:max-w-[80%] lg:h-[70%] lg:w-[60%] ${raleway.variable}`}
-                                    style={{
-                                        fontFamily: raleway.variable,
-                                    }}
-                                >
-                                    <DialogHeader></DialogHeader>
-                                    <PlanMyTripForm setDialogOpen={setDialopOpen} />
-                                </DialogContent>
-                            </DialogPortal>
+                            <DialogContent className="h-[80%] p-0 bg-background">
+                                <AnimatePresence>
+                                    {loading && (
+                                        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="absolute inset-0 flex justify-center items-center text-darker">
+                                            <p className="text-xl text-white">Loading...</p>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                                <iframe
+                                    width="720"
+                                    height="315"
+                                    src="https://forms.zohopublic.com/tazamaafricatourssafari1/form/TAZAMAPLANMYTRIPFORM/formperma/RpRK4CHabrTCKwe3sv1FNL5N9TBgcoBzTUZnWs6_Fvo"
+                                    title="Plan your dream trip and we'll get back to you"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                    className="w-full h-full z-0 rounded-xl"
+                                    onLoad={() => setLoading(false)}
+                                ></iframe>
+                            </DialogContent>
                         </Dialog>
                     </div>
                 </div>
