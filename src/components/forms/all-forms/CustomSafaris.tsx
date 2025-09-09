@@ -1,4 +1,6 @@
-import Input from "~/components/ui/input";
+/* eslint-disable @typescript-eslint/no-floating-promises */
+import { Input } from "~/components/Form";
+import { Textarea } from "~/components/ui/textarea";
 import z from "zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -72,11 +74,10 @@ export default function CustomSafarisForm() {
         </h3>
         <div className="lg:flex lg:space-x-10">
           <div className=" lg:w-[50%]">
-            <Label>Full Names*</Label>
             <Input
               type="text"
               // placeholder="Brighton Mboya"
-              className="w-full"
+              label="Full Names*"
               {...register("fullNames")}
             />
             {errors?.fullNames && (
@@ -85,11 +86,10 @@ export default function CustomSafarisForm() {
           </div>
 
           <div className="mt-8 lg:mt-0  lg:w-[50%]">
-            <Label>Email Address*</Label>
             <Input
               required
               type="email"
-              className=""
+              label="Email Address*"
               // placeholder="Enter your email address"
               {...register("email")}
             />
@@ -101,11 +101,10 @@ export default function CustomSafarisForm() {
 
         <div className="lg:flex lg:space-x-10 ">
           <div className="lg:w-[50%]">
-            <Label>Phone Number*</Label>
             <Input
               required
               type="text"
-              className=""
+              label="Phone Number*"
               // placeholder="+91 780 679 212"
               {...register("phoneNumber")}
             />
@@ -115,11 +114,10 @@ export default function CustomSafarisForm() {
           </div>
 
           <div className="mt-8 lg:mt-0 lg:w-[50%]">
-            <Label>How many people are in your group</Label>
             <Input
               required
               type="number"
-              className=""
+              label="How many people are in your group"
               // placeholder="5"
               {...register("peopleInTheGroup", { valueAsNumber: true })}
             />
@@ -133,13 +131,10 @@ export default function CustomSafarisForm() {
 
         <div className="lg:flex lg:space-x-10">
           <div className="lg:w-[50%]">
-            <Label>When do you want to travel?</Label>
             <Input
               required
-              // type="date"
-              // placeholder="5"
+              label="When do you want to travel?"
               {...register("date")}
-              className=""
             />
             {errors?.date && (
               <p className="text-sm text-red-500">
@@ -149,28 +144,22 @@ export default function CustomSafarisForm() {
           </div>
 
           <div className="mt-8 lg:mt-0 lg:w-[50%]">
-            <Label>Still researching /ready to book?</Label>
             <Input
               required
-              // type="date"
-              // placeholder="5"
+              label="Still researching /ready to book?"
               {...register("howFar")}
-              className=""
             />
             {errors?.howFar && (
               <p className="text-sm text-red-500">This field is required</p>
             )}
           </div>
         </div>
-        <div className="flex flex-col gap-2">
-          <label htmlFor="message" className="">
-            Additional Comments
-          </label>
-          <textarea
-            className=" h-36  rounded-lg border-none px-4 py-3 shadow-sm placeholder:text-gray-300 focus:ring-[#A87133]"
+        <div className="flex flex-col gap-2 mt-4">
+          <Textarea
             // placeholder="I would also want to go to Zanzibar as well"
-            name="Message"
-          ></textarea>
+            label="Additional Comments"
+            {...register("additionalComments")}
+          ></Textarea>
         </div>
 
         <div className="flex flex-col items-center">

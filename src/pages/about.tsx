@@ -26,7 +26,7 @@ const AboutPage = () => {
         description="Discover Tazama Africa Safari - Tanzania's premier safari company with over 15 years of expertise in crafting luxury, personalized wildlife adventures and Kilimanjaro treks. Our exceptional guides and sustainable practices ensure unforgettable African experiences."
       />
       <div className="mx-auto mt-20 max-w-5xl px-4 pt-[2rem]">
-        <div className="">
+        <div>
           <h3 className="text-5xl text-[#A87133]">Design Your Dream Safari Experience</h3>
           <p className="mb-3 mt-5 ">
             TAZAMA specializes in curating unforgettable memories that will have
