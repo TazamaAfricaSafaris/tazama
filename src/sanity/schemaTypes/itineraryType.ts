@@ -117,6 +117,51 @@ export const itineraryType = defineType({
               title: 'Accommodation',
               type: 'string',
             },
+            // New: Optional note per day
+            defineField({
+              name: 'note',
+              title: 'Note',
+              type: 'text',
+            }),
+            // New: Accommodation images
+            defineField({
+              name: 'accommodationGallery',
+              title: 'Accommodation Gallery',
+              type: 'array',
+              of: [
+                {
+                  type: 'image',
+                  options: { hotspot: true },
+                  fields: [
+                    { name: 'alt', type: 'string', title: 'Alternative Text' }
+                  ]
+                }
+              ]
+            }),
+            // New: Hotel's description (used in dropdown)
+            defineField({
+              name: 'hotelDescription',
+              title: "Hotel's Description",
+              type: 'text',
+            }),
+            // New: Amenities as chips
+            defineField({
+              name: 'amenities',
+              title: 'Amenities',
+              type: 'array',
+              of: [{ type: 'string' }],
+              options: {
+                layout: 'tags',
+                list: [
+                  { title: 'WiFi', value: 'WiFi' },
+                  { title: 'Swimming Pool', value: 'Swimming Pool' },
+                  { title: 'Laundry service', value: 'Laundry service' },
+                  { title: 'Wildlife area', value: 'Wildlife area' },
+                  { title: 'Spa', value: 'Spa' },
+                  { title: 'Restaurant', value: 'Restaurant' },
+                ]
+              }
+            }),
           ],
         },
       ],

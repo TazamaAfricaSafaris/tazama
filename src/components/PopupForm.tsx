@@ -15,7 +15,7 @@ export default function PopupForm() {
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <p className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2 max-sm:text-sm font-raleway animate-float cursor-pointer">
+                <p className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition ease-in-out md:gap-3 md:px-4 md:py-2 max-sm:text-sm font-raleway animate-float2 cursor-pointer">
                     Plan My Trip
                 </p>
             </DialogTrigger>
