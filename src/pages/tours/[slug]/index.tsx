@@ -110,9 +110,9 @@ export default function Page(props: PageProps) {
     return (
         <>
             <HeadSEO
-                title={`${title} | Tazama Africa Safaris`}
+                title={`Tazama Africa Safaris | ${title}`}
                 keywords={base_keywords}
-                description={subHeading || "Tazama Africa Safaris tour itinerary"}
+                description={subHeading || title}
             />
 
             {/* Dynamic hero header */}
