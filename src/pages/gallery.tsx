@@ -16,7 +16,7 @@ const GalleryPage = ({ images }: { images: ImageProps[] }) => {
       <HeadSEO 
         title="Safari & Kilimanjaro Photo Gallery | Tazama Africa" 
         keywords={`${base_keywords}, Tanzania safari photos, Kilimanjaro trek images, wildlife photography, African landscapes, Serengeti pictures, Tanzania wildlife gallery, safari memories, African adventure photos, Ngorongoro Crater images, Tanzania travel gallery`}
-        description="Explore our gallery of stunning Tanzania safari and Kilimanjaro trek photographs. Get inspired by breathtaking wildlife encounters, majestic landscapes, and unforgettable African adventures captured through our lens."
+        description="Explore our gallery of stunning Tanzania safari and Kilimanjaro trek photographs. Get inspired by breathtaking wildlife encounters, majestic landscapes, and unforgettable African adventures captured through our lens"
       />
       <PrimaryHeader image="gallery.webp" title="Glimpse of our Memories" />
 
