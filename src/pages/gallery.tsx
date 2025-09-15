@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable react-hooks/rules-of-hooks */
@@ -8,7 +9,6 @@ import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
 import useFetchImages from "~/hooks/useFetchImages";
-import { Masonry } from "react-plock"
 
 const GalleryPage = ({ images }: { images: ImageProps[] }) => {
   return (
@@ -47,15 +47,12 @@ export default GalleryPage;
 
 export function MasonryGallery({ images }: { images: ImageProps[] }) {
   return (
-    <Masonry
-      items={images}
-      config={{
-        columns: [2, 2, 3],
-        gap: [6, 9, 12],
-        media: [640, 768, 1024],
-      }}
-      render={(image) => (
-        <div className="rounded-xl overflow-hidden">
+    <div className="columns-1 sm:columns-2 lg:columns-3 gap-3 sm:gap-4 lg:gap-6 [column-fill:_balance]">
+      {images.map((image) => (
+        <div
+          key={(image as any).public_id ?? image.id}
+          className="mb-3 sm:mb-4 lg:mb-6 break-inside-avoid rounded-xl overflow-hidden"
+        >
           <Image
             alt="tazama gallery photos"
             className="object-cover w-full h-full rounded-xl"
@@ -64,15 +61,14 @@ export function MasonryGallery({ images }: { images: ImageProps[] }) {
               imageRendering: "crisp-edges",
             }}
             placeholder="blur"
-            blurDataURL={image.blurDataUrl}
-            src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_720/${image.public_id}.${image.format}`}
+            blurDataURL={(image as any).blurDataUrl}
+            src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_720/${(image as any).public_id}.${(image as any).format}`}
             width={Number(image.width)}
             height={Number(image.height)}
-          // layout="responsive"
           />
         </div>
-      )}
-    />
+      ))}
+    </div>
   );
 }
 
