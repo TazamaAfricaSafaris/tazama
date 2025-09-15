@@ -4,8 +4,6 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { MdChevronLeft } from "react-icons/md";
 import Link from "next/link";
 
-import { PopupButton } from "@typeform/embed-react"
-import ZohoFormLink from "./ZohoFormLink";
 import PopupForm from "./PopupForm";
 
 const navMainContent = [
@@ -122,7 +120,7 @@ const Navbar = () => {
         </Link>
         <div className="flex items-center gap-1 sm:gap-2">
           <PopupForm />
-          <Link href="/contact" className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition duration-200 ease-in-out md:gap-3 md:px-4 md:py-2 max-sm:text-sm font-raleway animate-float max-sm:hidden">Contact Us</Link>
+          <Link href="/contact" className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition ease-in-out md:gap-3 md:px-4 md:py-2 max-sm:text-sm font-raleway animate-float max-sm:hidden">Contact Us</Link>
           <AnimatePresence>
             {searchModal ? (
               <motion.div
