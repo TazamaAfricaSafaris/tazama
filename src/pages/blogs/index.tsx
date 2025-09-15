@@ -21,41 +21,8 @@ type PageProps = {
   token: string;
 };
 
-interface BlogProps {
-  name: string;
-  link: string;
-  imgUrl: string;
-  shortDescription: string;
-  category: string;
-  // id: number | undefined;
-}
-
-export function Blog({ name, link, imgUrl, shortDescription, category }: BlogProps) {
-  return (
-    <div className="h-full cursor-pointer overflow-hidden bg-white shadow-md md:max-w-[320px] lg:max-w-[350px] rounded-md">
-      <Link href={link}>
-        <div className="relative h-[200px] w-full rounded-sm">
-          <BlurImage src={imgUrl} />
-        </div>
-
-        <div className="p-3 flex flex-col gap-2 justify-end mt-2">
-          <p className="bg-dark w-fit py-1 px-2 rounded text-white font-raleway text-xs">{category}</p>
-          <p className="font-raleway text-primary text-base line-clamp-1">{name}</p>
-          <p className="line-clamp-3 text-sm">
-            {shortDescription}
-          </p>
-        </div>
-      </Link>
-    </div>
-  );
-}
-
 export default function Page(props: PageProps) {
   const [query, setQuery] = useState<string>("");
-  // Filter blogs based on query
-  const filteredBlogs = allBlogs.filter((blog) =>
-    blog.name.toLowerCase().includes(query.toLowerCase()),
-  );
 
   return (
     <>
