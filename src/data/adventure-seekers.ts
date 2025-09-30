@@ -197,7 +197,7 @@ export const fiveDayTrip = [
       From your accommodation you'll have a view of the crater. Enjoy a dinner. Spend the night at Ngorongoro 
       Wildlife Lodge.`,
     listHeader: "Accomodation",
-    list: ["Ngorongoro Wildlife Lodge,dinner ,breakfast lunch"],
+    list: ["Ngorongoro Wildlife Lodge,dinner, breakfast lunch"],
   },
   {
     qn: "Day 05: Exploring Serengeti Ngorongoro Crater Arusha",
@@ -262,7 +262,7 @@ export const sixDayTrip = [
     plains. As the day draws to a close you'll relish a satisfying dinner before retiring for a nights sleep at 
     your accommodation.`,
     listHeader: "Main Destination",
-    list: ["Ngorongoro Conservation Area for breakfast ,lunch and dinner"],
+    list: ["Ngorongoro Conservation Area for breakfast, lunch and dinner"],
   },
   {
     qn: "Day 5; Ngorongoro Crater Tour, to Lake Manyara",

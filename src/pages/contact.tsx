@@ -133,7 +133,7 @@ const ContactPage = () => {
           </p>
           <p className="text-2xl mt-2 max-sm:text-lg">
             Phone:&nbsp;
-            <a href="tel:+255744400043">
+            <a href="tel:+255754922334">
               (255)744400043
             </a>
           </p>

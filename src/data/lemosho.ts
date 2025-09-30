@@ -65,7 +65,7 @@ export const lemoshoItenary = [
     category: "itenary",
     qn: "DAY 4: MOUNT KILIMANJARO",
     ans: `
-        Today , you'll move from moorland to a semi-desert landscape. A 5-hour walk leads you to the Lava Tower (4630m). Lunch is served, and if weather permits, there's an option to climb the tower. Altitude effects like headaches may start. After lunch, a 6800m descent to Barranco Campsite (3950m) aids acclimatization. The camp, located beneath the Breach and Great Barranco Wall, offers drinking and washing water. Dinner is served as you witness the sunset.
+        Today,  you'll move from moorland to a semi-desert landscape. A 5-hour walk leads you to the Lava Tower (4630m). Lunch is served, and if weather permits, there's an option to climb the tower. Altitude effects like headaches may start. After lunch, a 6800m descent to Barranco Campsite (3950m) aids acclimatization. The camp, located beneath the Breach and Great Barranco Wall, offers drinking and washing water. Dinner is served as you witness the sunset.
         `,
   },
   {

@@ -5,7 +5,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
-import { FaCheck, FaXmark } from "react-icons/fa6";
+import { FaCheck, FaWhatsapp, FaXmark } from "react-icons/fa6";
 import CallToAction from "~/components/CallToAction";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
@@ -19,6 +19,18 @@ import { getClient } from "../../../sanity/lib/client";
 import { token } from "../../../sanity/lib/token";
 import { itineraryQueries } from "../../../sanity/lib/queries";
 import { urlFor } from "../../../sanity/lib/image";
+import KilimanjaroItinerariesCallToAction from "~/components/kilimanjaro/itineraries-cta";
+import ReasonsCallToActionKilimanjaro from "~/components/kilimanjaro/reasons-cta";
+import { PiMountainsFill } from "react-icons/pi";
+import { IoPawSharp } from "react-icons/io5";
+import {
+    Dialog,
+    DialogClose,
+    DialogContent,
+    DialogTrigger,
+} from "~/components/ui/dialog";
+
+import Link from "next/link";
 
 type PageProps = {
     itinerary: SanityDocument;
@@ -51,6 +63,8 @@ const customComponents = {
                                     fill
                                     className="rounded-lg w-full h-full object-cover"
                                     sizes="(max-width: 768px) 100vw, 800px"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmZiIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
                                 />
                             </div>
                         );
@@ -94,6 +108,7 @@ export default function Page(props: PageProps) {
 
     const title: string = itinerary.itineraryName || "Itinerary";
     const subHeading: string | undefined = itinerary.subHeading;
+    const zohoFormLink: string | undefined = itinerary.zohoFormLink;
     const coverImg = itinerary.coverImg;
     const description = itinerary.description;
     const itineraryDetails = itinerary.itineraryDetails || [];
@@ -101,8 +116,12 @@ export default function Page(props: PageProps) {
     const excludes: string[] = itinerary.excludes || [];
     const itineraryType: string | undefined = itinerary.itineraryType;
     const location = itinerary.locationAndDuration?.location as string | undefined;
-    const duration = itinerary.locationAndDuration?.duration as number | undefined;
-    const price: number | undefined = itinerary.price as number | undefined;
+    const duration = itinerary.locationAndDuration?.duration as string | undefined;
+    const price: string | undefined = itinerary.price as string | undefined;
+
+    // PAX Table
+    const paxTable = itinerary.paxTable;
+    const paxRows = paxTable?.rows || [];
 
     const heroUrl = coverImg ? urlFor(coverImg).quality(80).url() : undefined;
     const processedDescription = Array.isArray(description) ? preprocessContent(description) : [];
@@ -125,6 +144,8 @@ export default function Page(props: PageProps) {
                             className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                             alt={coverImg?.alt || title}
                             sizes="100vw"
+                            placeholder="blur"
+                            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmZiIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
                         />
                     ) : null}
                     <div className="container">
@@ -132,7 +153,7 @@ export default function Page(props: PageProps) {
                             {title}
                         </h1>
                         {subHeading ? (
-                            <h3 className="font-raleway absolute bottom-10 left-1/2 -translate-x-1/2 text-center text-lg tracking-wide text-white">
+                            <h3 className="font-raleway absolute bottom-10 left-1/2 -translate-x-1/2 text-center text-sm md:text-lg tracking-wide text-white">
                                 {subHeading}
                             </h3>
                         ) : null}
@@ -140,10 +161,43 @@ export default function Page(props: PageProps) {
                 </div>
             </div>
 
+
             {/* Overview / Description */}
-            <section className="mb-12 max-w-4xl mx-auto px-4">
-                <div className="mt-16">
-                    {subHeading ? <h3 className="mb-4 text-primary">{subHeading}</h3> : <h3 className="mb-4 text-center text-4xl text-primary">{title}</h3>}
+            <section className="mb-12 max-w-4xl mx-auto p-4 md:p-0">
+                <div className="max-w-4xl mx-auto my-12">
+                    <div className="border border-neutral-200 p-4 rounded-xl flex max-md:flex-col justify-between gap-4">
+                        <div className="px-2 space-y-2 ">
+                            <div>
+                                <p className="text-xs text-neutral-500 max-md:text-center">
+                                    Price starting from
+                                </p>
+                                <p className="text-neutral-700 font-bold text-xl max-md:text-center">${price?.toLocaleString()}</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-2 max-md:flex-col">
+                            <Link
+                                href="https://wa.me/+255754922334"
+                                target="_blank"
+                                className="py-2 px-4 bg-green-600 w-fit rounded-xl flex items-center justify-center hover:bg-green-700 duration-200 transition-colors max-md:w-full"
+                            >
+                                <div className="flex items-center gap-2 text-white">
+                                    <FaWhatsapp className="text-white" size={24} />
+                                    <span className="">Chat with us on WhatsApp</span>
+                                </div>
+                            </Link>
+
+                            {zohoFormLink && (
+                                <ZohoFormButton link={zohoFormLink} title={title} />
+                            )}
+                        </div>
+                    </div>
+                </div>
+
+                <div className="">
+                    <h3 className="mb-4 text-center text-5xl text-primary">
+                        {title}
+                    </h3>
                     {processedDescription?.length ? (
                         <div className="prose max-w-4xl text-black">
                             <PortableText value={processedDescription as any} components={customComponents as any} />
@@ -152,26 +206,40 @@ export default function Page(props: PageProps) {
                 </div>
             </section>
 
+            {/* {
+                itineraryType === "trekking" && (
+                    <div className="max-w-4xl mx-auto">
+                        <KilimanjaroItinerariesCallToAction />
+                        <br /><br />
+                    </div>
+                )
+            } */}
+
             {/* Trip itinerary + Side Price Card */}
             <section className="mx-auto max-w-4xl mb-20 px-4">
                 <div className="flex flex-col relative">
-                    <h4 className="mb-4 text-3xl text-primary">Detailed itinerary for {title}</h4>
+                    <h4 className="mb-4 text-4xl text-primary">Detailed itinerary for {title}</h4>
                     <div className="flex flex-col gap-2">
                         {itineraryDetails.map((detail: any, idx: number) => (
                             <ItineraryAccordion
                                 key={idx}
                                 id={idx + 1}
                                 day={detail?.day || `Day ${idx + 1}`}
-                                // Use Portable Text with images inside the accordion
+                                totalDays={itineraryDetails.length}
                                 descriptionPortable={detail?.description}
                                 mealPlan={detail?.mealPlan}
                                 accomodation={detail?.accommodation}
                                 note={detail?.note}
+                                tripType={`${itineraryType}`}
+                                highlights={detail?.highlights}  // Use detail.highlights instead of global highlights
+                                transferTime={detail?.transferTime}  // Add this line
+                                distance={detail?.distance}  // Add this line
                                 gallery={
                                     Array.isArray(detail?.accommodationGallery)
                                         ? detail.accommodationGallery.map((img: any) => ({
                                             src: urlFor(img).width(800).height(600).url(),
                                             alt: img?.alt,
+                                            blurDataURL: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmZiIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
                                         }))
                                         : undefined
                                 }
@@ -182,6 +250,74 @@ export default function Page(props: PageProps) {
                     </div>
                 </div>
             </section>
+
+            {/* PAX Table (if present) */}
+            {paxRows.length > 0 && (
+                <section className="mx-auto max-w-4xl mb-20 border rounded-xl border-neutral-200">
+                    <div className="py-6 px-8 flex items-center justify-between">
+                        <div className="flex gap-4 items-center">
+                            <div className={`${itineraryType === "trekking" ? "bg-teal-500" : "bg-lime-500"} w-10 h-10 flex items-center justify-center rounded-full`}>
+                                {
+                                    itineraryType === "trekking" ?
+                                        <PiMountainsFill className="text-white text-xl" /> :
+                                        <IoPawSharp className="text-white text-xl" />
+                                }
+                            </div>
+                            <div>
+                                <p className="text-xl text-neutral-700 font-bold">{title}</p>
+                                <p className="text-neutral-700 text-sm">Price per person</p>
+                            </div>
+                        </div>
+
+                        <div className="flex items-center gap-4">
+                            {zohoFormLink && (
+                                <ZohoFormButton link={zohoFormLink} title={title} />
+                            )}
+                        </div>
+                    </div>
+                    <div className="overflow-x-auto">
+                        <table className="min-w-full border-separate border-spacing-0">
+                            <thead>
+                                <tr className="border-b">
+                                    {paxRows.map((row: any, idx: number) => (
+                                        <th
+                                            key={idx}
+                                            className="px-6 py-2 text-center font-normal text-neutral-700 text-sm whitespace-nowrap border-b border-neutral-200 bg-neutral-100"
+                                        >
+                                            <p className="text-sm font-bold">
+                                                {row.paxLabel}
+                                            </p>
+                                        </th>
+                                    ))}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    {paxRows.map((row: any, idx: number) => (
+                                        <td
+                                            key={idx}
+                                            className="px-6 py-2 text-center  text-neutral-700 text-base whitespace-nowrap"
+                                        >
+                                            <p>
+                                                {row.price}
+                                            </p>
+                                        </td>
+                                    ))}
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            )}
+
+            {
+                itineraryType === "trekking" && (
+                    <div className="max-w-4xl mx-auto">
+                        <ReasonsCallToActionKilimanjaro />
+                        <br /><br />
+                    </div>
+                )
+            }
 
             {/* Includes / Excludes */}
             <section className="max-w-4xl mx-auto px-4 mb-20 grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -247,3 +383,26 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
     return { paths, fallback: 'blocking' };
 };
+
+const ZohoFormButton = ({ link, title }: { link: string, title: string }) => {
+    return (
+        <Dialog>
+            <DialogTrigger asChild>
+                <button className="bg-primary px-4 py-2 rounded-lg text-white hover:bg-dark transition-colors max-md:w-full">
+                    Book this trip
+                </button>
+            </DialogTrigger>
+            <DialogContent className="h-[75.5%] flex flex-col justify-center items-center overflow-hidden pt-4">
+                <iframe
+                    width="720"
+                    height="720"
+                    src={link}
+                    title={`Book ${title}`}
+                    aria-label={`Book ${title}`}
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    className="w-full h-full z-0 rounded-2xl"
+                ></iframe>
+            </DialogContent>
+        </Dialog>
+    )
+}
