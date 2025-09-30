@@ -110,7 +110,7 @@ const Navbar = () => {
 
   return (
     <section>
-      <nav className="fixed left-0 top-0 z-20 flex w-full items-center justify-between gap-4 px-4 py-4 md:px-8">
+      <nav className="fixed left-0 top-0 z-50 flex w-full items-center justify-between gap-4 px-4 py-4 md:px-8">
         <Link href="/" onClick={() => setNav(false)}>
           <img
             className="z-[9999]tazama w-24 sm:w-32 md:w-40"
