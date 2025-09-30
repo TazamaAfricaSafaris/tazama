@@ -114,7 +114,7 @@ Prices are based on current rates of exchange, tariffs and taxes. Should the aut
 
 ## COMMUNICATION CHANNELS:
 
-Should you need any assistance during your travels you may contact us on our 24/7 line +255 744 400 043 or our emergency number +255 752 812 481/+255744400043.
+Should you need any assistance during your travels you may contact us on our 24/7 line +255 744 400 043 or our emergency number +255 752 812 481/+255754922334.
 
 You can also reach us by email at info@tazamaafricasafari.com
 
