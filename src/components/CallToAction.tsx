@@ -25,11 +25,11 @@ const CallToAction = () => {
                     </p>
 
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
-                        <Link href="/safaris" className="border border-primary bg-primary hover:border-white rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-transparent hover:text-white transition-colors duration-200 cursor-pointer">Explore More</Link>
+                        <Link href="/safaris" className="border border-primary bg-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white transition-colors duration-200 cursor-pointer">Explore More</Link>
 
                         <Dialog>
                             <DialogTrigger asChild>
-                                <p className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary hover:text-white transition-colors duration-200 cursor-pointer">
+                                <p className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer">
                                     Plan My Trip
                                 </p>
                             </DialogTrigger>

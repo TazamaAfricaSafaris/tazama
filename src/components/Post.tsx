@@ -26,9 +26,6 @@ function urlFor(source: any) {
 export default function Post({ post }: { post: SanityDocument }) {
     const { title, mainImage, body, author, publishedAt } = post;
 
-    console.log(post);
-
-
     // Custom Portable Text Components
     const customComponents = {
         types: {
@@ -95,7 +92,7 @@ export default function Post({ post }: { post: SanityDocument }) {
                 <span className="font-bold text-2xl mx-2">•</span>
                 <span>{title}</span>
             </div>
-            {title ? <h1 className="text-center max-sm:text-4xl">{title}</h1> : null}
+            {title ? <h1 className="text-center max-sm:text-4xl text-primary font-normal">{title}</h1> : null}
             <div className="flex items-center gap-1 md:gap-4 mx-auto w-fit -mt-6 max-sm:flex-col">
                 {
                     author ? (

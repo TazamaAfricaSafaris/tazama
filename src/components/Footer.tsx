@@ -178,7 +178,7 @@ export const Footer = () => {
             >
               <FaTripadvisor className="cursor-pointer text-2xl text-[#35E0A1]" />
             </a>
-            <a href="https://wa.me/+255744400043" target="_blank">
+            <a href="https://wa.me/+255754922334" target="_blank">
               <FaWhatsapp className="cursor-pointer text-2xl text-[#25D366]" />
             </a>
             <a href="https://instagram.com/tazamaafricasafaris" target="_blank">

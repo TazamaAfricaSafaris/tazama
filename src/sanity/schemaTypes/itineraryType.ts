@@ -27,6 +27,11 @@ export const itineraryType = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'zohoFormLink',
+      title: 'Zoho Form Link',
+      type: 'string',
+    }),
+    defineField({
       name: 'price',
       title: 'Price',
       type: 'number',
@@ -107,6 +112,21 @@ export const itineraryType = defineType({
               validation: (Rule) => Rule.required(),
             },
             {
+              name: 'transferTime',
+              title: 'Transfer Time',
+              type: 'string',
+            },
+            {
+              name: 'distance',
+              title: 'Distance',
+              type: 'string',
+            },
+            {
+              name: 'highlights',
+              title: 'Highlights',
+              type: 'string',
+            },
+            {
               name: 'mealPlan',
               title: 'Meal Plan',
               type: 'array',
@@ -180,6 +200,46 @@ export const itineraryType = defineType({
       type: 'array',
       of: [{ type: 'string' }],
       validation: (Rule) => Rule.required(),
+    }),
+    // Optional: Table for PAX and Prices
+    defineField({
+      name: 'paxTable',
+      title: 'PAX Price Table',
+      type: 'object',
+      fields: [
+        {
+          name: 'rows',
+          title: 'Rows',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              fields: [
+                {
+                  name: 'paxLabel',
+                  title: 'PAX Label',
+                  type: 'string',
+                  description: 'E.g. SOLO, 2 PAX, 3 PAX, etc.',
+                  validation: (Rule) => Rule.required(),
+                },
+                {
+                  name: 'price',
+                  title: 'Price',
+                  type: 'string',
+                  description: 'E.g. $4,060',
+                  validation: (Rule) => Rule.required(),
+                },
+              ],
+            },
+          ],
+          description: 'Add as many PAX/Price rows as needed',
+        },
+      ],
+      options: {
+        collapsible: true,
+        collapsed: true,
+      },
+      description: 'Optional: Add a table of PAX and prices (e.g. SOLO, 2 PAX, etc.)',
     }),
   ],
   preview: {

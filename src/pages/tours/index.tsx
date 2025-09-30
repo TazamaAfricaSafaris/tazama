@@ -15,6 +15,7 @@ import { itineraryQueries } from "~/sanity/lib/queries";
 import Link from "next/link";
 import { urlFor } from "~/sanity/lib/image";
 import React from "react";
+import ReasonsCallToActionKilimanjaro from "~/components/kilimanjaro/reasons-cta";
 
 type PageProps = {
     itineraries: SanityDocument[];
@@ -32,15 +33,17 @@ export default function Page(props: PageProps) {
             <HeadSEO title="Tazama Africa Safaris | Our Tours" keywords={base_keywords} />
             <PrimaryHeader title="Our Safari Tours" image="safari.webp" />
 
-            <main className="mx-auto my-20 max-w-5xl px-4 pt-8 flex flex-col gap-8">
-                <div className="text-center max-w-3xl mx-auto flex flex-col gap-4">
+            <main className="mx-auto my-20 max-w-5xl px-4 pt-12 flex flex-col">
+                <div className="text-center max-w-3xl mx-auto">
                     <h2 className="text-primary text-3xl md:text-5xl">Experience Tanzania with Tazama Africa Safaris</h2>
-                    <p>Few places in the world rival Tanzania as a wildlife destination. Ranked #1 country for an African safari, Tanzania hypnotizes with its pristine, wildest beauty. The last sanctuary of the wildlife of such magnitude in the world, Tanzania is a perfect spot for your vacation.</p>
                     <br />
+                    <p>Few places in the world rival Tanzania as a wildlife destination. Ranked #1 country for an African safari, Tanzania hypnotizes with its pristine, wildest beauty. The last sanctuary of the wildlife of such magnitude in the world, Tanzania is a perfect spot for your vacation.</p>
                 </div>
-
+                <br /><br />
+                <ReasonsCallToActionKilimanjaro />
+                <br /><br />
                 <div>
-                    <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center content-center">
                         {
                             (props.itineraries?.length ?? 0) > 0 ? (
                                 props.itineraries.map((itinerary) => (
@@ -79,16 +82,15 @@ function ItineraryCard({ itinerary }: { itinerary: SanityDocument }) {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
 
-                <div className="absolute top-4 left-4 right-4 text-white drop-shadow-lg">
+                <div className="absolute top-0 left-0 p-4 right-4 text-white bg-gradient-to-b from-black/60 w-full">
                     <div className="flex flex-col gap-0.5">
-                        <p className="text-xl font-bold line-clamp-2">{title}</p>
-                        {typeof days === "number" ? (
-                            <p className="-mt-0.5">{days} day(s) safari</p>
-                        ) : null}
+                        <p className="text-xl font-bold line-clamp-2">
+                            {title}
+                        </p>
                     </div>
                 </div>
 
-                <div className="absolute bottom-0 left-0 text-white drop-shadow-lg p-4 w-full flex items-center justify-between">
+                <div className="absolute bottom-0 left-0 text-white p-4 w-full flex items-center justify-between bg-gradient-to-t from-black/60">
                     <div className="flex flex-col">
                         <p>Starting from</p>
                         <p className="text-2xl font-bold">

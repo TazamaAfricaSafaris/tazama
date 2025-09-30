@@ -2,8 +2,9 @@ import Image from "next/image"
 
 type primaryHeader = {
   title: string;
-  image: string;
+  image?: string;
   subTitle?: string;
+  imageUrl?: string;
 };
 
 const PrimaryHeader = (props: primaryHeader) => {
@@ -12,7 +13,7 @@ const PrimaryHeader = (props: primaryHeader) => {
       <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
         <Image
           layout='fill'
-          src={`/assets/images/gallery/${props.image}`}
+          src={!props.imageUrl ? `/assets/images/gallery/${props.image}` : props.imageUrl}
           className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
           alt={props.title}
         />
