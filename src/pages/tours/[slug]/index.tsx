@@ -252,72 +252,72 @@ export default function Page(props: PageProps) {
             </section>
 
             {/* PAX Table (if present) */}
-            {paxRows.length > 0 && (
-                <section className="mx-auto max-w-4xl mb-20 border rounded-xl border-neutral-200">
-                    <div className="py-6 px-8 flex items-center justify-between">
-                        <div className="flex gap-4 items-center">
-                            <div className={`${itineraryType === "trekking" ? "bg-teal-500" : "bg-lime-500"} w-10 h-10 flex items-center justify-center rounded-full`}>
-                                {
-                                    itineraryType === "trekking" ?
-                                        <PiMountainsFill className="text-white text-xl" /> :
-                                        <IoPawSharp className="text-white text-xl" />
-                                }
+            <div className="max-md:p-4">
+                {paxRows.length > 0 && (
+                    <section className="mx-auto max-w-4xl mb-20 border rounded-xl border-neutral-200">
+                        <div className="px-4 py-3 md:py-6 md:px-8 flex max-md:flex-col gap-4 md:items-center justify-between">
+                            <div className="flex gap-4 items-center">
+                                <div className={`${itineraryType === "trekking" ? "bg-teal-500" : "bg-lime-500"} w-10 h-10 flex items-center justify-center rounded-full`}>
+                                    {
+                                        itineraryType === "trekking" ?
+                                            <PiMountainsFill className="text-white text-xl" /> :
+                                            <IoPawSharp className="text-white text-xl" />
+                                    }
+                                </div>
+                                <div>
+                                    <p className="text-xl text-neutral-700 font-bold">{title}</p>
+                                    <p className="text-neutral-700 text-sm">Price per person</p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="text-xl text-neutral-700 font-bold">{title}</p>
-                                <p className="text-neutral-700 text-sm">Price per person</p>
-                            </div>
-                        </div>
 
-                        <div className="flex items-center gap-4">
                             {zohoFormLink && (
                                 <ZohoFormButton link={zohoFormLink} title={title} />
                             )}
                         </div>
-                    </div>
-                    <div className="overflow-x-auto">
-                        <table className="min-w-full border-separate border-spacing-0">
-                            <thead>
-                                <tr className="border-b">
-                                    {paxRows.map((row: any, idx: number) => (
-                                        <th
-                                            key={idx}
-                                            className="px-6 py-2 text-center font-normal text-neutral-700 text-sm whitespace-nowrap border-b border-neutral-200 bg-neutral-100"
-                                        >
-                                            <p className="text-sm font-bold">
-                                                {row.paxLabel}
-                                            </p>
-                                        </th>
-                                    ))}
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    {paxRows.map((row: any, idx: number) => (
-                                        <td
-                                            key={idx}
-                                            className="px-6 py-2 text-center  text-neutral-700 text-base whitespace-nowrap"
-                                        >
-                                            <p>
-                                                {row.price}
-                                            </p>
-                                        </td>
-                                    ))}
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-            )}
+                        <div className="overflow-x-auto">
+                            <table className="min-w-full border-separate border-spacing-0">
+                                <thead>
+                                    <tr className="border-b">
+                                        {paxRows.map((row: any, idx: number) => (
+                                            <th
+                                                key={idx}
+                                                className="px-6 py-2 text-center font-normal text-neutral-700 text-sm whitespace-nowrap border-b border-neutral-200 bg-neutral-100"
+                                            >
+                                                <p className="text-sm font-bold">
+                                                    {row.paxLabel}
+                                                </p>
+                                            </th>
+                                        ))}
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        {paxRows.map((row: any, idx: number) => (
+                                            <td
+                                                key={idx}
+                                                className="px-6 py-2 text-center  text-neutral-700 text-base whitespace-nowrap"
+                                            >
+                                                <p>
+                                                    {row.price}
+                                                </p>
+                                            </td>
+                                        ))}
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                )}
 
-            {
-                itineraryType === "trekking" && (
-                    <div className="max-w-4xl mx-auto">
-                        <ReasonsCallToActionKilimanjaro />
-                        <br /><br />
-                    </div>
-                )
-            }
+                {
+                    itineraryType === "trekking" && (
+                        <div className="max-w-4xl mx-auto">
+                            <ReasonsCallToActionKilimanjaro />
+                            <br /><br />
+                        </div>
+                    )
+                }
+            </div>
 
             {/* Includes / Excludes */}
             <section className="max-w-4xl mx-auto px-4 mb-20 grid grid-cols-1 md:grid-cols-2 gap-12">
