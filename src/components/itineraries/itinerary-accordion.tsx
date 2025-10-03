@@ -174,15 +174,15 @@ const ItineraryAccordion: React.FunctionComponent<Props> = ({
         <div className="relative">
             {/* Header (clickable) */}
             <div
-                className="flex flex-col md:flex-row justify-between items-center rounded-3xl cursor-pointer max-md:pl-3 max-md:p-2 gap-2"
+                className="flex flex-row justify-between items-center rounded-3xl cursor-pointer md:pl-3 md:p-2 gap-2"
                 onClick={() => { setToggle(!toggle) }}
             >
-                <div className="flex flex-col md:flex-row gap-4 items-center w-full">
+                <div className="flex flex-row gap-1 md:gap-4 items-center w-full">
                     {/* Day badge and icon */}
                     <div className="flex gap-2 items-center">
                         <div className="relative">
                             <div className="h-10 w-10 md:h-12 md:w-12 rounded-full border-2 border-primary text-primary flex items-center justify-center font-bold">
-                                <span className="text-lg">{id}</span>
+                                <span className="max-md:mb-1.5 text-sm md:text-lg">{id}</span>
                             </div>
                             <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 text-[0.6rem] leading-none bg-primary text-white rounded px-1 py-1 font-raleway">
                                 Day
@@ -196,7 +196,7 @@ const ItineraryAccordion: React.FunctionComponent<Props> = ({
                             {getActivityIcon(day, id, totalDays)}
                         </div>
                     </div>
-                    <h6 className="line-clamp-2 text-lg md:text-3xl p-2 flex-1">{day}</h6>
+                    <h6 className="line-clamp text-2xl md:text-3xl p-2 flex-1">{day}</h6>
                 </div>
             </div>
 
@@ -209,8 +209,8 @@ const ItineraryAccordion: React.FunctionComponent<Props> = ({
                     >
                         {/* Timeline rail */}
                         <div className="relative pl-4 md:pl-10">
-                            <div className="max-md:hidden absolute left-9 top-4 bottom-0 border-l-2 border-dashed border-primary" />
-                            <div className="ml-2 md:ml-4 py-4 flex flex-col gap-5">
+                            <div className="absolute left-5 md:left-9 top-4 bottom-0 border-l-2 border-dashed border-primary" />
+                            <div className="ml-8 md:ml-4 py-4 flex flex-col gap-5">
                                 {/* Description */}
                                 {(processedDescription ?? (Array.isArray(description) && description.length > 0)) && (
                                     <div className="flex flex-col gap-3 text-neutral-800">
@@ -255,7 +255,7 @@ const ItineraryAccordion: React.FunctionComponent<Props> = ({
                                 {highlights && (
                                     <div className="flex flex-wrap gap-2 mb-2">
                                         <p className="inline-block bg-yellow-100 text-yellow-800 text-sm px-3 py-1 rounded-full border border-yellow-300 shadow-sm">
-                                            <span className='font-bold'>⭐Highlights</span>: {highlights}
+                                            <span className='font-bold max-md:text-xs'>⭐Highlights</span>: {highlights}
                                         </p>
                                     </div>
                                 )}

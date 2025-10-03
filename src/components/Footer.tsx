@@ -27,6 +27,17 @@ import { Input } from "./Form";
 import { safaris } from "~/data/data";
 import { lodges } from "~/data/lodges";
 
+
+const kilimanjaroNav = [
+  {name: "Climbing Mount Kilimanjaro", link: "kilimanjaro"},
+  {name: "Itineraries", link: "kilimanjaro/itineraries"},
+  {name: "What makes Tazama's Kilimanjaro experience the best", link: "kilimanjaro/itineraries"},
+  {name: "Kilimanjaro Routes", link: "kilimanjaro/routes"},
+  {name: "Lemosho Route", link: "kilimanjaro/routes/lemosho"},
+  {name: "Machame Route", link: "kilimanjaro/routes/machame"},
+  {name: "Marangu Route", link: "kilimanjaro/routes/marangu"},
+]
+
 // Footer functional component definition
 export const Footer = () => {
   const [email, setEmail] = React.useState<string>("");
@@ -48,6 +59,8 @@ export const Footer = () => {
       });
     },
   });
+
+
 
   const onSubmit = (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -110,10 +123,14 @@ export const Footer = () => {
             </ul>
           </div>
           <div className="h-fit">
-            <h3 className="text-primary font-raleway text-xl font-medium mb-4">Trekking</h3>
+            <h3 className="text-primary font-raleway text-xl font-medium mb-4">Mount Kilimanjaro</h3>
             <ul className="grid gap-1">
-              <Link href="safaris/kilimanjaro" className="hover:underline hover:underline-offset-2">Mount Kilimanjaro</Link>
-              <Link href="safaris/mount-meru" className="hover:underline hover:underline-offset-2">Mount Meru</Link>
+              {
+                kilimanjaroNav.map(link => (
+                  <Link key={link.link} href={`/safaris/kilimanjaro/${link.link}`} className="hover:underline hover:underline-offset-2">{link.name}</Link>
+                ))
+              }
+              {/* <Link href="safaris/mount-meru" className="hover:underline hover:underline-offset-2">Mount Meru</Link> */}
             </ul>
           </div>
           <div className="h-fit">
