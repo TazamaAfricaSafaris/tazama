@@ -31,7 +31,7 @@ import { lodges } from "~/data/lodges";
 const kilimanjaroNav = [
   {name: "Climbing Mount Kilimanjaro", link: "kilimanjaro"},
   {name: "Itineraries", link: "kilimanjaro/itineraries"},
-  {name: "Tazama's Kilimanjaro experience", link: "kilimanjaro/itineraries"},
+  {name: "Tazama's Kilimanjaro experience", link: "kilimanjaro/what-makes-kilimanjaro-tazama-trek-different"},
   {name: "Kilimanjaro Routes", link: "kilimanjaro/routes"},
   {name: "Lemosho Route", link: "kilimanjaro/routes/lemosho"},
   {name: "Machame Route", link: "kilimanjaro/routes/machame"},
