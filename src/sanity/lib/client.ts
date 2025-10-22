@@ -10,7 +10,7 @@ export function getClient(previewToken?: string): SanityClient {
     projectId,
     dataset,
     apiVersion,
-    useCdn: true,
+    useCdn: false,
     perspective: previewToken ? 'previewDrafts' : 'published',
     stega: {
       enabled: previewToken ? true : false,
