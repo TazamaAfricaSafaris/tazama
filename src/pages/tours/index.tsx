@@ -23,6 +23,8 @@ type PageProps = {
     token: string;
 };
 
+export const revalidate = 60
+
 export default function Page(props: PageProps) {
     React.useEffect(() => {
         console.log(props.itineraries)

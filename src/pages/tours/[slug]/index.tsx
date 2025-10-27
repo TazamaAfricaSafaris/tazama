@@ -39,6 +39,8 @@ type PageProps = {
     token: string;
 };
 
+export const revalidate = 60
+
 // Helper: Convert Portable Text blocks to plain paragraphs (for Accordion)
 function blocksToPlainParagraphs(blocks: any[] | undefined): string[] {
     if (!Array.isArray(blocks)) return [];

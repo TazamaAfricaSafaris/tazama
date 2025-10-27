@@ -20,6 +20,8 @@ type PageProps = {
     token: string;
 };
 
+export const revalidate = 60
+
 export default function SinglePost(props: PageProps) {
     if (!props.post) {
         return <p className="mx-auto text-center mt-24">Loading...</p>
