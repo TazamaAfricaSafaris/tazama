@@ -1,5 +1,6 @@
+/* eslint-disable react/display-name */
 import React from "react";
-import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
+import { type MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
 
