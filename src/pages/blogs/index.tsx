@@ -21,8 +21,6 @@ type PageProps = {
   token: string;
 };
 
-export const revalidate = 60
-
 export default function Page(props: PageProps) {
   const [query, setQuery] = useState<string>("");
 
@@ -40,10 +38,10 @@ export default function Page(props: PageProps) {
         />
       </div> */}
       <main className="mt-20 flex-col md:flex md:items-center md:justify-center">
-      <div className="text-center">
-        <h2 className="text-primary text-3xl md:text-5xl">Guides, blogs, etc. Check out what we at <br /> Tazama Africa have for you!</h2>
-        <br />
-      </div>
+        <div className="text-center">
+          <h2 className="text-primary text-3xl md:text-5xl">Guides, blogs, etc. Check out what we at <br /> Tazama Africa have for you!</h2>
+          <br />
+        </div>
         {/* <section className="flex flex-col items-center md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3">
           {filteredBlogs.map((blog, index) => (
             <Blog key={index} name={blog.name} imgUrl={blog.imgUrl} link={blog.url} shortDescription={blog.shortDescription} category={blog.category} />
@@ -66,5 +64,6 @@ export const getStaticProps = async ({ draftMode = false }) => {
       draftMode,
       token: draftMode ? token : "",
     },
+    revalidate: 60
   };
 };
