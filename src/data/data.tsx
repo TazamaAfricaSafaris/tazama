@@ -427,6 +427,6 @@ export const safaris = [
     id: 10,
     name: 'Beach Holiday',
     img: "zanzibar.jpg",
-    href: "/safaris/zanzibar"
+    href: "/zanzibar"
   }
 ];

@@ -29,7 +29,7 @@ const navMainContent = [
   },
   {
     title: "Beach Holiday",
-    link: "/safaris/zanzibar",
+    link: "/zanzibar",
   },
   {
     title: "East Africa", // New item added
