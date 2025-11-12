@@ -7,11 +7,11 @@ import { gsap, ScrollTrigger } from "lib/gsap";
 import { useGSAP } from "@gsap/react"
 
 export type contentSectionData = {
-  rank: number;
+  rank?: number;
   image: string;
   title: string;
   action?: string;
-  reverse: boolean;
+  reverse?: boolean;
   description: string | string[];
   actionTitle?: string;
 };

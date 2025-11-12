@@ -181,5 +181,6 @@ export async function getStaticProps({ draftMode = false }) {
       draftMode,
       token: draftMode ? token : "",
     },
+    revalidate: 60
   };
 }
