@@ -41,14 +41,14 @@ const SafariTripadivsorReviews = () => {
                     <div className="flex items-center gap-2">
                         <div className="bg-tripadvisorDark w-10 h-10 rounded-full overflow-hidden relative">
                             <Image
-                                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f6/0d/default-avatar-2020-34.jpg?w=100&h=100&s=1"
+                                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/eb/default-avatar-2020-27.jpg?w=100&h=100&s=1"
                                 alt="Gordon S"
                                 layout='fill'
                                 className='object-cover w-full h-full'
                             />
                         </div>
                         <div>
-                            <p className="font-bold text-sm font-poppins text-tripadvisorDark">Gordon S</p>
+                            <p className="font-bold text-sm font-poppins text-tripadvisorDark">Steph C</p>
                             <p className="text-xs font-poppins">1 contributions</p>
                         </div>
                     </div>
@@ -62,12 +62,20 @@ const SafariTripadivsorReviews = () => {
                     </div>
 
                     <div>
-                        <p className="text-sm font-semibold font-poppins text-tripadvisorDark">Arusha, Ngorongoro Crater and Eastern Serengeti safari trip</p>
-                        <p className="text-sm font-poppins text-tripadvisorDark">Jun 2023</p>
+                        <p className="text-sm font-semibold font-poppins text-tripadvisorDark">
+                            Epic journey of climbing Mount Kilimanjaro
+                        </p>
+                        <p className="text-sm font-poppins text-tripadvisorDark">Oct 2025 • Friends</p>
                     </div>
 
                     <p className="text-sm text-neutral-600 font-poppins">
-                        Tazama Tours did an excellent job of tailoring our safari trip to our desires and personal needs! The staff was very helpful, friendly and courteous. In preparation we had great communication back and forth with staff being very helpful and timely to answer questions and address concerns. There was a lot of coordination pulling together the different lodges and local flights and paper work etc necessary to give us a great experience! They did it all! We would certainly book thru Tazama again and share them with our friends who are looking for unique and personal travel experiences! Gordon and Betty
+                        Tazama organised us a journey of a life time. Something has shifted in my soul from this experience. It wouldn’t be possible with each and everyone involved.
+                        From Walter, the guides, and his team he lead. To Watson and the “energy provisions” he indulged us in, Zacheriea who served us so enthusiastically and generously!
+                        <br />
+                        The “Internet cafe” where we all downloaded much more than we wanted to 😅🫢 thanks for making that as pleasant as can be!
+                        <br />
+                        Every single person on the 21 person team was outstanding- happy, guenuine, beyond helpful.
+                        We are spoilt and enriched by this journey and thank you 🙏 Asante sana
                     </p>
                 </div>
 
@@ -76,15 +84,15 @@ const SafariTripadivsorReviews = () => {
                     <div className="flex items-center gap-2">
                         <div className="bg-tripadvisorDark w-10 h-10 rounded-full overflow-hidden relative">
                             <Image
-                                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e3/1f/default-avatar-2020-46.jpg?w=100&h=100&s=1"
+                                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/df/99/default-avatar-2020-40.jpg?w=100&h=100&s=1"
                                 alt="Essenia B"
                                 layout='fill'
                                 className='object-cover w-full h-full'
                             />
                         </div>
                         <div>
-                            <p className="font-bold text-sm font-poppins text-tripadvisorDark">Yun Chin Ng</p>
-                            <p className="text-xs font-poppins">6 contribution</p>
+                            <p className="font-bold text-sm font-poppins text-tripadvisorDark">Felix K</p>
+                            <p className="text-xs font-poppins">1 contributions</p>
                         </div>
                     </div>
 
@@ -97,12 +105,14 @@ const SafariTripadivsorReviews = () => {
                     </div>
 
                     <div>
-                        <p className="text-sm font-semibold font-poppins text-tripadvisorDark">Amazing safari in Ngrongoro Crater, Serengiti and Zanzibar</p>
-                        <p className="text-sm font-poppins text-tripadvisorDark">Sep 2023 • Friends</p>
+                        <p className="text-sm font-semibold font-poppins text-tripadvisorDark">
+                            A once-in-a-lifetime experience!
+                        </p>
+                        <p className="text-sm font-poppins text-tripadvisorDark">Oct 2025 • Couples</p>
                     </div>
 
                     <p className="text-sm text-neutral-600 font-poppins">
-                        My friends who have never been to Africa, finally came for Safari. With the help of Tazama, I manage to put together a tour included Ngorongoro crater, North Serengiti - The Great Migration and Zanzibar. In the planning stage of the trip Jaffary was very helpful and patient to address all our concerns. Even in the pre safari day, they have sent us a cheerful and informative driver/guide Humphrey to drive us around Arusha. Our guide Safari ( Yes that is his real name) is warm, friendly and very patient with six ladies have lots of questions. In Zanzibar we stay at Michamvi where has the most beautiful sunset, and sunset dhow ride is amazing. Thanks Tazama
+                        We did a five-day safari with Tazama Africa Tours – and it was absolutely incredible. The entire trip was perfectly tailored to us, every little detail was just right. From the very beginning, we felt comfortable and truly welcomed. We’re beyond happy to have found a family in Tanzania. Our guide was amazing – warm, professional, and so passionate about sharing his country and its wildlife with us. We can genuinely recommend booking with Tazama – trust us, it will be one of the best decisions of your life.
                     </p>
                 </div>
             </div>

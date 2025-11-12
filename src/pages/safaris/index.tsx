@@ -65,7 +65,6 @@ const Page = ({ itineraries }: { itineraries: SanityDocument[] }) => {
           </p>
         </div>
 
-        <SafariTripadivsorReviews />
       </div>
       <br />
 
@@ -81,6 +80,10 @@ const Page = ({ itineraries }: { itineraries: SanityDocument[] }) => {
             <p className="col-span-full text-center text-gray-600">No itineraries found.</p>
           )}
         </div>
+      </div>
+
+      <div className="mx-auto max-w-5xl px-4 md:px-8">
+        <SafariTripadivsorReviews />
       </div>
       <br />
       <CallToAction />
