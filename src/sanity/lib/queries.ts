@@ -56,7 +56,7 @@ export const POST_QUERY = groq`
 `;
 
 export const itineraryQueries = {
-  all: `*[_type == "itinerary"] | order(_createdAt desc) {
+  all: `*[_type == "itinerary"] | order(price asc) {
     _id,
     slug,
     itineraryName,
@@ -113,7 +113,7 @@ export const itineraryQueries = {
     _updatedAt
   }`,
 
-  byType: `*[_type == "itinerary" && itineraryType == $type] | order(_createdAt desc) {
+  byType: `*[_type == "itinerary" && itineraryType == $type] | order(price asc) {
     _id,
     slug,
     itineraryName,
@@ -134,7 +134,7 @@ export const itineraryQueries = {
     _createdAt
   }`,
 
-  featured: `*[_type == "itinerary"] | order(_createdAt desc)[0..5] {
+  featured: `*[_type == "itinerary"] | order(price asc)[0..5] {
     _id,
     slug,
     itineraryName,
@@ -156,7 +156,7 @@ export const itineraryQueries = {
   }`,
 
   // Fetch itineraries whose location contains a substring (case-insensitive)
-  byLocationContains: `*[_type == "itinerary" && lower(locationAndDuration.location) match $pattern] | order(_createdAt desc) {
+  byLocationContains: `*[_type == "itinerary" && lower(locationAndDuration.location) match $pattern] | order(price asc) {
     _id,
     slug,
     itineraryName,
@@ -173,7 +173,7 @@ export const itineraryQueries = {
   }`,
 
   // Fetch itineraries whose location contains both a base location and a specific route (e.g., Mount Kilimanjaro + Lemosho route)
-  byLocationAndRouteContains: `*[_type == "itinerary" && lower(locationAndDuration.location) match $locationPattern && lower(locationAndDuration.location) match $routePattern] | order(_createdAt desc) {
+  byLocationAndRouteContains: `*[_type == "itinerary" && lower(locationAndDuration.location) match $locationPattern && lower(locationAndDuration.location) match $routePattern] | order(price asc) {
     _id,
     slug,
     itineraryName,
@@ -190,7 +190,7 @@ export const itineraryQueries = {
   }`,
 
   // Fetch itineraries by location substring and exact duration match
-  byLocationAndDurationContains: `*[_type == "itinerary" && lower(locationAndDuration.location) match $pattern && locationAndDuration.duration == $duration] | order(_createdAt desc) {
+  byLocationAndDurationContains: `*[_type == "itinerary" && lower(locationAndDuration.location) match $pattern && locationAndDuration.duration == $duration] | order(price asc) {
     _id,
     slug,
     itineraryName,

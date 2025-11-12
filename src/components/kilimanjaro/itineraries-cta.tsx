@@ -14,7 +14,7 @@ const KilimanjaroItinerariesCallToAction = () => {
 
       <div className="absolute left-20 top-1/2 -translate-y-1/2 w-full flex flex-col gap-4 items-start max-w-2xl">
         <h4 className="text-5xl text-left text-white font-normal">View our Kilimanjaro itineraries</h4>
-        <Link href='/safaris/kilimanjaro/itineraries' className="border border-white rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-white hover:text-black transition-colors duration-200 cursor-pointer no-underline">See more</Link>
+        <Link href='/kilimanjaro/itineraries' className="border border-white rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-white hover:text-black transition-colors duration-200 cursor-pointer no-underline">See more</Link>
       </div>
     </div>
   )

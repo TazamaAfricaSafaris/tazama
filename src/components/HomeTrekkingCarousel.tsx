@@ -53,7 +53,7 @@ const HomeTrekkingCarousel = () => {
                 Conquer the iconic Mount Kilimanjaro, the highest peak in Africa with Tazama Africa Safaris. Whether you're an experienced climber or a first-time trekker, this journey promises unforgettable memories and unparalleled views. Ready to take on the challenge? Explore our Kilimanjaro expeditions and start planning your ascent today!
               </p>
               <br />
-              <Link href='safaris/kilimanjaro' className="border border-white rounded-md px-4 lg:px-6 py-2 mt-4 md:text-lg text-xl font-raleway text-white hover:bg-white/90 hover:text-primary transition-colors duration-200">
+              <Link href='kilimanjaro' className="border border-white rounded-md px-4 lg:px-6 py-2 mt-4 md:text-lg text-xl font-raleway text-white hover:bg-white/90 hover:text-primary transition-colors duration-200">
                 See More
               </Link>
             </div>

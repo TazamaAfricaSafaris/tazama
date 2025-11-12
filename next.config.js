@@ -49,6 +49,12 @@ const config = {
       {
         hostname: "cdn.sanity.io",
       },
+      {
+        hostname: "dynamic-media-cdn.tripadvisor.com"
+      },
+      {
+        hostname: "images.pexels.com"
+      }
     ],
     domains: ["res.cloudinary.com", "images.unsplash.com", "cdn.sanity.io"],
   },

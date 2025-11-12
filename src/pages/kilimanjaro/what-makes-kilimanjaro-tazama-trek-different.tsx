@@ -141,7 +141,7 @@ export default function Page({ itineraries }: { itineraries: SanityDocument[] })
             <div className="flex justify-center mt-8 mb-16">
                 <Link
                     className="bg-primary text-white px-6 py-3 rounded-lg shadow hover:bg-primary-dark transition"
-                    href='/safaris/kilimanjaro/itineraries'
+                    href='/kilimanjaro/itineraries'
                 >
                     <p className="">See All Kilimanjaro Itineraries</p>
                 </Link>

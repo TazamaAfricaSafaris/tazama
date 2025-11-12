@@ -143,7 +143,7 @@ function ItineraryCard({ itinerary }: { itinerary: SanityDocument }) {
                 <div className="absolute bottom-0 left-0 text-white p-4 w-full flex items-center justify-between bg-gradient-to-t from-black/35">
                     <div className="flex flex-col">
                         <p>Starting from</p>
-                        <p className="text-2xl font-bold">{typeof price === "number" ? `${price.toLocaleString()}` : "Contact us"}</p>
+                        <p className="text-2xl font-bold">${typeof price === "number" ? `${price.toLocaleString()}` : "Contact us"}</p>
                     </div>
                     <button className='bg-transparent border-2 border-white py-2 px-6 font-semibold rounded-full group-hover:bg-white group-hover:text-black transition-colors'>See more</button>
                 </div>

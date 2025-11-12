@@ -204,7 +204,7 @@ const Page = ({ images, posts }: { images: ImageProps[], posts: SanityDocument[]
               routes.map((route, index) => (
                 <Link
                   key={index}
-                  href={`/safaris/kilimanjaro/routes/${route.link}`}
+                  href={`/kilimanjaro/routes/${route.link}`}
                   className="h-96 relative overflow-hidden rounded-xl group"
                 >
                   <Image

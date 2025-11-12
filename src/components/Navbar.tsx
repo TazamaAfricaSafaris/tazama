@@ -13,11 +13,11 @@ const navMainContent = [
   },
   {
     title: "Mount Kilimanjaro",
-    link: "/safaris/kilimanjaro",
+    link: "/kilimanjaro",
   },
   {
     title: "Mount Meru",
-    link: "/safaris/mount-meru",
+    link: "/mount-meru",
   },
   {
     title: "Safari",
@@ -44,7 +44,7 @@ const navMainContent = [
 
 const navSubContent = [
   {
-    title: "Our safari tours",
+    title: "Our itineraries",
     link: "/tours",
   },
   {

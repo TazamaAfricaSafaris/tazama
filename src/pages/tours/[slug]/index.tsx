@@ -129,7 +129,7 @@ export default function Page(props: PageProps) {
     return (
         <>
             <HeadSEO
-                title={`Tazama Africa Safaris | ${title}`}
+                title={`${title}`}
                 keywords={base_keywords}
                 description={subHeading || title}
             />
