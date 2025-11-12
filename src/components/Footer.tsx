@@ -127,7 +127,7 @@ export const Footer = () => {
             <ul className="grid gap-1">
               {
                 kilimanjaroNav.map(link => (
-                  <Link key={link.link} href={`/safaris/${link.link}`} className="hover:underline hover:underline-offset-2">{link.name}</Link>
+                  <Link key={link.link} href={`/${link.link}`} className="hover:underline hover:underline-offset-2">{link.name}</Link>
                 ))
               }
               {/* <Link href="safaris/mount-meru" className="hover:underline hover:underline-offset-2">Mount Meru</Link> */}

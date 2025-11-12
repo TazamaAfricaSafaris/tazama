@@ -303,7 +303,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
                 Climbing Kilimanjaro is not a one-size-fits-all experience. There are eight official routes to the summit, each with its own character, challenges, and highlights. Learn more about the routes we at Tazama use for your experience
               </p>
               <br />
-              <Link href='/safaris/kilimanjaro/routes' className="border border-white rounded-md px-4 lg:px-6 py-2 mt-4 text-sm md:text-base font-raleway text-white hover:bg-white/90 hover:text-darker transition-colors duration-200">
+              <Link href='/kilimanjaro/routes' className="border border-white rounded-md px-4 lg:px-6 py-2 mt-4 text-sm md:text-base font-raleway text-white hover:bg-white/90 hover:text-darker transition-colors duration-200">
                 See More
               </Link>
             </div>
