@@ -11,7 +11,7 @@ export type contentSectionData = {
   image: string;
   title: string;
   action?: string;
-  reverse?: boolean;
+  reverse: boolean;
   description: string | string[];
   actionTitle?: string;
 };
@@ -67,7 +67,7 @@ const ContentSection = (props: contentSectionData) => {
       >
         <div
           ref={textRef}
-          className="w-full px-8 md:px-10 lg:py-20 lg:px-32"
+          className="w-full px-8 md:px-10 lg:py-20 lg:px-36"
         >
           <h3
             className="text-5xl mb-4 font-light font-serif capitalize text-primary">

@@ -13,6 +13,7 @@ import type { SanityDocument } from "next-sanity";
 import { token } from "~/sanity/lib/token";
 import { itineraryQueries } from "~/sanity/lib/queries";
 import { ItineraryCard } from "~/pages/kilimanjaro/itineraries"
+import ContentSection from "~/components/ContentSection";
 
 const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: ImageProps[] }) => {
   return (
@@ -51,8 +52,11 @@ const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: 
             </div>
           </div>
         </div>
+      </div>
 
-        <section>
+
+      <section>
+        <div className="mx-auto max-w-5xl px-4 md:px-8">
           <h3 className="text-5xl text-primary mt-20">
             Why Climb Mount Meru
           </h3>
@@ -65,102 +69,71 @@ const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: 
 
             Many climbers use Meru as an acclimatization hike before tackling Kilimanjaro. Its altitude helps the body adjust, increasing your chances of success on the higher peak. But even on its own, Meru is incredibly rewarding, the landscapes, wildlife, and sense of solitude make it unforgettable.
           </p>
-          <div className="mt-20 flex flex-col md:flex-row gap-5 md:space-y-0 relative">
-            <div className="w-full md:sticky top-4">
-              <h3 className='text-primary text-5xl'>
-                A Wildlife Experience on Foot
-              </h3>
-              <br />
-              <p>
-                Because Mount Meru lies inside a national park, the climb begins surrounded by wildlife. It’s not uncommon to see buffalo, giraffes, bushbucks, and even colobus monkeys along the lower slopes. To ensure safety, an armed ranger joins every trek, especially on the first day. This unique mix of hiking and safari is part of what makes Meru so special, you’re literally walking through an African wilderness before rising above it.
-              </p>
-            </div>
+        </div>
 
-            <div className="relative h-[400px] w-full rounded-2xl overflow-hidden">
-              <Image
-                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1708504469/meru/ziqisp2ftbmqnjl10vfo.png"
-                alt="Safety First"
-                layout="fill"
-                className="object-cover w-full h-full"
-              />
-            </div>
-          </div>
-          <div className="mt-20 flex flex-col-reverse md:flex-row-reverse md:gap-x-5 relative">
-            <div className="w-full md:sticky top-4">
-              <h3 className='text-primary text-5xl'>
-                The Scenery
-              </h3>
-              <br />
-              <p>
-                Every section of Meru tells its own story. The lower slopes are draped in dense rainforest and waterfalls. Midway up, heather and wildflowers color the trails. Near the top, the volcanic ridges reveal dramatic views of the crater and beyond. On clear mornings, Kilimanjaro glows on the horizon, a distant reminder of where you stand in Africa.
-                <br /><br />
-                At the summit, Socialist Peak (4,566 m) offers a sunrise you’ll never forget, light spilling across the plains, clouds swirling below, and silence stretching endlessly.
-              </p>
-            </div>
+        <div className="grid gap-24 mt-24">
+          <ContentSection
+            title="A Wildlife Experience on Foot"
+            description="Because Mount Meru lies inside a national park, the climb begins surrounded by wildlife. It’s not uncommon to see buffalo, giraffes, bushbucks, and even colobus monkeys along the lower slopes. To ensure safety, an armed ranger joins every trek, especially on the first day. This unique mix of hiking and safari is part of what makes Meru so special, you’re literally walking through an African wilderness before rising above it."
+            image="https://res.cloudinary.com/drhl0yu7y/image/upload/v1708504469/meru/ziqisp2ftbmqnjl10vfo.png"
+            reverse
+          />
 
-            <div className="relative h-[400px] w-full rounded-2xl overflow-hidden">
-              <Image
-                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1762857871/meru/mount_meru_d0q59d.jpg"
-                alt="Safety First"
-                layout="fill"
-                className="object-cover w-full h-full"
-              />
-            </div>
-          </div>
+          <ContentSection
+            title="The Scenery"
+            description={
+              [
+                "Every section of Meru tells its own story. The lower slopes are draped in dense rainforest and waterfalls. Midway up, heather and wildflowers color the trails. Near the top, the volcanic ridges reveal dramatic views of the crater and beyond. On clear mornings, Kilimanjaro glows on the horizon, a distant reminder of where you stand in Africa.",
+                "At the summit, Socialist Peak (4,566 m) offers a sunrise you’ll never forget, light spilling across the plains, clouds swirling below, and silence stretching endlessly."
+              ]
+            }
+            image="https://res.cloudinary.com/drhl0yu7y/image/upload/v1762857871/meru/mount_meru_d0q59d.jpg"
+            reverse={false}
+          />
 
-          <div className="mt-20 flex flex-col-reverse md:flex-row md:gap-x-5 relative">
-            <div className="w-full md:sticky top-4">
-              <h3 className='text-primary text-5xl'>
-                Preparation & Safety
-              </h3>
-              <br />
-              <p>
-                Mount Meru doesn’t require technical climbing skills, but fitness and preparation help you enjoy it more. Light training, such as long walks or hiking, two months before your trip is ideal. The climb is led by our professional Tazama guides, all trained in first aid and altitude response, ensuring you’re in good hands throughout.
-                <br /><br />
-                All trekkers stay in mountain huts, which are basic but clean and comfortable. Meals are freshly prepared by our mountain chefs, and our team makes sure you’re safe, warm, and well-fed each day.
-              </p>
-            </div>
+          <ContentSection
+            title="Preparation & Safety"
+            description={
+              [
+                "Mount Meru doesn’t require technical climbing skills, but fitness and preparation help you enjoy it more. Light training, such as long walks or hiking, two months before your trip is ideal. The climb is led by our professional Tazama guides, all trained in first aid and altitude response, ensuring you’re in good hands throughout.",
+                "All trekkers stay in mountain huts, which are basic but clean and comfortable. Meals are freshly prepared by our mountain chefs, and our team makes sure you’re safe, warm, and well-fed each day."
+              ]
+            }
+            image="https://res.cloudinary.com/drhl0yu7y/image/upload/v1762857871/meru/mount_meru_d0q59d.jpg"
+            reverse
+          />
+        </div>
 
-            <div className="relative h-[400px] w-full rounded-2xl overflow-hidden">
-              <Image
-                src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1762859145/meru/mount-meru-waterfalls_p2m9gi.jpg"
-                alt="Safety First"
-                layout="fill"
-                className="object-cover w-full h-full"
-              />
-            </div>
-          </div>
+        <br />
+
+        <div className="mt-20 mx-auto max-w-5xl px-4 md:px-8">
+          <h3 className='text-primary text-5xl'>
+            Why Climb with Tazama Africa
+          </h3>
           <br />
-
-          <div className="mt-20">
-            <h3 className='text-primary text-5xl'>
-              Why Climb with Tazama Africa
-            </h3>
-            <br />
-            <p>
-              At Tazama Africa, every climb is personal. We believe in small-group or private treks that focus on your pace, comfort, and safety. Our goal isn’t just to get you to the summit, but to help you connect deeply with the mountain and the people who make the journey possible.
-            </p>
-            <br />
-            <p>
-              Choosing Tazama means traveling responsibly. Your trek supports local guides, porters, and communities while helping preserve the mountain’s fragile environment for generations to come.
-            </p>
-          </div>
-        </section>
-
-        <section className="mt-20">
-          <h3 className="text-5xl text-primary text-center">Featured Meru Itineraries</h3>
+          <p>
+            At Tazama Africa, every climb is personal. We believe in small-group or private treks that focus on your pace, comfort, and safety. Our goal isn’t just to get you to the summit, but to help you connect deeply with the mountain and the people who make the journey possible.
+          </p>
           <br />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {(itineraries?.length ?? 0) > 0 ? (
-              itineraries.slice(0, 6).map((itinerary) => (
-                <ItineraryCard key={itinerary?._id} itinerary={itinerary} />
-              ))
-            ) : (
-              <p className="col-span-full text-center text-gray-600">No itineraries found.</p>
-            )}
-          </div>
-        </section>
-      </div>
+          <p>
+            Choosing Tazama means traveling responsibly. Your trek supports local guides, porters, and communities while helping preserve the mountain’s fragile environment for generations to come.
+          </p>
+        </div>
+      </section>
+
+      <section className="mt-20 mx-auto max-w-5xl px-4 md:px-8">
+        <h3 className="text-5xl text-primary text-center">Featured Meru Itineraries</h3>
+        <br />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {(itineraries?.length ?? 0) > 0 ? (
+            itineraries.slice(0, 6).map((itinerary) => (
+              <ItineraryCard key={itinerary?._id} itinerary={itinerary} />
+            ))
+          ) : (
+            <p className="col-span-full text-center text-gray-600">No itineraries found.</p>
+          )}
+        </div>
+      </section>
       <br /><br /><br />
       <CallToAction />
     </>

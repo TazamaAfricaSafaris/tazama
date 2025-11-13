@@ -12,8 +12,8 @@ import { BsHouseFill } from 'react-icons/bs';
 import { FaChevronDown, FaWifi, FaSpa, FaPlane, FaClock, FaRoute } from 'react-icons/fa6'
 import { MdPool, MdLocalLaundryService, MdOutlineRestaurant } from 'react-icons/md'
 import { IoFastFoodOutline, IoPawSharp } from "react-icons/io5";
-import { GiElephant } from 'react-icons/gi';
-import { PiMountainsFill } from "react-icons/pi";
+import { GiElephant, GiPalmTree } from 'react-icons/gi';
+import { PiMountainsFill, PiTreePalmFill } from "react-icons/pi";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { PortableText } from "@portabletext/react"
@@ -165,6 +165,8 @@ const ItineraryAccordion: React.FunctionComponent<Props> = ({
             return <FaPlane className="text-white md:text-xl" />;
         } else if (tripType === 'trekking') {
             return <PiMountainsFill className='text-white md:text-xl' />
+        } else if (tripType === 'beach-holidays') {
+            return <PiTreePalmFill className='text-white md:text-xl' />
         }
         // All other days get paw icons
         return <IoPawSharp className="text-white md:text-xl" />;
@@ -190,7 +192,7 @@ const ItineraryAccordion: React.FunctionComponent<Props> = ({
                         </div>
                         <div
                             className={`h-8 w-8 md:h-10 md:w-10 rounded-full flex items-center justify-center shadow-md 
-                                ${(id === 1 || id === totalDays) ? 'bg-cyan-500' : tripType === 'trekking' ? 'bg-sky-700' : 'bg-orange-500'
+                                ${(id === 1 || id === totalDays) ? 'bg-cyan-500' : tripType === 'trekking' ? 'bg-sky-700' : tripType === 'beach-holidays' ? 'bg-emerald-500' : 'bg-orange-500'
                                 }`}
                         >
                             {getActivityIcon(day, id, totalDays)}

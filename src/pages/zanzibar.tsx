@@ -52,7 +52,7 @@ const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: 
           </h3>
           <br />
           <p>
-            Zanzibar is one of the world’s most enchanting island destinations — a place where white-sand beaches meet turquoise waters, spice plantations perfume the air, and history lingers in every narrow alley of Stone Town.
+            Zanzibar is one of the world’s most enchanting island destinations, a place where white-sand beaches meet turquoise waters, spice plantations perfume the air, and history lingers in every narrow alley of Stone Town.
           </p>
           <br />
           <p>
@@ -82,7 +82,7 @@ const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: 
         <h3 className="text-5xl text-primary text-center">Zanzibar at a Glance</h3>
         <br />
         <p>
-          Zanzibar is not just one island — it’s an archipelago made up of several islands, with Unguja (often called Zanzibar Island) and Pemba being the largest. Just 25 kilometers from mainland Tanzania, the islands are famous for their pristine beaches, rich history, and fascinating blend of African, Arab, and European influences.
+          Zanzibar is not just one island, it’s an archipelago made up of several islands, with Unguja (often called Zanzibar Island) and Pemba being the largest. Just 25 kilometers from mainland Tanzania, the islands are famous for their pristine beaches, rich history, and fascinating blend of African, Arab, and European influences.
         </p>
         <br />
         <p>
@@ -93,24 +93,23 @@ const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: 
       <div className="flex flex-col gap-24">
         <ContentSection
           title="Language & Culture"
-          description="Swahili is the main language spoken throughout Zanzibar, though English is also widely used. The island’s people are known for their warmth and hospitality — and its culture is a colorful mix of African, Arab, Indian, and Persian influences reflected in its food, music, and architecture."
+          description="Swahili is the main language spoken throughout Zanzibar, though English is also widely used. The island’s people are known for their warmth and hospitality, and its culture is a colorful mix of African, Arab, Indian, and Persian influences reflected in its food, music, and architecture."
           image={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME
             }/image/upload/${images[7]!.public_id}.${images[7]!.format}`}
         />
 
         <ContentSection
           title="Nature & Wildlife"
-          description="Unlike the mainland, Zanzibar’s wildlife is concentrated mainly in Jozani Forest, home to the rare red colobus monkey, the Zanzibar servaline genet, and a variety of butterflies and birds. The surrounding ocean is alive with marine diversity — coral reefs, dolphins, turtles, and colorful fish make it a paradise for divers and snorkelers."
-          image={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME
-            }/image/upload/${images[3]!.public_id}.${images[3]!.format}`}
+          description="Unlike the mainland, Zanzibar’s wildlife is concentrated mainly in Jozani Forest, home to the rare red colobus monkey, the Zanzibar servaline genet, and a variety of butterflies and birds. The surrounding ocean is alive with marine diversity, coral reefs, dolphins, turtles, and colorful fish make it a paradise for divers and snorkelers."
+          image={`https://res.cloudinary.com/drhl0yu7y/image/upload/v1763028674/beach_holidays/Fax-And-Tours-2_dzidq0.jpg`}
           reverse
         />
 
         <ContentSection
           title="The Spice Islands"
-          description="Zanzibar is often called the “Spice Islands” for good reason. Its fertile soils produce cloves, nutmeg, cinnamon, and black pepper — spices that have been traded for centuries. Visiting a spice farm is one of the most authentic experiences on the island, offering a taste of Zanzibar’s deep-rooted history and culture."
-          image={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME
-            }/image/upload/${images[11]!.public_id}.${images[11]!.format}`}
+          description="Zanzibar is often called the “Spice Islands” for good reason. Its fertile soils produce cloves, nutmeg, cinnamon, and black pepper, spices that have been traded for centuries. Visiting a spice farm is one of the most authentic experiences on the island, offering a taste of Zanzibar’s deep-rooted history and culture."
+          image={`https://res.cloudinary.com/drhl0yu7y/image/upload/v1763028976/beach_holidays/theoutsider_uex1lf.jpg`}
+            reverse={false}
         />
       </div>
 
