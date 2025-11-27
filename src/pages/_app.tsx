@@ -71,15 +71,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
             --font-amiora: ${amiora.variable};
           }
           
-          h1,
-          h2,
-          h3,
-          h4,
-          h5,
-          h6,
-          .font-serif {
-            font-family: ${amiora.style.fontFamily};
-          }
+         
         `}
         </style>
         <GoogleAnalytics gaId={env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />

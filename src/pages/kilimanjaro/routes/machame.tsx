@@ -89,7 +89,7 @@ function ItineraryCard({ itinerary }: { itinerary: SanityDocument }) {
             <p>Starting from</p>
             <p className="text-2xl font-bold">${typeof price === "number" ? `${price.toLocaleString()}` : "Contact us"}</p>
           </div>
-          <button className='bg-transparent border-2 border-white py-2 px-6 font-semibold rounded-full group-hover:bg-white group-hover:text-black transition-colors'>See more</button>
+          <button className='bg-transparent border-2 border-white py-2 px-6 font-semibold rounded-full group-hover:bg-white group-hover:text-primary transition-colors'>See more</button>
         </div>
       </div>
     </Link>

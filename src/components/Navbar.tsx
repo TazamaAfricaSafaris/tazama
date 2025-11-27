@@ -120,7 +120,7 @@ const Navbar = () => {
         </Link>
         <div className="flex items-center gap-1 sm:gap-2">
           <PopupForm />
-          <Link href="/contact" className="menu-trigger flex items-center gap-2 rounded-md bg-[#A87133] px-2 py-1 text-white transition ease-in-out md:gap-3 md:px-4 md:py-2 max-sm:text-sm font-raleway animate-float max-sm:hidden">Contact Us</Link>
+          <Link href="/contact" className="menu-trigger flex items-center gap-2 rounded-md bg-primary px-2 py-1 text-white transition ease-in-out md:gap-3 md:px-4 md:py-2 max-sm:text-sm font-raleway animate-float max-sm:hidden">Contact Us</Link>
           <AnimatePresence>
             {searchModal ? (
               <motion.div
@@ -212,7 +212,7 @@ const Navbar = () => {
                         onClick={goBack}
                       >
                         <MdChevronLeft size={26} />
-                        <span className="text-4xl font-serif mt-1">{navMainContent[activeIndex]?.title}</span>
+                        <span className="text-3xl md:text-4xl font-serif mt-1">{navMainContent[activeIndex]?.title}</span>
                       </button>
                       <ul className="text-xl text-white space-y-4 px-12 md:px-11">
                         {navMainContent[activeIndex]?.subItems?.map(
@@ -251,7 +251,7 @@ const Navbar = () => {
                         delay: 0.4,
                       },
                     }}
-                    className="absolute left-1/2 top-1/2 mx-auto mt-4 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-start justify-center gap-10 px-12 text-white sm:justify-evenly md:flex-row"
+                    className="absolute left-1/2 top-1/2 mx-auto mt-4 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-start justify-center gap-10 px-8 md:px-12 text-white sm:justify-evenly md:flex-row"
                   >
                     <motion.div
                       initial={{
@@ -265,7 +265,7 @@ const Navbar = () => {
                           duration: 1,
                         },
                       }}
-                      className="flex flex-col space-y-4 text-xl sm:text-3xl md:space-y-8"
+                      className="flex flex-col space-y-2 text-xl sm:text-3xl md:space-y-8"
                     >
                       {navMainContent.map((mainLink, index) => (
                         <motion.span
@@ -284,7 +284,7 @@ const Navbar = () => {
                               className="hover:text-[#e0e0e0]"
                               onClick={() => showSubItems(index)}
                             >
-                              <h3 className="text-3xl">{mainLink.title}</h3>
+                              <h3 className="text-2xl md:text-3xl">{mainLink.title}</h3>
                             </button>
                           ) : (
                             <Link
@@ -292,7 +292,7 @@ const Navbar = () => {
                               className="hover:text-[#e0e0e0]"
                               onClick={() => setNav(false)}
                             >
-                              <h3 className="text-3xl">{mainLink.title}</h3>
+                              <h3 className="text-2xl md:text-3xl">{mainLink.title}</h3>
                             </Link>
                           )}
                         </motion.span>
@@ -327,7 +327,7 @@ const Navbar = () => {
                               onClick={() => setNav(false)}
                               className="w-fit cursor-pointer pb-1 md:text-lg hover:underline hover:underline-offset-4"
                             >
-                              <h3 className="font-raleway">{subLink.title}</h3>
+                              <h3 className="font-raleway max-md:text-sm">{subLink.title}</h3>
                             </Link>
                           </motion.span>
                         ))}

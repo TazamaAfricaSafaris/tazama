@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -5,7 +6,8 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const cx = (...classNames: any) => classNames.filter(Boolean).join(" ");
+export const cx = (...classNames: (string | boolean | undefined)[]) =>
+  classNames.filter(Boolean).join(" ");
 
 export function formatDate(input: string | number): string {
   const date = new Date(input);

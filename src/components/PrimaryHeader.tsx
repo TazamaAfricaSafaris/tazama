@@ -18,7 +18,7 @@ const PrimaryHeader = (props: primaryHeader) => {
           alt={props.title}
         />
         <div className="container">
-          <h1 className=" absolute left-1/2 top-1/2 mx-auto w-full -translate-x-1/2 -translate-y-1/2 px-2 text-center text-6xl sm:px-12 lg:w-2/3 xl:text-7xl">
+          <h1 className=" absolute left-1/2 top-1/2 mx-auto w-full lg:min-w-full -translate-x-1/2 -translate-y-1/2 px-2 text-center text-6xl sm:px-12 lg:w-2/3 xl:text-6xl">
             {props.title}
           </h1>
 
