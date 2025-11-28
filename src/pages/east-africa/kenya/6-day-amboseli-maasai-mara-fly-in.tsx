@@ -8,11 +8,12 @@ import Accordion from '~/components/Accordion'
 
 import CallToAction from '~/components/CallToAction'
 import { sixDayAmboseliMaasaiMaraSafari } from '~/data/kenya'
+import ItineraryAccordion from '~/components/itineraries/itinerary-accordion'
 
 const Page = () => {
     return (
         <>
-            <HeadSEO title='Tazama Itenary | 6 Day Amboseli-Maasai Mara Fly-in Safari' keywords='' />
+            <HeadSEO title='Tazama Itinerary | 6 Day Amboseli-Maasai Mara Fly-in Safari' keywords='' />
 
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white overflow-hidden">
@@ -38,14 +39,14 @@ const Page = () => {
                 </p>
                 <section className='mt-20'>
                     <h3 className="text-center text-4xl  tracking-wider text-[#A87133]">
-                        Itinerary
+                        Detailed Itinerary for 6 Day Amboseli-Maasai Mara Fly-in Safari
                     </h3>
 
                     <div className='mt-10 flex flex-col-reverse items-start gap-4 md:flex-row md:gap-8 relative'>
                         <aside className="w-full md:w-1/2 md:sticky md:top-4">
                             <div className="flex flex-col-reverse items-start gap-2 md:gap-5">
                                 <Link href="/contact" className='border-primary border border-dark/40 px-6 py-3 w-full font-raleway text-center hover:bg-primary hover:text-white transition-colors rounded-md text-primary'>
-                                    Request Custom Itenary
+                                    Request Custom Itinerary
                                 </Link>
 
                                 <div className="relative h-[300px] w-full bg-zinc-900 group overflow-hidden">
@@ -72,17 +73,19 @@ const Page = () => {
                         <section className='w-full'>
                             {sixDayAmboseliMaasaiMaraSafari.map((item, index) => (
                                 <div key={index}>
-                                    <Accordion
-                                        default={true}
-                                        question={item.question}
-                                        answer={item.answer}
-                                        list={item.list}
-                                        list2={item.list2}
-                                        list3={item.list3}
-                                        listHeader={item.listHeader}
-                                        listHeader2={item.listHeader2}
-                                        listHeader3={item.listHeader3}
+                                    <ItineraryAccordion
+                                        key={index}
+                                        id={index + 1}
+                                        day={item.day}
+                                        description={item.description}
+                                        transferTime={item.transferTime}
                                         note={item.note}
+                                        mealPlan={item.mealPlan}
+                                        distance={item.distance}
+                                        highlights={item.highlights}
+                                        gallery={item.gallery}
+                                        totalDays={sixDayAmboseliMaasaiMaraSafari.length}
+                                        tripType='safari'
                                     />
                                 </div>
                             ))}
