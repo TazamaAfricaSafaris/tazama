@@ -6,6 +6,7 @@ import Link from "next/link"
 import { fourDayGorillaTrekking } from '~/data/rwanda'
 import Accordion from '~/components/Accordion'
 import CallToAction from '~/components/CallToAction'
+import ItineraryAccordion from '~/components/itineraries/itinerary-accordion'
 
 const Page = () => {
     return (
@@ -29,15 +30,11 @@ const Page = () => {
                 </div>
             </div>
 
-            <div className='mb-20 mt-28 max-w-5xl mx-auto md:px-8 px-4'>
+            <div className='mb-20 mt-28 max-w-4xl mx-auto md:px-8 px-4'>
                 <h3 className="text-5xl text-center mb-8 text-primary">4 Day Gorilla Trekking Adventure</h3>
                 <section className='mt-20'>
-                    <h3 className="text-center text-4xl  tracking-wider text-[#A87133]">
-                        Itinerary
-                    </h3>
-
                     <div className='mt-10 flex flex-col-reverse items-start gap-4 md:flex-row md:gap-8 relative'>
-                        <aside className="w-full md:w-1/2 md:sticky md:top-4">
+                        {/* <aside className="w-full md:w-1/2 md:sticky md:top-4">
                             <div className="flex flex-col-reverse items-start gap-2 md:gap-5">
                                 <Link href="/contact" className='border-primary border border-dark/40 px-6 py-3 w-full font-raleway text-center hover:bg-primary hover:text-white transition-colors rounded-md text-primary'>
                                     Request Custom Itenary
@@ -63,19 +60,23 @@ const Page = () => {
                                     </Link>
                                 </div>
                             </div>
-                        </aside>
+                        </aside> */}
                         <section className='w-full'>
                             {fourDayGorillaTrekking.map((item, index) => (
                                 <div key={index}>
-                                    <Accordion
-                                        default={true}
-                                        question={item.question}
-                                        answer={item.answer}
-                                        list={item.list}
-                                        list2={item.list2}
-                                        listHeader={item.listHeader}
-                                        listHeader2={item.listHeader2}
+                                    <ItineraryAccordion
+                                        key={index}
+                                        id={index + 1}
+                                        day={item.day}
+                                        description={item.description}
+                                        transferTime={item.transferTime}
                                         note={item.note}
+                                        mealPlan={item.mealPlan}
+                                        distance={item.distance}
+                                        highlights={item.highlights}
+                                        gallery={item.gallery}
+                                        totalDays={fourDayGorillaTrekking.length}
+                                        tripType='trekking'
                                     />
                                 </div>
                             ))}
