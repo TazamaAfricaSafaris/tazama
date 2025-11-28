@@ -10,8 +10,11 @@ import { IoMdCheckmark, IoMdClose } from "react-icons/io";
 import Accordion from '~/components/Accordion'
 import { ugandaGorillaSafariFlyIn } from '~/data/uganda'
 import CallToAction from '~/components/CallToAction';
+import { FaCheck } from 'react-icons/fa';
+import { FaXmark } from 'react-icons/fa6';
+import ItineraryAccordion from '~/components/itineraries/itinerary-accordion';
 
-const itenaryIncludes = [
+const ItineraryIncludes = [
     "Gorilla trekking permit per person",
     "Transport in a 4WD land cruiser(Window seat guaranteed)",
     "Return domestic airline ticket",
@@ -23,7 +26,7 @@ const itenaryIncludes = [
     "All government taxes"
 ]
 
-const itenaryExcludes = [
+const ItineraryExcludes = [
     "All optional activities",
     "Expenses of a personal nature",
     "Return domestic airline ticket",
@@ -37,7 +40,7 @@ const itenaryExcludes = [
 const Page = () => {
     return (
         <>
-            <HeadSEO title='Tazama Itenary | Uganda Gorilla Safari Fly In' keywords='' />
+            <HeadSEO title='Tazama Itinerary | Uganda Gorilla Safari Fly In' keywords='' />
 
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white overflow-hidden">
@@ -56,7 +59,7 @@ const Page = () => {
                 </div>
             </div>
 
-            <div className='mb-20 mt-28 max-w-5xl mx-auto md:px-8 px-4'>
+            <div className='mb-20 mt-28 max-w-4xl mx-auto md:px-8 px-4'>
                 <section>
                     <h3 className="text-5xl text-center mb-8 text-primary">Uganda Gorilla Safari Fly In</h3>
                     <p>
@@ -64,7 +67,7 @@ const Page = () => {
                     </p>
 
                     <div className="flex items-center justify-center gap-4 my-8">
-                        <div className="relative w-full h-72">
+                        <div className="relative h-relative w-full h-72 rounded-2xl overflow-hidden">
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730718010/east-africa/uganda/uganda-gorilla-safari/1-day-shoe-bill-birding-tour-mabamba-swamp_yz9z4z.jpg"
                                 alt=""
@@ -73,7 +76,7 @@ const Page = () => {
                                 className="w-full object-cover h-full"
                             />
                         </div>
-                        <div className="relative w-full h-72">
+                        <div className="relative h-relative w-full h-72 rounded-2xl overflow-hidden">
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730718213/east-africa/uganda/uganda-gorilla-safari/52037422427_838c3bc3be_h_px4gov.webp"
                                 alt=""
@@ -90,15 +93,15 @@ const Page = () => {
                 </section>
 
                 <section className='mt-20'>
-                    <h3 className="text-center text-4xl  tracking-wider text-[#A87133]">
-                        Itinerary
+                    <h3 className="text-4xl  tracking-wider text-[#A87133]">
+                        Detailed Itinerary for Uganda Gorilla Safari Fly In
                     </h3>
 
                     <div className='mt-10 flex flex-col-reverse items-start gap-4 md:flex-row md:gap-8 relative'>
-                        <aside className="w-full md:w-1/2 md:sticky md:top-4">
+                        {/* <aside className="w-full md:w-1/2 md:sticky md:top-4">
                             <div className="flex flex-col-reverse items-start gap-2 md:gap-5">
                                 <Link href="/contact" className='border-primary border px-6 py-3 w-full font-raleway text-center hover:bg-primary hover:text-white transition-colors rounded-md text-primary'>
-                                    Request Custom Itenary
+                                    Request Custom Itinerary
                                 </Link>
 
                                 <div className="relative h-[300px] w-full bg-zinc-900 group overflow-hidden">
@@ -121,56 +124,63 @@ const Page = () => {
                                     </Link>
                                 </div>
                             </div>
-                        </aside>
+                        </aside> */}
                         <section className='w-full'>
                             {ugandaGorillaSafariFlyIn.map((item, index) => (
-                                <div key={index}>
-                                    <Accordion
-                                        default={true}
-                                        question={item.question}
-                                        answer={item.answer}
-                                        list={item.list}
-                                        list2={item.list2}
-                                        listHeader={item.listHeader}
-                                        listHeader2={item.listHeader2}
-                                        note={item.note}
-                                    />
-                                </div>
+                                <ItineraryAccordion
+                                    key={index}
+                                    id={index + 1}
+                                    day={item.day}
+                                    description={item.description}
+                                    transferTime={item.transferTime}
+                                    note={item.note}
+                                    mealPlan={item.mealPlan}
+                                    distance={item.distance}
+                                    highlights={item.highlights}
+                                    gallery={item.gallery}
+                                    totalDays={ugandaGorillaSafariFlyIn.length}
+                                    tripType='safari'
+                                />
                             ))}
                         </section>
                     </div>
                 </section>
 
-                <section className='mt-20'>
-                    <div className='flex flex-col md:flex-row gap-8'>
-                        <div className='w-full'>
-                            <div className='flex flex-row items-center space-x-4'>
-                                <div className='w-8 h-8 bg-primary flex items-center justify-center rounded-full'>
-                                    <IoMdCheckmark className='text-xl text-[#F5F1EB]' />                                </div>
-                                <p className='text-2xl'>Itenary includes</p>
+                <section className="max-w-4xl mx-auto px-4 my-20 grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <div className="flex items-center gap-4 mb-4">
+                            <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
+                                <FaCheck color="#fff" />
                             </div>
-                            <ul className='list-disc list-inside mt-6'>
-                                {
-                                    itenaryIncludes.map(item => <li key={item} className='pl-8'>{item}</li>)
-                                }
-                            </ul>
+                            <h5 className="text-3xl">Cost Includes</h5>
                         </div>
-                        <div className='w-full'>
-                            <div className='flex flex-row items-center space-x-4'>
-                                <div className='w-8 h-8 bg-primary flex items-center justify-center rounded-full'>
-                                    <IoMdClose className='text-xl text-[#F5F1EB]' />                                </div>
-                                <p className='text-2xl'>Itenary Excludes</p>
+                        <ul className="list-inside list-disc flex flex-col gap-3">
+                            {ItineraryIncludes.map((item: string) => (
+                                <li key={item} className="ml-4 list-item">
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div className="flex items-center gap-4 mb-4">
+                            <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
+                                <FaXmark color="#fff" />
                             </div>
-                            <ul className='list-disc list-inside mt-6'>
-                                {
-                                    itenaryExcludes.map(item => <li key={item} className='pl-8'>{item}</li>)
-                                }
-                            </ul>
+                            <h5 className="text-3xl">Cost Excludes</h5>
                         </div>
+                        <ul className="list-inside list-disc flex flex-col gap-3">
+                            {ItineraryExcludes.map((item: string) => (
+                                <li key={item} className="ml-4 list-item">
+                                    {item}
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </section>
             </div>
-            
+
             <br /><br /><br />
             <CallToAction />
         </>
