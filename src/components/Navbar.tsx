@@ -34,7 +34,7 @@ const navMainContent = [
   {
     title: "East Africa", // New item added
     subItems: [
-      { name: "Tanzania", link: "/east-africa/tanzania" },
+      { name: "Tanzania", link: "/safaris" },
       { name: "Kenya", link: "/east-africa/kenya" },
       { name: "Rwanda", link: "/east-africa/rwanda" },
       { name: "Uganda", link: "/east-africa/uganda" },
