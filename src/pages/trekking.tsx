@@ -71,25 +71,25 @@ const TrekkingPage = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-4 md:gap-8 mt-16">
+                <div className="grid md:grid-cols-3 gap-4 md:gap-8 mt-16">
                     {
                         trekExperiences.map((experience, index) => (
                             <Link
                                 key={index}
                                 // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-                                href={`/blogs/${experience.link}`}
+                                href={`/${experience.link}`}
                                 className="w-full h-96 flex items-end justify-end relative overflow-hidden rounded-2xl group"
                             >
-                                <div className="p-8 flex flex-col justify-between gap-3 z-10">
-                                    <h4 className="text-5xl line-clamp-2 text-white">{experience.title}</h4>
-                                    <p className="text-white line-clamp-2">{experience.description}</p>
+                                <div className="p-6 flex flex-col justify-between gap-3 z-10">
+                                    <h4 className="text-4xl line-clamp-2 text-white">{experience.title}</h4>
+                                    <p className="text-white line-clamp-2 text-sm">{experience.description}</p>
                                 </div>
                                 <Image
                                     layout="fill"
                                     objectFit="cover"
                                     src={experience.image}
                                     alt={experience.title}
-                                    className="group-hover:scale-105 transition-transform object-cover w-full h-full brightness-[0.65]"
+                                    className="group-hover:scale-105 transition-transform object-cover w-full h-full brightness-[0.5]"
                                 />
                             </Link>
                         ))

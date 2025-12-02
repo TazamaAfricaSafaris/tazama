@@ -22,6 +22,7 @@ import type { SanityDocument } from "next-sanity";
 import { ItineraryCard } from "./kilimanjaro/itineraries";
 import Reviews from "~/components/home/reviews";
 import { lodges } from '~/data/lodges'
+import Hero from "~/components/home/hero";
 
 
 export const homePageContentData: contentSectionData[] = [
@@ -60,11 +61,8 @@ export default function Page(props: PageProps) {
                 keywords="African safaris, luxuruy safaris, personalized safaris, Serengeti, Kilimanjaro, memorable safaris"
                 description="Tazama Africa Safaris is a leading provider of authentic and timeless African safaris. We offer personalized safaris, connecting you with the best of Africa. Whether you're a seasoned explorer or a first-timer, we have the perfect safari for you. Book your trip today!"
             />
-            <PrimaryHeader
-                image="home.webp"
-                title="Your Next Adventure Awaits"
-                subTitle="connect, celebrate & create memories"
-            />
+
+            <Hero />
 
             <section className="mx-auto max-w-5xl px-4 xl:px-8 mt-20 lg:mt-28">
                 <h3 className="mb-4 text-4xl lg:text-5xl text-primary text-center">
@@ -110,7 +108,7 @@ export default function Page(props: PageProps) {
                             </div>
                         </div>
                         <Image
-                            src="https://images.unsplash.com/photo-1464908394256-327852e6539a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src="https://images.pexels.com/photos/2101088/pexels-photo-2101088.jpeg"
                             alt="Trekking"
                             fill
                             className="object-cover group-hover:scale-110 transition-transform duration-200 brightness-90"
@@ -133,7 +131,7 @@ export default function Page(props: PageProps) {
                             src="https://images.unsplash.com/photo-1621583628955-42fbc37bf424?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="Beach Holidays"
                             fill
-                            className="object-cover group-hover:scale-110 transition-transform duration-200 brightness-90"
+                            className="object-cover group-hover:scale-110 transition-transform duration-200 brightness-75"
                         />
                     </Link>
                 </div>
@@ -151,7 +149,7 @@ export default function Page(props: PageProps) {
                     </p>
                     <br />
                     <div className="mx-auto">
-                        <Link href="/about" className="border border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-primary hover:bg-primary/5 transition-colors duration-200 cursor-pointer w-fit">
+                        <Link href="/about" className="border border-primary hover:border-primary rounded-md px-4 lg:px-8 py-4 md:text-lg text-xl font-raleway text-primary hover:bg-primary/15 transition-colors duration-200 cursor-pointer mx-auto flex justify-center w-fit">
                             Learn More
                         </Link>
                     </div>
@@ -243,16 +241,34 @@ export default function Page(props: PageProps) {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                     {(props.itineraries?.length ?? 0) > 0 ? (
-                        props.itineraries.slice(0, 3).map((itinerary) => (
-                            <ItineraryCard key={itinerary?._id} itinerary={itinerary} />
-                        ))
+                        (() => {
+                            // Sort itineraries by price
+                            const sorted = [...props.itineraries].sort((a, b) =>
+                                ((a.price as number) ?? 0) - ((b.price as number) ?? 0)
+                            );
+
+                            // Get cheapest, most expensive, and midrange
+                            const cheapest = sorted[0];
+                            const mostExpensive = sorted[sorted.length - 1];
+                            const midIndex = Math.floor(sorted.length / 2);
+                            const midrange = sorted[midIndex];
+
+                            // Filter out any undefined values and return
+                            return [cheapest, midrange, mostExpensive]
+                                .filter((itinerary): itinerary is SanityDocument => itinerary !== undefined)
+                                .map((itinerary) => (
+                                    <ItineraryCard key={itinerary?._id} itinerary={itinerary} />
+                                ));
+                        })()
                     ) : (
                         <p className="col-span-full text-center text-gray-600">No itineraries found.</p>
                     )}
                 </div>
+
+
                 <Link
                     href="/tours"
-                    className="border border-primary hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-primary hover:bg-primary/15 transition-colors duration-200 cursor-pointer mx-auto flex justify-center w-fit"
+                    className="border border-primary hover:border-primary rounded-md px-4 lg:px-8 py-4 md:text-lg text-xl font-raleway text-primary hover:bg-primary/15 transition-colors duration-200 cursor-pointer mx-auto flex justify-center w-fit"
                 >
                     See more itineraries
                 </Link>
