@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/prefer-nullish-coalescing */
 import { createTRPCRouter, publicProcedure } from "../trpc";
 import { Resend } from "resend";
 import { planMyTripSchema } from "~/components/forms/all-forms/plan-my-trip/AllQuestions";

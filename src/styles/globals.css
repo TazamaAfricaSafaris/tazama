@@ -40,9 +40,9 @@ h6,
   font-family: "Poppins", sans-serif;
 }
 
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 p {
   @apply leading-relaxed;

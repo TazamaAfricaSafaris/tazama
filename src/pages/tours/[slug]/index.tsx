@@ -129,7 +129,11 @@ export default function Page(props: PageProps) {
     return (
         <>
             <HeadSEO
+<<<<<<< HEAD
                 title={`${title}`}
+=======
+                title={title}
+>>>>>>> ae8c73f89ac5dcc845f121f7cf5b71a70c95f3c7
                 keywords={base_keywords}
                 description={subHeading || title}
             />
@@ -370,6 +374,7 @@ export const getStaticProps = async ({ params = {}, draftMode = false }) => {
             draftMode,
             token: draftMode ? token : "",
         },
+        revalidate: 60
     };
 };
 
