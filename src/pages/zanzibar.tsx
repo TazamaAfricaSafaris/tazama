@@ -96,6 +96,7 @@ const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: 
           description="Swahili is the main language spoken throughout Zanzibar, though English is also widely used. The island’s people are known for their warmth and hospitality, and its culture is a colorful mix of African, Arab, Indian, and Persian influences reflected in its food, music, and architecture."
           image={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME
             }/image/upload/${images[7]!.public_id}.${images[7]!.format}`}
+          reverse={false}
         />
 
         <ContentSection
