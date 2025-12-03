@@ -4,7 +4,7 @@ import Image from 'next/image'
 function Hero() {
     return (
         <div className="relative h-screen">
-            <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/40 text-white">
+            <div className="absolute bg-darker bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/40 text-white">
                 <video
                     autoPlay
                     muted
