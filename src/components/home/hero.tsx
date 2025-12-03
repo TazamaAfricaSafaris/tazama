@@ -10,9 +10,9 @@ function Hero() {
                     muted
                     loop
                     playsInline
-                    className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
+                    className="absolute left-0 right-0 top-0 h-screen w-screen object-cover opacity-80"
                 >
-                    <source src="/assets/tazama-video.mp4" type="video/mp4" />
+                    <source src="https://res.cloudinary.com/drhl0yu7y/video/upload/v1764753833/tazama-video_ijznqm.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
 
