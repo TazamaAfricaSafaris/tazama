@@ -73,7 +73,7 @@ const Page = ({ itineraries }: { itineraries: SanityDocument[] }) => {
         <br />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {(itineraries?.length ?? 0) > 0 ? (
-            itineraries.slice(0, 6).map((itinerary) => (
+            itineraries.map((itinerary) => (
               <ItineraryCard key={itinerary?._id} itinerary={itinerary} />
             ))
           ) : (

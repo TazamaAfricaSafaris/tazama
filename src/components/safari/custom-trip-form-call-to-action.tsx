@@ -18,13 +18,13 @@ function CustomTripFormCallToAction() {
   return (
     <section className="bg-lighter relative bg-cover bg-center py-8 rounded-3xl overflow-hidden">
       <div className="max-w-5xl z-10 relative top-0 left-0 w-full mx-auto flex flex-col items-center justify-center p-4 gap-8 md:p-10 xl:px-36 text-white">
-        <h1 className="text-5xl leading-none text-left">Your next breathtaking escape awaits.</h1>
+        <h1 className="text-5xl leading-none text-center">Bring Your Dreams into Reality.</h1>
 
         <div className="flex flex-col md:flex-row items-start justify-start gap-4 w-full">
 
           <Dialog>
             <DialogTrigger asChild>
-              <p className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer">
+              <p className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-center mx-auto text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer">
                 Plan My Trip
               </p>
             </DialogTrigger>
@@ -51,7 +51,7 @@ function CustomTripFormCallToAction() {
         </div>
       </div>
       <br />
-      <Image src="https://images.pexels.com/photos/1815084/pexels-photo-1815084.jpeg" alt="" layout="fill" objectFit="cover" className="w-full h-full brightness-[0.7]" />
+      <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1720014575/home/lioness_o9ed35.webp" alt="" layout="fill" objectFit="cover" className="w-full h-full brightness-[0.7]" />
     </section>
   )
 }

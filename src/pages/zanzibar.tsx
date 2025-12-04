@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 /* eslint-disable react-hooks/rules-of-hooks */
 import Image from "next/legacy/image";
-import { ImageProps } from "~/lib/generateBlurPlaceHolder";
-import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
-import QuoteSection from "~/components/QuoteSection";
+import { useState } from "react";
+import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
+import { CloudinaryImage } from "~/components/ui/GalleryImage";
 import useFetchImages from "~/hooks/useFetchImages";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
@@ -14,8 +14,12 @@ import type { SanityDocument } from "next-sanity";
 import { token } from "~/sanity/lib/token";
 import { itineraryQueries } from "~/sanity/lib/queries";
 import { ItineraryCard } from "~/pages/kilimanjaro/itineraries"
+import { Dialog, DialogContent, DialogTrigger } from "~/components/ui/dialog";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: ImageProps[] }) => {
+  const [loading, setLoading] = useState(true);
+
   return (
     <>
       <HeadSEO
@@ -110,7 +114,7 @@ const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: 
           title="The Spice Islands"
           description="Zanzibar is often called the “Spice Islands” for good reason. Its fertile soils produce cloves, nutmeg, cinnamon, and black pepper, spices that have been traded for centuries. Visiting a spice farm is one of the most authentic experiences on the island, offering a taste of Zanzibar’s deep-rooted history and culture."
           image={`https://res.cloudinary.com/drhl0yu7y/image/upload/v1763028976/beach_holidays/theoutsider_uex1lf.jpg`}
-            reverse={false}
+          reverse={false}
         />
       </div>
 
@@ -126,6 +130,44 @@ const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: 
             <p className="col-span-full text-center text-gray-600">No itineraries found.</p>
           )}
         </div>
+      </section>
+
+      <section className="bg-lighter relative bg-cover bg-center py-8 rounded-3xl overflow-hidden max-w-5xl mx-auto mb-28">
+        <div className="max-w-5xl z-10 relative top-0 left-0 w-full mx-auto flex flex-col items-center justify-center p-4 gap-8 md:p-10 xl:px-36 text-white">
+          <h1 className="text-5xl leading-none text-left">Bring Your Dreams into Reality.</h1>
+
+          <div className="flex flex-col md:flex-row items-start justify-start gap-4 w-full">
+
+            <Dialog>
+              <DialogTrigger asChild>
+                <p className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer text-center mx-auto">
+                  Plan My Trip
+                </p>
+              </DialogTrigger>
+              <DialogContent className="h-[80%] p-0 bg-background">
+                <AnimatePresence>
+                  {loading && (
+                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="absolute inset-0 flex justify-center items-center text-darker">
+                      <p className="text-xl text-white">Loading...</p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+                <iframe
+                  width="720"
+                  height="315"
+                  src="https://forms.zohopublic.com/tazamaafricatourssafari1/form/TAZAMAPLANMYTRIPFORM/formperma/RpRK4CHabrTCKwe3sv1FNL5N9TBgcoBzTUZnWs6_Fvo"
+                  title="Plan your dream trip and we'll get back to you"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  className="w-full h-full z-0 rounded-xl"
+                  onLoad={() => setLoading(false)}
+                ></iframe>
+              </DialogContent>
+            </Dialog>
+          </div>
+        </div>
+        <br />
+        <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1708503582/beach_holidays/eoxqa1kpd8og9y7hrr5u.jpg" alt="" layout="fill" objectFit="cover" className="w-full h-full brightness-[0.6]" />
       </section>
     </>
   );
