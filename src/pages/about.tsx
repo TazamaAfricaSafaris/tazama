@@ -112,7 +112,7 @@ const AboutPage = () => {
             meets the untamed, and every moment is a story waiting to be told.
           </p>
           <br />
-          <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
             <h3 className="text-4xl text-primary">
               Partnering with SafariBookings.com
             </h3>
@@ -130,10 +130,9 @@ const AboutPage = () => {
                 www.safaribookings.com
               </Link>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
-      <br />
       <div className="flex flex-col gap-12 mt-12 lg:mt-20">
         {array
           .sort(aboutPageContentData, "asc", "rank")
