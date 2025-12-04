@@ -82,7 +82,7 @@ const Page = ({ itineraries }: { itineraries: SanityDocument[] }) => {
         </div>
       </div>
 
-      <div className="mx-auto max-w-5xl px-4 md:px-8">
+      <div className="mx-auto max-w-5xl px-4 md:px-8 mb-20">
         <SafariTripadivsorReviews />
       </div>
       <br />
