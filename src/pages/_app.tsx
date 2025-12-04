@@ -52,16 +52,24 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     return () => cancelFrame(update)
   }, [])
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }, [])
+
   return (
     <ReactLenis
-    options={{
-      autoRaf: false,
-      duration: 1.5,          // Scroll animation duration (seconds)
-      smoothWheel: true,      // Enable smooth mouse wheel scrolling
-      infinite: false,
-    }}
-    ref={lenisRef}
-    root
+      options={{
+        autoRaf: false,
+        duration: 1.5,          // Scroll animation duration (seconds)
+        smoothWheel: true,      // Enable smooth mouse wheel scrolling
+        infinite: false,
+      }}
+      ref={lenisRef}
+      root
     >
       <React.Fragment>
         <style jsx global>
