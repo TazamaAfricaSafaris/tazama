@@ -52,10 +52,6 @@ const navSubContent = [
     link: "/faq",
   },
   {
-    title: "Special Offers",
-    link: "/safaris/special-offers",
-  },
-  {
     title: "Blogs",
     link: "/blogs",
   },
