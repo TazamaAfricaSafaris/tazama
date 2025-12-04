@@ -64,18 +64,7 @@ const uganda = () => {
                         {
                             itenaries.map(itenary => (
                                 <CarouselItem className="md:basis-1/2 lg:basis-1/3" key={itenary.link}>
-                                    <Link href={`uganda/${itenary.link}`}>
-                                        <div className='bg-light w-full h-80 md:h-96 relative overflow-hidden'>
-                                            <Image
-                                                src={itenary.img}
-                                                alt=""
-                                                layout="fill"
-                                                objectFit="cover"
-                                                className='w-full h-full object-cover brightness-90'
-                                            />
-                                        </div>
-                                        <p className='mt-2 text-xl z-10'>{itenary.title}</p>
-                                    </Link>
+                                    <ItineraryCard itinerary={itenary} />
                                 </CarouselItem>
                             ))
                         }
@@ -96,15 +85,51 @@ const uganda = () => {
 
 export default uganda
 
+export function ItineraryCard({ itinerary }: { itinerary: { link: string, title: string, img: string, days: number } }) {
+    return (
+        <Link href={itinerary.link ? `${itinerary.link}` : "#"} className="block">
+            <div className="h-96 rounded-xl relative overflow-hidden group">
+                <Image
+                    src={itinerary.img}
+                    alt={itinerary.title}
+                    layout="fill"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+
+                <div className="absolute top-0 left-0 p-4 right-4 text-white bg-gradient-to-b from-black/60 w-full">
+                    <div className="flex flex-col gap-0.5">
+                        <p className="text-xl font-bold line-clamp-2">
+                            {itinerary.title}
+                        </p>
+                    </div>
+                </div>
+
+                <div className="absolute bottom-0 left-0 text-white p-4 w-full flex items-center justify-between bg-gradient-to-t from-black/60">
+                    <div className="flex flex-col">
+                        <p>Trip duration</p>
+                        <p className="text-2xl font-bold">
+                            {itinerary.days} Days
+                        </p>
+                    </div>
+
+                    <button className='bg-transparent border-2 border-white py-2 px-6 font-semibold rounded-full group-hover:bg-white group-hover:text-primary transition-colors'>See more</button>
+                </div>
+            </div>
+        </Link>
+    );
+}
+
 const itenaries = [
     {
-        link: 'chimps-wildlife-fishing-safari',
+        link: '/east-africa/uganda/chimps-wildlife-fishing-safari',
         title: 'Chimps, Wildlife and Fishing Safari',
-        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711197/east-africa/uganda/chimps-wildlife-fishing-safari/49198076118_4fa0090611_k_bbsmqo.jpg'
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711197/east-africa/uganda/chimps-wildlife-fishing-safari/49198076118_4fa0090611_k_bbsmqo.jpg',
+        days: 6
     },
     {
-        link: 'uganda-gorilla-safari-fly-in',
+        link: '/east-africa/uganda/uganda-gorilla-safari-fly-in',
         title: '4 Day Gorilla Trekking',
-        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711559/east-africa/uganda/uganda-gorilla-safari/26022685797_fb352d1d64_k_eqveca.webp'
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711559/east-africa/uganda/uganda-gorilla-safari/26022685797_fb352d1d64_k_eqveca.webp',
+        days: 4
     },
 ]

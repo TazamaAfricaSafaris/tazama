@@ -12,6 +12,7 @@ import PrimaryHeader from '~/components/PrimaryHeader'
 import HeadSEO from '~/components/ui/Head'
 import { rwandaContent } from '~/data/east-africa'
 import { base_keywords } from '~/lib/constants'
+import { ItineraryCard } from '../uganda'
 
 const kenya = () => {
   return (
@@ -46,30 +47,13 @@ const kenya = () => {
       <section className='max-w-5xl my-20 mx-auto px-4'>
         <h4 className="text-4xl text-primary">Our Itenaries</h4>
         <br />
-        <Carousel className='w-full max-w-sm md:max-w-none'>
-          <CarouselPrevious />
-          <CarouselContent>
-            {
-              itenaries.map(itenary => (
-                <CarouselItem className="md:basis-1/2 lg:basis-1/3" key={itenary.link}>
-                  <Link href={`rwanda/${itenary.link}`}>
-                    <div className='bg-black w-full h-80 md:h-96 relative overflow-hidden'>
-                      <Image
-                        src={itenary.img}
-                        alt=""
-                        layout="fill"
-                        objectFit="cover"
-                        className='w-full h-full object-cover brightness-90'
-                      />
-                    </div>
-                    <p className='mt-2 text-xl z-10'>{itenary.title}</p>
-                  </Link>
-                </CarouselItem>
-              ))
-            }
-          </CarouselContent>
-          <CarouselNext />
-        </Carousel>
+        <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative'>
+          {
+            itenaries.map((itenary, index) => (
+              <ItineraryCard key={index} itinerary={itenary} />
+            ))
+          }
+        </div>
       </section>
 
       <section className='max-w-5xl my-20 mx-auto text-center px-4'>
@@ -86,23 +70,27 @@ export default kenya
 
 const itenaries = [
   {
-    link: 'rwanda-gorilla-safari',
+    link: '/east-africa/rwanda/rwanda-gorilla-safari',
     title: 'Rwanda Gorilla Safari',
-    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730709645/east-africa/rwanda/rwanda-gorilla-trekking/49197853001_362e5dca1e_k_lpuofw.webp'
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730709645/east-africa/rwanda/rwanda-gorilla-trekking/49197853001_362e5dca1e_k_lpuofw.webp',
+    days: 4,
   },
   {
-    link: '4-day-gorilla-trekking',
+    link: '/east-africa/rwanda/4-day-gorilla-trekking',
     title: '4 Day Gorilla Trekking',
-    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730707076/east-africa/rwanda/4-day-gorilla-trekking/35303680765_e4d19f5a46_k_jqahjx.webp'
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730707076/east-africa/rwanda/4-day-gorilla-trekking/35303680765_e4d19f5a46_k_jqahjx.webp',
+    days: 4,
   },
   {
-    link: '5-day-rwanda-itenary',
+    link: '/east-africa/rwanda/5-day-rwanda-itenary',
     title: '5 Day Rwanda Safari',
-    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730709939/east-africa/rwanda/5-day-rwanda-safari/51912508047_1719d91c62_k_nejeon.webp'
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730709939/east-africa/rwanda/5-day-rwanda-safari/51912508047_1719d91c62_k_nejeon.webp',
+    days: 5,
   },
   {
-    link: '6-day-rwanda-safari',
+    link: '/east-africa/rwanda/6-day-rwanda-safari',
     title: '6 Day Rwanda Safari',
-    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730710201/east-africa/rwanda/6-day-rwanda-safari/40185985184_8a3cd7cad6_k_ud0kay.webp'
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730710201/east-africa/rwanda/6-day-rwanda-safari/40185985184_8a3cd7cad6_k_ud0kay.webp',
+    days: 6,
   },
 ]
