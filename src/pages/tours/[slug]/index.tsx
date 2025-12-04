@@ -385,7 +385,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return { paths, fallback: 'blocking' };
 };
 
-const ZohoFormButton = ({ link, title }: { link: string, title: string }) => {
+export const ZohoFormButton = ({ link, title }: { link: string, title: string }) => {
     return (
         <Dialog>
             <DialogTrigger asChild>

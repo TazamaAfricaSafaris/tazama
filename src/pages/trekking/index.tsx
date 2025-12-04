@@ -5,7 +5,6 @@ import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
 import Link from "next/link";
 import { HomeContactUs } from "~/components/HomeContactUs";
-import Carousel, { CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "~/components/Carousel";
 import ReasonsCallToActionKilimanjaro from "~/components/kilimanjaro/reasons-cta";
 
 const trekExperiences = [
@@ -31,7 +30,7 @@ const trekExperiences = [
         image: "https://res.cloudinary.com/drhl0yu7y/image/upload/v1763712822/01TNHC-IM0001-ngorongoro-highlands-camp_dlq3v5.jpg",
         title: "Ngorongoro Highlands Trekking",
         description: "The Ngorongoro Highlands offer one of the most unique trekking experiences in East Africa.",
-        link: "/kilimanjaro"
+        link: "/trekking/ngorongoro-highlands"
     },
 ]
 
