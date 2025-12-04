@@ -5,10 +5,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 import * as React from "react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
-import useEmblaCarousel from // type EmblaCarouselType as CarouselApi,
-// type EmblaOptionsType as CarouselOptions,
-// type EmblaPluginType as CarouselPlugin,
-"embla-carousel-react";
+import useEmblaCarousel from "embla-carousel-react";
 
 import { cn } from "~/lib/utils";
 import { Button } from "~/components/ui/button";
@@ -156,7 +153,7 @@ const CarouselContent = React.forwardRef<
   const { carouselRef, orientation } = useCarousel();
 
   return (
-    <div ref={carouselRef} className="overflow-hidden">
+    <div ref={carouselRef} className="">
       <div
         ref={ref}
         className={cn(
