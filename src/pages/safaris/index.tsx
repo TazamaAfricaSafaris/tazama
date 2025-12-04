@@ -10,8 +10,7 @@ import SafariTripadivsorReviews from "~/components/safari/safari-tripadivsor-rev
 import { getClient } from "~/sanity/lib/client";
 import type { SanityDocument } from "next-sanity";
 import { token } from "~/sanity/lib/token";
-import { POSTS_QUERY, itineraryQueries } from "~/sanity/lib/queries";
-import { urlFor } from "~/sanity/lib/image";
+import { itineraryQueries } from "~/sanity/lib/queries";
 import { ItineraryCard } from "../kilimanjaro/itineraries";
 import CustomTripFormCallToAction from "~/components/safari/custom-trip-form-call-to-action";
 
