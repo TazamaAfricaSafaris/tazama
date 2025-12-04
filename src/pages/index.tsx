@@ -4,16 +4,12 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable react/no-unescaped-entities */
 import { HomeContactUs } from "~/components/HomeContactUs";
-import PrimaryHeader from "~/components/PrimaryHeader";
 
 import { getClient } from "~/sanity/lib/client";
 import { token } from "~/sanity/lib/token";
 import { POSTS_QUERY } from "~/sanity/lib/queries";
 import { itineraryQueries } from "~/sanity/lib/queries";
 
-import ContentSection, {
-    type contentSectionData,
-} from "~/components/ContentSection";
 import HeadSEO from "~/components/ui/Head";
 import Link from "next/link";
 import Image from "next/image";
@@ -25,25 +21,6 @@ import { lodges } from '~/data/lodges'
 import Hero from "~/components/home/hero";
 
 
-export const homePageContentData: contentSectionData[] = [
-    {
-        rank: 1,
-        reverse: true,
-        action: "/about",
-        image: "https://res.cloudinary.com/drhl0yu7y/image/upload/v1720014575/home/lioness_o9ed35.webp",
-        actionTitle: "Our Story",
-        title: "Why Travel with Tazama",
-        description: `Our outstanding guides and staff are experts who ensure your trip is seamless from start to finish. We offer authentic safaris, giving you up an up-close glimpse of these incredible ecosystems at the pace you'd prefer. We partner with outfitters that share our passion of environmentally sustainable business practices and commit to buying local, organic and women-owned where possible. Whether it's on the slopes of Kilimanjaro or the plains of the Serengeti, we promise to deliver an experience that is authentic, adventurous, and awe-inspiring! We can't wait to share our home with you.`,
-    },
-    {
-        rank: 2,
-        reverse: false,
-        image: "https://res.cloudinary.com/drhl0yu7y/image/upload/v1720014575/home/maasai_umc8z9.webp",
-        title: "Locally Owned & Operated",
-        description:
-            "When you travel with us, we'll be with you every step of the way. From the minute you touch down on the runway our talented, dedicated, and passionate staff are there to make sure you have the trip of a lifetime. We can't wait to share our home with you.",
-    },
-];
 
 type PageProps = {
     posts: SanityDocument[];
