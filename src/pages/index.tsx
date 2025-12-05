@@ -122,7 +122,7 @@ export default function Page(props: PageProps) {
                     <p
                         className="font-raleway"
                     >
-                        We at Tazama Africa Safaris pride ourselves on collaborating with top-tier partners to ensure our guests receive the best experiences Africa has to offer. We are committed to providing our guests with the best possible experience, whether it be a traditional safari or a modern trekking expedition.
+                        We at Tazama Africa Safaris pride ourselves on collaborating with top-tier partners to ensure our guests receive the best experiences Africa has to offer. We are committed to providing our guests with the best possible experience, Whether it be a luxury safari, trekking or a beach holiday
                     </p>
                     <br />
                     <div className="mx-auto">
@@ -144,11 +144,14 @@ export default function Page(props: PageProps) {
 
             <section className="mx-auto max-w-5xl px-4 xl:px-8 mt-28">
                 <h3 className="mb-4 text-4xl lg:text-5xl text-primary text-center">
-                    Move Outside Your Comfort Zone
+                    Explore East Africa, The Tazama Way
                 </h3>
 
                 <p className="text-center mx-auto max-w-4xl">
-                    Your comfort zone is a cozy couch. Outside of it is the roar of a lion at sunrise, the silhouette of a giraffe against a blazing sunset, and the feeling of awe that rewires your soul. Trade your routine for the wild. Your East African adventure awaits.
+                    Our expertise spans all four corners of East Africa. Whether you’re tracking gorillas, chasing the Great Migration, or unwinding on pristine coastlines, Tazama crafts fully personalized itineraries shaped around you.
+                    <br />
+                    <br />
+                    Click on any destination below and begin your journey.
                 </p>
                 <br />
                 <div className="grid grid-cols-3 gap-4">
