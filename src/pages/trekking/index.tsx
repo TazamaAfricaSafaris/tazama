@@ -95,9 +95,11 @@ const TrekkingPage = () => {
                                 href={`/${experience.link}`}
                                 className="w-full h-96 flex items-end justify-end relative overflow-hidden rounded-2xl group"
                             >
-                                <div className="p-6 flex flex-col justify-between gap-3 z-10">
-                                    <h4 className="text-4xl line-clamp-2 text-white">{experience.title}</h4>
-                                    <p className="text-white line-clamp-2 text-sm">{experience.description}</p>
+                                <div className="p-6 flex flex-col justify-between gap-3 z-10 text-white">
+                                    <h4 className="text-4xl line-clamp-2">{experience.title}</h4>
+                                    <p className="line-clamp-2 text-sm">{experience.description}</p>
+                                    <button className='bg-transparent border-2 border-white py-2 px-6 font-semibold rounded-full group-hover:bg-white group-hover:text-primary transition-colors'>Explore</button>
+
                                 </div>
                                 <Image
                                     layout="fill"
