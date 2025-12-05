@@ -6,6 +6,7 @@ import { base_keywords } from "~/lib/constants";
 import Link from "next/link";
 import { HomeContactUs } from "~/components/HomeContactUs";
 import ReasonsCallToActionKilimanjaro from "~/components/kilimanjaro/reasons-cta";
+import { ItineraryCard } from "../east-africa/uganda";
 
 const trekExperiences = [
     {
@@ -13,12 +14,6 @@ const trekExperiences = [
         title: "Kilimanjaro Trekking",
         description: "Climbing Mount Kilimanjaro is one of the world’s greatest trekking achievements.",
         link: "/kilimanjaro"
-    },
-    {
-        image: "https://res.cloudinary.com/drhl0yu7y/image/upload/v1708504712/chimp_trekking/iscrqp7sdqdetsykfkts.jpg",
-        title: "Gorilla Trekking",
-        description: "Step into the misty jungles of Uganda or Rwanda for a once-in-a-lifetime encounter with endangered mountain gorillas.",
-        link: "/east-africa/uganda"
     },
     {
         image: "/assets/images/gallery/mount-meru.webp",
@@ -31,6 +26,27 @@ const trekExperiences = [
         title: "Ngorongoro Highlands Trekking",
         description: "The Ngorongoro Highlands offer one of the most unique trekking experiences in East Africa.",
         link: "/trekking/ngorongoro-highlands"
+    },
+]
+
+const gorillaTrekking = [
+    {
+        link: '/east-africa/rwanda/4-day-gorilla-trekking',
+        title: '4 Day Gorilla Trekking',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730707076/east-africa/rwanda/4-day-gorilla-trekking/35303680765_e4d19f5a46_k_jqahjx.webp',
+        days: 4,
+    },
+    {
+        link: '/east-africa/uganda/uganda-gorilla-safari-fly-in',
+        title: '4 Day Gorilla Trekking',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711559/east-africa/uganda/uganda-gorilla-safari/26022685797_fb352d1d64_k_eqveca.webp',
+        days: 4
+    },
+    {
+        link: '/east-africa/rwanda/rwanda-gorilla-safari',
+        title: 'Rwanda Gorilla Safari',
+        img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1730709645/east-africa/rwanda/rwanda-gorilla-trekking/49197853001_362e5dca1e_k_lpuofw.webp',
+        days: 4,
     },
 ]
 
@@ -70,7 +86,7 @@ const TrekkingPage = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-4 md:gap-8 mt-16">
+                <div className="grid md:grid-cols-3 gap-4 mt-16">
                     {
                         trekExperiences.map((experience, index) => (
                             <Link
@@ -93,9 +109,14 @@ const TrekkingPage = () => {
                             </Link>
                         ))
                     }
+                    {
+                        gorillaTrekking.map((itenary, index) => (
+                            <ItineraryCard key={index} itinerary={itenary} />
+                        ))
+                    }
                 </div>
 
-                <div className="mt-24">
+                <div className="mt-16">
                     <ReasonsCallToActionKilimanjaro />
                 </div>
             </section >

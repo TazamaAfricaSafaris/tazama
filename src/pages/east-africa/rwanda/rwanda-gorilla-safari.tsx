@@ -1,13 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import HeadSEO from '~/components/ui/Head'
-import Link from 'next/link'
 
 import Image from 'next/image'
 
-import { IoMdCheckmark, IoMdClose } from "react-icons/io";
-
-import Accordion from '~/components/Accordion'
 import { rwandaGorillaSafari } from '~/data/rwanda';
 import CallToAction from '~/components/CallToAction';
 import ItineraryAccordion from '~/components/itineraries/itinerary-accordion';
