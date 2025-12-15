@@ -20,15 +20,15 @@ const Page = () => {
 
       <div className="relative h-screen">
         <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
-            <Image
-              fill
-              src={'https://res.cloudinary.com/drhl0yu7y/image/upload/v1765794414/partners/kafika-house/kafika-244_gwmznv.webp'}
-              className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
-              alt={'Kafika House'}
-              sizes="100vw"
-              placeholder="blur"
-              blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmZiIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-            />
+          <Image
+            fill
+            src={'https://res.cloudinary.com/drhl0yu7y/image/upload/v1765794414/partners/kafika-house/kafika-244_gwmznv.webp'}
+            className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
+            alt={'Kafika House'}
+            sizes="100vw"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmZiIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
+          />
           <div className="container">
             <h1 className="absolute left-1/2 top-1/2 mx-auto w-full -translate-x-1/2 -translate-y-1/2 px-2 text-center text-5xl sm:px-12 lg:w-2/3 xl:text-6xl">
               Kafika House
@@ -45,7 +45,7 @@ const Page = () => {
           </p>
           <br />
           <p>
-            <Link href="https://kafikahouse.org/" className='underline underline-offset-4 font-semibold'>Kafika House</Link> ensures that every child receives the treatment they deserve, regardless of cost. While parents are asked to contribute within their means, Kafika House covers the remaining expenses. This compassionate approach enables children to regain their health, attend school, and actively participate in community life.
+            <Link href="https://kafikahouse.org/" className='underline underline-offset-4 font-semibold'>Kafika House</Link> provides high-love, low-cost surgical and rehabilitative care for children in Tanzania living with treatable disabilities. Since 2008, the organisation has helped more than 10,000 children access surgery, recovery, and rehabilitation in a warm, supportive environment, ensuring that cost is never a barrier to a child’s healing.
           </p>
         </section>
 
@@ -109,7 +109,9 @@ const Page = () => {
         <div className='max-w-5xl mx-auto py-20 px-4'>
           <h3 className="text-3xl mb-4 text-white">Do You Want to Visit Kafika House?</h3>
           <p className='text-white/90'>Visiting Kafika House is a unique opportunity to see the life-changing work being done up close. Our guests who visit often leave inspired and moved by the experience. If you are interested in visiting, please let us know, and we will arrange a tour for you. A minimum contribution of $100 is requested for facility tours, which directly supports Kafika House's ongoing efforts.</p>
-          <button className='bg-primary text-white px-6 py-2 mt-4 rounded-md'>Visit Kafika House</button>
+          <Link href='https://www.kafikahouse.org' target="_blank">
+            <button className='bg-primary text-white px-6 py-2 mt-4 rounded-md'>Visit Kafika House</button>
+          </Link>
         </div>
       </section>
 
