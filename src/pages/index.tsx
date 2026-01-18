@@ -50,8 +50,8 @@ export default function Page(props: PageProps) {
                     Tazama specializes in curating unforgettable memories that will have you reminiscing with your loved ones for years to come. Boasting over 15 years of expertise in the safari industry, we've mastered the art of crafting seamless journeys.
                 </p>
 
-                <div className="grid grid-cols-3 gap-4 mt-8">
-                    <Link href="/safaris" className="w-full h-96 flex items-center justify-center relative overflow-hidden rounded-2xl group">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+                    <Link href="/safaris" className="w-full h-72 md:h-80 lg:h-96 flex items-center justify-center relative overflow-hidden rounded-2xl group">
                         <div className="text-center z-10 w-full h-full text-white py-8 flex flex-col justify-between">
                             <div>
                                 <p className='font-bold text-3xl'>Safaris</p>
@@ -71,7 +71,7 @@ export default function Page(props: PageProps) {
                             className="object-cover group-hover:scale-110 transition-transform duration-200 brightness-75"
                         />
                     </Link>
-                    <Link href="/trekking" className="w-full h-96 flex items-center justify-center relative overflow-hidden rounded-2xl group">
+                    <Link href="/trekking" className="w-full h-72 md:h-80 lg:h-96 flex items-center justify-center relative overflow-hidden rounded-2xl group">
                         <div className="text-center z-10 w-full h-full text-white py-8 flex flex-col justify-between">
                             <div>
                                 <p className='font-bold text-3xl'>Trekking</p>
@@ -91,7 +91,7 @@ export default function Page(props: PageProps) {
                             className="object-cover group-hover:scale-110 transition-transform duration-200 brightness-90"
                         />
                     </Link>
-                    <Link href="/zanzibar" className="w-full h-96 flex items-center justify-center relative overflow-hidden rounded-2xl group">
+                    <Link href="/zanzibar" className="w-full h-72 md:h-80 lg:h-96 flex items-center justify-center relative overflow-hidden rounded-2xl group">
                         <div className="text-center z-10 w-full h-full text-white py-8 flex flex-col justify-between">
                             <div>
                                 <p className='font-bold text-3xl'>Beach Holidays</p>
@@ -154,8 +154,8 @@ export default function Page(props: PageProps) {
                     Click on any destination below and begin your journey.
                 </p>
                 <br />
-                <div className="grid grid-cols-3 gap-4">
-                    <Link href="/safaris" className="h-64 col-span-2 flex items-start justify-start relative overflow-hidden rounded-2xl group">
+                <div className="grid md:grid-cols-3 gap-4">
+                    <Link href="/safaris" className="h-64 md:col-span-2 flex items-start justify-start relative overflow-hidden rounded-2xl group">
                         <div className="px-8 w-full h-full text-white py-8 flex flex-col justify-end z-10">
                             <p className="text-2xl">Tanzania</p>
                         </div>
@@ -167,7 +167,7 @@ export default function Page(props: PageProps) {
                             className="object-cover group-hover:scale-110 transition-transform duration-200 brightness-75"
                         />
                     </Link>
-                    <Link href="/east-africa/uganda" className="h-64 col-span-1 flex items-start justify-start relative overflow-hidden rounded-2xl group">
+                    <Link href="/east-africa/uganda" className="h-64 md:col-span-1 flex items-start justify-start relative overflow-hidden rounded-2xl group">
                         <div className="px-8 w-full h-full text-white py-8 flex flex-col justify-end z-10">
                             <p className="text-2xl">Uganda</p>
                         </div>
@@ -192,7 +192,7 @@ export default function Page(props: PageProps) {
                         />
                     </Link>
 
-                    <Link href="/east-africa/kenya" className="h-64 col-span-2 flex items-start justify-start relative overflow-hidden rounded-2xl group">
+                    <Link href="/east-africa/kenya" className="h-64 md:col-span-2 flex items-start justify-start relative overflow-hidden rounded-2xl group">
                         <div className="px-8 w-full h-full text-white py-8 flex flex-col justify-end z-10">
                             <p className="text-2xl">Kenya</p>
                         </div>
@@ -281,12 +281,12 @@ export default function Page(props: PageProps) {
                     </div>
 
                     <div>
-                        <div className='grid grid-cols-2 lg:grid-cols-3 gap-8 mb-8'>
+                        <div className='grid grid-cols-2 md:grid-cols-3 gap-8 mb-8'>
                             {
                                 lodges.slice(0, 3).map((lodge, index) => (
                                     <Link href={`/lodges/${lodge.link}`} key={index}>
                                         <div className='w-full group'>
-                                            <div className='w-full h-80 relative rounded-xl overflow-hidden'>
+                                            <div className='w-full h-52 md:h-80 relative rounded-xl overflow-hidden'>
                                                 <Image
                                                     src={`${lodge.img}`}
                                                     alt={lodge.title}

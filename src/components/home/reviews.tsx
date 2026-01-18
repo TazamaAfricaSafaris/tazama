@@ -58,7 +58,7 @@ const Reviews = () => {
     return (
         <>
             <div className="mb-8 mt-10 space-y-4 flex flex-col items-center">
-                <div className="flex items-center gap-2">
+                <div className="flex max-md:flex-col max-md:items-center gap-2">
                     <div className="w-10 h-10 rounded-full overflow-hidden relative bg-tripadvisorLight flex items-center justify-center">
                         <FaTripadvisor className="text-black text-2xl" />
                     </div>
