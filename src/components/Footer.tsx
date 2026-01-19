@@ -121,20 +121,20 @@ export const Footer = () => {
                 </form>
               </div>
             </div>
-            
+
             <div className="w-full relative h-96 rounded-3xl overflow-hidden">
               <div className="absolute top-0 left-8 w-full h-full flex items-center justify-start z-10">
                 <div className="flex-col gap-2 flex max-w-lg text-white">
-                  <h4 className="text-4xl">
+                  <h4 className="text-2xl md:text-4xl">
                     Bring Your Dreams into Reality
                   </h4>
-                  <p className="mb-4">
+                  <p className="max-md:text-sm mb-4">
                     Fill in the form in  below to create your custom itinerary. Our highly experienced team of professionals team will go through your request and get back to you
                   </p>
 
                   <Dialog>
                     <DialogTrigger asChild>
-                      <p className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer w-fit">
+                      <p className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer w-fit max-md:text-sm">
                         Plan My Trip
                       </p>
                     </DialogTrigger>
