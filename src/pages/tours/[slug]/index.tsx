@@ -14,7 +14,7 @@ import type { QueryParams, SanityDocument } from "next-sanity";
 import type { GetStaticPaths } from "next";
 import ItineraryAccordion from "~/components/itineraries/itinerary-accordion";
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+import { base_keywords, Kilimanjaro_keywords, beach_keywords } from "~/lib/constants";
 import { getClient } from "../../../sanity/lib/client";
 import { token } from "../../../sanity/lib/token";
 import { itineraryQueries } from "../../../sanity/lib/queries";
@@ -130,7 +130,14 @@ export default function Page(props: PageProps) {
         <>
             <HeadSEO
                 title={`${title}`}
-                keywords={base_keywords}
+                keywords={`
+                    ${base_keywords} 
+                    ${location ? `, ${location}` : ""},
+                    ${duration ? `, ${duration}` : ""},
+                    ${itineraryType ? `, ${itineraryType}` : ""},
+                    ${title}
+                    ${itineraryType === "trekking" ? Kilimanjaro_keywords : beach_keywords}
+                `}
                 description={subHeading || title}
             />
 
