@@ -21,10 +21,6 @@ span {
   font-family: "Raleway", sans-serif;
 }
 
-.font-gilda-display {
-  font-family: 'Gilda Display', serif;
-}
-
 h1,
 h2,
 h3,
@@ -113,6 +109,9 @@ iframe[seamless] {
 }
 
 @layer base {
+  .font-gilda-display {
+    font-family: 'Gilda Display', serif;
+  }
   :root {
     --font-raleway: "Raleway", sans-serif;
     --background: 0 0% 100%;
