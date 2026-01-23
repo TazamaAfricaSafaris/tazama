@@ -15,7 +15,7 @@ import { HomeContactUs } from "~/components/HomeContactUs";
 
 const AboutPage = () => {
   return (
-    <>
+    <div className="w-full overflow-x-hidden">
       <PrimaryHeader
         image="about.webp"
         title="About Tazama"
@@ -154,7 +154,7 @@ const AboutPage = () => {
       <br />
       <br />
       <HomeContactUs />
-    </>
+    </div>
   );
 };
 

@@ -123,9 +123,9 @@ export const Footer = () => {
             </div>
 
             <div className="w-full relative h-96 rounded-3xl overflow-hidden">
-              <div className="absolute top-0 left-8 w-full h-full flex items-center justify-start z-10">
+              <div className="absolute md:top-0 md:left-8 w-full h-full flex items-center justify-start z-10 px-8">
                 <div className="flex-col gap-2 flex max-w-lg text-white">
-                  <h4 className="text-2xl md:text-4xl">
+                  <h4 className="text-3xl md:text-4xl">
                     Bring Your Dreams into Reality
                   </h4>
                   <p className="max-md:text-sm mb-4">
@@ -171,7 +171,7 @@ export const Footer = () => {
         </div>
 
         <div className="my-12 flex justify-between gap-6 max-lg:flex-wrap pt-12 border-t border-t-[#E0DED9]">
-          <div className="h-fit">
+          <div>
             <h3 className="text-primary font-raleway text-xl font-medium mb-4">Safaris</h3>
             <ul className="grid gap-1">
               {safaris.map(safari => (
@@ -181,7 +181,7 @@ export const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="h-fit">
+          <div>
             <h3 className="text-primary font-raleway text-xl font-medium mb-4">Mount Kilimanjaro</h3>
             <ul className="grid gap-1">
               {
@@ -192,7 +192,7 @@ export const Footer = () => {
               {/* <Link href="safaris/mount-meru" className="hover:underline hover:underline-offset-2">Mount Meru</Link> */}
             </ul>
           </div>
-          <div className="h-fit">
+          <div>
             <h3 className="text-primary font-raleway text-xl font-medium mb-4">East Africa</h3>
             <ul className="grid gap-1">
               <Link href="/east-africa/tanzania" className="hover:underline hover:underline-offset-2">Tanzania</Link>
@@ -201,7 +201,7 @@ export const Footer = () => {
               <Link href="/east-africa/uganda" className="hover:underline hover:underline-offset-2">Uganda</Link>
             </ul>
           </div>
-          <div className="h-fit">
+          <div>
             <h3 className="text-primary font-raleway text-xl font-medium mb-4">Other Links</h3>
             <ul className="grid gap-1">
               <Link href="/lodges" className="hover:underline hover:underline-offset-2">Our Itineraries</Link>

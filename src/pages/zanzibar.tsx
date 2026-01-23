@@ -132,42 +132,43 @@ const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: 
         </div>
       </section>
 
-      <section className="bg-lighter relative bg-cover bg-center py-8 rounded-3xl overflow-hidden max-w-5xl mx-auto mb-28">
-        <div className="max-w-5xl z-10 relative top-0 left-0 w-full mx-auto flex flex-col items-center justify-center p-4 gap-8 md:p-10 xl:px-36 text-white">
-          <h1 className="text-5xl leading-none text-left">Bring Your Dreams into Reality.</h1>
+      <section className='px-4 md:px-8'>
+        <div className="bg-lighter relative bg-cover bg-center py-8 rounded-3xl overflow-hidden max-w-5xl mx-auto mb-20">
+          <div className="max-w-5xl z-10 relative top-0 left-0 w-full mx-auto flex flex-col items-center justify-center p-4 md:px-8 gap-4 md:gap-8 md:p-10 xl:px-36 text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl leading-none text-left">Bring Your Dreams into Reality.</h1>
 
-          <div className="flex flex-col md:flex-row items-start justify-start gap-4 w-full">
-
-            <Dialog>
-              <DialogTrigger asChild>
-                <p className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer text-center mx-auto">
-                  Plan My Trip
-                </p>
-              </DialogTrigger>
-              <DialogContent className="h-[80%] p-0 bg-background">
-                <AnimatePresence>
-                  {loading && (
-                    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="absolute inset-0 flex justify-center items-center text-darker">
-                      <p className="text-xl text-white">Loading...</p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-                <iframe
-                  width="720"
-                  height="315"
-                  src="https://forms.zohopublic.com/tazamaafricatourssafari1/form/TAZAMAPLANMYTRIPFORM/formperma/RpRK4CHabrTCKwe3sv1FNL5N9TBgcoBzTUZnWs6_Fvo"
-                  title="Plan your dream trip and we'll get back to you"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  className="w-full h-full z-0 rounded-xl"
-                  onLoad={() => setLoading(false)}
-                ></iframe>
-              </DialogContent>
-            </Dialog>
+            <div className="flex flex-col md:flex-row items-start justify-start gap-4 w-full">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <p className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer text-center md:mx-auto">
+                    Plan My Trip
+                  </p>
+                </DialogTrigger>
+                <DialogContent className="h-[80%] p-0 bg-background">
+                  <AnimatePresence>
+                    {loading && (
+                      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="absolute inset-0 flex justify-center items-center text-darker">
+                        <p className="text-xl text-white">Loading...</p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                  <iframe
+                    width="720"
+                    height="315"
+                    src="https://forms.zohopublic.com/tazamaafricatourssafari1/form/TAZAMAPLANMYTRIPFORM/formperma/RpRK4CHabrTCKwe3sv1FNL5N9TBgcoBzTUZnWs6_Fvo"
+                    title="Plan your dream trip and we'll get back to you"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                    className="w-full h-full z-0 rounded-xl"
+                    onLoad={() => setLoading(false)}
+                  ></iframe>
+                </DialogContent>
+              </Dialog>
+            </div>
           </div>
+          <br />
+          <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1708503582/beach_holidays/eoxqa1kpd8og9y7hrr5u.jpg" alt="" layout="fill" objectFit="cover" className="w-full h-full brightness-[0.6]" />
         </div>
-        <br />
-        <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1708503582/beach_holidays/eoxqa1kpd8og9y7hrr5u.jpg" alt="" layout="fill" objectFit="cover" className="w-full h-full brightness-[0.6]" />
       </section>
     </>
   );

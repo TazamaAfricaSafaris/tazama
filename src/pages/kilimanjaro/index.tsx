@@ -38,7 +38,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
   );
 
   return (
-    <>
+    <div className="w-full overflow-x-hidden">
       <HeadSEO title="Tazama Africa Safaris | Climbing Mount Kilimanjaro" keywords={Kilimanjaro_keywords} />
       <PrimaryHeader
         image={`mount-kilimanjaro.webp`}
@@ -298,7 +298,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
             <div className='z-10 absolute bottom-[5%] md:bottom-[10%] max-w-3xl left-[5%]'>
               <h3 className='text-white text-4xl md:text-5xl mb-2'>Kilimanjaro Routes with Tazama</h3>
               <p className='text-[#f5f1eb] text-sm md:text-base'>
-                Climbing Kilimanjaro is not a one-size-fits-all experience. There are eight official routes to the summit, each with its own character, challenges, and highlights. Learn more about the routes we at Tazama use for your experience
+                Climbing Kilimanjaro is not a one-size-fits-all experience. Learn more about the routes we at Tazama use for your experience
               </p>
               <br />
               <Link href='/kilimanjaro/routes' className="border border-white rounded-md px-4 lg:px-6 py-2 mt-4 text-sm md:text-base font-raleway text-white hover:bg-white/90 hover:text-darker transition-colors duration-200">
@@ -385,7 +385,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
         </section>
       </div>
       <CallToAction />
-    </>
+    </div>
   );
 };
 
