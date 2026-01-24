@@ -7,17 +7,22 @@ import { HomeContactUs } from "~/components/HomeContactUs";
 import SafariCarousel from "~/components/safari-carousel";
 import PrimaryHeader from "~/components/PrimaryHeader";
 
+import { getClient } from "~/sanity/lib/client";
+import { token } from "~/sanity/lib/token";
+import { POSTS_QUERY } from "~/sanity/lib/queries";
+import BlogPosts from "~/components/BlogPosts";
+
 import ContentSection, {
-  contentSectionData,
+  type contentSectionData,
 } from "~/components/ContentSection";
-import Image from "next/legacy/image";
 import { array } from "fast-web-kit";
 import HeadSEO from "~/components/ui/Head";
 import Link from "next/link";
 import Image from "next/image";
 import PartnersMarquee from "~/components/PartnersMarquee";
-import { Blog } from "./blogs";
 import HomeTrekkingCarousel from "~/components/HomeTrekkingCarousel";
+import { SanityDocument } from "next-sanity";
+import Carousel, { CarouselPrevious, CarouselContent, CarouselItem, CarouselNext } from "~/components/Carousel";
 
 export const homePageContentData: contentSectionData[] = [
   {
@@ -39,14 +44,22 @@ export const homePageContentData: contentSectionData[] = [
   },
 ];
 
-export default function Page() {
-  const homeBlogPosts = allBlogs.slice(-6)
+type PageProps = {
+  posts: SanityDocument[];
+  draftMode: boolean;
+  token: string;
+};
+
+export default function Page(props: PageProps) {
+
+  const slicedPosts = props.posts.slice(0, 6)
 
   return (
     <>
       <HeadSEO
         title="Tazama Africa Safaris - East Africa Safaris"
         keywords="African safaris, luxuruy safaris, personalized safaris, Serengeti, Kilimanjaro, memorable safaris"
+        description="Tazama Africa Safaris is a leading provider of authentic and timeless African safaris. We offer personalized safaris, connecting you with the best of Africa. Whether you're a seasoned explorer or a first-timer, we have the perfect safari for you. Book your trip today!"
       />
       <PrimaryHeader
         image="home.webp"
@@ -95,34 +108,7 @@ export default function Page() {
       <br />
       <br />
       <br />
-      {/* <div className="px-4 xl:px-8 my-20 bg-[#ece6dc86] py-10 lg:py-20 bg-fixed">
-        <div className="mx-auto max-w-6xl px-4 xl:px-8">
-          <div className="mb-8 w-full px-4 py-4 ">
-            <h3
-              className="mb-4 text-4xl lg:text-5xl text-primary"
-            >
-              Ascending Africa's Summits
-            </h3>
-            <p
-              className="font-raleway"
-            >
-              Explore the summits of Africa with Tazama Africa Safaris as you climb the mountains Kilimanajaro and Meru to fulfill your desire to know what it's like to be at the top
-            </p>
-          </div>
-          <div className="flex flex-col md:flex-row gap-6 max-w-6xl px-4 mx-auto">
-            <Link href={'/safaris/kilimanjaro'} className="w-full border border-white overflow-hidden rounded-md h-72 relative group">
-              <Image src={"/assets/images/gallery/mount-kilimanjaro.webp"} layout="fill" className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:scale-105" alt="Travel to Mount Kilimanjaro" />
-              <p className="w-full absolute bottom-0 left-0 bg-gradient-to-t from-orange-950/35 to-transparent text-white p-4 text-xl">Mount Kilimanjaro</p>
-            </Link>
-
-            <Link href={'/safaris/mount-meru'} className="w-full border border-white overflow-hidden rounded-md h-72 relative group">
-              <Image src={"/assets/images/gallery/mount-meru.webp"} layout="fill" className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-75 group-hover:scale-105" alt="Travel to Mount Kilimanjaro" />
-              <p className="w-full absolute bottom-0 left-0 bg-gradient-to-t from-orange-950/35 to-transparent text-white p-4 text-xl">Mount Meru </p>
-            </Link>
-          </div>
-        </div>
-      </div> */}
-        <HomeTrekkingCarousel />
+      <HomeTrekkingCarousel />
       <br />
       <br />
       <div className="mb-16">
@@ -167,9 +153,39 @@ export default function Page() {
           <CarouselPrevious />
           <CarouselContent>
             {
-              homeBlogPosts.map((post, index) => (
+              slicedPosts.map((post, index) => (
                 <CarouselItem key={index} className="sm:basis-1/3 lg:basis-1/3 mb-2 lg:mr-6 xl:mr-0">
-                  <Blog name={post.name} link={post.url} imgUrl={post.imgUrl} shortDescription={post.shortDescription} category={post.category} />
+                  <Link
+                    key={post._id}
+                    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+                    href={`/blogs/${post.slug.current}`}
+                    className="group p-0 mt-4"
+                  >
+                    <div className="w-full h-64 relative overflow-hidden p-0">
+                      <Image
+                        fill
+                        objectFit="cover"
+                        src={post.mainImage.asset.url}
+                        alt={post.mainImage.alt}
+                        className="group-hover:scale-105 transition-transform object-cover w-full h-full"
+                      />
+                      <div className="absolute z-10 bottom-2 left-2 flex gap-1">
+                        {post.categories.map((category: any, index: number) => (
+                          <p
+                            key={index}
+                            className="bg-amber-50/80 border border-darker px-2 text-sm line-clamp-2 rounded-3xl"
+                          >
+                            {category.title}
+                          </p>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="pt-4 h-36 flex flex-col justify-between gap-3">
+                      <h4 className="text-3xl line-clamp-2 text-dark">{post.title}</h4>
+                      <p>By {post.author.name}</p>
+                    </div>
+                    {/* <div className="border border-darker w-1/3 mx-auto mt-2 group-hover:w-3/4 transition-all"></div> */}
+                  </Link>
                 </CarouselItem>
               ))
             }
@@ -182,3 +198,16 @@ export default function Page() {
     </>
   );
 }
+
+export const getStaticProps = async ({ draftMode = false }) => {
+  const client = getClient(draftMode ? token : undefined);
+  const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY);
+
+  return {
+    props: {
+      posts,
+      draftMode,
+      token: draftMode ? token : "",
+    },
+  };
+};

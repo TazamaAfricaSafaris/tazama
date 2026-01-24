@@ -8,53 +8,24 @@ import Image from "next/legacy/image";
 import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
-const honeyMooners = [
-  {
-    id: 1,
-    src: "/assets/images/gallery/family-trip.webp",
-  },
-  {
-    id: 2,
-    src: "/assets/images/gallery/maasai.webp",
-  },
-  {
-    id: 3,
-    src: "/assets/images/gallery/blog.webp",
-  },
-  {
-    id: 4,
-    src: "/assets/images/gallery/offer.webp",
-  },
-  {
-    id: 5,
-    src: "/assets/images/gallery/classic-safaris.webp",
-  },
-  {
-    id: 6,
-    src: "/assets/images/gallery/discovery.webp",
-  },
-];
+import useFetchImages from "~/hooks/useFetchImages";
 
-const MemoryImage = ({ src }: { src: string }) => {
-  return (
-    <div className="relative h-[200px] w-[80%] md:h-[300px] lg:w-[400px]">
-      <Image src={src} layout="fill" className="rounded-sm object-cover" />
-    </div>
-  );
-};
-
-const GalleryPage = () => {
+const GalleryPage = ({ images }: { images: ImageProps[] }) => {
   return (
     <>
-      <HeadSEO title="Gallery" keywords={base_keywords} />
+      <HeadSEO 
+        title="Safari & Kilimanjaro Photo Gallery | Tazama Africa" 
+        keywords={`${base_keywords}, Tanzania safari photos, Kilimanjaro trek images, wildlife photography, African landscapes, Serengeti pictures, Tanzania wildlife gallery, safari memories, African adventure photos, Ngorongoro Crater images, Tanzania travel gallery`}
+        description="Explore our gallery of stunning Tanzania safari and Kilimanjaro trek photographs. Get inspired by breathtaking wildlife encounters, majestic landscapes, and unforgettable African adventures captured through our lens"
+      />
       <PrimaryHeader image="gallery.webp" title="Glimpse of our Memories" />
 
       <section className="flex flex-col items-center justify-center max-w-5xl mx-auto mt-16">
-        <div className="mb-4 py-8">
-          <h3 className="text-center text-4xl text-[#A87133]">
+        <div className="mb-4 py-8 px-6 lg:px-0">
+          <h3 className="text-center text-4xl md:text-5xl text-[#A87133]">
             Our Personal Tailored experiences
           </h3>
-          <p className="mt-5 text-[#757371]">
+          <p className="mt-5">
             Welcome to our diverse collection of meticulously crafted
             itineraries, each designed to offer you a unique and unforgettable
             travel experience. Our itineraries are thoughtfully curated to
@@ -118,13 +89,8 @@ const GalleryPage = () => {
         <br />
 
         <div>
-          <div className="mt-[4px] flex flex-col items-center justify-center gap-4 md:gap-0 md:grid md:grid-cols-2 lg:grid-cols-3">
-            {honeyMooners.map((item) => (
-              <MemoryImage src={item.src} key={item.id} />
-            ))}
-            {honeyMooners.map((item) => (
-              <MemoryImage src={item.src} key={item.id} />
-            ))}
+          <div className=" mb-20 px-6 md:px-0">
+            <MasonryGallery images={images} />
           </div>
         </div>
       </section>

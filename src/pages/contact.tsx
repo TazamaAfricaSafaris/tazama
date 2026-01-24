@@ -11,11 +11,21 @@ import { useRouter } from "next/router";
 import { Toaster } from "~/components/ui/toaster";
 import { useToast } from "~/hooks/useToast";
 import { ToastAction } from "~/components/ui/Toast";
+import { Textarea } from "~/components/ui/textarea";
 
 const ContactPage = () => {
   const [email, setEmail] = React.useState<string>("");
   const [fullNames, setFullNames] = React.useState("");
   const [message, setMessage] = React.useState<string>("");
+  
+  // Add validation states
+  const [errors, setErrors] = React.useState({
+    email: "",
+    fullNames: "",
+    message: "",
+  });
+  const [formValid, setFormValid] = React.useState(false);
+
   const router = useRouter();
   const { toast } = useToast();
 
@@ -78,8 +88,22 @@ const ContactPage = () => {
     },
   });
 
-  const onSubmit = (e: ChangeEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // Prevent page reload
+    
+    // Validate form before submission
+    validateForm();
+    
+    if (!formValid) {
+      toast({
+        variant: "destructive",
+        title: "Form validation failed",
+        description: "Please check the form for errors and try again",
+        duration: 3000,
+      });
+      return;
+    }
+
     mutateAsync({
       email,
       message,
@@ -91,34 +115,32 @@ const ContactPage = () => {
     <>
       <HeadSEO
         title="Contact Tazama Africa for your Dream Safari Experience"
-        keywords={base_keywords}
+        keywords={`${base_keywords}, Tanzania safari contact, book safari Tanzania, safari planning, Kilimanjaro trek booking, Tanzania travel inquiry, safari consultation, wildlife tour contact, African adventure planning, Tanzania tour operator, safari travel agent`}
+        description="Contact Tazama Africa Safari to plan your dream Tanzania safari or Kilimanjaro trek. Our expert team is ready to help you create a personalized adventure through Africa's most spectacular landscapes and wildlife experiences."
       />
-      <PrimaryHeader image="mount-kilimanjaro.webp" title="Contact Us" />
-      <div className="mx-auto mt-14">
-        <div className="text-center text-[#757371]">
-          <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-xl ">
+      <PrimaryHeader image="contact.webp" title="Contact Us" />
+      <div className="mx-auto mt-36 max-sm:mt-28 px-8">
+        <div className="text-center">
+          <p className="mx-auto mb-10 mt-3 max-w-4xl px-4 text-5xl max-sm:text-3xl leading-[3.7rem] font-serif text-primary">
             We'd love to hear from you. Simply fill in the form below or reach
             out directly to us through one of our contacts listed below.
           </p>
 
-          <p className=" text-xl ">
+          <p className="text-2xl max-sm:text-lg">
             Email:&nbsp;
-            <a
-              href="mailto:info@tazamaafricasafari.com"
-              className="hover:underline"
-            >
-              {" "}
-              info@tazamaafricasafari.com
-            </a>
+            <a href="mailto:info@tazamaafricasafari.com">info@tazamaafricasafari.com</a>
           </p>
-          <p className=" text-xl">
+          <p className="text-2xl mt-2 max-sm:text-lg">
             Phone:&nbsp;
-            <a href="tel:+255744400043" className="hover:underline">
+            <a href="tel:+255754922334">
               (255)744400043
             </a>
           </p>
-          <p className="mt-10 text-lg md:text-xl">
-            You can also send us a message by filling the form below
+        </div>
+
+        <div className="mx-auto my-14 max-w-2xl px-4 text-center">
+          <p className="text-lg">
+            Please fill in the form below to get in touch with us and our team will get back to you as soon as possible.
           </p>
         </div>
 

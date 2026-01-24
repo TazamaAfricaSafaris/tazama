@@ -46,6 +46,9 @@ const config = {
         port: "",
         pathname: "/my-account/**",
       },
+      {
+        hostname: "cdn.sanity.io",
+      },
     ],
     domains: ["res.cloudinary.com", "images.unsplash.com", "cdn.sanity.io"],
   },

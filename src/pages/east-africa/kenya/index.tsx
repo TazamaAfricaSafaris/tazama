@@ -14,12 +14,11 @@ import Image from 'next/image'
 import HeadSEO from '~/components/ui/Head'
 import { base_keywords } from '~/lib/constants'
 import CallToAction from '~/components/CallToAction'
-import { ItineraryCard } from '../uganda'
 
 const kenya = () => {
   return (
     <>
-      <HeadSEO title='Tazama Africa Safaris | Kenya' keywords={`kenya, Kenaya ${base_keywords}`} />
+      <HeadSEO title='Tazama Africa Safaris | Kenya' keywords={`kenya, Kenaya ${base_keywords}`}/>
       <PrimaryHeader title='Kenya' image='kenya/kenya.jpg' />
       <div className='max-w-5xl mx-auto my-20'>
         <p className='text-left leading-relaxed'>
@@ -57,13 +56,30 @@ const kenya = () => {
       <section className='max-w-5xl my-20 mx-auto px-4'>
         <h4 className="text-4xl text-primary">Our Itenaries</h4>
         <br />
-        <div className='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative'>
-          {
-            itenaries.map((itenary, index) => (
-              <ItineraryCard key={index} itinerary={itenary} />
-            ))
-          }
-        </div>
+        <Carousel className='w-full max-w-sm md:max-w-none'>
+          <CarouselPrevious />
+          <CarouselContent>
+            {
+              itenaries.map(itenary => (
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3" key={itenary.link}>
+                  <Link href={`kenya/${itenary.link}`}>
+                    <div className='bg-black w-full h-80 md:h-96 relative overflow-hidden'>
+                      <Image
+                        src={itenary.img}
+                        alt=""
+                        layout="fill"
+                        objectFit="cover"
+                        className='w-full h-full object-cover brightness-90'
+                      />
+                    </div>
+                    <p className='mt-2 text-xl z-10'>{itenary.title}</p>
+                  </Link>
+                </CarouselItem>
+              ))
+            }
+          </CarouselContent>
+          <CarouselNext />
+        </Carousel>
       </section>
 
 
@@ -86,31 +102,26 @@ const itenaries = [
   {
     link: '3-days-amboseli-safari',
     title: '3 Days Amboseli Fly-in Safari',
-    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731333470/east-africa/kenya/3-day-amboseli-safari/adore-africa-kenya-amboseli-slider-03_zf7oup.jpg',
-    days: 3,
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731333470/east-africa/kenya/3-day-amboseli-safari/adore-africa-kenya-amboseli-slider-03_zf7oup.jpg'
   },
   {
     link: '3-days-masai-mara-safari',
     title: '3 Days Masai Mara Fly-in Safari',
-    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731335119/east-africa/kenya/3-day-masai-mara-safari/wildebeest-zebra-maasai-mara-national-reserve-kenya-africa_kk6cpk.webp',
-    days: 3,
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731335119/east-africa/kenya/3-day-masai-mara-safari/wildebeest-zebra-maasai-mara-national-reserve-kenya-africa_kk6cpk.webp'
   },
   {
     link: '4-days-and-beyond-luxury-safari',
     title: '4 Days and Beyond Luxury Safari',
-    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731329695/east-africa/kenya/4-days-and-beyond-luxury-safari/Masai-Mara-National-Reserve_zdzfci.jpg',
-    days: 4,
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731329695/east-africa/kenya/4-days-and-beyond-luxury-safari/Masai-Mara-National-Reserve_zdzfci.jpg'
   },
   {
     link: '5-days-kenya-safari-amboseli-and-tsavo',
     title: '5 Days Kenya Safari – Amboseli and Tsavo',
-    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731332122/east-africa/kenya/5-days-kenya-safari/Tsavo-West-leopards_o8fnib.jpg',
-    days: 5,
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731332122/east-africa/kenya/5-days-kenya-safari/Tsavo-West-leopards_o8fnib.jpg'
   },
   {
     link: '6-day-amboseli-maasai-mara-fly-in',
     title: '6 Day Amboseli-Maasai Mara Fly-in Safari',
-    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731328470/east-africa/kenya/6-day-amboselu-maasai-safari/_copyright_beverly_joubert_oldonyo_wildlife_kenya_5717_gr6dpt.webp',
-    days: 6,
+    img: 'https://res.cloudinary.com/drhl0yu7y/image/upload/v1731328470/east-africa/kenya/6-day-amboselu-maasai-safari/_copyright_beverly_joubert_oldonyo_wildlife_kenya_5717_gr6dpt.webp'
   },
 ]

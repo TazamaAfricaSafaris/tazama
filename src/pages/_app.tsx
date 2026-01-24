@@ -39,12 +39,46 @@ if (typeof window !== "undefined") {
 }
 
 const MyApp: AppType = ({ Component, pageProps }) => {
+  const lenisRef = useRef<LenisRef>(null)
+
+  useEffect(() => {
+    function update(data: { timestamp: number }) {
+      const time = data.timestamp
+      lenisRef.current?.lenis?.raf(time)
+    }
+
+    frame.update(update, true)
+
+    return () => cancelFrame(update)
+  }, [])
+
   return (
-    <React.Fragment>
-      <style jsx global>
-        {`
+    <ReactLenis
+    options={{
+      autoRaf: false,
+      duration: 1.5,          // Scroll animation duration (seconds)
+      smoothWheel: true,      // Enable smooth mouse wheel scrolling
+      infinite: false,
+    }}
+    ref={lenisRef}
+    root
+    >
+      <React.Fragment>
+        <style jsx global>
+          {`
           :root {
             --font-raleway: ${raleway.variable};
+            --font-amiora: ${amiora.variable};
+          }
+          
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6,
+          .font-serif {
+            font-family: ${amiora.style.fontFamily};
           }
           
          

@@ -55,10 +55,6 @@ const PartnersMarquee = memo(() => {
                         <img src={"/assets/images/logos/partners/rustic-pathways.png"} alt="Rustic Pathways Logo" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-200" loading="lazy" />
                     </Link>
 
-                    <Link href={"/partners/seed-bombs-tanzania"} className="group transition-all duration-200 w-40">
-                        <img src={"/assets/images/logos/partners/seed-bombs.png"} alt="Seed Bombs Tanzania Logo" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-200" loading="lazy" />
-                    </Link>
-
                     <Link href={"https://www.tatotz.org/"} className="group transition-all duration-200 w-52">
                         <img src={"/assets/images/logos/partners/tato.png"} alt="Tato Logo" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-200" loading="lazy" />
                     </Link>
@@ -72,10 +68,6 @@ const PartnersMarquee = memo(() => {
 
                     <Link href={"/partners/rustic-pathways"} className="group transition-all duration-200 w-96">
                         <img src={"/assets/images/logos/partners/rustic-pathways.png"} alt="Rustic Pathways Logo" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-200" loading="lazy" />
-                    </Link>
-
-                    <Link href={"/partners/seed-bombs-tanzania"} className="group transition-all duration-200 w-40">
-                        <img src={"/assets/images/logos/partners/seed-bombs.png"} alt="Seed Bombs Tanzania Logo" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-200" loading="lazy" />
                     </Link>
 
                     <Link href={"https://www.tatotz.org/"} className="group transition-all duration-200 w-52">

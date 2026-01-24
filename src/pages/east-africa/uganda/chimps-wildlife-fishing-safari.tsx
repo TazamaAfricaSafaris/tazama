@@ -7,14 +7,11 @@ import Accordion from '~/components/Accordion'
 import { IoMdCheckmark, IoMdClose } from 'react-icons/io'
 import { ugandaChimpsWildlifeFishingSafari } from '~/data/uganda'
 import CallToAction from '~/components/CallToAction'
-import { FaCheck } from 'react-icons/fa'
-import { FaXmark } from 'react-icons/fa6'
-import ItineraryAccordion from '~/components/itineraries/itinerary-accordion'
 
 const Page = () => {
     return (
         <>
-            <HeadSEO title='Tazama Itinerary | Chimps, Wildlife and Fishing Safari' keywords='' />
+            <HeadSEO title='Tazama Itenary | Chimps, Wildlife and Fishing Safari' keywords='' />
 
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white overflow-hidden">
@@ -33,7 +30,7 @@ const Page = () => {
                 </div>
             </div>
 
-            <div className='mb-20 mt-28 max-w-4xl mx-auto md:px-8 px-4'>
+            <div className='mb-20 mt-28 max-w-5xl mx-auto md:px-8 px-4'>
                 <section className=''>
                     <h3 className="text-5xl text-center mb-8 text-primary">Chimps, Wildlife and Fishing Safari</h3>
                     <p>
@@ -42,14 +39,14 @@ const Page = () => {
                 </section>
                 <section className='mt-20'>
                     <h3 className="text-center text-4xl  tracking-wider text-[#A87133]">
-                        Detailed Itinerary for Chimps, Wildlife and Fishing Safari
+                        Itinerary
                     </h3>
 
                     <div className='mt-10 flex flex-col-reverse items-start gap-4 md:flex-row md:gap-8 relative'>
-                        {/* <aside className="w-full md:w-1/2 md:sticky md:top-4">
+                        <aside className="w-full md:w-1/2 md:sticky md:top-4">
                             <div className="flex flex-col-reverse items-start gap-2 md:gap-5">
                                 <Link href="/contact" className='border-primary border border-dark/40 px-6 py-3 w-full font-raleway text-center hover:bg-primary hover:text-white transition-colors rounded-md text-primary'>
-                                    Request Custom Itinerary
+                                    Request Custom Itenary
                                 </Link>
 
                                 <div className="relative h-[300px] w-full bg-zinc-900 group overflow-hidden">
@@ -72,23 +69,19 @@ const Page = () => {
                                     </Link>
                                 </div>
                             </div>
-                        </aside> */}
+                        </aside>
                         <section className='w-full'>
                             {ugandaChimpsWildlifeFishingSafari.map((item, index) => (
                                 <div key={index}>
-                                    <ItineraryAccordion
-                                        key={index}
-                                        id={index + 1}
-                                        day={item.day}
-                                        description={item.description}
-                                        transferTime={item.transferTime}
+                                    <Accordion
+                                        default={true}
+                                        question={item.question}
+                                        answer={item.answer}
+                                        list={item.list}
+                                        list2={item.list2}
+                                        listHeader={item.listHeader}
+                                        listHeader2={item.listHeader2}
                                         note={item.note}
-                                        mealPlan={item.mealPlan}
-                                        distance={item.distance}
-                                        highlights={item.highlights}
-                                        gallery={item.gallery}
-                                        totalDays={ugandaChimpsWildlifeFishingSafari.length}
-                                        tripType='safari'
                                     />
                                 </div>
                             ))}
@@ -96,38 +89,34 @@ const Page = () => {
                     </div>
                 </section>
 
-                <section className="max-w-4xl mx-auto px-4 my-20 grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div>
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                                <FaCheck color="#fff" />
+                <section className='mt-20'>
+                    <div className='flex flex-col md:flex-row gap-8'>
+                        <div className='w-full'>
+                            <div className='flex flex-row items-center space-x-4'>
+                                <div className='w-8 h-8 bg-primary flex items-center justify-center rounded-full'>
+                                    <IoMdCheckmark className='text-xl text-[#F5F1EB]' />                                </div>
+                                <p className='text-2xl'>Itenary includes</p>
                             </div>
-                            <h5 className="text-3xl">Cost Includes</h5>
+                            <ul className='list-disc list-inside mt-6'>
+                                {
+                                    itenaryIncludes.map(item => <li key={item} className='pl-8'>{item}</li>)
+                                }
+                            </ul>
                         </div>
-                        <ul className="list-inside list-disc flex flex-col gap-3">
-                            {ItineraryIncludes.map((item: string) => (
-                                <li key={item} className="ml-4 list-item">
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    <div>
-                        <div className="flex items-center gap-4 mb-4">
-                            <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
-                                <FaXmark color="#fff" />
+                        <div className='w-full'>
+                            <div className='flex flex-row items-center space-x-4'>
+                                <div className='w-8 h-8 bg-primary flex items-center justify-center rounded-full'>
+                                    <IoMdClose className='text-xl text-[#F5F1EB]' />                                </div>
+                                <p className='text-2xl'>Itenary Excludes</p>
                             </div>
-                            <h5 className="text-3xl">Cost Excludes</h5>
+                            <ul className='list-disc list-inside mt-6'>
+                                {
+                                    itenaryExcludes.map(item => <li key={item} className='pl-8'>{item}</li>)
+                                }
+                            </ul>
                         </div>
-                        <ul className="list-inside list-disc flex flex-col gap-3">
-                            {ItineraryExcludes.map((item: string) => (
-                                <li key={item} className="ml-4 list-item">
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
                     </div>
+                    <br /><br />
                 </section>
                 <section className='mt-8'>
                     <h3 className='text-4xl text-primary'>Preparing for Your Journey</h3>
@@ -141,7 +130,7 @@ const Page = () => {
     )
 }
 
-const ItineraryIncludes = [
+const itenaryIncludes = [
     "Transport in a 4X4 Land Cruiser (Window seat guaranteed)",
     "Fuel cost for the entire trip",
     "Meals and daily breakfast as described in the itinerary",
@@ -155,7 +144,7 @@ const ItineraryIncludes = [
     "AMREF Medical evacuation cover",
 ]
 
-const ItineraryExcludes = [
+const itenaryExcludes = [
     "Extra meals and snacks not mentioned",
     "Travel-related insurance and visa fees",
     "All optional activities",

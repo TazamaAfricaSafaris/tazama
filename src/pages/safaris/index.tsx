@@ -6,19 +6,12 @@ import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
 import CallToAction from "~/components/CallToAction";
-import SafariTripadivsorReviews from "~/components/safari/safari-tripadivsor-reviews";
-import { getClient } from "~/sanity/lib/client";
-import type { SanityDocument } from "next-sanity";
-import { token } from "~/sanity/lib/token";
-import { itineraryQueries } from "~/sanity/lib/queries";
-import { ItineraryCard } from "../kilimanjaro/itineraries";
-import CustomTripFormCallToAction from "~/components/safari/custom-trip-form-call-to-action";
 
 const Page = ({ itineraries }: { itineraries: SanityDocument[] }) => {
   return (
     <>
-      <HeadSEO
-        title="Tanzania Safaris | Tazama Africa Safari Adventures"
+      <HeadSEO 
+        title="Tanzania Safaris | Tazama Africa Safari Adventures" 
         keywords={`${base_keywords}, Tanzania safari, Serengeti safari, Ngorongoro Crater, wildlife viewing, Big Five, game drives, luxury safari, Tanzania national parks, African wildlife, safari experiences, Tarangire, sustainable safari`}
         description="Experience the ultimate Tanzania safari with Tazama Africa. Our expertly guided tours through Serengeti, Ngorongoro, and other iconic parks offer unforgettable wildlife encounters while supporting conservation and local communities."
       />
@@ -31,12 +24,16 @@ const Page = ({ itineraries }: { itineraries: SanityDocument[] }) => {
           <h3 className="text-5xl text-primary text-center">
             Explore the Heartbeat of the Wild.
           </h3>
-          <br />
-          <p>
-            Tanzania is a land where nature still reigns wild and free. You won’t find paved roads or fences here, only endless savannas, ancient craters, and herds of animals moving with the rhythm of the seasons. From the golden plains of the Serengeti to the breathtaking Ngorongoro Crater and the quiet beauty of Tarangire, every park tells its own story.
+          <p className="mb-3 mt-5">
+            Tanzania is renowned for its stunning landscapes, rich biodiversity,
+            and abundant wildlife, making it the ultimate destination for safari
+            enthusiasts. You won’t find paved roads or fences in our national
+            parks. Some of the most iconic wildlife sceneries call Tanzania
+            home. From the Serengeti to Ngorongoro Crater to the hidden gems of
+            Tarangire and Selous (Nyerere National Park), Tanzania's national
+            parks offer a kaleidoscope of experiences waiting to be explored.
           </p>
-          <br />
-          <p>
+          <p className="mb-3 mt-5">
             At Tazama Africa, we curate safari experiences that go beyond the
             ordinary, allowing you to connect with nature in its purest form.
             Our expert guides will lead you on immersive game drives, where
@@ -44,23 +41,27 @@ const Page = ({ itineraries }: { itineraries: SanityDocument[] }) => {
             buffaloes, leopards, and rhinos - along with an array of other
             fascinating wildlife species.
           </p>
-          <br />
-          <p>
-            At <strong>Tazama Africa</strong>, we design safaris that go beyond sightseeing. We want you to feel the heartbeat of the wild, to watch lions in the early light, hear the rumble of elephants across the plains, and see the sky turn gold as the sun sets behind the acacias. Our experienced guides know every track, sound, and scent of the bush, bringing you closer to the Big Five and beyond.
+          <p className="mb-3 mt-5">
+            What sets a safari experience with Tazama apart is our commitment to
+            responsible and sustainable tourism. We prioritize conservation and
+            community engagement, ensuring that our safaris leave a positive
+            impact on the environment and local communities. With Tazama Africa,
+            you'll not only witness the wonders of Tanzania's wilderness but
+            also contribute to its preservation for future generations to enjoy.
           </p>
-          <br />
-          <CustomTripFormCallToAction />
-          <br />
-          <p>
-            What makes a safari with Tazama special is our philosophy, <strong>travel with purpose</strong>. Every journey we create supports conservation and local communities. By traveling with us, you become part of something meaningful: protecting Tanzania’s wilderness while empowering the people who call it home.
+
+          <p className="mb-3 mt-5">
+            We invite you to explore the different options below to discover
+            where an adventure with Tazama might take you. Whether you're drawn
+            to the vast savannas of the Serengeti, the lush forests of
+            Tarangire, or the remote wilderness of Selous, there's a safari
+            experience waiting to capture your imagination and leave you with
+            memories to last a lifetime.
           </p>
-          <br />
-          <p>
-            Whether you’re traveling as a couple, with family, friends, or solo, your safari will be custom-crafted to match your interests, wildlife, adventure, photography, or relaxation.
-          </p>
-          <br />
-          <p>
-            The below itineraries are a great starting point as you begin to explore the possibilities but please reach out to us directly to build your custom itinerary made just for you.
+          <p className="mb-3 mt-5">
+            The below itineraries are a great starting point as you begin to
+            explore the possibilities but please reach out to us directly to
+            build your custom itinerary made just for you.
           </p>
         </div>
 
@@ -80,10 +81,8 @@ const Page = ({ itineraries }: { itineraries: SanityDocument[] }) => {
           )}
         </div>
       </div>
-
-      <div className="mx-auto max-w-5xl px-4 md:px-8 mb-20">
-        <SafariTripadivsorReviews />
-      </div>
+      <br />
+      <br />
       <br />
       <CallToAction />
     </>

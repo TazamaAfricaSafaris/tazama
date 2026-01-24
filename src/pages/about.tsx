@@ -20,18 +20,22 @@ const AboutPage = () => {
         image="about.webp"
         title="About Tazama"
       />
-      <HeadSEO title="About Tazama" keywords={base_keywords} />
-      <div className="mx-auto mt-10 max-w-5xl px-4 pt-[2rem]">
-        <div className="">
-          <h3 className="text-4xl text-[#A87133]">Tazama Africa Tours | Design Your Dream Safari Experience</h3>
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+      <HeadSEO
+        title="About Tazama Africa Safari | Luxury Safari Experiences in Tanzania"
+        keywords={`${base_keywords}, Tanzania safari company, luxury safari, Kilimanjaro trekking, safari experts, sustainable tourism, Tanzania travel, African safari experience, safari guides, wildlife adventures, eco-friendly safaris, Tazama`}
+        description="Discover Tazama Africa Safari - Tanzania's premier safari company with over 15 years of expertise in crafting luxury, personalized wildlife adventures and Kilimanjaro treks. Our exceptional guides and sustainable practices ensure unforgettable African experiences."
+      />
+      <div className="mx-auto mt-20 max-w-5xl px-4 pt-[2rem]">
+        <div>
+          <h3 className="text-5xl text-[#A87133]">Design Your Dream Safari Experience</h3>
+          <p className="mb-3 mt-5 ">
             TAZAMA specializes in curating unforgettable memories that will have
             you reminiscing with your loved ones for years to come. Boasting
             over 15 years of expertise in the safari industry, we've mastered
             the art of crafting seamless journeys.
           </p>
 
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 ">
             Our exceptional guides and dedicated staff are seasoned experts,
             ensuring every aspect of your trip is flawlessly executed. Because
             every trip is as unique as you, a journey with us brings you up
@@ -41,7 +45,7 @@ const AboutPage = () => {
             and women-owned businesses whenever possible.
           </p>
 
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 ">
             Whether you're conquering the slopes of Kilimanjaro or exploring the
             vast Serengeti plains, we pledge an experience that is genuine,
             thrilling, and awe-inspiring! Join us as we eagerly unveil the
@@ -71,7 +75,7 @@ const AboutPage = () => {
       <br />
       <div className="mx-auto max-w-5xl px-4 lg:px-8">
         <div className="">
-          <p className="mb-3 mt-5 text-lg text-[#757371]">
+          <p className="mb-3 mt-5 ">
             At Tazama, we don't just offer safaris; we deliver bespoke
             adventures tailored to the dreams of each traveler. With over 15
             years of experience under our belt, we have perfected the recipe for
@@ -106,10 +110,10 @@ const AboutPage = () => {
           <h3 className="pt-[12px] text-3xl text-[#A87133]">
             Partnering with SafariBookings.com
           </h3>
-          <p className="mb-3 mt-1 text-lg text-[#757371]">
+          <p className="mb-3 mt-1 ">
             Tazama Africa is represented on SafariBookings.com.
             <br />
-             For reviews and
+            For reviews and
             and feedback you can visit{" "}
             <Link
               className="cursor-pointer text-primary"
@@ -122,6 +126,11 @@ const AboutPage = () => {
         </div>
       </div>
       <br />
+      <br />
+      <QuoteSection
+        subText="- Leonie Trubshoe, Australia"
+        quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
+      />
       <br />
       <br />
       <div className="flex flex-col gap-12 lg:mt-0">
@@ -141,10 +150,16 @@ const AboutPage = () => {
             </section>
           ))}
       </div>
-      <QuoteSection
-        subText="- Leonie Trubshoe, Australia"
-        quote="Tazama is the one safari company anyone thinking of visiting Tanzania should contact. Infact, anyone thinking of doing safari [anywhere]."
-      />
+
+      {/* <div className="max-w-6xl mx-auto lg:text-center my-24 px-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta non aspernatur, dicta aliquid exercitationem voluptatum? Quos nulla pariatur consequuntur sapiente id ullam quisquam, laboriosam non harum! Aliquam autem dolor ratione.
+        </p>
+      </div> */}
+
+      <br />
+      <br />
+      <HomeContactUs />
     </>
   );
 };
