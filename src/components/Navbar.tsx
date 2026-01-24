@@ -44,10 +44,6 @@ const navMainContent = [
 
 const navSubContent = [
   {
-    title: "Our itineraries",
-    link: "/tours",
-  },
-  {
     title: "FAQ",
     link: "/faq",
   },
@@ -115,8 +111,7 @@ const Navbar = () => {
           />
         </Link>
         <div className="flex items-center gap-1 sm:gap-2">
-          <PopupForm />
-          <Link href="/contact" className="menu-trigger flex items-center gap-2 rounded-md bg-primary px-2 py-1 text-white transition ease-in-out md:gap-3 md:px-4 md:py-2 max-sm:text-sm font-raleway animate-float max-sm:hidden">Contact Us</Link>
+          <PlanMyTrip />
           <AnimatePresence>
             {searchModal ? (
               <motion.div
@@ -207,8 +202,8 @@ const Navbar = () => {
                         className="text-left text-lg text-white mb-8 w-full flex items-center gap-x-2"
                         onClick={goBack}
                       >
-                        <MdChevronLeft size={26} />
-                        <span className="text-3xl md:text-4xl font-serif mt-1">{navMainContent[activeIndex]?.title}</span>
+                          <MdChevronLeft size={26} />
+                        <span className="text-4xl font-serif mt-1">{navMainContent[activeIndex]?.title}</span>
                       </button>
                       <ul className="text-xl text-white space-y-4 px-12 md:px-11">
                         {navMainContent[activeIndex]?.subItems?.map(
@@ -280,7 +275,7 @@ const Navbar = () => {
                               className="hover:text-[#e0e0e0]"
                               onClick={() => showSubItems(index)}
                             >
-                              <h3 className="text-2xl md:text-3xl">{mainLink.title}</h3>
+                              <h3>{mainLink.title}</h3>
                             </button>
                           ) : (
                             <Link
@@ -288,7 +283,7 @@ const Navbar = () => {
                               className="hover:text-[#e0e0e0]"
                               onClick={() => setNav(false)}
                             >
-                              <h3 className="text-2xl md:text-3xl">{mainLink.title}</h3>
+                              <h3>{mainLink.title}</h3>
                             </Link>
                           )}
                         </motion.span>

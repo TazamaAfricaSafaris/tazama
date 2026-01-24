@@ -39,44 +39,12 @@ if (typeof window !== "undefined") {
 }
 
 const MyApp: AppType = ({ Component, pageProps }) => {
-  const lenisRef = useRef<LenisRef>(null)
-
-  useEffect(() => {
-    function update(data: { timestamp: number }) {
-      const time = data.timestamp
-      lenisRef.current?.lenis?.raf(time)
-    }
-
-    frame.update(update, true)
-
-    return () => cancelFrame(update)
-  }, [])
-
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
-    });
-  }, [])
-
   return (
-    <ReactLenis
-      options={{
-        autoRaf: false,
-        duration: 1.5,          // Scroll animation duration (seconds)
-        smoothWheel: true,      // Enable smooth mouse wheel scrolling
-        infinite: false,
-      }}
-      ref={lenisRef}
-      root
-    >
-      <React.Fragment>
-        <style jsx global>
-          {`
+    <React.Fragment>
+      <style jsx global>
+        {`
           :root {
             --font-raleway: ${raleway.variable};
-            --font-amiora: ${amiora.variable};
           }
           
          

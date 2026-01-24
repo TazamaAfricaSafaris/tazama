@@ -12,31 +12,8 @@ import { base_keywords } from '~/lib/constants'
 const Page = () => {
   return (
     <>
-      <HeadSEO
-        title='Kafika House | Tazama Africa Safari Community Partner'
-        keywords={`${base_keywords}, Kafika House Tanzania, children's rehabilitation center, disability support Africa, correctable disabilities, community support Tanzania, medical tourism, social responsibility, charitable travel, volunteer opportunities Tanzania, disability awareness`}
-        description="Learn about Tazama Africa Safari's partnership with Kafika House, a rehabilitation center helping children with correctable disabilities in Tanzania. Discover how we support their mission and how you can contribute to this life-changing work."
-      />
-
-      <div className="relative h-screen">
-        <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
-          <Image
-            fill
-            src={'https://res.cloudinary.com/drhl0yu7y/image/upload/v1765794414/partners/kafika-house/kafika-244_gwmznv.webp'}
-            className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
-            alt={'Kafika House'}
-            sizes="100vw"
-            placeholder="blur"
-            blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0iI2ZmZiIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+"
-          />
-          <div className="container">
-            <h1 className="absolute left-1/2 top-1/2 mx-auto w-full -translate-x-1/2 -translate-y-1/2 px-2 text-center text-5xl sm:px-12 lg:w-2/3 xl:text-6xl">
-              Kafika House
-            </h1>
-          </div>
-        </div>
-      </div>
-
+      <HeadSEO title={'Our Partners | Kafika House'} keywords={base_keywords} />
+      <PrimaryHeader title={'Kafika House'} image={'/partners/kafika-house/kafika-house-header.jpg'} />
       <div className='max-w-5xl mx-auto'>
         <section className='mt-20'>
           <h3 className='text-5xl text-center mb-6 text-primary'>Our Partnership With Kafika House</h3>
@@ -114,9 +91,6 @@ const Page = () => {
           </Link>
         </div>
       </section>
-
-      <br /><br /><br />
-      <CallToAction />
     </>
 
   )
