@@ -160,7 +160,7 @@ const AboutPage = () => {
       <br />
       <br />
       <HomeContactUs />
-    </>
+    </div>
   );
 };
 
