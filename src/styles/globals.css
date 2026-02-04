@@ -29,8 +29,7 @@ h4,
 h5,
 h6,
 .font-serif {
-  font-family: 'Amiora', 'Gilda Display', serif;
-  @apply max-md:font-gilda-display;
+  font-family: 'Amiora', serif;
 }
 
 .font-raleway {

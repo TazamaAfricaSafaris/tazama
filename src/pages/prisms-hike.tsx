@@ -41,9 +41,15 @@ const PrismsHike = () => {
         "Tips for mountain crew"
     ]
 
+    const whatHappens = [
+        "You’ll receive additional details about the climb and preparation",
+        "We’ll share pricing, timelines, and fundraising information",
+        "You’ll have the opportunity to ask questions before confirming your participation"
+    ]
+
     return (
         <>
-            <HeadSEO 
+            <HeadSEO
                 title='Tazama X PRISMS Foundation Kilimanjaro Climb'
                 keywords='Tazama, PRISMS Foundation, Kilimanjaro Climb, Mount Kilimanjaro, Group Climb, Support for Research, Smith-Magenis Syndrome, PRISMS'
                 description='Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS Foundation and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Africa’s highest mountain.'
@@ -53,7 +59,7 @@ const PrismsHike = () => {
                 imageUrl='https://images.pexels.com/photos/31121292/pexels-photo-31121292.jpeg'
             />
 
-            <section className='mx-auto max-w-6xl px-4 md:px-8 mb-20 mt-36'>
+            <section className='mx-auto max-w-5xl px-4 md:px-8 mb-20 mt-36'>
                 <div>
                     <h3 className='text-5xl text-primary text-center'>Climbing Mount Kilimanjaro For a Cause</h3>
                     <br />
@@ -90,22 +96,26 @@ const PrismsHike = () => {
                 </div>
             </section>
 
-            <section className='mx-auto max-w-6xl px-4 md:px-8 mt-32 mb-20'>
-                <h3 className='text-4xl text-primary'>About the Cause: PRISMS Foundation</h3>
+            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-36 mb-20'>
+                <h3 className='text-5xl text-primary text-center'>About the Cause: PRISMS Foundation</h3>
                 <br />
-                <p>
-                    The PRISMS Foundation is dedicated to supporting individuals and families affected by Smith-Magenis Syndrome (SMS) through research, advocacy, education, and community support.
-                </p>
+                <div className='text-center max-w-4xl mx-auto'>
+                    <p>
+                        The PRISMS Foundation is dedicated to supporting individuals and families affected by Smith-Magenis Syndrome (SMS) through research, advocacy, education, and community support.
+                    </p>
+                    <br />
+                    <p>
+                        Funds raised through this climb will help advance research initiatives, increase awareness, and provide resources to families navigating life with SMS. Every step we take on the mountain contributes to a larger mission of understanding, support, and hope.
+                    </p>
+                </div>
                 <br />
-                <p>
-                    Funds raised through this climb will help advance research initiatives, increase awareness, and provide resources to families navigating life with SMS. Every step we take on the mountain contributes to a larger mission of understanding, support, and hope.
-                </p>
-                <br />
-                <ZohoFormButton
-                    title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
-                    btnTitle='Register Here'
-                    link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
-                />
+                <div className='mx-auto flex justify-center'>
+                    <ZohoFormButton
+                        title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
+                        btnTitle='Register Here'
+                        link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
+                    />
+                </div>
 
                 <div className='w-full flex items-center gap-4'>
                     {children_images.map((image, index) => (
@@ -121,12 +131,12 @@ const PrismsHike = () => {
                 </div>
             </section>
 
-            <br /><br /><br />
-            <ContentSection
-                title='About the climb'
-                image='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770119700/prisms-kili-climb/daniel-vargas-FyrplABOofM-unsplash_gsxw4i.jpg'
-                description={
-                    <>
+            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
+                <div className='w-full flex items-start relative gap-12'>
+                    <div className='w-full py-4 sticky top-2'>
+                        <h3 className='text-4xl text-primary mb-4'>
+                            About the climb
+                        </h3>
                         <p>
                             Mount Kilimanjaro is one of the world’s most iconic and accessible high-altitude climbs. No technical climbing experience is required  just a sense of adventure and a willingness to challenge yourself.
                         </p>
@@ -150,50 +160,52 @@ const PrismsHike = () => {
                                 Click to View Full itinerary
                             </button>
                         </Link>
-                    </>
-                }
-                reverse
-            />
-            <br /><br />
-            <ContentSection
-                title='About the climb'
-                image='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770119700/prisms-kili-climb/daniel-vargas-FyrplABOofM-unsplash_gsxw4i.jpg'
-                description={
-                    <>
-                        <p>This experience is ideal for:</p>
-                        <ul className='list-inside list-disc'>
-                            <li>Supporters of PRISMS and the SMS community</li>
-                            <li>Individuals seeking a meaningful personal challenge</li>
-                            <li>Friends, family members, and advocates climbing with purpose</li>
-                            <li>People from around the world looking to connect through a shared cause</li>
-                        </ul>
-                        <br />
-                        <p>You do not need prior high-altitude or mountaineering experience, just commitment, preparation, and heart.</p>
-                    </>
-                }
-                reverse={false}
-            />
-            <br /><br />
-            <ContentSection
-                title='Who Is This Climb For?'
-                image='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770119700/prisms-kili-climb/daniel-vargas-FyrplABOofM-unsplash_gsxw4i.jpg'
-                description={
-                    <>
-                        <p>This experience is ideal for:</p>
-                        <ul className='list-inside list-disc'>
-                            <li>Supporters of PRISMS and the SMS community</li>
-                            <li>Individuals seeking a meaningful personal challenge</li>
-                            <li>Friends, family members, and advocates climbing with purpose</li>
-                            <li>People from around the world looking to connect through a shared cause</li>
-                        </ul>
-                        <br />
-                        <p>You do not need prior high-altitude or mountaineering experience, just commitment, preparation, and heart.</p>
-                    </>
-                }
-                reverse
-            />
+                    </div>
 
-            <section className='mx-auto max-w-6xl px-4 md:px-8 mt-32 mb-20'>
+                    <div className='relative h-[34rem] w-full border'>
+                        <Image
+                            src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770119700/prisms-kili-climb/daniel-vargas-FyrplABOofM-unsplash_gsxw4i.jpg'
+                            alt=''
+                            fill
+                            className='w-full mx-auto rounded-lg object-cover'
+                        />
+                    </div>
+                </div>
+
+                <br /><br /><br />
+
+                <div className='w-full flex flex-row-reverse items-start relative gap-12'>
+                    <div className='w-full py-4 sticky top-2'>
+                        <h3 className='text-4xl text-primary mb-4'>
+                            Who is This Climb For?
+                        </h3>
+                        <p>This experience is ideal for:</p>
+                        <ul className='list-inside list-disc'>
+                            <li>Supporters of PRISMS and the SMS community</li>
+                            <li>Individuals seeking a meaningful personal challenge</li>
+                            <li>Friends, family members, and advocates climbing with purpose</li>
+                            <li>People from around the world looking to connect through a shared cause</li>
+                        </ul>
+                        <br />
+                        <p>You do not need prior high-altitude or mountaineering experience, just commitment, preparation, and heart.</p>
+                    </div>
+
+                    <div className='relative h-[34rem] w-full border'>
+                        <Image
+                            src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770191655/prisms-kili-climb/to-the-mountains-kilimanjaro-trekkers-marangu-route-near-peak_yj7vzo.webp'
+                            alt=''
+                            fill
+                            className='w-full mx-auto rounded-lg object-cover'
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-20 mb-20'>
+                <p>
+                    A full packing list and preparation guide will be shared with confirmed participants. Costs paid for the climb includes and excludes as fellows:
+                </p>
+                <br />
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
                     <div>
                         <div className="flex items-center gap-4 mb-4">
@@ -228,12 +240,9 @@ const PrismsHike = () => {
                     </div>
                 </div>
                 <br />
-                <p>
-                    A full packing list and preparation guide will be shared with confirmed participants.
-                </p>
             </section>
 
-            <section className='mx-auto max-w-6xl px-4 md:px-8 mt-32 mb-20'>
+            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
                 <div>
                     <h3 className='text-5xl text-primary text-center'>Pricing & Fundraising</h3>
                     <br />
@@ -251,7 +260,7 @@ const PrismsHike = () => {
 
                     <div className='relative w-full h-96'>
                         <Image
-                            src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770119700/prisms-kili-climb/daniel-vargas-FyrplABOofM-unsplash_gsxw4i.jpg'
+                            src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770191933/prisms-kili-climb/kilimanjaro-climbing-guide-1_dbcqzp.webp'
                             alt='Kilimanjaro Hike'
                             fill
                             className='my-8 mx-auto rounded-lg object-cover'
@@ -260,8 +269,8 @@ const PrismsHike = () => {
                 </div>
             </section>
 
-            <section className='mx-auto max-w-6xl px-4 md:px-8 mt-32 mb-20'>
-                <div>
+            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
+                <div className='max-w-4xl mx-auto text-center'>
                     <h3 className='text-5xl text-primary'>Meet The Organizers</h3>
                     <br />
                     <p>
@@ -307,7 +316,7 @@ const PrismsHike = () => {
                 </div>
             </section>
 
-            <section className='mx-auto max-w-6xl px-4 md:px-8 mt-32 mb-20'>
+            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
                 <div>
                     <h3 className='text-5xl text-primary text-center'>How to Join?</h3>
                     <br />
@@ -325,42 +334,46 @@ const PrismsHike = () => {
                 </div>
             </section>
 
-            <section className='mx-auto max-w-6xl px-4 md:px-8 mt-32 mb-20'>
-                <div>
-                    <h3 className='text-4xl text-primary'>What Happens Next?</h3>
-                    <br />
-                    <p>
-                        Once you submit the form:
-                    </p>
-                    <ol className='list-decimal list-inside pl-4'>
-                        <li>You’ll receive additional details about the climb and preparation</li>
-                        <li>We’ll share pricing, timelines, and fundraising information</li>
-                        <li>You’ll have the opportunity to ask questions before confirming your participation</li>
-                    </ol>
+            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-24 mb-20'>
+                <h3 className='text-5xl text-primary text-center'>What Happens Next?</h3>
+                <br />
+                <p className='text-center'>Once you submit the form:</p>
+                <br />
+                <div className='grid grid-cols-3 gap-8'>
+                    {
+                        whatHappens.map((item, index) => (
+                            <div className='text-center p-4 border border-primary rounded-lg flex flex-col justify-center items-center h-48 bg-amber-400/10' key={index}>
+                                <h3 className='text-4xl mb-4 text-primary'>{index + 1}</h3>
+                                <p>{item}</p>
+                            </div>
+                        ))
+                    }
                 </div>
             </section>
 
-            <section className='mx-auto max-w-6xl px-4 md:px-8 mt-32 mb-20'>
-                <div>
-                    <h3 className='text-4xl text-primary capitalize'>Do you have any questions?</h3>
-                    <br />
+            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
+                <div className='text-center'>
+                    <h3 className='text-5xl text-primary capitalize mb-4'>Do you have any questions?</h3>
                     <p>
                         We’re happy to help. You’ll have plenty of time to connect, prepare, and decide if this climb is right for you.
                     </p>
-                    <br />
-                    <Accordion
-                        question="How does the fundraising component work?"
-                        answer="Fundraising details will be shared with registered participants. The aim is to raise meaningful support for PRISMS while keeping the process transparent and manageable."
-                    />
-                    <Accordion
-                        question="When do I need to commit?"
-                        answer="Registering your interest is not a commitment. Once you’ve received full details, you’ll have time to ask questions and decide whether to participate."
-                    />
-                    <Accordion
-                        question="How will we stay connected as a group?"
-                        answer="Confirmed participants will be invited to a shared communication space (such as WhatsApp or email updates) for planning, updates, and support leading up to the climb."
-                    />
                 </div>
+                <br />
+                <Accordion
+                    question="How does the fundraising component work?"
+                    answer="Fundraising details will be shared with registered participants. The aim is to raise meaningful support for PRISMS while keeping the process transparent and manageable."
+                    default={true}
+                />
+                <Accordion
+                    question="When do I need to commit?"
+                    answer="Registering your interest is not a commitment. Once you’ve received full details, you’ll have time to ask questions and decide whether to participate."
+                    default={true}
+                />
+                <Accordion
+                    question="How will we stay connected as a group?"
+                    answer="Confirmed participants will be invited to a shared communication space (such as WhatsApp or email updates) for planning, updates, and support leading up to the climb."
+                    default={true}
+                />
 
                 <div className='w-full relative mx-auto overflow-hidden h-72 md:h-[32rem] mt-16 rounded-2xl'>
                     <Image

@@ -23,7 +23,7 @@ const Accordion: React.FunctionComponent<accordion> = React.memo(
       <div className="relative">
         {/* Header (clickable) */}
         <div
-          className="flex flex-row justify-between items-center rounded-3xl cursor-pointer md:pl-3 md:p-2 gap-2"
+          className="flex flex-row justify-between items-center rounded-3xl cursor-pointer md:pl-3 md:p-2 gap-2 border mb-2 border-lighter/75"
           onClick={() => setAccordion(!accordion)}
         >
           <p className="text-lg md:text-xl text-dark capitalize flex-1 p-2">{props.question}</p>
@@ -43,12 +43,12 @@ const Accordion: React.FunctionComponent<accordion> = React.memo(
             >
               {/* Timeline rail */}
               <div className="relative pl-4 md:pl-10">
-                <div className="absolute left-5 md:left-9 top-4 bottom-0 border-l-2 border-dashed border-primary" />
+                <div className="absolute left-5 md:left-9 top-0 bottom-0 border-l-2 border-dashed border-primary" />
                 <div className="ml-8 md:ml-4 py-4 flex flex-col gap-5">
                   {/* Answer */}
                   {props.answer && (
                     <div className="flex flex-col gap-3 text-neutral-800">
-                      <p className="font-now pt-4">{props.answer}</p>
+                      <p className="font-now">{props.answer}</p>
                     </div>
                   )}
 
