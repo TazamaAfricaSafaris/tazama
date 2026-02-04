@@ -7,6 +7,7 @@ import { ZohoFormButton } from './tours/[slug]'
 import Link from 'next/link'
 import ContentSection from '~/components/ContentSection'
 import Accordion from '~/components/Accordion'
+import HeadSEO from '~/components/ui/Head'
 
 const PrismsHike = () => {
     const children_images = [
@@ -41,7 +42,12 @@ const PrismsHike = () => {
     ]
 
     return (
-        <div>
+        <>
+            <HeadSEO 
+                title='Tazama X PRISMS Foundation Kilimanjaro Climb'
+                keywords='Tazama, PRISMS Foundation, Kilimanjaro Climb, Mount Kilimanjaro, Group Climb, Support for Research, Smith-Magenis Syndrome, PRISMS'
+                description='Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS Foundation and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Africa’s highest mountain.'
+            />
             <PrimaryHeader
                 title='Tazama X PRISMS Foundation'
                 imageUrl='https://images.pexels.com/photos/31121292/pexels-photo-31121292.jpeg'
@@ -373,7 +379,7 @@ const PrismsHike = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </>
     )
 }
 
