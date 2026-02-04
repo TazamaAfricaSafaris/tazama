@@ -192,7 +192,7 @@ const PrismsHike = () => {
 
                     <div className='relative h-[34rem] w-full border'>
                         <Image
-                            src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770191655/prisms-kili-climb/to-the-mountains-kilimanjaro-trekkers-marangu-route-near-peak_yj7vzo.webp'
+                            src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770206196/prisms-kili-climb/to-the-mountains-kilimanjaro-trekkers-marangu-route-near-peak_un5lay.webp'
                             alt=''
                             fill
                             className='w-full mx-auto rounded-lg object-cover'
