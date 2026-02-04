@@ -392,12 +392,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return { paths, fallback: 'blocking' };
 };
 
-export const ZohoFormButton = ({ link, title }: { link: string, title: string }) => {
+export const ZohoFormButton = ({ link, title, btnTitle }: { link: string, title: string, btnTitle?: string }) => {
     return (
         <Dialog>
             <DialogTrigger asChild>
                 <button className="bg-primary px-4 py-2 rounded-lg text-white hover:bg-dark transition-colors max-md:w-full">
-                    Book this trip
+                    {btnTitle ? btnTitle : "Book This Trip"}
                 </button>
             </DialogTrigger>
             <DialogContent className="h-[75.5%] flex flex-col justify-center items-center overflow-hidden pt-4">
