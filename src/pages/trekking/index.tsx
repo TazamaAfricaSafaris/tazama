@@ -92,7 +92,7 @@ const TrekkingPage = () => {
                             <Link
                                 key={index}
                                 // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-                                href={`/${experience.link}`}
+                                href={`${experience.link}`}
                                 className="w-full h-96 flex items-end justify-end relative overflow-hidden rounded-2xl group"
                             >
                                 <div className="p-6 flex flex-col justify-between gap-3 z-10 text-white">
