@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import markdownToHtml from "~/lib/markdown-to-html";
 import { getPostBySlug } from "~/lib/markddownConfig";
 import markdownStyles from "~/styles/markdownStyles.module.css";
@@ -8,21 +11,21 @@ const PostBody = ({ content }: any) => {
   return (
     <div className="mx-auto max-w-2xl">
       <div
-        className={markdownStyles["markdown"]}
+        className={markdownStyles.markdown}
         dangerouslySetInnerHTML={{ __html: content }}
       />
     </div>
   );
 };
 
-export default function Page({ post }: any) {
+export default function Page({ post }: { post: any }) {
   return (
     <>
       <HeadSEO
-        title="Tazama Africa Tours & Safaris = East Africa Travel Specialists"
+        title="Tazama Africa Tours & Safaris | East Africa Travel Specialists"
         keywords={base_keywords}
       />
-      <div className="mx-auto  max-w-5xl px-4 pt-20 text-lg text-[#757371] md:px-8">
+      <div className="mx-auto  max-w-5xl px-4 pt-20 text-lg md:px-8">
         <article>
           <PostBody content={post.content} />
         </article>
@@ -40,7 +43,7 @@ export async function getStaticProps() {
     "content",
     "coverImage",
   ]);
-  const content = await markdownToHtml(post.content || "");
+  const content = await markdownToHtml(post.content ?? "");
 
   return {
     props: {

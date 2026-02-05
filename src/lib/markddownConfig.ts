@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
@@ -14,9 +15,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  type Items = {
-    [key: string]: string;
-  };
+  type Items = Record<string, string>;
 
   const items: Items = {};
 
