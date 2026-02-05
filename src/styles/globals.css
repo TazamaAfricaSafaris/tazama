@@ -16,6 +16,7 @@ label,
 input,
 textarea,
 button,
+ol,
 ul,
 span {
   font-family: "Raleway", sans-serif;
@@ -29,7 +30,6 @@ h5,
 h6,
 .font-serif {
   font-family: 'Amiora', serif;
-  @apply max-md:font-gilda-display;
 }
 
 .font-raleway {

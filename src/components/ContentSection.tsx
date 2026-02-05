@@ -12,7 +12,7 @@ export type contentSectionData = {
   title: string;
   action?: string;
   reverse: boolean;
-  description: string | string[];
+  description: string | string[] | React.ReactNode;
   actionTitle?: string;
 };
 
@@ -21,7 +21,7 @@ const ContentSection = (props: contentSectionData) => {
   const imageRef = useRef(null);
   const textRef = useRef(null);
 
-  const renderDescription = (description: string | string[]) => {
+  const renderDescription = (description: string | string[] | React.ReactNode) => {
     if (typeof description === "string") {
       return description.split("\n").map((line, index) => (
         <p key={index} className="mb-4">{line}</p>
@@ -30,6 +30,10 @@ const ContentSection = (props: contentSectionData) => {
       return description.map((line, index) => (
         <p key={index} className="mb-4">{line}</p>
       ));
+    } else {
+      return (
+        <>{description}</>
+      )
     }
   };
 
