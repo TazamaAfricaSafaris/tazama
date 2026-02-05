@@ -249,6 +249,9 @@ const PrismsHike = () => {
                     <p className=' max-w-3xl'>
                         Climb pricing and fundraising details will be shared directly with registered participants. Our goal is to keep the process clear, transparent, and accessible, while maximising support for PRISMS’ work.
                     </p>
+                    <p className=' max-w-3xl mt-4'>
+                        Price per person $3,465  and single supplment (hotel and mountain) $966 USD
+                    </p>
                     <br />
                     <ZohoFormButton
                         title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
