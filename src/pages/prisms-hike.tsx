@@ -67,7 +67,7 @@ const PrismsHike = () => {
                 <div>
                     <h3 className='text-5xl text-primary'>Climbing Mount Kilimanjaro For a Cause</h3>
                     <br />
-                    <p className='max-w-3xl'>
+                    <p className='max-w-4xl'>
                         Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS Foundation and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Africa’s highest mountain.
                     </p>
                     <br />
@@ -246,11 +246,15 @@ const PrismsHike = () => {
                 <div>
                     <h3 className='text-5xl text-primary '>Pricing & Fundraising</h3>
                     <br />
-                    <p className=' max-w-3xl'>
+                    <p className=' max-w-4xl'>
                         Climb pricing and fundraising details will be shared directly with registered participants. Our goal is to keep the process clear, transparent, and accessible, while maximising support for PRISMS’ work.
                     </p>
-                    <p className=' max-w-3xl mt-4'>
-                        Price per person $3,465  and single supplment (hotel and mountain) $966 USD
+                    <br />
+                    <p className=' max-w-4xl'>
+                        To join the 9-day guided Lemosho Route climb, the price is $3,465 USD per person.
+                        If you prefer single occupancy (hotel and mountain tent), the single supplement is $966 USD.
+                        <br /><br />
+                        Once you register and confirm your decision to join the climb, a 30% deposit will be required to secure your spot. Full payment details and next steps will be shared at that stage.
                     </p>
                     <br />
                     <ZohoFormButton
@@ -321,7 +325,7 @@ const PrismsHike = () => {
                 <div>
                     <h3 className='text-5xl text-primary '>How to Join?</h3>
                     <br />
-                    <p className=' max-w-3xl'>
+                    <p className=' max-w-4xl'>
                         If you’re interested in learning more or potentially joining the climb, please register your interest below. This is not a commitment, simply a way for us to share more information, timelines, and next steps.
                     </p>
                     <br />
