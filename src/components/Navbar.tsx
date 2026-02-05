@@ -44,6 +44,10 @@ const navMainContent = [
 
 const navSubContent = [
   {
+    title: "PRISMS x Tazama Africa Kilimanjaro Climb",
+    link: "/prisms-hike"
+  },
+  {
     title: "Our itineraries",
     link: "/tours",
   },
