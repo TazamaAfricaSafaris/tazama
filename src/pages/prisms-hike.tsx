@@ -59,25 +59,23 @@ const PrismsHike = () => {
                     src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770276925/prisms-kili-climb/Tazama_Africa_Kili_MERU_RATES_2025-2026_Video.jpg_1_ih55rt.jpg'
                     alt='Kilimanjaro Hike'
                     fill
-                    className='mx-auto object-cover'
+                    className=' object-cover'
                 />
             </div>
 
-            <section className='mx-auto max-w-5xl px-4 md:px-8 mb-20 mt-36'>
+            <section className=' mx-auto max-w-5xl px-4 md:px-8 mb-20 mt-36'>
                 <div>
-                    <h3 className='text-5xl text-primary text-center'>Climbing Mount Kilimanjaro For a Cause</h3>
+                    <h3 className='text-5xl text-primary'>Climbing Mount Kilimanjaro For a Cause</h3>
                     <br />
-                    <p className='text-center mx-auto max-w-3xl'>
+                    <p className='max-w-3xl'>
                         Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS Foundation and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Africa’s highest mountain.
                     </p>
                     <br />
-                    <div className='mx-auto flex justify-center'>
-                        <ZohoFormButton
-                            title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
-                            btnTitle='Register Here'
-                            link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
-                        />
-                    </div>
+                    <ZohoFormButton
+                        title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
+                        btnTitle='Register Here'
+                        link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
+                    />
                 </div>
 
                 <div className='w-full flex items-center gap-4'>
@@ -86,7 +84,7 @@ const PrismsHike = () => {
                             src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770114027/prisms-kili-climb/tom-cleary-vdMllb3x-1s-unsplash_1_bojfey.jpg'
                             alt='Kilimanjaro Hike'
                             fill
-                            className='my-8 mx-auto rounded-lg object-cover'
+                            className='my-8  rounded-lg object-cover'
                         />
                     </div>
                     <div className='relative w-full h-96'>
@@ -94,16 +92,16 @@ const PrismsHike = () => {
                             src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770114265/prisms-kili-climb/david-magalhaes-Yz8r_LeSuow-unsplash_lkqvbe.jpg'
                             alt='Kilimanjaro Hike'
                             fill
-                            className='my-8 mx-auto rounded-lg object-cover'
+                            className='my-8  rounded-lg object-cover'
                         />
                     </div>
                 </div>
             </section>
 
-            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-36 mb-20'>
-                <h3 className='text-5xl text-primary text-center'>About the Cause: PRISMS Foundation</h3>
+            <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-36 mb-20'>
+                <h3 className='text-5xl text-primary'>About the Cause: PRISMS Foundation</h3>
                 <br />
-                <div className='text-center max-w-4xl mx-auto'>
+                <div className='max-w-4xl '>
                     <p>
                         The PRISMS Foundation is dedicated to supporting individuals and families affected by Smith-Magenis Syndrome (SMS) through research, advocacy, education, and community support.
                     </p>
@@ -113,13 +111,11 @@ const PrismsHike = () => {
                     </p>
                 </div>
                 <br />
-                <div className='mx-auto flex justify-center'>
-                    <ZohoFormButton
-                        title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
-                        btnTitle='Register Here'
-                        link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
-                    />
-                </div>
+                <ZohoFormButton
+                    title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
+                    btnTitle='Register Here'
+                    link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
+                />
 
                 <div className='w-full flex items-center gap-4'>
                     {children_images.map((image, index) => (
@@ -128,14 +124,14 @@ const PrismsHike = () => {
                                 src={image.src}
                                 alt={image.alt}
                                 fill
-                                className='my-8 mx-auto rounded-lg object-cover'
+                                className='my-8  rounded-lg object-cover'
                             />
                         </div>
                     ))}
                 </div>
             </section>
 
-            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
+            <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
                 <div className='w-full flex items-start relative gap-12'>
                     <div className='w-full py-4 sticky top-2'>
                         <h3 className='text-4xl text-primary mb-4'>
@@ -171,7 +167,7 @@ const PrismsHike = () => {
                             src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770119700/prisms-kili-climb/daniel-vargas-FyrplABOofM-unsplash_gsxw4i.jpg'
                             alt=''
                             fill
-                            className='w-full mx-auto rounded-lg object-cover'
+                            className='w-full  rounded-lg object-cover'
                         />
                     </div>
                 </div>
@@ -199,13 +195,13 @@ const PrismsHike = () => {
                             src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770206196/prisms-kili-climb/to-the-mountains-kilimanjaro-trekkers-marangu-route-near-peak_un5lay.webp'
                             alt=''
                             fill
-                            className='w-full mx-auto rounded-lg object-cover'
+                            className='w-full  rounded-lg object-cover'
                         />
                     </div>
                 </div>
             </section>
 
-            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-20 mb-20'>
+            <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-20 mb-20'>
                 <p>
                     A full packing list and preparation guide will be shared with confirmed participants. Costs paid for the climb includes and excludes as fellows:
                 </p>
@@ -246,35 +242,33 @@ const PrismsHike = () => {
                 <br />
             </section>
 
-            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
+            <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
                 <div>
-                    <h3 className='text-5xl text-primary text-center'>Pricing & Fundraising</h3>
+                    <h3 className='text-5xl text-primary '>Pricing & Fundraising</h3>
                     <br />
-                    <p className='text-center mx-auto max-w-3xl'>
+                    <p className=' max-w-3xl'>
                         Climb pricing and fundraising details will be shared directly with registered participants. Our goal is to keep the process clear, transparent, and accessible, while maximising support for PRISMS’ work.
                     </p>
                     <br />
-                    <div className='mx-auto flex justify-center'>
-                        <ZohoFormButton
-                            title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
-                            btnTitle='Register Here'
-                            link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
-                        />
-                    </div>
+                    <ZohoFormButton
+                        title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
+                        btnTitle='Register Here'
+                        link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
+                    />
 
                     <div className='relative w-full h-96'>
                         <Image
                             src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770191933/prisms-kili-climb/kilimanjaro-climbing-guide-1_dbcqzp.webp'
                             alt='Kilimanjaro Hike'
                             fill
-                            className='my-8 mx-auto rounded-lg object-cover'
+                            className='my-8  rounded-lg object-cover'
                         />
                     </div>
                 </div>
             </section>
 
-            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
-                <div className='max-w-4xl mx-auto text-center'>
+            <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
+                <div className='max-w-4xl  '>
                     <h3 className='text-5xl text-primary'>Meet The Organizers</h3>
                     <br />
                     <p>
@@ -296,7 +290,7 @@ const PrismsHike = () => {
                             src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770122281/prisms-kili-climb/organizers/Joann_entx2b.jpg'
                             alt='Kilimanjaro Hike'
                             fill
-                            className='my-8 mx-auto rounded-lg object-cover'
+                            className='my-8  rounded-lg object-cover'
                         />
 
                         <div className='absolute -bottom-4 right-4 bg-white p-4 rounded-tl-2xl rounded-br-2xl'>
@@ -309,7 +303,7 @@ const PrismsHike = () => {
                             src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770122489/prisms-kili-climb/organizers/Connie_i1a6cj.jpg'
                             alt='Kilimanjaro Hike'
                             fill
-                            className='my-8 mx-auto rounded-lg object-cover'
+                            className='my-8  rounded-lg object-cover'
                         />
 
                         <div className='absolute -bottom-4 right-4 bg-white p-4 rounded-tl-2xl rounded-br-2xl'>
@@ -320,33 +314,31 @@ const PrismsHike = () => {
                 </div>
             </section>
 
-            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
+            <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
                 <div>
-                    <h3 className='text-5xl text-primary text-center'>How to Join?</h3>
+                    <h3 className='text-5xl text-primary '>How to Join?</h3>
                     <br />
-                    <p className='text-center mx-auto max-w-3xl'>
+                    <p className=' max-w-3xl'>
                         If you’re interested in learning more or potentially joining the climb, please register your interest below. This is not a commitment, simply a way for us to share more information, timelines, and next steps.
                     </p>
                     <br />
-                    <div className='mx-auto flex justify-center'>
-                        <ZohoFormButton
-                            title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
-                            btnTitle='Register Here'
-                            link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
-                        />
-                    </div>
+                    <ZohoFormButton
+                        title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
+                        btnTitle='Register Here'
+                        link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
+                    />
                 </div>
             </section>
 
-            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-24 mb-20'>
-                <h3 className='text-5xl text-primary text-center'>What Happens Next?</h3>
+            <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-24 mb-20'>
+                <h3 className='text-5xl text-primary '>What Happens Next?</h3>
                 <br />
-                <p className='text-center'>Once you submit the form:</p>
+                <p className=''>Once you submit the form:</p>
                 <br />
                 <div className='grid grid-cols-3 gap-8'>
                     {
                         whatHappens.map((item, index) => (
-                            <div className='text-center p-4 border border-primary rounded-lg flex flex-col justify-center items-center h-48 bg-amber-400/10' key={index}>
+                            <div className='p-4 border border-primary rounded-lg flex flex-col justify-center items-center h-48 bg-amber-400/10' key={index}>
                                 <h3 className='text-4xl mb-4 text-primary'>{index + 1}</h3>
                                 <p>{item}</p>
                             </div>
@@ -355,8 +347,8 @@ const PrismsHike = () => {
                 </div>
             </section>
 
-            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
-                <div className='text-center'>
+            <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-32 mb-20'>
+                <div className=''>
                     <h3 className='text-5xl text-primary capitalize mb-4'>Do you have any questions?</h3>
                     <p>
                         We’re happy to help. You’ll have plenty of time to connect, prepare, and decide if this climb is right for you.
@@ -379,12 +371,12 @@ const PrismsHike = () => {
                     default={true}
                 />
 
-                <div className='w-full relative mx-auto overflow-hidden h-72 md:h-[32rem] mt-16 rounded-2xl'>
+                <div className='w-full relative  overflow-hidden h-72 md:h-[32rem] mt-16 rounded-2xl'>
                     <Image
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1770177477/prisms-kili-climb/Tazama_Africa_Kili_MERU_RATES_2025-2026.jpg_oszq7p.jpg"
                         alt="Kilimanjaro Climb"
                         fill
-                        className='mx-auto object-cover'
+                        className=' object-cover'
                     />
 
                     <div className='absolute bottom-10 md:bottom-20 left-1/2 -translate-x-1/2'>
