@@ -54,10 +54,14 @@ const PrismsHike = () => {
                 keywords='Tazama, PRISMS Foundation, Kilimanjaro Climb, Mount Kilimanjaro, Group Climb, Support for Research, Smith-Magenis Syndrome, PRISMS'
                 description='Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS Foundation and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Africa’s highest mountain.'
             />
-            <PrimaryHeader
-                title='Tazama X PRISMS Foundation'
-                imageUrl='https://images.pexels.com/photos/31121292/pexels-photo-31121292.jpeg'
-            />
+            <div className='relative w-full h-screen'>
+                <Image
+                    src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770276925/prisms-kili-climb/Tazama_Africa_Kili_MERU_RATES_2025-2026_Video.jpg_1_ih55rt.jpg'
+                    alt='Kilimanjaro Hike'
+                    fill
+                    className='mx-auto object-cover'
+                />
+            </div>
 
             <section className='mx-auto max-w-5xl px-4 md:px-8 mb-20 mt-36'>
                 <div>
