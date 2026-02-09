@@ -23,10 +23,10 @@ const Accordion: React.FunctionComponent<accordion> = React.memo(
       <div className="relative">
         {/* Header (clickable) */}
         <div
-          className="flex flex-row justify-between items-center rounded-3xl cursor-pointer md:pl-3 md:p-2 gap-2 border mb-2 border-lighter/75"
+          className="flex flex-row justify-between items-center rounded-3xl cursor-pointer px-2 md:pl-3 md:p-2 gap-2 border mb-2 border-lighter/75"
           onClick={() => setAccordion(!accordion)}
         >
-          <p className="text-lg md:text-xl text-dark capitalize flex-1 p-2">{props.question}</p>
+          <p className="text-base md:text-xl text-dark capitalize flex-1 p-2">{props.question}</p>
           <span
             className={`transition-transform duration-200 ${accordion ? "rotate-0" : "rotate-180"}`}
           >
