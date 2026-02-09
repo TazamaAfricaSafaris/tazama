@@ -1,11 +1,9 @@
 import React from 'react'
-import PrimaryHeader from '~/components/PrimaryHeader'
 import Image from 'next/image'
 import { FaCheck } from 'react-icons/fa'
 import { FaXmark } from 'react-icons/fa6'
 import { ZohoFormButton } from './tours/[slug]'
 import Link from 'next/link'
-import ContentSection from '~/components/ContentSection'
 import Accordion from '~/components/Accordion'
 import HeadSEO from '~/components/ui/Head'
 
