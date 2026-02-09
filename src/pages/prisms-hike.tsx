@@ -341,7 +341,7 @@ const PrismsHike = () => {
                 <div className=''>
                     <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary capitalize mb-4'>Do you have any questions?</h3>
                     <p className='text-sm md:text-base'>
-                        We're happy to help. You'll have plenty of time to connect, prepare, and decide if this climb is right for you.
+                        We&apos;re happy to help. You&apos;ll have plenty of time to connect, prepare, and decide if this climb is right for you.
                     </p>
                 </div>
                 <br />
@@ -363,7 +363,7 @@ const PrismsHike = () => {
 
                 <div className='text-center my-12 md:my-16 mx-auto max-w-4xl'>
                     <p className='text-sm md:text-base'>
-                        Please join us in this adventure. If, however, it doesn't work out for you at this time, please consider a donation to PRISMS.
+                        Please join us in this adventure. If, however, it doesn&apos;t work out for you at this time, please consider a donation to PRISMS.
                     </p>
                     <br />
                     <Link
