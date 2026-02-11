@@ -41,7 +41,7 @@ const PrismsHike = () => {
             />
             <div className='relative w-full h-[50vh] md:h-[70vh] lg:h-screen'>
                 <Image
-                    src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770276925/prisms-kili-climb/Tazama_Africa_Kili_MERU_RATES_2025-2026_Video.jpg_1_ih55rt.jpg'
+                    src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770795234/prisms-kili-climb/tazama_x_prism_foundation_1_k7jbyb.webp'
                     alt='Kilimanjaro Hike'
                     fill
                     className=' object-cover'
@@ -96,11 +96,11 @@ const PrismsHike = () => {
                     </p>
                 </div>
                 <br />
-                <ZohoFormButton
-                    title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
-                    btnTitle='Register Here'
-                    link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
-                />
+                <Link href='https://www.prisms.org' target='_blank'>
+                    <button className='bg-primary text-white px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-lg block hover:bg-primary-dark transition w-full md:w-auto'>
+                        Learn More About PRISMS
+                    </button>
+                </Link>
             </section>
 
             <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-12 md:mt-24 lg:mt-32 mb-12 md:mb-20'>
