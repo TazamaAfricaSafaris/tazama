@@ -53,7 +53,7 @@ const PrismsHike = () => {
                     <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary'>Climbing Mount Kilimanjaro For a Cause</h3>
                     <br />
                     <p className='max-w-4xl text-sm md:text-base'>
-                        Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS Foundation and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Afrixca&apos;s highest mountain.
+                        Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS Foundation and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Africa&apos;s highest mountain.
                     </p>
                     <br />
                     <ZohoFormButton
