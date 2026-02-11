@@ -53,7 +53,7 @@ const PrismsHike = () => {
                     <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary'>Climbing Mount Kilimanjaro For a Cause</h3>
                     <br />
                     <p className='max-w-4xl text-sm md:text-base'>
-                        Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS Foundation and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Afrixca&apos;s highest mountain.
+                        Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS Foundation and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Africa&apos;s highest mountain.
                     </p>
                     <br />
                     <ZohoFormButton
@@ -384,7 +384,7 @@ const PrismsHike = () => {
 
                 <div className='w-full relative  overflow-hidden h-72 md:h-96 lg:h-[32rem] rounded-2xl'>
                     <Image
-                        src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1770177477/prisms-kili-climb/Tazama_Africa_Kili_MERU_RATES_2025-2026.jpg_oszq7p.jpg"
+                        src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1770276925/prisms-kili-climb/Tazama_Africa_Kili_MERU_RATES_2025-2026_Video.jpg_1_ih55rt.jpg"
                         alt="Kilimanjaro Climb"
                         fill
                         className=' object-cover'
