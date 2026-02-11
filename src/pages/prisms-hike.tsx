@@ -77,7 +77,7 @@ const PrismsHike = () => {
                             src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770114265/prisms-kili-climb/david-magalhaes-Yz8r_LeSuow-unsplash_lkqvbe.jpg'
                             alt='Kilimanjaro Hike'
                             fill
-                            className='my-8  rounded-lg object-cover'
+                            className='my-8  rounded-lg object-cover '
                         />
                     </div>
                 </div>
