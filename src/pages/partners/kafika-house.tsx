@@ -41,11 +41,11 @@ const Page = () => {
         <section className='mt-20'>
           <h3 className='text-5xl text-center mb-6 text-primary'>Our Partnership With Kafika House</h3>
           <p>
-            At Tazama Africa Tours & Safari Ltd., we are deeply committed to making a positive impact on the communities we serve. One of the ways we do this is through our partnership with <Link href="https://kafikahouse.org/" className='underline underline-offset-4 font-semibold'>Kafika House</Link>, a residential rehabilitation center dedicated to helping children with correctable disabilities such as clubfoot, cleft lip and palate, fluorosis, burn scar contracture, masses, and neurological conditions like spina bifida and hydrocephalus.
+            At Tazama Africa Tours & Safari Ltd., we are deeply committed to making a positive impact on the communities we serve. One of the ways we do this is through our partnership with <Link href="https://kafikahouse.org/" className='underline underline-offset-4 font-semibold'>Kafika House</Link>, a residential rehabilitation center dedicated to helping children with correctable disabilities such as clubfoot, cleft lip and palate, fluorosis, burn scar contracture and masses.
           </p>
           <br />
           <p>
-            <Link href="https://kafikahouse.org/" className='underline underline-offset-4 font-semibold'>Kafika House</Link> provides high-love, low-cost surgical and rehabilitative care for children in Tanzania living with treatable disabilities. Since 2008, the organisation has helped more than 10,000 children access surgery, recovery, and rehabilitation in a warm, supportive environment, ensuring that cost is never a barrier to a child’s healing.
+            <Link href="https://kafikahouse.org/" className='underline underline-offset-4 font-semibold'>Kafika House</Link> provides high-love, low-cost surgical and rehabilitative care for children in Tanzania living with treatable disabilities. Since 2008, the organisation has helped more than 12,000 children access surgery, recovery, and rehabilitation in a warm, supportive environment, ensuring that cost is never a barrier to a child’s healing.
           </p>
         </section>
 
@@ -127,7 +127,7 @@ export default Page
 const howTazamaHelps = [
   {
     title: "Transportation Support",
-    description: "We provide transportation for children from their communities to Kafika House locations in Arusha, Moshi, or Karatu, ensuring they can access the medical care they need."
+    description: "We provide transportation for children from their communities to Kafika House locations in Arusha."
   },
   {
     title: "Facility Tours",
