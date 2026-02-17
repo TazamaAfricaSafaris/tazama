@@ -6,6 +6,8 @@ import { ZohoFormButton } from './tours/[slug]'
 import Link from 'next/link'
 import Accordion from '~/components/Accordion'
 import HeadSEO from '~/components/ui/Head'
+import BioCard from '~/components/prisms/bio-card'
+import JoanneQuote from '~/components/prisms/joanne-quote'
 
 const PrismsHike = () => {
     const includes = [
@@ -119,7 +121,7 @@ const PrismsHike = () => {
                             <li>Route: 9-days Lemosho</li>
                             <li>Duration: 9 days (including ascent and descent)</li>
                             <li>Group size: Small, supported group</li>
-                            {/* <li>Dates: January 8 - </li> */}
+                            <li>Dates: 9 January 2027 - 20 January 2027</li>
                             <li>Support: Fully guided by experienced local mountain crew</li>
                         </ul>
                         <br />
@@ -214,7 +216,7 @@ const PrismsHike = () => {
                 <br />
             </section>
 
-            <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-12 md:mt-24 lg:mt-32 mb-12 md:mb-20'>
+            <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-12 md:mt-24 lg:mt-28 mb-12 md:mb-20'>
                 <div>
                     <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary '>Pricing</h3>
                     <br />
@@ -228,6 +230,17 @@ const PrismsHike = () => {
                         <br /><br />
                         Once you register and confirm your decision to join the climb, a 30% deposit will be required to secure your spot. Full payment details and next steps will be shared at that stage.
                     </p>
+
+                    <div className=' bg-yellow-100 text-yellow-800 text-xs md:text-sm p-3 rounded-2xl border border-yellow-300 mt-8 text-left'>
+                        <p className='font-semibold text-sm md:text-base mb-2'>⭐ Please Note:</p>
+                        <p>
+                            Once a deposit is made, you will be added to a WhatsApp group and join monthly meetings to keep you updated on the climb progress.
+                        </p>
+                        <p>
+                            The <strong>deadline</strong> for registering for the Kilimanjaro Climb is <strong>September 1st, 2027</strong>.
+                        </p>
+                    </div>
+
                     <br />
                     <ZohoFormButton
                         title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
@@ -247,7 +260,7 @@ const PrismsHike = () => {
             </section>
 
             <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-24 lg:mt-32 mb-12 md:mb-20'>
-                <div className='max-w-4xl  '>
+                <div className='max-w-4xl mb-8'>
                     <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary'>Meet The Organizers</h3>
                     <br />
                     <p className='text-sm md:text-base'>
@@ -263,42 +276,9 @@ const PrismsHike = () => {
                     </p>
                 </div>
 
-                <div className='w-full flex flex-col md:flex-row items-center gap-4 mb-8'>
-                    <div className='relative w-full h-72 md:h-96'>
-                        <Image
-                            src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770122489/prisms-kili-climb/organizers/Connie_i1a6cj.jpg'
-                            alt='Kilimanjaro Hike'
-                            fill
-                            className='my-8  rounded-lg object-cover'
-                        />
-
-                        <div className='absolute -bottom-4 right-4 bg-white p-3 md:p-4 rounded-tl-2xl rounded-br-2xl'>
-                            <p className='text-sm md:text-base font-bold'>Connie Bessette</p>
-                            <p className='text-xs mt-1'>PRISMS Foundation Organizer</p>
-                        </div>
-                    </div>
-                    <div className='relative w-full h-72 md:h-96'>
-                        <Image
-                            src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770122281/prisms-kili-climb/organizers/Joann_entx2b.jpg'
-                            alt='Kilimanjaro Hike'
-                            fill
-                            className='my-8  rounded-lg object-cover'
-                        />
-
-                        <div className='absolute -bottom-4 right-4 bg-white p-3 md:p-4 rounded-tl-2xl rounded-br-2xl'>
-                            <p className='text-sm md:text-base font-bold'>Joann Geddes</p>
-                            <p className='text-xs mt-1'>PRISMS Foundation Supporter</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='bg-yellow-100 text-yellow-800 text-xs md:text-sm p-3 md:p-4 rounded-2xl border border-yellow-300 mt-12 text-left'>
-                    <p className='mb-2'>
-                        &quot;Why Tazama? After much research, we are convinced that selecting Tazama as our partner is the best choice possible. They are very supportive of our climbing and philanthropic goals, and they come highly recommended by those in the know! We look forward to working together with you and them!&quot;
-                    </p>
-                    <p className='font-semibold text-sm md:text-base text-right italic'>
-                        ⭐ Joann Geddes
-                    </p>
+                <div className='px-6 py-2 bg-amber-400/10 rounded-2xl border border-primary'>
+                    <BioCard />
+                    <JoanneQuote />
                 </div>
             </section>
 
@@ -319,9 +299,8 @@ const PrismsHike = () => {
             </section>
 
             <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-12 md:mt-24 mb-12 md:mb-20'>
-                <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary '>What Happens Next?</h3>
-                <br />
-                <p className='text-sm md:text-base'>Once you submit the form:</p>
+                <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary text-center'>What Happens Next?</h3>
+                
                 <br />
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8'>
                     {
