@@ -20,7 +20,7 @@ export default function JoanneQuote() {
                             src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1771484821/prisms-kili-climb/organizers/Joann_o46day.jpg'
                             alt='Joann Geddes'
                             fill
-                            className='object-cover'
+                            className='object-cover rounded-lg '
                         />
                     </div>
                     {/* Caption sits beneath the image */}

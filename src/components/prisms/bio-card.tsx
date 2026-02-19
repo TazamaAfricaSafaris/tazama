@@ -24,7 +24,7 @@ export default function BioCard() {
                             src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770122489/prisms-kili-climb/organizers/Connie_i1a6cj.jpg'
                             alt='Connie Bessette'
                             fill
-                            className='object-cover'
+                            className='object-cover rounded-lg '
                         />
                     </div>
                     {/* Caption block sits beneath the image, still inside the float */}
