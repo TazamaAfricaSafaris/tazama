@@ -29,7 +29,7 @@ export default function JoanneQuote() {
                             Joann Geddes
                         </p>
                         <p className='text-sm not-italic text-zinc-500 mt-0.5 tracking-wide'>
-                            PRISMS Foundation Supporter
+                            PRISMS Supporter
                         </p>
                     </div>
                 </aside>
@@ -43,7 +43,7 @@ export default function JoanneQuote() {
                 <p className='mb-4'>
                     We look forward to working together with you and them — and to bringing
                     greater awareness to Smith-Magenis Syndrome through this remarkable
-                    journey to the roof of Africa.
+                    journey.
                 </p>
 
                 {/* Clears both floats */}

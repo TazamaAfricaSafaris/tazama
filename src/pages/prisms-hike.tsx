@@ -11,21 +11,21 @@ import JoanneQuote from '~/components/prisms/joanne-quote'
 
 const PrismsHike = () => {
     const includes = [
-        "Professional mountain guides and support crew",
-        "Park fees and climbing permits",
-        "Accommodation on the mountain",
+        "Professional mountain guides and support crew.",
+        "Park fees and climbing permits.",
+        "Accommodation on the mountain.",
         "Accommodation before and after the climb.",
-        "All meals during the climb",
-        "Group coordination and on-the-ground support by Tazama Africa",
-        "Sleeping bags",
-        "Tents, cots and private toilets"
+        "All meals during the climb.",
+        "Group coordination and on-the-ground support by Tazama Africa.",
+        "Sleeping bags.",
+        "Tents, cots and private toilets."
     ]
 
     const excludes = [
-        "International flights",
-        "Travel insurance (required)",
-        "Personal climbing gear",
-        "Tips for mountain crew"
+        "International flights.",
+        "Travel insurance (required).",
+        "Personal climbing gear.",
+        "Tips for mountain crew."
     ]
 
     const whatHappens = [
@@ -37,9 +37,9 @@ const PrismsHike = () => {
     return (
         <>
             <HeadSEO
-                title='Tazama X PRISMS Foundation Kilimanjaro Climb'
-                keywords="Tazama, PRISMS Foundation, Kilimanjaro Climb, Mount Kilimanjaro, Group Climb, Support for Research, Smith-Magenis Syndrome, PRISMS"
-                description="Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS Foundation and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Africa's highest mountain."
+                title='Tazama X PRISMS Kilimanjaro Climb'
+                keywords="Tazama, PRISMS, Kilimanjaro Climb, Mount Kilimanjaro, Group Climb, Support for Research, Smith-Magenis Syndrome, PRISMS"
+                description="Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Africa's highest mountain."
             />
             <div className='relative w-full h-[50vh] md:h-[70vh] lg:h-screen'>
                 <Image
@@ -55,11 +55,11 @@ const PrismsHike = () => {
                     <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary'>Climbing Mount Kilimanjaro For a Cause</h3>
                     <br />
                     <p className='max-w-4xl text-sm md:text-base'>
-                        Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS Foundation and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Africa&apos;s highest mountain.
+                        Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Africa&apos;s highest mountain.
                     </p>
                     <br />
                     <ZohoFormButton
-                        title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
+                        title='Tazama X PRISMS Kilimanjaro Climb Registration'
                         btnTitle='Register Here'
                         link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
                     />
@@ -86,11 +86,11 @@ const PrismsHike = () => {
             </section>
 
             <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-24 lg:mt-36 mb-12 md:mb-20'>
-                <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary'>About the Cause: PRISMS Foundation</h3>
+                <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary'>About the Cause: PRISMS</h3>
                 <br />
                 <div className='max-w-4xl text-sm md:text-base'>
                     <p>
-                        The PRISMS Foundation is dedicated to supporting individuals and families affected by Smith-Magenis Syndrome (SMS) through research, advocacy, education, and community support.
+                        PRISMS is dedicated to supporting individuals and families affected by Smith-Magenis Syndrome (SMS) through research, advocacy, education, and community support.
                     </p>
                     <br />
                     <p>
@@ -177,7 +177,7 @@ const PrismsHike = () => {
 
             <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-12 md:mt-20 mb-12 md:mb-20'>
                 <p className='text-sm md:text-base'>
-                    A full packing list and preparation guide will be shared with confirmed participants. Costs paid for the climb includes and excludes as fellows:
+                    A full packing list and preparation guide will be shared with confirmed participants. Costs paid for the climb include and exclude as follows:
                 </p>
                 <br />
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12'>
@@ -237,13 +237,13 @@ const PrismsHike = () => {
                             Once a deposit is made, you will be added to a WhatsApp group and join monthly meetings to keep you updated on the climb progress.
                         </p>
                         <p>
-                            The <strong>deadline</strong> for registering for the Kilimanjaro Climb is <strong>September 1st, 2027</strong>.
+                            The <strong>deadline</strong> for registering for the Kilimanjaro Climb is <strong>September 1st, 2027</strong>. However, we encourage you to consider registering as soon as possible because the monthly updates and preparations will begin soon which is crucial for climb.
                         </p>
                     </div>
 
                     <br />
                     <ZohoFormButton
-                        title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
+                        title='Tazama X PRISMS Kilimanjaro Climb Registration'
                         btnTitle='Register Here'
                         link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
                     />
@@ -264,7 +264,7 @@ const PrismsHike = () => {
                     <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary'>Meet The Organizers</h3>
                     <br />
                     <p className='text-sm md:text-base'>
-                        This climb is organised in partnership between Tazama Africa and dedicated supporters of the PRISMS Foundation.
+                        This climb is organised in partnership between Tazama Africa and dedicated supporters of PRISMS.
                     </p>
                     <br />
                     <p className='text-sm md:text-base'>
@@ -291,7 +291,7 @@ const PrismsHike = () => {
                     </p>
                     <br />
                     <ZohoFormButton
-                        title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
+                        title='Tazama X PRISMS Kilimanjaro Climb Registration'
                         btnTitle='Register Here'
                         link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
                     />
@@ -356,7 +356,7 @@ const PrismsHike = () => {
                     <div className='inline-block bg-yellow-100 text-yellow-800 text-xs md:text-sm p-3 rounded-2xl border border-yellow-300 mt-8 text-left'>
                         <p className='font-semibold text-sm md:text-base'>⭐Please Note:</p>
                         <p>
-                            If donating, please note that you are with the Kilimanjaro Climb in the Prisms instruction box.
+                            If donating, please note that you are with the Kilimanjaro Climb in the PRISMS instruction box.
                         </p>
                     </div>
                 </div>
@@ -372,7 +372,7 @@ const PrismsHike = () => {
                     <div className='absolute bottom-6 md:bottom-10 lg:bottom-20 left-1/2 -translate-x-1/2 w-full px-4'>
                         <div className='flex justify-center'>
                             <ZohoFormButton
-                                title='Tazama X PRISMS Foundation Kilimanjaro Climb Registration'
+                                title='Tazama X PRISMS Kilimanjaro Climb Registration'
                                 btnTitle='Register Here'
                                 link='https://forms.zohopublic.com/tazamaafricatourssafari1/form/REGISTERINGFORKILIMANJAROCLIMBinsupportofthePRISMS/formperma/tnMr5IILLzMDCOY59PORCWqlbFBiCbliY68AB9ZnCss'
                             />

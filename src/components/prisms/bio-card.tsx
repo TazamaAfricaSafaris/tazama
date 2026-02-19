@@ -33,7 +33,7 @@ export default function BioCard() {
                             Connie Bessette
                         </p>
                         <p className='text-sm not-italic text-zinc-500 mt-0.5 tracking-wide'>
-                            PRISMS Foundation Organizer
+                            PRISMS Organizer
                         </p>
                     </div>
                 </aside>
@@ -51,18 +51,12 @@ export default function BioCard() {
                 <p className='mb-4'>
                     SMS, a rare neurobehavioral disorder, is globally underdiagnosed,
                     occurring between 1 out of every 15,000 to 25,000 births — which could
-                    mean at least 300,000 people worldwide have SMS. The international
-                    organization PRISMS (Parents and Researchers Interested in Smith-Magenis
-                    Syndrome) currently has 1,192 SMS individuals in its database.
+                    mean at least 300,000 people worldwide have SMS. To my knowledge there are fewer than 2000 individuals currently diagnosed with SMS.
                     Smith-Magenis Syndrome is caused by particular genetic changes on
                     chromosomal region 17p11.2, which contains the gene <em>RAI1</em>.
                 </p>
                 <p className='mb-4'>
-                    We need more people in the world to know about this disorder — doctors,
-                    teachers, mothers, fathers, therapists, dentists, emergency departments,
-                    and so many others. And we need more funding to support struggling
-                    families and to continue the research being conducted at research centers
-                    and major hospitals.
+                    We need more people in the world to know about this disorder. That means doctors, teachers, mothers, fathers, therapists, dentists, emergency departments, etc. And we need more money to support struggling families and to continue the research that is being conducted at research centers and major hospitals. 
                 </p>
                 <p className='mb-4'>
                     My wish is that through raising awareness campaigns like this Kilimanjaro
@@ -72,19 +66,19 @@ export default function BioCard() {
 
                 {/* Clears the float so the sign-off sits below everything */}
                 <p className='md:clear-left mb-0 text-base not-italic'>
-                    Contact{' '}
+                    Contact me Connie Bessette at{' '}
                     <a
                         href='mailto:cbessett4@gmail.com'
                         className='text-primary underline underline-offset-2 decoration-primary hover:decoration-primary transition-colors'
                     >
-                        Connie Bessette
+                        cbessett4@gmail.com
                     </a>{' '}
-                    at cbessett4@gmail.com or{' '}
+                    or{' '}
                     <a
-                        href='https://prisms.org'
+                        href='mailto:info@prisms.org'
                         className='text-primary underline underline-offset-2 decoration-primary hover:decoration-primary transition-colors'
                     >
-                        PRISMS.org
+                        info@prisms.org
                     </a>{' '}
                     for more information. <strong>Join us in this challenge.</strong>
                 </p>
