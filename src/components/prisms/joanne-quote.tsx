@@ -17,7 +17,7 @@ export default function JoanneQuote() {
                 <aside className='md:float-right md:ml-7 mb-4 w-full md:w-80 shrink-0'>
                     <div className='relative h-64 md:h-80 w-full shadow-lg'>
                         <Image
-                            src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770122281/prisms-kili-climb/organizers/Joann_entx2b.jpg'
+                            src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1771484821/prisms-kili-climb/organizers/Joann_o46day.jpg'
                             alt='Joann Geddes'
                             fill
                             className='object-cover'
