@@ -11,21 +11,21 @@ import JoanneQuote from '~/components/prisms/joanne-quote'
 
 const PrismsHike = () => {
     const includes = [
-        "Professional mountain guides and support crew.",
-        "Park fees and climbing permits.",
-        "Accommodation on the mountain.",
-        "Accommodation before and after the climb.",
-        "All meals during the climb.",
-        "Group coordination and on-the-ground support by Tazama Africa.",
-        "Sleeping bags.",
-        "Tents, cots and private toilets."
+        "Professional mountain guides and support crew",
+        "Park fees and climbing permits",
+        "Accommodation on the mountain",
+        "Accommodation before and after the climb",
+        "All meals during the climb",
+        "Group coordination and on-the-ground support by Tazama Africa",
+        "Sleeping bags",
+        "Tents, cots and private toilets"
     ]
 
     const excludes = [
-        "International flights.",
-        "Travel insurance (required).",
-        "Personal climbing gear.",
-        "Tips for mountain crew."
+        "International flights",
+        "Travel insurance (required)",
+        "Personal climbing gear",
+        "Tips for mountain crew"
     ]
 
     const whatHappens = [
