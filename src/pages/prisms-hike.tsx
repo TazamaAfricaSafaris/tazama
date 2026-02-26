@@ -43,7 +43,7 @@ const PrismsHike = () => {
             />
             <div className='relative w-full h-[50vh] md:h-[70vh] lg:h-screen'>
                 <Image
-                    src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1770795234/prisms-kili-climb/tazama_x_prism_foundation_1_k7jbyb.webp'
+                    src='https://res.cloudinary.com/drhl0yu7y/image/upload/v1772126152/prisms-kili-climb/tazama_x_prism_foundation_3_k5uglz.png'
                     alt='Kilimanjaro Hike'
                     fill
                     className=' object-cover'
