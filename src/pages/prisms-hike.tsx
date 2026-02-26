@@ -117,12 +117,12 @@ const PrismsHike = () => {
                         <br />
                         <p className='text-sm md:text-base'>Key details:</p>
                         <ul className='list-inside list-disc pl-4 text-sm md:text-base'>
-                            <li>Mountain: Mount Kilimanjaro, Tanzania</li>
-                            <li>Route: 9-days Lemosho</li>
-                            <li>Duration: 9 days (including ascent and descent)</li>
-                            <li>Group size: Small, supported group</li>
-                            <li>Dates: 9 January 2027 - 20 January 2027</li>
-                            <li>Support: Fully guided by experienced local mountain crew</li>
+                            <li><span className="font-semibold">Mountain:</span> Mount Kilimanjaro, Tanzania</li>
+                            <li><span className="font-semibold">Route:</span> 9-days Lemosho</li>
+                            <li><span className="font-semibold">Duration:</span> 9 days (including ascent and descent)</li>
+                            <li><span className="font-semibold">Group size:</span> Small, supported group</li>
+                            <li><span className="font-semibold">Dates:</span> 9 January 2027 - 20 January 2027</li>
+                            <li><span className="font-semibold">Support:</span> Fully guided by experienced local mountain crew</li>
                         </ul>
                         <br />
                         <p className='text-sm md:text-base'>
@@ -237,7 +237,7 @@ const PrismsHike = () => {
                             Once a deposit is made, you will be added to a WhatsApp group and join monthly meetings to keep you updated on the climb progress.
                         </p>
                         <p>
-                            The <strong>deadline</strong> for registering for the Kilimanjaro Climb is <strong>September 1st, 2027</strong>. However, we encourage you to consider registering as soon as possible because the monthly updates and preparations will begin soon which is crucial for climb.
+                            The <strong>deadline</strong> for registering for the Kilimanjaro Climb is <strong>September 1st, 2026</strong>. However, we encourage you to consider registering as soon as possible because the monthly updates and preparations will begin soon which is crucial for climb.
                         </p>
                     </div>
 
@@ -363,7 +363,7 @@ const PrismsHike = () => {
 
                 <div className='w-full relative  overflow-hidden h-72 md:h-96 lg:h-[32rem] rounded-2xl'>
                     <Image
-                        src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1770276925/prisms-kili-climb/Tazama_Africa_Kili_MERU_RATES_2025-2026_Video.jpg_1_ih55rt.jpg"
+                        src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1772126565/prisms-kili-climb/tazama_x_prism_foundation_2_txtvom.png"
                         alt="Kilimanjaro Climb"
                         fill
                         className=' object-cover'
