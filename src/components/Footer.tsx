@@ -98,22 +98,25 @@ export const Footer = () => {
                   className="mx-auto w-full"
                   onSubmit={onSubmit}
                 >
-                  <div className="flex max-sm:flex-col items-end gap-4">
-                    <Input
-                      required
-                      type="email"
-                      name="email"
-                      value={email}
-                      label="Email Address*"
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
+                  <div className="flex max-sm:flex-col items-end self-end gap-4">
+                    <div className="flex flex-col gap-2 w-full">
+                      <label htmlFor="email" className="text-xs font-medium capitalize text-stone-500">Email address</label>
+                      <input
+                        className="max-w-md w-full rounded-full border px-4 py-3 text-sm text-stone-800 placeholder-stone-300 outline-none transition-colors focus:ring-2 focus:ring-primary border-primary/75 bg-white focus:border-primary/75"
+                        required
+                        type="email"
+                        name="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </div>
                     <button
                       type="submit"
                       disabled={isLoading}
                       onClick={() => {
                         posthog.capture("contact-form", { property: "Contact form" });
                       }}
-                      className="w-fit max-sm:w-full h-fit rounded-lg bg-[#A87133] px-6 py-3 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
+                      className="w-fit max-sm:w-full h-fit rounded-full bg-[#A87133] px-6 py-2 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
                     >
                       Send
                     </button>
@@ -134,7 +137,7 @@ export const Footer = () => {
 
                   <Dialog>
                     <DialogTrigger asChild>
-                      <p className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer w-fit max-md:text-sm">
+                      <p className="border border-white hover:border-primary rounded-full px-4 lg:px-8 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer w-fit max-md:text-sm">
                         Plan My Trip
                       </p>
                     </DialogTrigger>
