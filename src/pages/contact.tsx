@@ -11,6 +11,7 @@ import { Toaster } from "~/components/ui/toaster";
 import { ToastAction } from "~/components/ui/Toast";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { base_keywords } from "~/lib/constants";
+import CallToAction from "~/components/CallToAction";
 
 /* ─── Types ─────────────────────────────────────────────────── */
 interface FormErrors {
@@ -269,8 +270,8 @@ const ContactPage = () => {
                         setTouched((t) => ({ ...t, fullNames: true }))
                       }
                       className={`w-full rounded-full border px-4 py-3 text-sm text-stone-800 placeholder-stone-300 outline-none transition-colors focus:ring-2 focus:ring-primary ${visibleErrors.fullNames
-                          ? "border-red-300 bg-red-50 focus:ring-red-100"
-                          : "border-primary/35 bg-white focus:border-primary/75"
+                        ? "border-red-300 bg-red-50 focus:ring-red-100"
+                        : "border-primary/35 bg-white focus:border-primary/75"
                         }`}
                     />
                   </Field>
@@ -292,8 +293,8 @@ const ContactPage = () => {
                         setTouched((t) => ({ ...t, email: true }))
                       }
                       className={`w-full rounded-full border px-4 py-3 text-sm text-stone-800 placeholder-stone-300 outline-none transition-colors focus:ring-1 focus:ring-primary ${visibleErrors.email
-                          ? "border-red-300 bg-red-50 focus:ring-red-100"
-                          : "border-primary/35 bg-white focus:border-primary/75"
+                        ? "border-red-300 bg-red-50 focus:ring-red-100"
+                        : "border-primary/35 bg-white focus:border-primary/75"
                         }`}
                     />
                   </Field>
@@ -315,8 +316,8 @@ const ContactPage = () => {
                       setTouched((t) => ({ ...t, message: true }))
                     }
                     className={`w-full resize-y rounded-3xl border px-4 py-3 text-sm text-stone-800 placeholder-stone-300 outline-none transition-colors focus:ring-2 focus:ring-primary leading-relaxed ${visibleErrors.message
-                        ? "border-red-300 bg-red-50 focus:ring-red-100"
-                        : "border-primary/35 bg-white focus:border-primary/75"
+                      ? "border-red-300 bg-red-50 focus:ring-red-100"
+                      : "border-primary/35 bg-white focus:border-primary/75"
                       }`}
                   />
                 </Field>
@@ -327,8 +328,8 @@ const ContactPage = () => {
                     type="submit"
                     disabled={isLoading}
                     className={`inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-sm font-medium text-white transition-all duration-200 ${isLoading
-                        ? "bg-stone-400 cursor-not-allowed"
-                        : "bg-primary hover:bg-primary/90 active:scale-[0.98]"
+                      ? "bg-stone-400 cursor-not-allowed"
+                      : "bg-primary hover:bg-primary/90 active:scale-[0.98]"
                       }`}
                   >
                     {isLoading ? (
@@ -371,6 +372,7 @@ const ContactPage = () => {
           )}
         </div>
       </main>
+      <CallToAction />
     </>
   );
 };
