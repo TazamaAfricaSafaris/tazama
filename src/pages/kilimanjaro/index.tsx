@@ -26,7 +26,6 @@ import { urlFor } from "~/sanity/lib/image";
 import CallToAction from "~/components/CallToAction";
 import ReasonsCallToActionKilimanjaro from "~/components/kilimanjaro/reasons-cta";
 import KilimanjaroItinerariesCallToAction from "~/components/kilimanjaro/itineraries-cta";
-import { FaTripadvisor } from "react-icons/fa";
 import KiliTripadivsorReviews from "~/components/kilimanjaro/kili-tripadivsor-reviews";
 
 const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: SanityDocument[] }) => {
@@ -294,14 +293,14 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
         <br /><br /><br />
 
         <div>
-          <div className='w-full h-[30rem] relative rounded-2xl overflow-hidden'>
+          <div className='w-full h-[30rem] relative rounded-3xl overflow-hidden'>
             <div className='z-10 absolute bottom-[5%] md:bottom-[10%] max-w-3xl left-[5%]'>
               <h3 className='text-white text-4xl md:text-5xl mb-2'>Kilimanjaro Routes with Tazama</h3>
               <p className='text-[#f5f1eb] text-sm md:text-base'>
                 Climbing Kilimanjaro is not a one-size-fits-all experience. Learn more about the routes we at Tazama use for your experience
               </p>
               <br />
-              <Link href='/kilimanjaro/routes' className="border border-white rounded-md px-4 lg:px-6 py-2 mt-4 text-sm md:text-base font-raleway text-white hover:bg-white/90 hover:text-darker transition-colors duration-200">
+              <Link href='/kilimanjaro/routes' className="border border-white rounded-full px-4 lg:px-6 py-3 mt-4 text-sm md:text-base font-raleway text-white hover:bg-white/15 transition-colors duration-200">
                 See More
               </Link>
             </div>

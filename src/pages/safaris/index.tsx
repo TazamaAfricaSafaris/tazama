@@ -1,8 +1,4 @@
 import PrimaryHeader from "../../components/PrimaryHeader";
-import { safaris } from "~/data/data";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
 import CallToAction from "~/components/CallToAction";

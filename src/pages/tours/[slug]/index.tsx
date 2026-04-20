@@ -19,13 +19,11 @@ import { getClient } from "../../../sanity/lib/client";
 import { token } from "../../../sanity/lib/token";
 import { itineraryQueries } from "../../../sanity/lib/queries";
 import { urlFor } from "../../../sanity/lib/image";
-import KilimanjaroItinerariesCallToAction from "~/components/kilimanjaro/itineraries-cta";
 import ReasonsCallToActionKilimanjaro from "~/components/kilimanjaro/reasons-cta";
 import { PiMountainsFill } from "react-icons/pi";
 import { IoPawSharp } from "react-icons/io5";
 import {
     Dialog,
-    DialogClose,
     DialogContent,
     DialogTrigger,
 } from "~/components/ui/dialog";
@@ -172,7 +170,7 @@ export default function Page(props: PageProps) {
             {/* Overview / Description */}
             <section className="mb-12 max-w-4xl mx-auto p-4 md:p-0">
                 <div className="max-w-4xl mx-auto my-12">
-                    <div className="border border-neutral-200 p-4 rounded-xl flex max-md:flex-col justify-between gap-4">
+                    <div className="border border-neutral-300 p-3 rounded-3xl flex max-md:flex-col justify-between gap-4">
                         <div className="px-2 space-y-2 ">
                             <div>
                                 <p className="text-xs text-neutral-500 max-md:text-center">
@@ -186,7 +184,7 @@ export default function Page(props: PageProps) {
                             <Link
                                 href="https://wa.me/+255754922334"
                                 target="_blank"
-                                className="py-2 px-4 bg-green-600 w-fit rounded-xl flex items-center justify-center hover:bg-green-700 duration-200 transition-colors max-md:w-full"
+                                className="py-2 px-4 bg-green-600 w-fit rounded-full flex items-center justify-center hover:bg-green-700 duration-200 transition-colors max-md:w-full"
                             >
                                 <div className="flex items-center gap-2 text-white">
                                     <FaWhatsapp className="text-white" size={24} />
@@ -396,7 +394,7 @@ export const ZohoFormButton = ({ link, title, btnTitle }: { link: string, title:
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <button className="bg-primary px-4 py-2 rounded-lg text-white hover:bg-dark transition-colors max-md:w-full">
+                <button className="bg-primary px-4 py-2 rounded-full text-white hover:bg-dark transition-colors max-md:w-full">
                     {btnTitle ? btnTitle : "Book This Trip"}
                 </button>
             </DialogTrigger>

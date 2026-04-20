@@ -126,7 +126,7 @@ export default function Page(props: PageProps) {
                     </p>
                     <br />
                     <div className="mx-auto">
-                        <Link href="/about" className="border border-primary hover:border-primary rounded-md px-4 lg:px-8 py-4 md:text-lg text-xl font-raleway text-primary hover:bg-primary/15 transition-colors duration-200 cursor-pointer mx-auto flex justify-center w-fit">
+                        <Link href="/about" className="border border-primary hover:border-primary rounded-full px-4 lg:px-8 py-2.5 md:text-lg text-xl font-raleway text-primary hover:bg-primary/15 transition-colors duration-200 cursor-pointer mx-auto flex justify-center w-fit">
                             Learn More
                         </Link>
                     </div>
@@ -248,7 +248,7 @@ export default function Page(props: PageProps) {
 
                 <Link
                     href="/tours"
-                    className="border border-primary hover:border-primary rounded-md px-4 lg:px-8 py-4 md:text-lg text-xl font-raleway text-primary hover:bg-primary/15 transition-colors duration-200 cursor-pointer mx-auto flex justify-center w-fit"
+                    className="border border-primary hover:border-primary rounded-full px-4 lg:px-8 py-2.5 md:text-lg text-xl font-raleway text-primary hover:bg-primary/15 transition-colors duration-200 cursor-pointer mx-auto flex justify-center w-fit"
                 >
                     See more itineraries
                 </Link>
@@ -271,7 +271,7 @@ export default function Page(props: PageProps) {
                 <PartnersMarquee />
             </section>
 
-            <section className="my-24 bg-dark">
+            <section className=" bg-dark">
                 <div className="mx-auto max-w-5xl px-4 xl:px-8 py-24 text-white">
                     <h3 className="text-5xl mb-2">Not Sure Where to Stay?</h3>
                     <div className="max-w-4xl">
@@ -300,12 +300,14 @@ export default function Page(props: PageProps) {
                                 ))
                             }
                         </div>
-                        <Link
-                            href="/lodges"
-                            className="border border-white rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer mx-auto w-fit mt-16"
-                        >
-                            Find More
-                        </Link>
+                        <div className="flex justify-center">
+                            <Link
+                                href="/lodges"
+                                className="border border-white rounded-full px-4 lg:px-8 py-2.5 md:text-lg text-xl font-raleway text-white hover:bg-primary/15 transition-colors text-center duration-200 cursor-pointer mx-auto w-fit mt-4"
+                            >
+                                Find More
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>

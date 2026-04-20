@@ -8,12 +8,6 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
-
-import { PortableText } from "@portabletext/react";
-import imageUrlBuilder from "@sanity/image-url";
-import { getImageDimensions } from "@sanity/asset-utils"
 
 import type { SanityDocument } from "next-sanity";
 import { BsHouseFill } from "react-icons/bs";
@@ -47,7 +41,7 @@ export default function Page({ itineraries }: { itineraries: SanityDocument[] })
 
                 <div className="relative w-full h-96">
                     <Image
-                        className="m-0 w-full rounded-lg object-cover"
+                        className="m-0 w-full rounded-3xl object-cover"
                         src={'/assets/images/gallery/kilimanjaro-cta/cta-3.jpg'}
                         layout="fill"
                         objectFit="cover"
@@ -140,7 +134,7 @@ export default function Page({ itineraries }: { itineraries: SanityDocument[] })
             {/* --- Button to All Kilimanjaro Itineraries --- */}
             <div className="flex justify-center mt-8 mb-16">
                 <Link
-                    className="bg-primary text-white px-6 py-3 rounded-lg shadow hover:bg-primary-dark transition"
+                    className="bg-primary text-white px-6 py-3 rounded-full shadow hover:bg-primary-dark transition"
                     href='/kilimanjaro/itineraries'
                 >
                     <p className="">See All Kilimanjaro Itineraries</p>

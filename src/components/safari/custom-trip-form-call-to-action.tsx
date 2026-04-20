@@ -8,7 +8,6 @@ import {
   DialogTrigger,
 } from "~/components/ui/dialog";
 
-import Link from "next/link";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -24,7 +23,7 @@ function CustomTripFormCallToAction() {
 
           <Dialog>
             <DialogTrigger asChild>
-              <p className="border border-white hover:border-primary rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-center mx-auto text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer">
+              <p className="border border-white hover:border-primary rounded-full px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-center mx-auto text-white hover:bg-primary/15 transition-colors duration-200 cursor-pointer">
                 Plan My Trip
               </p>
             </DialogTrigger>

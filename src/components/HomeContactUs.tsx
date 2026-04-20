@@ -14,7 +14,7 @@ export const HomeContactUs = () => {
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
-            <Link href="/contact" className="border border-white rounded-md px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-white hover:text-primary hover:font-medium transition-colors duration-200">Contact Us</Link>
+            <Link href="/contact" className="border border-white rounded-full px-4 lg:px-6 py-2 md:text-lg text-xl font-raleway text-white hover:bg-white hover:text-primary hover:font-medium transition-colors duration-200">Contact Us</Link>
           </div>
         </div>
         <br />

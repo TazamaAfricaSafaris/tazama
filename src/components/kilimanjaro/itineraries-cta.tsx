@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const KilimanjaroItinerariesCallToAction = () => {
   return (
-    <div className="relative overflow-hidden h-80 rounded-xl w-full p-6 md:p-8">
+    <div className="relative overflow-hidden h-80 rounded-3xl w-full p-6 md:p-8">
       <Image
         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1759133497/kilimanjaro/call-to-action/itinerary-cta-4_y8z4uu.jpg"
         alt="Found out why Tazama's Kilimanjaro trek is the best out there"
@@ -18,7 +18,7 @@ const KilimanjaroItinerariesCallToAction = () => {
           </h4>
           <Link 
             href='/kilimanjaro/itineraries' 
-            className="border border-white rounded-md px-6 py-2 text-lg md:text-xl font-raleway text-white hover:bg-white hover:text-black transition-colors duration-200 cursor-pointer no-underline"
+            className="border border-white rounded-full px-6 py-2 text-lg md:text-xl font-raleway text-white hover:bg-white/15  transition-colors duration-200 cursor-pointer no-underline"
           >
             See more
           </Link>

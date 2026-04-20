@@ -116,7 +116,7 @@ export const Footer = () => {
                       onClick={() => {
                         posthog.capture("contact-form", { property: "Contact form" });
                       }}
-                      className="w-fit max-sm:w-full h-fit rounded-full bg-[#A87133] px-6 py-2 text-white hover:border hover:border-[#A87133] hover:bg-transparent hover:text-[#A87133]"
+                      className="w-fit max-sm:w-full h-fit rounded-full bg-[#A87133] px-6 py-3 text-white hover:bg-[#A87133]/90 transition-colors duration-200 disabled:cursor-not-allowed disabled:bg-[#A87133]/50 disabled:hover:bg-[#A87133]/50"
                     >
                       Send
                     </button>

@@ -6,11 +6,9 @@ import ContentSection, {
   type contentSectionData,
 } from "~/components/ContentSection";
 import { array } from "fast-web-kit";
-import QuoteSection from "~/components/QuoteSection";
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
 import { base_keywords } from "~/lib/constants";
-import Link from "next/link";
 import { HomeContactUs } from "~/components/HomeContactUs";
 
 const AboutPage = () => {
