@@ -1,259 +1,376 @@
 /* eslint-disable @typescript-eslint/no-floating-promises */
 /* eslint-disable react/no-unescaped-entities */
-import React, { ChangeEvent } from "react";
-import PrimaryHeader from "~/components/PrimaryHeader";
-import { Input } from "~/components/Form";
-import HeadSEO from "~/components/ui/Head";
-import posthog from "posthog-js";
-import { base_keywords } from "~/lib/constants";
-import { api } from "~/lib/api";
+import React from "react";
+import Head from "next/head";
+import Link from "next/link";
 import { useRouter } from "next/router";
-import { Toaster } from "~/components/ui/toaster";
-import { useToast } from "~/hooks/useToast";
-import { ToastAction } from "~/components/ui/Toast";
-import { Textarea } from "~/components/ui/textarea";
 import { IoArrowForward } from "react-icons/io5";
+import { api } from "~/lib/api";
+import { useToast } from "~/hooks/useToast";
+import { Toaster } from "~/components/ui/toaster";
+import { ToastAction } from "~/components/ui/Toast";
+import PrimaryHeader from "~/components/PrimaryHeader";
+import { base_keywords } from "~/lib/constants";
 
+/* ─── Types ─────────────────────────────────────────────────── */
+interface FormErrors {
+  fullNames: string;
+  email: string;
+  message: string;
+}
+
+/* ─── Sub-components ─────────────────────────────────────────── */
+
+/** Labelled text input with inline error */
+function Field({
+  label,
+  id,
+  error,
+  children,
+}: {
+  label: string;
+  id: string;
+  error?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="flex flex-col gap-2 w-full">
+      <label
+        htmlFor={id}
+        className="text-xs font-medium capitalize text-stone-500"
+      >
+        {label}
+      </label>
+      {children}
+      {error && (
+        <p className="text-xs text-red-500 mt-0.5">{error}</p>
+      )}
+    </div>
+  );
+}
+
+/** Contact card (email + phone) */
+function ContactCard({
+  type,
+  email,
+  phone,
+}: {
+  type: string;
+  email: string;
+  phone: string;
+  href?: string;
+}) {
+  return (
+    <div className="group flex items-center justify-between gap-4 rounded-2xl border border-stone-300 bg-white p-6 transition-shadow hover:shadow-sm hover:border-primary">
+      <div className="flex flex-col gap-1">
+        <p className="text-xs font-medium uppercase tracking-widest text-primary">
+          {type}
+        </p>
+        <a
+          href={`mailto:${email}`}
+          className="text-sm transition-colors hover:text-stone-900 hover:underline underline-offset-2"
+        >
+          {email}
+        </a>
+        <a
+          href={`tel:${phone.replace(/\s/g, "")}`}
+          className="text-sm text-stone-500 transition-colors hover:text-stone-800"
+        >
+          {phone}
+        </a>
+      </div>
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-primary/50 text-primary/50 transition-all group-hover:border-primary group-hover:text-primary rotate-45 group-hover:rotate-0 duration-500">
+        <IoArrowForward className="-rotate-45 text-base" />
+      </span>
+    </div>
+  );
+}
+
+/** Success confirmation screen */
+function SuccessState() {
+  return (
+    <div className="flex flex-col items-center justify-center gap-6 py-20 text-center">
+      <span className="flex h-14 w-14 items-center justify-center rounded-full border border-primary/35 text-2xl text-stone-600">
+        ✓
+      </span>
+      <div className="flex flex-col gap-2">
+        <h3 className="font-serif text-3xl font-medium text-stone-800">
+          Message sent!
+        </h3>
+        <p className="text-sm text-stone-500 max-w-xs">
+          Thank you for reaching out. Our team will get back to you as soon as possible.
+        </p>
+      </div>
+      <Link
+        href="/"
+        className="mt-2 rounded-lg border border-primary/35 px-5 py-2 text-sm text-stone-600 transition-colors hover:border-primary/75 hover:text-stone-900"
+      >
+        Back to home
+      </Link>
+    </div>
+  );
+}
+
+/* ─── Page ───────────────────────────────────────────────────── */
 const ContactPage = () => {
-  const [email, setEmail] = React.useState<string>("");
   const [fullNames, setFullNames] = React.useState("");
-  const [message, setMessage] = React.useState<string>("");
-
-  // Add validation states
-  const [errors, setErrors] = React.useState({
-    email: "",
-    fullNames: "",
-    message: "",
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
+  const [touched, setTouched] = React.useState({
+    fullNames: false,
+    email: false,
+    message: false,
   });
-  const [formValid, setFormValid] = React.useState(false);
+  const [submitted, setSubmitted] = React.useState(false);
 
-  const router = useRouter();
   const { toast } = useToast();
 
-  // Validate form on input change
-  React.useEffect(() => {
-    validateForm();
-  }, [email, fullNames, message]);
+  /* ── Validation ── */
+  const validate = React.useCallback(
+    (values: { fullNames: string; email: string; message: string }) => {
+      const e: FormErrors = { fullNames: "", email: "", message: "" };
+      if (!values.fullNames || values.fullNames.length < 3)
+        e.fullNames = "Full name must be at least 3 characters.";
+      if (!values.email || !/\S+@\S+\.\S+/.test(values.email))
+        e.email = "Please enter a valid email address.";
+      if (!values.message || values.message.length < 10)
+        e.message = "Message must be at least 10 characters.";
+      return e;
+    },
+    []
+  );
 
-  const validateForm = () => {
-    const newErrors = {
-      email: "",
-      fullNames: "",
-      message: "",
-    };
-    let isValid = true;
+  const currentErrors = validate({ fullNames, email, message });
+  const isFormValid = !Object.values(currentErrors).some(Boolean);
 
-    // Validate email
-    if (!email) {
-      newErrors.email = "Email is required";
-      isValid = false;
-    } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = "Email is invalid";
-      isValid = false;
-    }
-
-    // Validate full names
-    if (!fullNames) {
-      newErrors.fullNames = "Full name is required";
-      isValid = false;
-    } else if (fullNames.length < 3) {
-      newErrors.fullNames = "Name must be at least 3 characters";
-      isValid = false;
-    }
-
-    // Validate message
-    if (!message) {
-      newErrors.message = "Message is required";
-      isValid = false;
-    } else if (message.length < 10) {
-      newErrors.message = "Message must be at least 10 characters";
-      isValid = false;
-    }
-
-    setErrors(newErrors);
-    setFormValid(isValid);
+  const visibleErrors: FormErrors = {
+    fullNames: touched.fullNames ? currentErrors.fullNames : "",
+    email: touched.email ? currentErrors.email : "",
+    message: touched.message ? currentErrors.message : "",
   };
 
+  /* ── Mutation ── */
   const { isLoading, mutateAsync } = api.contactEmail.send.useMutation({
     onSuccess: () => {
-      router.push("/thank-you");
+      setSubmitted(true);
+      // Optionally redirect instead:
+      // router.push("/thank-you");
     },
     onError: () => {
       toast({
         variant: "destructive",
         title: "Uh oh! Something went wrong.",
-        description: `Try adding all the details and submit again`,
+        description: "Please check your details and try again.",
         action: <ToastAction altText="Try again">Try again</ToastAction>,
-        duration: 1500,
+        duration: 3000,
       });
     },
   });
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent page reload
-
-    // Validate form before submission
-    validateForm();
-
-    if (!formValid) {
-      toast({
-        variant: "destructive",
-        title: "Form validation failed",
-        description: "Please check the form for errors and try again",
-        duration: 3000,
-      });
-      return;
-    }
-
-    mutateAsync({
-      email,
-      message,
-      fullNames,
-    });
+  /* ── Submit ── */
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    // Mark all fields as touched so errors surface
+    setTouched({ fullNames: true, email: true, message: true });
+    if (!isFormValid) return;
+    mutateAsync({ email, message, fullNames });
   };
 
   return (
     <>
-      <HeadSEO
-        title="Contact Tazama Africa for your Dream Safari Experience"
-        keywords={`${base_keywords}, Tanzania safari contact, book safari Tanzania, safari planning, Kilimanjaro trek booking, Tanzania travel inquiry, safari consultation, wildlife tour contact, African adventure planning, Tanzania tour operator, safari travel agent`}
-        description="Contact Tazama Africa Safari to plan your dream Tanzania safari or Kilimanjaro trek. Our expert team is ready to help you create a personalized adventure through Africa's most spectacular landscapes and wildlife experiences."
-      />
+      <Head>
+        <title>Contact Tazama Africa — Plan Your Dream Safari</title>
+        <meta
+          name="description"
+          content="Contact Tazama Africa Safari to plan your dream Tanzania safari or Kilimanjaro trek. Our expert team is ready to help create your perfect adventure."
+        />
+        <meta
+          name="keywords"
+          content={`${base_keywords}, Tanzania safari contact, book safari Tanzania, safari planning, Kilimanjaro trek booking`}
+        />
+      </Head>
+
       <Toaster />
+
+      {/* Hero banner */}
       <PrimaryHeader image="contact.webp" title="Contact Us" />
-      <div className="mx-auto mt-24 max-sm:mt-28 max-w-4xl px-4">
-        <div className="text-center mb-14">
-          <h3 className="text-5xl max-sm:text-3xl font-serif text-primary">
-            We'd Love to Here from You
-          </h3>
 
-          <p>You can get in touch with us for any more information, enquiries and questions</p>
+      <main className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8 pb-24">
 
-          <div className="grid grid-cols-2 gap-4 mt-8">
-            <div className="border border-light rounded-3xl text-left p-8 flex items-center justify-between group">
-              <div>
-                <p className="text-primary font-semibold text-lg mb-1">General Enquiries</p>
-                <p>
-                  <a className="hover:text-dark hover:underline hover:underline-offset-3" href="mailto:info@tazamaafricasafari.com">info@tazamaafricasafari.com</a><br />
-                  <a className="hover:text-dark hover:underline hover:underline-offset-3" href="tel:+255754922334">
-                    (255)754922334
-                  </a>
-                </p>
-              </div>
-              <div className=" border border-light rounded-full p-2">
-                <IoArrowForward className="-rotate-45 text-xl text-primary" />
-              </div>
-            </div>
-            <div className="border border-light rounded-3xl text-left p-8 flex items-center justify-between">
-              <div>
-                <p className="text-primary font-semibold">Reservations</p>
-                <p>
-                  <a className="hover:text-dark hover:underline hover:underline-offset-3" href="mailto:info@tazamaafricasafari.com">reservations@tazamaafricasafari.com</a><br />
-                  <a className="hover:text-dark hover:underline hover:underline-offset-3" href="tel:+255744400043">
-                    (255)744400043
-                  </a>
-                </p>
-              </div>
-              <div className=" border border-primary rounded-full p-2">
-                <IoArrowForward className="-rotate-45 text-xl text-primary" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <div className="mx-auto my-12 max-w-2xl px-4 text-center">
-          <p>
-            Please fill in the form below to get in touch with us and our team will get back to you as soon as possible.
+        {/* ── Section header ── */}
+        <section className="mt-20 text-center">
+          <span className="inline-block text-xs font-medium uppercase tracking-widest text-primary mb-4">
+            Get in touch
+          </span>
+          <h2 className="font-serif text-4xl sm:text-5xl font-medium leading-tight text-stone-800">
+            We'd love to hear
+            <br />
+            <em className="italic text-primary font-normal">from you</em>
+          </h2>
+          <p className="mt-4 text-sm text-stone-500 max-w-md mx-auto leading-relaxed">
+            Reach out for any enquiries, questions, or to start planning your
+            dream safari or Kilimanjaro adventure.
           </p>
+        </section>
+
+        {/* ── Contact cards ── */}
+        <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <ContactCard
+            type="General enquiries"
+            email="info@tazamaafricasafari.com"
+            phone="+255 754 922 334"
+          />
+          <ContactCard
+            type="Reservations"
+            email="reservations@tazamaafricasafari.com"
+            phone="+255 744 400 043"
+          />
         </div>
 
-        <div className="mx-auto my-20 max-w-4xl px-4">
-          <form
-            className="mx-auto mt-8 flex w-full flex-col gap-8"
-            onSubmit={onSubmit}
-          >
-            <div className="flex flex-col gap-10 mt-2">
-              <div>
-                <Input
-                  required
-                  type="text"
-                  name="fullName"
-                  value={fullNames}
-                  label="Full Names*"
-                  placeholder=""
-                  onChange={(e) => setFullNames(e.target.value)}
-                />
-                {errors.fullNames && (
-                  <p className="text-red-500 text-sm mt-1">{errors.fullNames}</p>
-                )}
+        {/* ── Divider ── */}
+        <hr className="my-14 border-stone-300" />
+
+        {/* ── Form area ── */}
+        <div className="mx-auto">
+          {submitted ? (
+            <SuccessState />
+          ) : (
+            <>
+              <div className="mb-8">
+                <h3 className="font-serif text-4xl font-medium text-stone-800">
+                  Send us a message
+                </h3>
+                <p className="mt-1 text-sm text-stone-500 leading-relaxed">
+                  Fill in the form below and our team will get back to you as
+                  soon as possible.
+                </p>
               </div>
 
-              <div>
-                <Input
-                  required
-                  type="email"
-                  name="email"
-                  value={email}
-                  label="Email Address*"
-                  placeholder=""
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                {errors.email && (
-                  <p className="text-red-500 text-sm mt-1">{errors.email}</p>
-                )}
-              </div>
+              <form
+                onSubmit={handleSubmit}
+                noValidate
+                className="flex flex-col gap-6"
+              >
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4 w-full">
+                  {/* Full name */}
+                  <Field
+                    label="Full name *"
+                    id="fullNames"
+                    error={visibleErrors.fullNames}
+                  >
+                    <input
+                      id="fullNames"
+                      type="text"
+                      autoComplete="name"
+                      placeholder="Jane Smith"
+                      value={fullNames}
+                      onChange={(e) => setFullNames(e.target.value)}
+                      onBlur={() =>
+                        setTouched((t) => ({ ...t, fullNames: true }))
+                      }
+                      className={`w-full rounded-full border px-4 py-3 text-sm text-stone-800 placeholder-stone-300 outline-none transition-colors focus:ring-2 focus:ring-primary ${visibleErrors.fullNames
+                          ? "border-red-300 bg-red-50 focus:ring-red-100"
+                          : "border-primary/35 bg-white focus:border-primary/75"
+                        }`}
+                    />
+                  </Field>
 
-              <div>
-                <Textarea
-                  required
-                  name="message"
-                  value={message}
-                  label="Message*"
-                  onChange={(e) => setMessage(e.target.value)}
-                />
-                {errors.message && (
-                  <p className="text-red-500 text-sm mt-1">{errors.message}</p>
-                )}
-              </div>
-            </div>
+                  {/* Email */}
+                  <Field
+                    label="Email address *"
+                    id="email"
+                    error={visibleErrors.email}
+                  >
+                    <input
+                      id="email"
+                      type="email"
+                      autoComplete="email"
+                      placeholder="jane@example.com"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      onBlur={() =>
+                        setTouched((t) => ({ ...t, email: true }))
+                      }
+                      className={`w-full rounded-full border px-4 py-3 text-sm text-stone-800 placeholder-stone-300 outline-none transition-colors focus:ring-1 focus:ring-primary ${visibleErrors.email
+                          ? "border-red-300 bg-red-50 focus:ring-red-100"
+                          : "border-primary/35 bg-white focus:border-primary/75"
+                        }`}
+                    />
+                  </Field>
+                </div>
 
-            {/* Hidden components necessary for submititng the form to the email */}
-            {/* <input
-              type="hidden"
-              name="_subject"
-              value="New Tazama Trip Inquiry"
-            ></input>
-            <input
-              type="hidden"
-              name="_cc"
-              value="james@tazamaafricasafari.com"
-            ></input>
-            <input
-              type="hidden"
-              name="_cc"
-              value="info@tazamaafricasafari.com"
-            ></input>
-            <input
-              type="hidden"
-              name="_next"
-              value="https://www.tazamaafricasafari.com/thank-you"
-            ></input> */}
+                {/* Message */}
+                <Field
+                  label="Message *"
+                  id="message"
+                  error={visibleErrors.message}
+                >
+                  <textarea
+                    id="message"
+                    rows={5}
+                    placeholder="Tell us about your safari dream…"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    onBlur={() =>
+                      setTouched((t) => ({ ...t, message: true }))
+                    }
+                    className={`w-full resize-y rounded-3xl border px-4 py-3 text-sm text-stone-800 placeholder-stone-300 outline-none transition-colors focus:ring-2 focus:ring-primary leading-relaxed ${visibleErrors.message
+                        ? "border-red-300 bg-red-50 focus:ring-red-100"
+                        : "border-primary/35 bg-white focus:border-primary/75"
+                      }`}
+                  />
+                </Field>
 
-            <button
-              type="submit"
-              disabled={isLoading}
-              onClick={() => {
-                posthog.capture("contact-form", { property: "Contact form" });
-              }}
-              className={`w-fit rounded-lg ${isLoading ? "bg-primary/75" : "bg-primary"} px-4 py-2 text-white border hover:border-primary hover:bg-transparent hover:text-primary transition-all duration-300`}
-            >
-              {isLoading ? "Loading..." : "Submit Form"}
-            </button>
-          </form>
+                {/* Submit */}
+                <div className="flex flex-col sm:flex-row sm:items-center gap-4 pt-1">
+                  <button
+                    type="submit"
+                    disabled={isLoading}
+                    className={`inline-flex items-center justify-center gap-2 rounded-full px-8 py-4 text-sm font-medium text-white transition-all duration-200 ${isLoading
+                        ? "bg-stone-400 cursor-not-allowed"
+                        : "bg-primary hover:bg-primary/90 active:scale-[0.98]"
+                      }`}
+                  >
+                    {isLoading ? (
+                      <>
+                        <svg
+                          className="h-4 w-4 animate-spin"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <circle
+                            className="opacity-25"
+                            cx="12"
+                            cy="12"
+                            r="10"
+                            stroke="currentColor"
+                            strokeWidth="3"
+                          />
+                          <path
+                            className="opacity-75"
+                            fill="currentColor"
+                            d="M4 12a8 8 0 018-8v8H4z"
+                          />
+                        </svg>
+                        Sending…
+                      </>
+                    ) : (
+                      <>
+                        Send message
+                        <IoArrowForward className="-rotate-45 text-base" />
+                      </>
+                    )}
+                  </button>
+
+                  <p className="text-xs text-stone-400 leading-snug">
+                    We respect your privacy and never share your details.
+                  </p>
+                </div>
+              </form>
+            </>
+          )}
         </div>
-      </div>
+      </main>
     </>
   );
 };

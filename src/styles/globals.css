@@ -18,7 +18,8 @@ textarea,
 button,
 ol,
 ul,
-span {
+span, 
+a {
   font-family: "Raleway", sans-serif;
 }
 
