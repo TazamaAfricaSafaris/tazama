@@ -153,7 +153,7 @@ const Navbar = () => {
           </Link>
 
           {/* Right controls */}
-          <div className={`flex items-center gap-2 sm:gap-3 ${isOpen ? 'bg-primary/10' : 'bg-white/75 backdrop-blur-md'} p-2 rounded-full border border-primary/50`}>
+          <div className={`flex items-center gap-2 sm:gap-3 ${isOpen ? 'bg-primary/10' : 'bg-white/90 backdrop-blur-md'} p-2 rounded-full border border-primary/50`}>
             {/* Plan My Trip popup */}
             <PopupForm />
 

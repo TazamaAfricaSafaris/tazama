@@ -282,6 +282,63 @@ const PrismsHike = () => {
                 </div>
             </section>
 
+            <section className='mx-auto max-w-5xl px-4 md:px-8 mt-12 md:mt-24 lg:mt-32 mb-12 md:mb-20'>
+                <div className='max-w-4xl mb-8'>
+                    <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary'>Extend Your Adventure</h3>
+                    <br />
+                    <p className='text-sm md:text-base'>
+                        Make the most of your time in Tanzania. After your Kilimanjaro climb, explore the incredible wildlife and landscapes East Africa has to offer. Choose the safari experience that&apos;s right for you:
+                    </p>
+                </div>
+
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8'>
+                    {/* Dorobo Safaris */}
+                    <Link
+                        href='https://itineraries.safariportal.app/PRISMS/1657826735724430850'
+                        target='_blank'
+                        className='group block'
+                    >
+                        <div className='h-full p-6 md:p-8 border border-zinc-500 rounded-2xl bg-zinc-500/10 hover:bg-zinc-500/20 transition-all duration-300 flex flex-col gap-4'>
+                            <div className='flex items-center gap-3'>
+                                <div className='w-10 h-10 bg-zinc-300 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden relative border-2 border-zinc-300'>
+                                    <Image src="/assets/images/logos/dorobo-logo.jpg" alt="Dorobo Safaris" fill />
+                                </div>
+                                <h4 className='text-xl md:text-2xl text-zinc-700'>Dorobo Safaris</h4>
+                            </div>
+                            <p className='text-sm md:text-base flex-1'>
+                                Explore a curated safari itinerary crafted by Dorobo Safaris specifically for the PRISMS group — offering an authentic and immersive East African wildlife experience.
+                            </p>
+                            <div className='flex items-center gap-2 text-zinc-700 font-medium text-sm md:text-base group-hover:gap-3 transition-all'>
+                                <span>View Dorobo Itinerary</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                    </Link>
+
+                    {/* Tazama Safaris */}
+                    <Link
+                        href='/tours'
+                        className='group block'
+                    >
+                        <div className='h-full p-6 md:p-8 border border-primary rounded-2xl bg-amber-400/10 hover:bg-amber-400/20 transition-all duration-300 flex flex-col gap-4'>
+                            <div className='flex items-center gap-3'>
+                                <div className='w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0'>
+                                    <Image src="/assets/images/logos/favicon.png" alt="Tazama Africa" width={32} height={32} />
+                                </div>
+                                <h4 className='text-xl md:text-2xl text-primary'>Tazama Africa Safaris</h4>
+                            </div>
+                            <p className='text-sm md:text-base flex-1'>
+                                Browse our own range of safari tours. As your climb organiser, we know Tanzania inside out — let us guide you through the Serengeti, Ngorongoro, and beyond.
+                            </p>
+                            <div className='flex items-center gap-2 text-primary font-medium text-sm md:text-base group-hover:gap-3 transition-all'>
+                                <span>Explore Tazama Tours</span>
+                                <span>→</span>
+                            </div>
+                        </div>
+                    </Link>
+                </div>
+            </section>
+
             <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-12 md:mt-16 mb-12 md:mb-20'>
                 <div>
                     <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary '>How to Join?</h3>
@@ -300,7 +357,7 @@ const PrismsHike = () => {
 
             <section className=' mx-auto max-w-5xl px-4 md:px-8 mt-12 md:mt-24 mb-12 md:mb-20'>
                 <h3 className='text-3xl md:text-4xl lg:text-5xl text-primary text-center'>What Happens Next?</h3>
-                
+
                 <br />
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8'>
                     {
