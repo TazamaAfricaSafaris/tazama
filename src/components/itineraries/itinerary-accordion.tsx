@@ -198,7 +198,7 @@ const ItineraryAccordion: React.FunctionComponent<Props> = ({
                             {getActivityIcon(day, id, totalDays)}
                         </div>
                     </div>
-                    <h6 className="line-clamp text-2xl md:text-3xl p-2 flex-1">{day}</h6>
+                    <h6 className="line-clamp text-2xl md:text-3xl p-2 flex-1 text-primary">{day}</h6>
                 </div>
             </div>
 

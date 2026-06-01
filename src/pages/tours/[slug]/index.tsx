@@ -223,7 +223,6 @@ export default function Page(props: PageProps) {
             {/* Trip itinerary + Side Price Card */}
             <section className="mx-auto max-w-4xl mb-20 px-4">
                 <div className="flex flex-col relative">
-                    <h4 className="mb-4 text-4xl text-primary">Detailed itinerary for {title}</h4>
                     <div className="flex flex-col gap-2">
                         {itineraryDetails.map((detail: any, idx: number) => (
                             <ItineraryAccordion
@@ -326,36 +325,31 @@ export default function Page(props: PageProps) {
 
             {/* Includes / Excludes */}
             <section className="max-w-4xl mx-auto px-4 mb-20 grid grid-cols-1 md:grid-cols-2 gap-12">
+                {/* Included */}
                 <div>
-                    <div className="flex items-center gap-4 mb-4">
-                        <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                            <FaCheck color="#fff" />
+                    <h3 className="text-3xl  mb-5 flex items-center gap-3">
+                        <span className="w-2.5 h-2.5 rounded-full bg-[#7BB464] flex-shrink-0" />
+                        Included
+                    </h3>
+                    {includes.map(item => (
+                        <div key={item} className="flex items-start gap-3 py-3 border-b border-white/8 text-sm  leading-snug">
+                            <FaCheck size={10} color="#7BB464" className="mt-1 flex-shrink-0" />
+                            <p>{item}</p>
                         </div>
-                        <h5 className="text-3xl">Cost Includes</h5>
-                    </div>
-                    <ul className="list-inside list-disc flex flex-col gap-3">
-                        {includes.map((item: string) => (
-                            <li key={item} className="ml-4 list-item">
-                                {item}
-                            </li>
-                        ))}
-                    </ul>
+                    ))}
                 </div>
-
+                {/* Excluded */}
                 <div>
-                    <div className="flex items-center gap-4 mb-4">
-                        <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
-                            <FaXmark color="#fff" />
+                    <h3 className="text-3xl  mb-5 flex items-center gap-3">
+                        <span className="w-2.5 h-2.5 rounded-full bg-[#C45A4A] flex-shrink-0" />
+                        Not Included
+                    </h3>
+                    {excludes.map(item => (
+                        <div key={item} className="flex items-start gap-3 py-3 border-b border-white/8 text-sm  leading-snug">
+                            <FaXmark size={11} color="#C45A4A" className="mt-0.5 flex-shrink-0" />
+                            <p>{item}</p>
                         </div>
-                        <h5 className="text-3xl">Cost Excludes</h5>
-                    </div>
-                    <ul className="list-inside list-disc flex flex-col gap-3">
-                        {excludes.map((item: string) => (
-                            <li key={item} className="ml-4 list-item">
-                                {item}
-                            </li>
-                        ))}
-                    </ul>
+                    ))}
                 </div>
             </section>
 
@@ -394,7 +388,7 @@ export const ZohoFormButton = ({ link, title, btnTitle }: { link: string, title:
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <button className="bg-primary px-4 py-2 rounded-full text-white hover:bg-dark transition-colors max-md:w-full">
+                <button className="bg-primary px-6 py-2 rounded-full text-white hover:bg-dark transition-colors max-md:w-full">
                     {btnTitle ? btnTitle : "Book This Trip"}
                 </button>
             </DialogTrigger>
