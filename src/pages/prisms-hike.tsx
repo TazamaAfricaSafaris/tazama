@@ -132,7 +132,7 @@ const PrismsHike = () => {
                 </div>
                 <br />
                 <Link href='https://www.prisms.org' target='_blank'>
-                    <button className='bg-primary text-white px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-lg block hover:bg-primary-dark transition w-full md:w-auto'>
+                    <button className='bg-primary text-white px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full block hover:bg-primary-dark transition w-full md:w-auto'>
                         Learn More About PRISMS
                     </button>
                 </Link>
@@ -165,7 +165,7 @@ const PrismsHike = () => {
                         </p>
                         <br />
                         <Link href='https://wetu.com/ItineraryOutputs/Discovery/9ec618f1-594d-44a0-b581-c05709ed3555' target='_blank'>
-                            <button className='bg-primary text-white px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-lg block hover:bg-primary-dark transition w-full md:w-auto'>
+                            <button className='bg-primary text-white px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-full block hover:bg-primary-dark transition w-full md:w-auto'>
                                 Click to View Full itinerary
                             </button>
                         </Link>

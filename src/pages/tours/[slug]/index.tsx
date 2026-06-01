@@ -388,7 +388,7 @@ export const ZohoFormButton = ({ link, title, btnTitle }: { link: string, title:
     return (
         <Dialog>
             <DialogTrigger asChild>
-                <button className="bg-primary px-4 py-2 rounded-full text-white hover:bg-dark transition-colors max-md:w-full">
+                <button className="bg-primary px-6 py-2 rounded-full text-white hover:bg-dark transition-colors max-md:w-full">
                     {btnTitle ? btnTitle : "Book This Trip"}
                 </button>
             </DialogTrigger>
