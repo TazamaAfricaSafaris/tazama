@@ -41,7 +41,7 @@ module.exports = {
     if (path === "/") {
       priority = 1.0;
       changefreq = "daily";
-    } else if (path.startsWith("/tours/") && path.startsWith("/blogs/")) {
+    } else if (path.startsWith("/tours/")) {
       priority = 0.9;
     }
 
