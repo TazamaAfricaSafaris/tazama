@@ -1,9 +1,3 @@
-/* eslint-disable @typescript-eslint/prefer-nullish-coalescing */
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 import HeadSEO from "~/components/ui/Head";
 
 import PrimaryHeader from "~/components/PrimaryHeader";
@@ -74,7 +68,7 @@ function ItineraryCard({ itinerary }: { itinerary: SanityDocument }) {
                 <Image
                     src={imageUrl}
                     alt={altText}
-                    layout="fill"
+                    fill
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
 

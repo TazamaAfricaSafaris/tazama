@@ -7,9 +7,8 @@ import { ReactLenis, type LenisRef } from 'lenis/react';
 import { cancelFrame, frame } from 'framer-motion';
 
 import { Raleway } from "next/font/google";
-import localFont from "next/font/local"
+import { amiora, now } from "~/fonts";
 
-import "~/styles/globals.css";
 import { env } from "~/env";
 import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
@@ -17,16 +16,13 @@ import React, { useEffect, useRef } from "react";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
+// @ts-expect-error: allow side-effect css import without type declarations
+import "~/styles/globals.css";
 
 export const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
 });
-
-export const amiora = localFont({
-  src: '../fonts/Amiora.ttf',
-  variable: '--font-amiora'
-})
 
 if (typeof window !== "undefined") {
   // checks that we are client-side
@@ -77,7 +73,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
           :root {
             --font-raleway: ${raleway.variable};
             --font-amiora: ${amiora.variable};
-          }
+            --font-now: ${now.variable};
           
          
         `}
