@@ -43,3 +43,6 @@ yarn-error.log*
 
 #next-sitemap
 /sitemap/*
+public/sitemap.xml
+public/sitemap-0.xml
+public/robots.txt
