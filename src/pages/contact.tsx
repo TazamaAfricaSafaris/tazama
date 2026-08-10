@@ -12,6 +12,7 @@ import { ToastAction } from "~/components/ui/Toast";
 import PrimaryHeader from "~/components/PrimaryHeader";
 
 import CallToAction from "~/components/CallToAction";
+import HeadSEO from "~/components/ui/Head";
 
 /* ─── Types ─────────────────────────────────────────────────── */
 interface FormErrors {
@@ -179,17 +180,12 @@ const ContactPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Contact Tazama Africa — Plan Your Dream Safari</title>
-        <meta
-          name="description"
-          content="Contact Tazama Africa Safari to plan your dream Tanzania safari or Kilimanjaro trek. Our expert team is ready to help create your perfect adventure."
-        />
-        <meta
-          name="keywords"
-          content={`${base_keywords}, Tanzania safari contact, book safari Tanzania, safari planning, Kilimanjaro trek booking`}
-        />
-      </Head>
+      <HeadSEO 
+        title="Contact Tazama Africa | Plan Your Dream Safari"
+        description="Get in touch with Tazama Africa Safaris for any enquiries, questions, or to start planning your dream safari or Kilimanjaro adventure."
+        path="/contact"
+        image="contact.webp"
+      />
 
       <Toaster />
 
