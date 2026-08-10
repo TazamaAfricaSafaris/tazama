@@ -3,7 +3,6 @@ import React from 'react'
 import PrimaryHeader from '~/components/PrimaryHeader'
 import SafariCarousel from '~/components/safari-carousel'
 import HeadSEO from '~/components/ui/Head'
-import { base_keywords } from '~/lib/constants'
 
 import { MasonryGallery } from "../gallery"
 import useFetchImages from "~/hooks/useFetchImages"
