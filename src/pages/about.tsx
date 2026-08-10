@@ -8,7 +8,7 @@ import ContentSection, {
 import { array } from "fast-web-kit";
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+
 import { HomeContactUs } from "~/components/HomeContactUs";
 
 const AboutPage = () => {

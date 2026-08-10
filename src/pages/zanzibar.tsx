@@ -6,7 +6,7 @@ import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import { CloudinaryImage } from "~/components/ui/GalleryImage";
 import useFetchImages from "~/hooks/useFetchImages";
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+
 import ContentSection from "~/components/ContentSection";
 
 import { getClient } from "~/sanity/lib/client";

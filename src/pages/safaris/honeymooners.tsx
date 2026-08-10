@@ -9,7 +9,7 @@ import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import EnquireNow from "~/components/EnquireNow";
 import ItienaryViewer from "~/components/itenaries/day-itienary";
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+
 import BlurImage from "~/components/ui/BlurImage";
 import CallToAction from "~/components/CallToAction";
 

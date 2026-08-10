@@ -10,7 +10,7 @@ import Link from "next/link";
 import Image from "next/image";
 import HeadSEO from "~/components/ui/Head";
 import CallToAction from "~/components/CallToAction";
-import { base_keywords } from "~/lib/constants";
+
 import ContentSection from "~/components/ContentSection";
 import {
   trekkingOffers,

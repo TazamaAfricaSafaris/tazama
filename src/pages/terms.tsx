@@ -5,7 +5,7 @@ import markdownToHtml from "~/lib/markdown-to-html";
 import { getPostBySlug } from "~/lib/markddownConfig";
 import markdownStyles from "~/styles/markdownStyles.module.css";
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+
 
 const PostBody = ({ content }: any) => {
   return (

@@ -5,7 +5,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+
 import PrimaryHeader from "~/components/PrimaryHeader";
 import Image from "next/image";
 import { getClient } from "~/sanity/lib/client";

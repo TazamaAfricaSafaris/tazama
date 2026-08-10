@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+
 import Link from "next/link";
 import { HomeContactUs } from "~/components/HomeContactUs";
 import ReasonsCallToActionKilimanjaro from "~/components/kilimanjaro/reasons-cta";

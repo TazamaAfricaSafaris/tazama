@@ -1,7 +1,7 @@
 import CallToAction from "~/components/CallToAction";
 import Image from "next/legacy/image";
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+
 
 export default function Page() {
   return (

@@ -10,7 +10,7 @@ import { useToast } from "~/hooks/useToast";
 import { Toaster } from "~/components/ui/toaster";
 import { ToastAction } from "~/components/ui/Toast";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import { base_keywords } from "~/lib/constants";
+
 import CallToAction from "~/components/CallToAction";
 
 /* ─── Types ─────────────────────────────────────────────────── */

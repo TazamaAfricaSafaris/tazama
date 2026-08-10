@@ -6,7 +6,7 @@ import Input from "~/components/ui/input";
 import { useState } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+
 
 import type { SanityDocument } from "next-sanity";
 

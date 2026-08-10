@@ -3,7 +3,7 @@ import PrimaryHeader from "~/components/PrimaryHeader";
 import Accordion from "~/components/Accordion";
 import { accordionQns } from "~/data/data";
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+
 
 const FAQPage = () => {
   const [category, setCategory] = React.useState("safari");

@@ -7,7 +7,7 @@ import PrimaryHeader from "~/components/PrimaryHeader";
 import Image from "next/legacy/image";
 import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+
 import useFetchImages from "~/hooks/useFetchImages";
 import { InstagramEmbed } from "~/components/socials/instagram-embedded";
 import { YouTubeEmbed } from "~/components/socials/youtube-embedded";

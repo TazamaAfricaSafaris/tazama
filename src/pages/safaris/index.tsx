@@ -1,6 +1,6 @@
 import PrimaryHeader from "../../components/PrimaryHeader";
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+
 import CallToAction from "~/components/CallToAction";
 import SafariTripadivsorReviews from "~/components/safari/safari-tripadivsor-reviews";
 import { getClient } from "~/sanity/lib/client";

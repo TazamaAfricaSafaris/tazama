@@ -11,7 +11,7 @@ import { token } from "../../sanity/lib/token";
 import { POSTS_SLUG_QUERY, POST_QUERY } from "../../sanity/lib/queries";
 import Post from "~/components/Post";
 import HeadSEO from "~/components/ui/Head";
-import { base_keywords } from "~/lib/constants";
+
 
 type PageProps = {
     post: SanityDocument;
