@@ -8,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./Carousel";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { safaris } from "~/data/data";
 import Link from "next/link";
 

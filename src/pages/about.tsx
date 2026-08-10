@@ -6,7 +6,7 @@ import ContentSection, {
   type contentSectionData,
 } from "~/components/ContentSection";
 import { array } from "fast-web-kit";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import HeadSEO from "~/components/ui/Head";
 
 import { HomeContactUs } from "~/components/HomeContactUs";

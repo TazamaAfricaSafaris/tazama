@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { setPageTitle } from "~/helpers";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const ItenaryPage = () => {
   useEffect(() => {

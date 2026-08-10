@@ -1,6 +1,6 @@
 import React from "react";
 import Accordion from "~/components/Accordion";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { migration } from "~/data/migration";
 

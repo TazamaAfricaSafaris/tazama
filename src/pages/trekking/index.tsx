@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import HeadSEO from "~/components/ui/Head";
 
 import Link from "next/link";

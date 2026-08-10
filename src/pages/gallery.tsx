@@ -4,7 +4,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from "react";
 import PrimaryHeader from "~/components/PrimaryHeader";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import HeadSEO from "~/components/ui/Head";
 

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Button } from "./button";
 import Link from "next/link";
 import { CLOUDINARY_URL } from "~/lib/constants";

@@ -3,7 +3,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import PrimaryHeader from "~/components/PrimaryHeader";
 import { honeyMooners } from "~/components/itenaries/day-itienary";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import useFetchImages from "~/hooks/useFetchImages";
 import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import EnquireNow from "~/components/EnquireNow";

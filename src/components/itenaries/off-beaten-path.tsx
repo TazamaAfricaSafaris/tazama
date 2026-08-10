@@ -1,7 +1,7 @@
 import React from "react";
 import Accordion from "~/components/Accordion";
 import { offBeatenPath } from "~/data/off-beaten-itenary";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const Page = () => {

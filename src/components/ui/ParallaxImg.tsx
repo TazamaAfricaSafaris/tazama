@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useScroll, motion } from "framer-motion";
 import useParallax from "~/hooks/useParallax";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function ParallaxImg({
   publicId,

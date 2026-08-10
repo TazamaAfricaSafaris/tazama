@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 /* eslint-disable react-hooks/rules-of-hooks */
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useState } from "react";
 import { type ImageProps } from "~/lib/generateBlurPlaceHolder";
 import { CloudinaryImage } from "~/components/ui/GalleryImage";

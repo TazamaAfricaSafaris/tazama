@@ -1,6 +1,6 @@
 import MigrationItienary from "~/components/itenaries/migration";
 import QuoteSection from "~/components/QuoteSection";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import useFetchImages from "~/hooks/useFetchImages";
 import { ImageProps } from "~/lib/generateBlurPlaceHolder";
 import Gallery, { CloudinaryImage } from "~/components/ui/GalleryImage";
