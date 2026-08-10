@@ -21,7 +21,7 @@ const Page = () => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730282377/lodges/katambuga_house/Katambuga_House_detail_x6pdzu.jpg"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -52,7 +52,7 @@ const Page = () => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730282700/lodges/katambuga_house/Katambuga_House_Double_room_mr8upa.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -61,7 +61,7 @@ const Page = () => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730282928/lodges/katambuga_house/Katambuga_House_exterior_1_wy92tx.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -85,7 +85,7 @@ const Page = () => {
                         <Image
                             src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730283263/lodges/katambuga_house/Katambuga_House_fireplace_s35b5h.jpg"
                             alt=""
-                            layout="fill"
+                            fill
                             objectFit="cover"
                             className="w-full object-cover h-full"
                         />
@@ -106,7 +106,7 @@ const Page = () => {
                         <Image
                             src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730283621/lodges/katambuga_house/Katambuga_House_dining_area_qky6qh.jpg"
                             alt=""
-                            layout="fill"
+                            fill
                             objectFit="cover"
                             className="w-full object-cover h-full"
                         />
@@ -115,7 +115,7 @@ const Page = () => {
                         <Image
                             src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730283665/lodges/katambuga_house/Katambuga_House_Lunch_1_yipgin.jpg"
                             alt=""
-                            layout="fill"
+                            fill
                             objectFit="cover"
                             className="w-full object-cover h-full"
                         />

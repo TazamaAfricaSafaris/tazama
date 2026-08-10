@@ -57,7 +57,7 @@ const AboutPage = () => {
             <Image
               src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1728461374/about/IMG_0561_ykqjjm.jpg"
               className="object-cover"
-              layout="fill"
+              fill
               alt="cover-img"
             />
           </div>
@@ -66,7 +66,7 @@ const AboutPage = () => {
             <Image
               src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1728461701/about/classic-safaris_whilv4.webp"
               className="object-cover"
-              layout="fill"
+              fill
               alt="cover-img"
             />
           </div>

@@ -22,7 +22,7 @@ const Page = () => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730717456/east-africa/uganda/chimps-wildlife-fishing-safari/49198076118_4fa0090611_k_rniv7l.webp"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -60,7 +60,7 @@ const Page = () => {
                                         <>
                                             <Image
                                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730717456/east-africa/uganda/chimps-wildlife-fishing-safari/49198076118_4fa0090611_k_rniv7l.webp"
-                                                layout="fill"
+                                                fill
                                                 className="object-cover  opacity-30 group-hover:scale-110 transition-transform"
                                                 alt=''
                                             />

@@ -41,7 +41,7 @@ export default function Post({ post }: { post: SanityDocument }) {
                                     <Image
                                         src={urlFor(image).width(width).height(height).url()}
                                         alt={image.alt || "Image"}
-                                        layout="fill"
+                                        fill
                                         objectFit="cover"
                                         className="rounded-lg w-full h-full object-cover"
                                     />
@@ -122,7 +122,7 @@ export default function Post({ post }: { post: SanityDocument }) {
                     <Image
                         className="m-0 w-full rounded-lg object-cover"
                         src={builder.image(mainImage).quality(80).url()}
-                        layout="fill"
+                        fill
                         objectFit="cover"
                         alt={mainImage.alt || ''}
                     />

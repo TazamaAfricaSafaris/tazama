@@ -48,7 +48,7 @@ const Page = () => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711559/east-africa/uganda/uganda-gorilla-safari/26022685797_fb352d1d64_k_eqveca.webp"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -71,7 +71,7 @@ const Page = () => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730718010/east-africa/uganda/uganda-gorilla-safari/1-day-shoe-bill-birding-tour-mabamba-swamp_yz9z4z.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -80,7 +80,7 @@ const Page = () => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730718213/east-africa/uganda/uganda-gorilla-safari/52037422427_838c3bc3be_h_px4gov.webp"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -112,7 +112,7 @@ const Page = () => {
                                         <>
                                             <Image
                                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730711559/east-africa/uganda/uganda-gorilla-safari/26022685797_fb352d1d64_k_eqveca.webp"
-                                                layout="fill"
+                                                fill
                                                 className="object-cover  opacity-30 group-hover:scale-110 transition-transform"
                                                 alt=''
                                             />

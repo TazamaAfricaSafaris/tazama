@@ -25,7 +25,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730194330/lodges/manyaras-secret/1-1024x640_vorz3h.jpg"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -52,7 +52,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730195121/lodges/manyaras-secret/ManyarasSecret_2020_3235_sqd6o8.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -61,7 +61,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730195120/lodges/manyaras-secret/ManyarasSecret_2020_1240_fb8tiv.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -110,7 +110,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730196582/lodges/manyaras-secret/keuken-1536x865_xjyp6n.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -119,7 +119,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730196680/lodges/manyaras-secret/foto-gerecht-1536x1451_aolmbk.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />

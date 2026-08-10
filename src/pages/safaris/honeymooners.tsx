@@ -16,7 +16,7 @@ import CallToAction from "~/components/CallToAction";
 export const MemoryImage = ({ src }: { src: string }) => {
   return (
     <div className="relative h-[200px] w-[300px] md:h-[300px] md:w-[80%] lg:w-[400px]">
-      <Image src={src} layout="fill" className="rounded-sm object-cover" alt="" />
+      <Image src={src} fill className="rounded-sm object-cover" alt="" />
     </div>
   );
 };

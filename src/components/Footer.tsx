@@ -166,7 +166,7 @@ export const Footer = () => {
               <Image
                 src="/assets/images/gallery/faq.webp"
                 alt=""
-                layout="fill"
+                fill
                 className="object-cover w-full h-full"
               />
             </div>

@@ -46,7 +46,7 @@ const Page = () => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730709645/east-africa/rwanda/rwanda-gorilla-trekking/49197853001_362e5dca1e_k_lpuofw.webp"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -70,7 +70,7 @@ const Page = () => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730714623/east-africa/rwanda/rwanda-gorilla-trekking/40185955594_7a7f6358b8_k_fui6lh.webp"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -79,7 +79,7 @@ const Page = () => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730714781/east-africa/rwanda/rwanda-gorilla-trekking/48685332787_91fdc97c30_k_kffffx.webp"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />

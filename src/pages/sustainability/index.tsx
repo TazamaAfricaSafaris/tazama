@@ -79,7 +79,7 @@ const Page = () => {
                                             <Image
                                                 src={`${item.img}`}
                                                 alt=""
-                                                layout="fill"
+                                                fill
                                                 className="object-cover group-hover:brightness-95"
                                             />
                                         </div>

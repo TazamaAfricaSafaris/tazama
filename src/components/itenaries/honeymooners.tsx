@@ -29,7 +29,7 @@ const Page = () => {
                   <>
                     <Image
                       src="/assets/images/gallery/honey-moon-trip.webp"
-                      layout="fill"
+                      fill
                       className="object-cover  opacity-30"
                     />
 

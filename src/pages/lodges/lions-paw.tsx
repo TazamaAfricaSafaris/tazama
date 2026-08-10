@@ -45,7 +45,7 @@ const Page = () => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730203838/lodges/lions-paw/LP_Double_1-min-scaled_dgq0vu.webp"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -72,7 +72,7 @@ const Page = () => {
                         <Image
                             src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730205339/lodges/lions-paw/LP_Lounge_Bar_5-scaled_hcj8ny.webp"
                             alt=""
-                            layout="fill"
+                            fill
                             objectFit="cover"
                             className="w-full object-cover h-full"
                         />
@@ -81,7 +81,7 @@ const Page = () => {
                         <Image
                             src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730204863/lodges/lions-paw/LP_Lounge_Bar_8-1-scaled_tzqfeq.webp"
                             alt=""
-                            layout="fill"
+                            fill
                             objectFit="cover"
                             className="w-full object-cover h-full"
                         />
@@ -103,7 +103,7 @@ const Page = () => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730205233/lodges/lions-paw/LP_Exterior_Public_Areas_17-scaled_1_sdorri.webp"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -112,7 +112,7 @@ const Page = () => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730205397/lodges/lions-paw/LP_Lounge_Bar_10-min-scaled_o2kfqj.webp"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />

@@ -18,7 +18,7 @@ export const HomeContactUs = () => {
           </div>
         </div>
         <br />
-        <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730973516/DSC09836_kipash.webp" alt="" layout="fill" objectFit="cover" className="w-full h-full brightness-[0.5]" />
+        <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730973516/DSC09836_kipash.webp" alt="" fill objectFit="cover" className="w-full h-full brightness-[0.5]" />
       </section>
     </>
   );

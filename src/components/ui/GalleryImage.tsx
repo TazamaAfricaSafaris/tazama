@@ -41,7 +41,7 @@ export function CloudinaryImage({ public_id, blurDataUrl, format }: Props) {
       placeholder="blur"
       blurDataURL={blurDataUrl}
       src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_720/${public_id}.${format}`}
-      layout="fill"
+      fill
     />
   );
 }

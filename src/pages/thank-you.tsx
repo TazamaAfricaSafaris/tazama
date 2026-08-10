@@ -22,7 +22,7 @@ export default function Page() {
           {/* <div className="relative mt-5 h-[500px] w-[350px] md:mt-0 md:w-[490px]">
             <Image
               src="/assets/images/gallery/family-trip.webp"
-              layout="fill"
+              fill
               className="rounded-sm object-cover"
               alt="Tazama Africa and Safaris"
             />

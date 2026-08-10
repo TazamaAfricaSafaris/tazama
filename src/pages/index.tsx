@@ -135,7 +135,7 @@ export default function Page(props: PageProps) {
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1763461486/pexels-magda-ehlers-pexels-1320609_npvqkj.jpg"
                         alt="Cheetahs in the wild"
                         className="w-full h-full"
-                        layout="fill"
+                        fill
                         objectFit="cover"
                     />
                 </div>
@@ -290,7 +290,7 @@ export default function Page(props: PageProps) {
                                                     src={`${lodge.img}`}
                                                     alt={lodge.title}
                                                     className='w-full h-full object-cover transition-transform group-hover:scale-110'
-                                                    layout="fill"
+                                                    fill
                                                 />
                                             </div>
                                             <p className='mt-4 text-lg text-white'>{lodge.title}</p>

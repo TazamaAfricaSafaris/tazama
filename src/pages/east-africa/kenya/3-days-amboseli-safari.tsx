@@ -21,7 +21,7 @@ const Page = () => {
             alt="tazama gallery photos"
             className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
             src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1731333470/east-africa/kenya/3-day-amboseli-safari/adore-africa-kenya-amboseli-slider-03_zf7oup.jpg"
-            layout="fill"
+            fill
           />
 
           <div className="container">
@@ -67,7 +67,7 @@ const Page = () => {
                                         <>
                                             <Image
                                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1731333572/east-africa/kenya/3-day-amboseli-safari/zebras-in-Kenya_edy34s.jpg"
-                                                layout="fill"
+                                                fill
                                                 className="object-cover  opacity-30 group-hover:scale-110 transition-transform"
                                                 alt=''
                                                 objectFit='cover'

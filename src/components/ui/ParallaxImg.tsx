@@ -32,7 +32,7 @@ export default function ParallaxImg({
       <Image
         src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload/c_scale,w_720/${publicId}.${format}`}
         alt="Tazama Img"
-        layout="fill"
+        fill
         className="-ml-4 h-full w-full object-cover"
       />
       {/* </motion.div> */}

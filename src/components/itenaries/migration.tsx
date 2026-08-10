@@ -34,7 +34,7 @@ const Page = () => {
                   <>
                     <Image
                       src="/assets/images/gallery/discovery.webp"
-                      layout="fill"
+                      fill
                       className="object-cover  opacity-30"
                     />
 

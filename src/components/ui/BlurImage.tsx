@@ -19,7 +19,7 @@ export default function BlurImage({ src }: Props) {
         <Image
           alt="Thumbnail"
           src={src}
-          layout="fill"
+          fill
           objectFit="cover"
           priority={false}
           className={cn(

@@ -28,7 +28,7 @@ function DestinationImage({
           src={imgSrc}
           alt="carousel Img"
           className="object-cover opacity-30 "
-          layout="fill"
+          fill
         />
         <p className="h-[300px] w-[300px] translate-y-[150px] text-center text-2xl text-white">
           {caption}

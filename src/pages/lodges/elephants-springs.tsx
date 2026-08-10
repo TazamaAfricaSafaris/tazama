@@ -21,7 +21,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730199754/lodges/elephant-springs/ES_Dining_2-scaled_w65ijr.jpg"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -48,7 +48,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730199601/lodges/elephant-springs/ES_Swimming_Pool_3-scaled_yvhbjg.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -57,7 +57,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730201209/lodges/elephant-springs/ES_Double_5-scaled_uedcxh.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />

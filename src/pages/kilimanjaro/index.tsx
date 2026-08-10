@@ -76,7 +76,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
               <Image
                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1759228990/kilimanjaro/main-page/clients/WhatsApp_Image_2025-09-30_at_10.15.01_1_ppkopg.jpg"
                 alt="Safety First"
-                layout="fill"
+                fill
                 className="object-cover w-full h-full"
               />
             </div>
@@ -90,7 +90,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
               <Image
                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1759228982/kilimanjaro/main-page/clients/WhatsApp_Image_2025-09-30_at_10.14.55_1_cwngiy.jpg"
                 alt="How Hard Is It Really?"
-                layout="fill"
+                fill
                 className="object-cover w-full h-full"
               />
             </div>
@@ -119,7 +119,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
               <Image
                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1759229205/kilimanjaro/main-page/kilimanjaro19_lpdch6.webp"
                 alt="How Hard Is It Really?"
-                layout="fill"
+                fill
                 className="object-cover w-full h-full"
               />
             </div>
@@ -179,7 +179,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
               <Image
                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1759229199/kilimanjaro/main-page/kilimanjaro11_hyxmwe.webp"
                 alt="How Hard Is It Really?"
-                layout="fill"
+                fill
                 className="object-cover w-full h-full"
               />
             </div>
@@ -187,7 +187,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
               <Image
                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1759229197/kilimanjaro/main-page/kilimanjaro12_h4dou2.webp"
                 alt="How Hard Is It Really?"
-                layout="fill"
+                fill
                 className="object-cover w-full h-full"
               />
             </div>
@@ -195,7 +195,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
               <Image
                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1759229190/kilimanjaro/main-page/kilimanjaro4_wclu5t.webp"
                 alt="How Hard Is It Really?"
-                layout="fill"
+                fill
                 className="object-cover w-full h-full"
               />
             </div>
@@ -249,7 +249,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
               <Image
                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1759229199/kilimanjaro/main-page/kilimanjaro14_oflla1.webp"
                 alt="How Hard Is It Really?"
-                layout="fill"
+                fill
                 className="object-cover w-full h-full"
               />
             </div>
@@ -267,7 +267,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
               <Image
                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1759229190/kilimanjaro/main-page/kilimanjaro5_y8r9ru.webp"
                 alt="How Hard Is It Really?"
-                layout="fill"
+                fill
                 className="object-cover w-full h-full"
               />
             </div>
@@ -403,7 +403,7 @@ function ItineraryCard({ itinerary }: { itinerary: SanityDocument }) {
         <Image
           src={imageUrl}
           alt={altText}
-          layout="fill"
+          fill
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
         />
         <div className="absolute top-0 left-0 p-4 right-4 text-white bg-gradient-to-b from-black/35 w-full">

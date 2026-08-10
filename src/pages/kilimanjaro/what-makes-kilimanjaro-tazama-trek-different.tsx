@@ -43,7 +43,7 @@ export default function Page({ itineraries }: { itineraries: SanityDocument[] })
                     <Image
                         className="m-0 w-full rounded-3xl object-cover"
                         src={'/assets/images/gallery/kilimanjaro-cta/cta-3.jpg'}
-                        layout="fill"
+                        fill
                         objectFit="cover"
                         alt={'Why Tazama’s Kilimanjaro Experience Stands Apart'}
                     />

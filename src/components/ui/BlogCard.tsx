@@ -17,7 +17,7 @@ export default function BlogCard(props: Props) {
         <div className="relative h-[200px] w-full rounded-sm">
           <Image
             src={`${CLOUDINARY_URL}/${props.imgLink}.png`}
-            layout="fill"
+            fill
             alt="blog_img"
             className="object-cover"
             placeholder="blur"

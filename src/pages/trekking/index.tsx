@@ -60,7 +60,7 @@ const TrekkingPage = () => {
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/50 text-white">
                     <Image
-                        layout="fill"
+                        fill
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1763709981/kilimanjaro/daniel-vargas-ZYtdVrR4WNI-unsplash_mbodby.jpg"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover"
                         alt="A view in the mountains"
@@ -101,7 +101,7 @@ const TrekkingPage = () => {
 
                                 </div>
                                 <Image
-                                    layout="fill"
+                                    fill
                                     objectFit="cover"
                                     src={experience.image}
                                     alt={experience.title}

@@ -34,7 +34,7 @@ const ItenaryPage = () => {
               <Image
                 src="/assets/images/gallery/honey-moon-trip.webp"
                 className="object-cover"
-                layout="fill"
+                fill
                 alt="cover-img"
               />
             </div>
@@ -43,7 +43,7 @@ const ItenaryPage = () => {
               <Image
                 src="/assets/images/gallery/classic-safaris.webp"
                 className="object-cover"
-                layout="fill"
+                fill
                 alt="cover-img"
               />
             </div>
@@ -76,7 +76,7 @@ const ItenaryPage = () => {
               <Image
                 src="/assets/images/gallery/about.webp"
                 className="object-cover"
-                layout="fill"
+                fill
                 alt="cover-img"
               />
             </div>
@@ -118,7 +118,7 @@ const ItenaryPage = () => {
               <Image
                 src="/assets/images/gallery/honey-moon-trip.webp"
                 className="object-cover"
-                layout="fill"
+                fill
                 alt="cover-img"
               />
             </div>
@@ -127,7 +127,7 @@ const ItenaryPage = () => {
               <Image
                 src="/assets/images/gallery/classic-safaris.webp"
                 className="object-cover"
-                layout="fill"
+                fill
                 alt="cover-img"
               />
             </div>

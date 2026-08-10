@@ -92,7 +92,7 @@ export function ItineraryCard({ itinerary }: { itinerary: { link: string, title:
                 <Image
                     src={itinerary.img}
                     alt={itinerary.title}
-                    layout="fill"
+                    fill
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
 

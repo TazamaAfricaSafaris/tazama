@@ -29,7 +29,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                         //     imageRendering: "crisp-edges",
                         // }}
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730121676/lodges/gibbs-farm/Gibbs-Farm-restaurant-path-1_dakt8u.jpg"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">

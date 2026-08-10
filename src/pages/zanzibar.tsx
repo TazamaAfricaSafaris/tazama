@@ -38,7 +38,7 @@ const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: 
             blurDataURL={images[1]!.blurDataUrl!}
             src={`https://res.cloudinary.com/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME
               }/image/upload/${images[1]!.public_id}.${images[1]!.format}`}
-            layout="fill"
+            fill
           />
 
           <div className="container">
@@ -166,7 +166,7 @@ const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: 
             </div>
           </div>
           <br />
-          <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1708503582/beach_holidays/eoxqa1kpd8og9y7hrr5u.jpg" alt="" layout="fill" objectFit="cover" className="w-full h-full brightness-[0.6]" />
+          <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1708503582/beach_holidays/eoxqa1kpd8og9y7hrr5u.jpg" alt="" fill objectFit="cover" className="w-full h-full brightness-[0.6]" />
         </div>
       </section>
     </>

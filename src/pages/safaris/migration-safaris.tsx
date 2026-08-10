@@ -27,7 +27,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
             placeholder="blur"
             blurDataURL={images[1]!.blurDataUrl!}
             src={`https://res.cloudinary.com/drhl0yu7y/image/upload/v1728588997/migration/Serengeti-wildebeest-Migration-in-November_bitp8a.jpg`}
-            layout="fill"
+            fill
           />
 
           <div className="container">

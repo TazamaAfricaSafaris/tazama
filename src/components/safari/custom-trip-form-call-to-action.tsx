@@ -50,7 +50,7 @@ function CustomTripFormCallToAction() {
         </div>
       </div>
       <br />
-      <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1720014575/home/lioness_o9ed35.webp" alt="" layout="fill" objectFit="cover" className="w-full h-full brightness-[0.7]" />
+      <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1720014575/home/lioness_o9ed35.webp" alt="" fill objectFit="cover" className="w-full h-full brightness-[0.7]" />
     </section>
   )
 }

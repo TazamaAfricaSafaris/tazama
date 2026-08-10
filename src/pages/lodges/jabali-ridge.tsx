@@ -43,7 +43,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730364344/lodges/jabali_ridge/Jabali_Ridge_Infinity_Pool_uryvob.jpg"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -70,7 +70,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730364256/lodges/jabali_ridge/Jabali_Ridge_Room_Deck_ugttgt.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -79,7 +79,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730363956/lodges/jabali_ridge/sunset_from_room_jabali_iifyty.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />

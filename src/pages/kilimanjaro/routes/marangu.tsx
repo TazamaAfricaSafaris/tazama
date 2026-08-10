@@ -80,7 +80,7 @@ function ItineraryCard({ itinerary }: { itinerary: SanityDocument }) {
         <Image
           src={imageUrl}
           alt={altText}
-          layout="fill"
+          fill
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
         />
         <div className="absolute top-0 left-0 p-4 right-4 text-white bg-gradient-to-b from-black/35 w-full">

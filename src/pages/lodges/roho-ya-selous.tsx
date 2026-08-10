@@ -44,7 +44,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730286314/lodges/roho_ya_selous/Roho_ya_Selous_Pool_area_h7euqr.jpg"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -71,7 +71,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730282700/lodges/katambuga_house/Katambuga_House_Double_room_mr8upa.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -80,7 +80,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730290490/lodges/roho_ya_selous/gallery/Roho_ya_Selous_Sunset_barbecue_v2kvcw.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />

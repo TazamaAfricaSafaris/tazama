@@ -103,7 +103,7 @@ const Page = () => {
             <Image
               src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1736412634/special-offers/pexels-balazsimon-15994016_tmxkxd.jpg"
               alt=""
-              layout="fill"
+              fill
               objectFit="cover"
               className="object-cover w-full h-full"
             />
@@ -112,7 +112,7 @@ const Page = () => {
             <Image
               src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1736412784/special-offers/209117334517meru_pkcssc.jpg"
               alt=""
-              layout="fill"
+              fill
               objectFit="cover"
               className="object-cover w-full h-full"
             />
@@ -186,7 +186,7 @@ const Page = () => {
                       <Image
                         src={safari.image}
                         alt=""
-                        layout="fill"
+                        fill
                         objectFit="cover"
                         className="object-cover w-full h-full"
                       />

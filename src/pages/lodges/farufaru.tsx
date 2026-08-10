@@ -64,7 +64,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730366312/lodges/farufaru/Singita_Faru_Faru_Lodge_Food_fgggml.jpg"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -91,7 +91,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730366163/lodges/farufaru/Singita_Faru_Faru_Lodge_Deck_jmfqv6.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -100,7 +100,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730366360/lodges/farufaru/Singita_Faru_Faru_Lodge_Interactive_Kitchen_oj5tgu.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />

@@ -56,7 +56,7 @@ const CallToAction = () => {
                     </div>
                 </div>
                 <br />
-                <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730884908/call-to-action_hyqnoa.webp" alt="" layout="fill" objectFit="cover" className="w-full h-full brightness-[0.65]" />
+                <Image src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730884908/call-to-action_hyqnoa.webp" alt="" fill objectFit="cover" className="w-full h-full brightness-[0.65]" />
             </section>
         </>
     )

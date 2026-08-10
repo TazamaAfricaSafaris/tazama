@@ -21,7 +21,7 @@ const Page = () => {
                         //     imageRendering: "crisp-edges",
                         // }}
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1729688549/lodges/konokono-lodge/pic-konokono-beach-resort-michamvi-kae-90_jr4zdp.jpg"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -99,7 +99,7 @@ const Page = () => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1731319246/lodges/konokono-lodge/161544875_nuk97e.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -108,7 +108,7 @@ const Page = () => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1731319346/lodges/konokono-lodge/images_zuxlpj.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />

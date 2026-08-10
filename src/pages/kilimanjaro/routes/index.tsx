@@ -210,7 +210,7 @@ const Page = ({ images, posts }: { images: ImageProps[], posts: SanityDocument[]
                   <Image
                     src={route.img}
                     alt="How Hard Is It Really?"
-                    layout="fill"
+                    fill
                     className="object-cover w-full h-full group-hover:scale-110 transition-transform"
                   />
                   <div className="absolute bottom-0 left-0 px-4 py-6 bg-gradient-to-t from-black/75">

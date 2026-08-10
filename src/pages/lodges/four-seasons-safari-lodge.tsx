@@ -26,7 +26,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730454796/lodges/four-seasons/twin-room-four-seasons-serengeti-tanzania_c8hcab.jpg"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -63,7 +63,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                         <Image
                             src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730454370/lodges/four-seasons/SBT_928_original_ttq2zc.jpg"
                             alt=""
-                            layout="fill"
+                            fill
                             objectFit="cover"
                             className="w-full object-cover h-full"
                         />
@@ -72,7 +72,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
                         <Image
                             src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730366360/lodges/farufaru/Singita_Faru_Faru_Lodge_Interactive_Kitchen_oj5tgu.jpg"
                             alt=""
-                            layout="fill"
+                            fill
                             objectFit="cover"
                             className="w-full object-cover h-full"
                         />

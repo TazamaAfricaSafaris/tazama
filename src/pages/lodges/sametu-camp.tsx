@@ -46,7 +46,7 @@ const Page = () => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730209662/lodges/sametu-camp/SC_Twin_7_djjpto.jpg"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
@@ -73,7 +73,7 @@ const Page = () => {
                         <Image
                             src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730277295/lodges/sametu-camp/sc_swimming_pool_52_hdfv5y.jpg"
                             alt=""
-                            layout="fill"
+                            fill
                             objectFit="cover"
                             className="w-full object-cover h-full"
                         />
@@ -82,7 +82,7 @@ const Page = () => {
                         <Image
                             src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730277214/lodges/sametu-camp/sc_bush_dining_4_ldtc7w.jpg"
                             alt=""
-                            layout="fill"
+                            fill
                             objectFit="cover"
                             className="w-full object-cover h-full"
                         />
@@ -103,7 +103,7 @@ const Page = () => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730278597/lodges/sametu-camp/sc_balloon_2_ztktv9.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />
@@ -112,7 +112,7 @@ const Page = () => {
                             <Image
                                 src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1730278640/lodges/sametu-camp/sametu_-_family_-_4_c5slpq.jpg"
                                 alt=""
-                                layout="fill"
+                                fill
                                 objectFit="cover"
                                 className="w-full object-cover h-full"
                             />

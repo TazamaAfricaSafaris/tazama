@@ -26,7 +26,7 @@ const Page = () => {
                         alt="tazama gallery photos"
                         className="absolute left-0 right-0 top-0 -z-50 h-screen w-screen object-cover opacity-80"
                         src="https://res.cloudinary.com/drhl0yu7y/image/upload/v1764885511/ngorongoro-highlands/header_ib5ocu.jpg"
-                        layout="fill"
+                        fill
                     />
 
                     <div className="container">
