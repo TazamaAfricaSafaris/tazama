@@ -20,7 +20,7 @@ import { Kilimanjaro_keywords } from '~/lib/constants';
 const Page = ({ itineraries }: { itineraries: SanityDocument[] }) => {
   return (
     <>
-      <HeadSEO title="Tazama Africa Safaris | Kilimanjaro Marangu Route" keywords={Kilimanjaro_keywords} />
+      <HeadSEO title="Tazama Africa Safaris | Kilimanjaro Marangu Route"  />
       <PrimaryHeader title='Marangu Route' image='https://res.cloudinary.com/drhl0yu7y/image/upload/v1759229205/kilimanjaro/main-page/kilimanjaro18_nlxory.webp' />
 
       <section className='mx-auto max-w-5xl px-4 md:px-8 mt-20'>

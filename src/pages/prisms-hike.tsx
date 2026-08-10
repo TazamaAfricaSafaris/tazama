@@ -53,7 +53,6 @@ const PrismsHike = () => {
         <>
             <HeadSEO
                 title='Tazama X PRISMS Kilimanjaro Climb'
-                keywords="Tazama, PRISMS, Kilimanjaro Climb, Mount Kilimanjaro, Group Climb, Support for Research, Smith-Magenis Syndrome, PRISMS"
                 description="Join us on a guided group climb of Mount Kilimanjaro in support of the PRISMS and research into Smith-Magenis Syndrome (SMS). This climb brings together purpose, community, and a once-in-a-lifetime experience on Africa's highest mountain."
             />
             <MinimalStyles />

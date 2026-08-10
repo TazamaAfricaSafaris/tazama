@@ -11,7 +11,6 @@ const Page = () => {
         <>
             <HeadSEO 
                 title='Tazama Africa Safari | Sustainability' 
-                keywords={`${base_keywords}, sustainable tourism, eco-friendly safaris, responsible travel, conservation efforts, community engagement, environmental protection, wildlife conservation, plastic reduction, local employment, educational outreach, TazamaEdu, Kafika House, Tanzania conservation`} 
                 description="Discover Tazama Africa Safari's commitment to sustainable tourism in Tanzania. Our comprehensive initiatives focus on environmental protection, community support, and responsible business practices to preserve Tanzania's natural beauty for future generations."
             />
             <PrimaryHeader title='Sustainability with Tazama' image='sustainability/sustainability-header.jpg' />

@@ -42,7 +42,6 @@ const Page = () => {
         <>
             <HeadSEO 
                 title="Siringit Camps | Luxury Safari Collection in Tanzania" 
-                keywords={`${base_keywords}, Siringit Camps Tanzania, luxury safari collection, Serengeti accommodation, Ngorongoro luxury lodge, boutique safari experience, family safari accommodation, migration viewing camps, exclusive Tanzania lodges, sustainable luxury safari, wildlife photography camps`}
                 description="Discover Siringit Camps, a collection of luxury safari accommodations across Tanzania's most iconic locations. Experience exceptional service, elegant design, and prime wildlife viewing in these intimate, eco-conscious camps and lodges."
             />
             <PrimaryHeader title="Siringit Camps" image='lodges/siringit-camps/siringit-camps.jpg' />

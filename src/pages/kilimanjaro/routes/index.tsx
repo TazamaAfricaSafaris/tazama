@@ -58,7 +58,7 @@ const Page = ({ images, posts }: { images: ImageProps[], posts: SanityDocument[]
 
   return (
     <>
-      <HeadSEO title="Tazama Africa Safaris | Our Routes And Prices" keywords={Kilimanjaro_keywords} />
+      <HeadSEO title="Tazama Africa Safaris | Our Routes And Prices"  />
       <PrimaryHeader
         imageUrl="https://res.cloudinary.com/drhl0yu7y/image/upload/v1759229198/kilimanjaro/main-page/kilimanjaro13_k3dfjk.webp"
         title="Our Routes And Prices"

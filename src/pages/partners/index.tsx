@@ -10,7 +10,6 @@ const index = () => {
         <>
             <HeadSEO 
                 title='Tazama Africa | Our Partners and Collaborators' 
-                keywords={`${base_keywords}, Tanzania partnerships, Kafika House, Rustic Pathways, sustainable tourism partners, community support Tanzania, responsible travel collaborations, ethical tourism, social impact travel, disability support Tanzania, educational travel programs`}
                 description="Discover Tazama Africa Safari's trusted partners who help us deliver exceptional experiences while supporting local communities. Learn about our collaborations with Kafika House and Rustic Pathways that align with our commitment to quality and sustainability."
             />
             <PrimaryHeader image="partners-header.jpg" title="Our Partners" />

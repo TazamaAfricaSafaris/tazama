@@ -13,7 +13,7 @@ const Page = ({ images }: { images: ImageProps[] }) => {
     <>
       <HeadSEO
         title="Migration Safaris - Tazama Africa Safaris"
-        keywords={base_keywords}
+        
       />
       <div className="relative h-screen">
         <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">

@@ -36,7 +36,6 @@ const Page = () => {
         <>
             <HeadSEO
                 title="Lion's Paw Camp | Tazama Africa Safari"
-                keywords={`${base_keywords}, Lion's Paw Camp Tanzania, Serengeti luxury tented camp, migration viewing accommodation, big cat safari lodge, exclusive safari camp, wildlife photography lodge, eco-friendly safari accommodation, authentic safari experience, Serengeti central accommodation`}
                 description="Experience the heart of the Serengeti at Lion's Paw Camp, a luxury tented camp offering exceptional wildlife viewing, personalized service, and authentic safari experiences in one of Africa's most iconic wildlife destinations."
             />
 

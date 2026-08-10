@@ -18,7 +18,7 @@ import { PiMountainsFill } from "react-icons/pi";
 const Page = () => {
     return (
         <>
-            <HeadSEO title='The Ngorongoro Highlands & The Great Rift Valley Trek' keywords={base_keywords} />
+            <HeadSEO title='The Ngorongoro Highlands & The Great Rift Valley Trek'  />
 
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white overflow-hidden">

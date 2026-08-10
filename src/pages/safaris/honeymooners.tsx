@@ -25,7 +25,6 @@ const Page = ({ images }: { images: ImageProps[] }) => {
     <>
       <HeadSEO 
             title="Luxury Honeymoon Safaris in Tanzania | Tazama Africa"
-            keywords={`${base_keywords}, Tanzania honeymoon safari, romantic safari, luxury honeymoon Africa, Zanzibar beach honeymoon, safari and beach package, romantic getaway Tanzania, exclusive honeymoon experience, private safari tour, couples safari, luxury accommodation Tanzania`}
             description="Begin your marriage with Tazama's romantic honeymoon safaris, combining thrilling wildlife encounters in Tanzania with serene Zanzibar beach relaxation for the perfect balance of adventure and luxury."
           />
       <PrimaryHeader image="honey-moon-trip.webp" title="Honeymooners" />

@@ -15,7 +15,7 @@ import CallToAction from '~/components/CallToAction'
 const uganda = () => {
     return (
         <>
-            <HeadSEO title='Tazama Africa Safaris | Uganda' keywords={base_keywords} />
+            <HeadSEO title='Tazama Africa Safaris | Uganda'/>
             <PrimaryHeader title='Uganda' image={'chimps.webp'} />
             <section className='max-w-5xl mx-auto '>
                 <div className='my-20'>

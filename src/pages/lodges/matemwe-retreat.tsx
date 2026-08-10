@@ -39,7 +39,6 @@ const Page = () => {
         <>
             <HeadSEO 
                 title="Matemwe Retreat | Exclusive Beach Villas in Zanzibar" 
-                keywords={`${base_keywords}, Matemwe Retreat Zanzibar, private beach villas, luxury Zanzibar accommodation, exclusive beach resort, ocean view villas, private plunge pools, Mnemba Atoll diving, romantic beach getaway, seafood dining Zanzibar, boutique beach retreat`}
                 description="Indulge in ultimate privacy at Matemwe Retreat, featuring exclusive beach villas with private plunge pools and panoramic Indian Ocean views. Experience personalized service, exceptional dining, and world-class diving at nearby Mnemba Atoll."
             />
             <div className="relative h-screen">

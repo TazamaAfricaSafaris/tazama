@@ -17,7 +17,10 @@ import ContentSection from "~/components/ContentSection";
 const Page = ({ itineraries, images }: { itineraries: SanityDocument[], images: ImageProps[] }) => {
   return (
     <>
-      <HeadSEO title="Mount Meru" keywords={base_keywords} />
+      <HeadSEO 
+      title="Mount Meru" 
+      description="Mount Meru offers something that few mountains do, a blend of adventure, scenery, and wildlife. As you climb higher, the forest fades into open moorland and volcanic ridges. From the top, you’ll watch the sun rise behind Kilimanjaro, one of Africa’s most breathtaking views."
+      />
       <PrimaryHeader image={`mount-meru.webp`} title="Mount Meru" />
       <div className="mx-auto max-w-5xl px-4 md:px-8">
         <div className="mt-20 py-8">

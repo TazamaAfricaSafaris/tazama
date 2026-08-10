@@ -19,7 +19,7 @@ import { Kilimanjaro_keywords } from '~/lib/constants';
 const Page = ({ itineraries }: { itineraries: SanityDocument[] }) => {
   return (
     <>
-      <HeadSEO title="Tazama Africa Safaris | Our Kilimanjaro Itineraries" keywords={Kilimanjaro_keywords} />
+      <HeadSEO title="Tazama Africa Safaris | Our Kilimanjaro Itineraries"  />
 
       <PrimaryHeader title='Kilimanjaro Itineraries' imageUrl='https://res.cloudinary.com/drhl0yu7y/image/upload/v1759133497/kilimanjaro/call-to-action/itinerary-cta-4_y8z4uu.jpg' />
 

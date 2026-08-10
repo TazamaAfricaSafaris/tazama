@@ -23,7 +23,7 @@ import { Kilimanjaro_keywords } from "~/lib/constants";
 export default function Page({ itineraries }: { itineraries: SanityDocument[] }) {
     return (
         <>
-            <HeadSEO title="Tazama Africa Safaris | What Makes Tazama’s Kilimanjaro Experience Different?" keywords={Kilimanjaro_keywords} />
+            <HeadSEO title="Tazama Africa Safaris | What Makes Tazama’s Kilimanjaro Experience Different?"  />
             <main className="max-w-4xl mx-auto prose p-4 mb-8 text-black">
                 <div className="font-raleway mt-28 md:mt-32 mx-auto mb-5 text-center max-w-xl text-sm flex items-center justify-center max-sm:flex-col">
                     <Link

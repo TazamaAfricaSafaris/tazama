@@ -16,7 +16,6 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         <>
             <HeadSEO 
                 title="The Nest Boutique Resort | Luxury Beachfront Retreat in Zanzibar" 
-                keywords={`${base_keywords}, The Nest Boutique Resort, Zanzibar luxury accommodation, beachfront boutique hotel, design hotel Zanzibar, private beach resort, ocean view suites, fine dining Zanzibar, water sports resort, honeymoon destination Tanzania, exclusive beach getaway`}
                 description="Escape to The Nest Boutique Resort in Zanzibar, an exclusive beachfront retreat offering stylish accommodations, personalized service, and exceptional dining. The perfect destination for romantic getaways and post-safari relaxation."
             />
 

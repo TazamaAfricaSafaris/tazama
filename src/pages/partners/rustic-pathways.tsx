@@ -11,7 +11,6 @@ const Page = () => {
     <>
       <HeadSEO 
         title='Rustic Pathways | Tazama Africa Safari Educational Partner' 
-        keywords={`${base_keywords}, Rustic Pathways Tanzania, educational travel, student travel programs, youth travel Tanzania, experiential learning, cultural immersion, global education, student safari experiences, educational tourism, transformative travel`}
         description="Explore Tazama Africa Safari's partnership with Rustic Pathways, offering transformative travel experiences for youth and students in Tanzania. Our collaboration helps young travelers expand their horizons through meaningful cultural immersion and adventure."
       />
       <PrimaryHeader title={'Rustic Pathways'} image={'partners/rustic-pathways/rustic-pathways-header.jpg'} />

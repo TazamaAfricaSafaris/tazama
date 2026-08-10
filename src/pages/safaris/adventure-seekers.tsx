@@ -13,7 +13,7 @@ import CallToAction from "~/components/CallToAction";
 const Page = ({ images }: { images: ImageProps[] }) => {
   return (
     <>
-      <HeadSEO title="Tazama Africa Safaris | Custom Adventure Travel Experiences" keywords={base_keywords} />
+      <HeadSEO title="Tazama Africa Safaris | Custom Adventure Travel Experiences"  />
       <div className="relative h-screen">
         <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">
           <Image

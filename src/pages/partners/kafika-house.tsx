@@ -14,7 +14,6 @@ const Page = () => {
     <>
       <HeadSEO
         title='Kafika House | Tazama Africa Safari Community Partner'
-        keywords={`${base_keywords}, Kafika House Tanzania, children's rehabilitation center, disability support Africa, correctable disabilities, community support Tanzania, medical tourism, social responsibility, charitable travel, volunteer opportunities Tanzania, disability awareness`}
         description="Learn about Tazama Africa Safari's partnership with Kafika House, a rehabilitation center helping children with correctable disabilities in Tanzania. Discover how we support their mission and how you can contribute to this life-changing work."
       />
 

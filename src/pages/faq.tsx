@@ -11,8 +11,7 @@ const FAQPage = () => {
   return (
     <>
       <HeadSEO 
-            title="Frequently Asked Questions | Tazama Africa Safari & Kilimanjaro Treks" 
-            keywords={`${base_keywords}, safari FAQ, Kilimanjaro trekking questions, Tanzania travel tips, safari planning guide, Kilimanjaro preparation, Tanzania safari information, wildlife safari questions, mountain climbing FAQ, African safari preparation, Tanzania travel advice`}
+            title="Frequently Asked Questions | Tazama Africa Safaris" 
             description="Find answers to your questions about Tanzania safaris and Kilimanjaro treks. Our comprehensive FAQ covers everything from trip planning and packing tips to wildlife viewing and climbing preparation."
           />
       <PrimaryHeader image="faq.webp" title="Frequently Asked Questions" />

@@ -36,7 +36,6 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         <>
             <HeadSEO 
                 title="Roho ya Selous | Luxury Safari Camp in Nyerere National Park" 
-                keywords={`${base_keywords}, Roho ya Selous, Nyerere National Park, Selous Game Reserve, luxury tented camp, boating safari Tanzania, walking safari Tanzania, fishing safari, waterside safari camp, southern Tanzania safari, exclusive wilderness camp`}
                 description="Experience the wild heart of Nyerere National Park at Roho ya Selous, a luxury tented camp offering exceptional game drives, walking safaris, boating adventures, and fishing experiences in Tanzania's largest protected area."
             />
             <div className="relative h-screen">

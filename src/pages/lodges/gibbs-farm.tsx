@@ -16,7 +16,6 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         <>
             <HeadSEO 
                 title="Gibb's Farm | Tazama Africa Safari" 
-                keywords={`${base_keywords}, Gibb's Farm Tanzania, Ngorongoro luxury lodge, farm-to-table Tanzania, coffee plantation stay, historic lodge Tanzania, Karatu accommodation, organic farm lodge, cultural safari experience, sustainable luxury lodge, Ngorongoro Crater accommodation`}
                 description="Experience the charm of Gibb's Farm, a historic farm lodge offering luxury accommodation near Ngorongoro Crater. Enjoy farm-to-table dining, coffee plantation tours, and a perfect sanctuary between safari adventures."
             />
 

@@ -128,14 +128,6 @@ export default function Page(props: PageProps) {
         <>
             <HeadSEO
                 title={`${title}`}
-                keywords={`
-                    ${base_keywords} 
-                    ${location ? `, ${location}` : ""},
-                    ${duration ? `, ${duration}` : ""},
-                    ${itineraryType ? `, ${itineraryType}` : ""},
-                    ${title}
-                    ${itineraryType === "trekking" ? Kilimanjaro_keywords : beach_keywords}
-                `}
                 description={subHeading || title}
             />
 

@@ -23,7 +23,6 @@ export default function Page({ post }: { post: any }) {
     <>
       <HeadSEO
         title="Tazama Africa Tours & Safaris | East Africa Travel Specialists"
-        keywords={base_keywords}
       />
       <div className="mx-auto  max-w-5xl px-4 pt-20 text-lg md:px-8">
         <article>

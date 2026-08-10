@@ -45,7 +45,6 @@ const AboutPage = () => {
     <>
       <HeadSEO
         title="Wildlife Adventures in Tanzania | Tazama Africa Safari"
-        keywords={`${base_keywords}, Tanzania wildlife safari, wildlife photography, animal migration, bird watching Tanzania, conservation safari, wildlife enthusiast tour, guided wildlife safari, African wildlife experience, nature safari, wildlife conservation`}
         description="Immerse yourself in Tanzania's diverse ecosystems with Tazama's Wildlife Adventures. Our expert-guided safaris offer intimate wildlife encounters, conservation insights, and unforgettable experiences for nature enthusiasts."
       />
       <PrimaryHeader image="classic-safaris.webp" title="Wildlife Adventures" />

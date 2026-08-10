@@ -26,7 +26,10 @@ export default function Page(props: PageProps) {
 
   return (
     <>
-      <HeadSEO title="Tazama Africa Safaris | Blog" keywords={base_keywords} />
+      <HeadSEO
+        title="Tazama Africa Safaris | Blog"
+        description="Explore the Tazama Africa Safaris blog for expert insights, travel tips, and captivating stories from our safari adventures in Tanzania. Discover the beauty of African wildlife and landscapes through our curated content."
+      />
       <PrimaryHeader title="Latest From Tazama" image="safari.webp" />
       {/* <div className="mt-20 flex items-center justify-center ">
         <Input
@@ -39,7 +42,10 @@ export default function Page(props: PageProps) {
       </div> */}
       <main className="mt-20 flex-col md:flex md:items-center md:justify-center">
         <div className="text-center">
-          <h2 className="text-primary text-3xl md:text-5xl">Guides, blogs, etc. Check out what we at <br /> Tazama Africa have for you!</h2>
+          <h2 className="text-3xl text-primary md:text-5xl">
+            Guides, blogs, etc. Check out what we at <br /> Tazama Africa have
+            for you!
+          </h2>
           <br />
         </div>
         {/* <section className="flex flex-col items-center md:grid md:grid-cols-2 md:gap-5 lg:grid-cols-3">
@@ -52,7 +58,7 @@ export default function Page(props: PageProps) {
       </main>
     </>
   );
-};
+}
 
 export const getStaticProps = async ({ draftMode = false }) => {
   const client = getClient(draftMode ? token : undefined);
@@ -64,6 +70,6 @@ export const getStaticProps = async ({ draftMode = false }) => {
       draftMode,
       token: draftMode ? token : "",
     },
-    revalidate: 60
+    revalidate: 60,
   };
 };

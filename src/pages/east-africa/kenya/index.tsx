@@ -19,7 +19,7 @@ import { ItineraryCard } from '../uganda'
 const kenya = () => {
   return (
     <>
-      <HeadSEO title='Tazama Africa Safaris | Kenya' keywords={`kenya, Kenaya ${base_keywords}`} />
+      <HeadSEO title='Tazama Africa Safaris | Kenya'  />
       <PrimaryHeader title='Kenya' image='kenya/kenya.jpg' />
       <div className='max-w-5xl mx-auto my-20'>
         <p className='text-left leading-relaxed'>

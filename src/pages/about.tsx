@@ -19,8 +19,7 @@ const AboutPage = () => {
         title="About Tazama"
       />
       <HeadSEO
-        title="About Tazama Africa Safari | Luxury Safari Experiences in Tanzania"
-        keywords={`${base_keywords}, Tanzania safari company, luxury safari, Kilimanjaro trekking, safari experts, sustainable tourism, Tanzania travel, African safari experience, safari guides, wildlife adventures, eco-friendly safaris, Tazama`}
+        title="About Tazama Africa Safari"
         description="Discover Tazama Africa Safari - Tanzania's premier safari company with over 15 years of expertise in crafting luxury, personalized wildlife adventures and Kilimanjaro treks. Our exceptional guides and sustainable practices ensure unforgettable African experiences."
       />
       <div className="mx-auto mt-20 max-w-5xl px-4 lg:px-8">

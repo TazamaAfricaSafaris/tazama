@@ -9,7 +9,7 @@ import CallToAction from "~/components/CallToAction"
 const Page = () => {
     return (
         <>
-            <HeadSEO title='Tazama Africa Safari | Konokono Beach Resort & Spa' keywords={base_keywords} />
+            <HeadSEO title='Tazama Africa Safari | Konokono Beach Resort & Spa'  />
 
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white">

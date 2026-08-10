@@ -26,7 +26,7 @@ type PageProps = {
 export default function Page(props: PageProps) {
     return (
         <>
-            <HeadSEO title="Tazama Africa Safaris | Our Tours" keywords={base_keywords} />
+            <HeadSEO title="Tazama Africa Safaris | Our Tours"  />
             <PrimaryHeader title="Explore our itineraries" image="safari.webp" />
 
             <main className="mx-auto my-20 max-w-5xl px-4 pt-12 flex flex-col">

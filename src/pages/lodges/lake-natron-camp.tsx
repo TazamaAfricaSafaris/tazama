@@ -16,7 +16,6 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         <>
             <HeadSEO 
                 title='Lake Natron Camp | Tazama Africa Safari' 
-                keywords={`${base_keywords}, Lake Natron accommodation, flamingo viewing Tanzania, Ol Doinyo Lengai trek, ecological camp Tanzania, Maasai cultural experience, Rift Valley accommodation, hominid footprints, adventure safari camp, northern Tanzania lodging, natural pool accommodation`}
                 description="Stay at the unique Lake Natron Camp, an ecological retreat in one of Tanzania's most dramatic landscapes. Experience flamingo breeding grounds, Ol Doinyo Lengai volcano treks, and Maasai culture in this extraordinary wilderness setting."
             />
 

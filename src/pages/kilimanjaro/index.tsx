@@ -38,7 +38,7 @@ const Page = ({ posts, itineraries }: { posts: SanityDocument[], itineraries: Sa
 
   return (
     <div className="w-full overflow-x-hidden">
-      <HeadSEO title="Tazama Africa Safaris | Climbing Mount Kilimanjaro" keywords={Kilimanjaro_keywords} />
+      <HeadSEO title="Tazama Africa Safaris | Climbing Mount Kilimanjaro"  />
       <PrimaryHeader
         image={`mount-kilimanjaro.webp`}
         title="Climb Kilimanjaro with Tazama"

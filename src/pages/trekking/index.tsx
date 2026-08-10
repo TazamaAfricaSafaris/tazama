@@ -55,7 +55,6 @@ const TrekkingPage = () => {
         <>
             <HeadSEO
                 title="Tazama Africa Safaris | Trekking"
-                keywords={`${base_keywords}, Tanzania safari company, luxury safari, Kilimanjaro trekking, safari experts, sustainable tourism, Tanzania travel, African safari experience, safari guides, wildlife adventures, eco-friendly safaris`}
                 description="Discover Tazama Africa Safaris - Tanzania's premier trekking company with over 15 years of expertise in crafting luxury, personalized trekking adventures. Our exceptional guides and sustainable practices ensure unforgettable African experiences."
             />
             <div className="relative h-screen">

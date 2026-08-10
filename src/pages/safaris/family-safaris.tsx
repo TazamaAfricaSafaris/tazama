@@ -17,7 +17,6 @@ const Page = ({ images }: { images: ImageProps[] }) => {
     <>
       <HeadSEO
         title="Family Safaris in Tanzania | Tazama Africa Safari"
-        keywords={`${base_keywords}, family safari Tanzania, kid-friendly safari, educational safari, family adventure Africa, Tanzania family vacation, family wildlife tour, luxury family safari, child-friendly accommodation, family travel Tanzania, multi-generational safari`}
         description="Create unforgettable family memories with Tazama's specially designed Tanzania family safaris. Our educational, entertaining adventures offer both mid-range and luxury options perfect for travelers of all ages."
       />
       <PrimaryHeader image="discovery.webp" title="Family Safaris" />

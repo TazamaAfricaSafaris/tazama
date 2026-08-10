@@ -37,7 +37,6 @@ const Page = () => {
         <>
             <HeadSEO
                 title="Sametu Camp | Authentic Safari Experience in Eastern Serengeti"
-                keywords={`${base_keywords}, Sametu Camp Tanzania, eastern Serengeti accommodation, authentic safari camp, migration viewing camp, big cat territory, off-the-beaten-track safari, luxury mobile camp, wildlife photography location, exclusive safari experience, Serengeti National Park`}
                 description="Experience the untamed wilderness at Sametu Camp, an authentic safari camp in the eastern Serengeti. Enjoy exceptional big cat sightings, Great Migration views, and an intimate safari experience away from the crowds in this pristine location."
             />
 

@@ -54,7 +54,6 @@ const Page = () => {
         <>
             <HeadSEO 
                 title='Upendo Beach Zanzibar | Tazama Africa Safari' 
-                keywords={`${base_keywords}, Upendo Beach Zanzibar, luxury beach resort Tanzania, Zanzibar beachfront accommodation, boutique beach hotel, Indian Ocean resort, romantic Zanzibar getaway, water sports Zanzibar, seafood dining Zanzibar, honeymoon beach resort, exclusive Zanzibar accommodation`}
                 description="Relax at Upendo Beach Zanzibar, a stunning beachfront retreat offering luxurious accommodation, exceptional dining, and spectacular Indian Ocean views. The perfect destination for romantic getaways and post-safari relaxation."
             />
             <PrimaryHeader title="Upendo Beach Resort" image='lodges/upendo-beach-resort/upendo-beach-resort-header.jpg' />

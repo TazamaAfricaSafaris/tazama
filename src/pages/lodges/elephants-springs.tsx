@@ -14,7 +14,7 @@ import CallToAction from '~/components/CallToAction'
 const Page = ({ images }: { images: ImageProps[] }) => {
     return (
         <>
-            <HeadSEO title="Tazama Africa Safari | Elephant's Spring Camp" keywords={base_keywords} />
+            <HeadSEO title="Tazama Africa Safari | Elephant's Spring Camp"  />
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white overflow-hidden">
                     <Image

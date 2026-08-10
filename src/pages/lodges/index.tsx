@@ -27,7 +27,6 @@ const Page = () => {
         <>
             <HeadSEO 
                 title='Luxury Safari Lodges & Beach Resorts | Tazama Africa Safari' 
-                keywords={`${base_keywords}, Tanzania luxury lodges, safari accommodation, Serengeti lodges, Zanzibar beach resorts, luxury safari camps, Tanzania hotels, wildlife viewing accommodation, eco-friendly lodges, boutique safari lodges, exclusive beach resorts, Ngorongoro accommodation`}
                 description="Discover Tazama Africa Safari's handpicked collection of luxury lodges and beach resorts in Tanzania. From exclusive safari camps in pristine wilderness to idyllic Zanzibar beach retreats, experience exceptional comfort and hospitality."
             />
             <PrimaryHeader title={'Lodges'} image={'lodges/lemala-camps/lemala-nanyukie-header.jpg'} />

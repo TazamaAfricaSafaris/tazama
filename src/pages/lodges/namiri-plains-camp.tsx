@@ -49,7 +49,6 @@ const Page = () => {
         <>
                         <HeadSEO 
                 title="Namiri Plains | Tazama Africa Safari" 
-                keywords={`${base_keywords}, Namiri Plains camp, Serengeti eastern plains, big cat safari, cheetah viewing Tanzania, exclusive safari camp, remote Serengeti accommodation, luxury tented camp, predator territory lodge, wildlife photography camp, authentic safari experience`}
                 description="Experience the untamed wilderness at Namiri Plains, an exclusive camp in the eastern Serengeti known for exceptional big cat sightings. Enjoy luxury tented accommodations, expert guiding, and unrivaled privacy in this remote safari paradise."
             />
             

@@ -32,7 +32,6 @@ const Page = ({ images }: { images: ImageProps[] }) => {
         <>
             <HeadSEO
                 title="Zuri Zanzibar | Tazama Africa Safari"
-                keywords={`${base_keywords}, Zuri Zanzibar resort, luxury beach accommodation Tanzania, design hotel Zanzibar, sustainable beach resort, private beach villas, wellness retreat Zanzibar, spice garden resort, Indian Ocean luxury stay, honeymoon resort Zanzibar, water sports Tanzania`}
                 description="Indulge in luxury at Zuri Zanzibar, an award-winning design hotel offering private beach bungalows, exceptional dining experiences, and a world-class wellness center. Experience the perfect blend of African and contemporary design in this sustainable paradise."
             />
             <PrimaryHeader title="Zuri Zanzibar Hotel and Resort" image='lodges/zuri-zanzibar/zuri-zanzibar-header.webp' />

@@ -30,7 +30,7 @@ const Page = () => {
 
   return (
     <>
-      <HeadSEO title="Tazama Special Offers" keywords={base_keywords} />
+      <HeadSEO title="Tazama Special Offers"  />
       <PrimaryHeader
         image={`adventure.webp`}
         title={`Special Offer for International Symposium on Artemisia attendees`}

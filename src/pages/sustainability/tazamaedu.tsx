@@ -10,7 +10,6 @@ const Page = () => {
         <>
             <HeadSEO 
                 title='TazamaEdu | Tazama Africa Safari Educational Initiative' 
-                keywords={`${base_keywords}, TazamaEdu, conservation education, youth education Tanzania, wildlife education, experiential learning, national park visits, environmental stewardship, conservation program, domestic tourism, underprivileged youth support`} 
                 description="TazamaEdu is Tazama Africa Safari's educational initiative fostering the next generation of conservationists in Tanzania through immersive national park experiences, bridging the gap between academic knowledge and real-world conservation efforts."
             />
             <PrimaryHeader title='TazamaEdu' image='/tazama-edu/tazama-edu-header.jpg' />

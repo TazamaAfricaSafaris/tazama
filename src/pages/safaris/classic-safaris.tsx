@@ -17,7 +17,6 @@ const Page = ({ images }: { images: ImageProps[] }) => {
     <>
       <HeadSEO
         title="Classic Tanzania Safaris | Tazama Africa Safari Experiences"
-        keywords={`${base_keywords}, classic safari Tanzania, Serengeti safari, Ngorongoro Crater tour, Tarangire National Park, Tanzania wildlife, Big Five safari, short safari Tanzania, luxury safari experience, guided safari tours, African wildlife viewing`}
         description="Experience our 5-day Classic Safari through Tanzania's iconic landscapes. Explore the Serengeti plains, Ngorongoro Crater, and Tarangire National Park with expert guides for an unforgettable wildlife adventure."
       />
       <PrimaryHeader image="discovery.webp" title="Classic Safaris" />

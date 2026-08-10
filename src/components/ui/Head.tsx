@@ -1,68 +1,61 @@
-/* eslint-disable @next/next/no-sync-scripts */
 import Head from "next/head";
 import Script from "next/script";
 
+const SITE_URL = "https://www.tazamaafricasafari.com";
+const DEFAULT_DESCRIPTION =
+  "Helping you design the safari of your dreams. Tazama Africa designs unique travel experiences throughout East Africa, giving you the trip of a lifetime.";
+const DEFAULT_IMAGE =
+  "https://res.cloudinary.com/drhl0yu7y/image/upload/v1708505897/family_safari/frzvpsec6tiivi2aeszm.jpg";
+
 export default function HeadSEO({
   title,
-  keywords,
-  description
+  description,
+  path = "",
+  image = DEFAULT_IMAGE,
+  noindex = false,
 }: {
   title: string;
-  keywords: string;
   description?: string;
+  path?: string;
+  image?: string;
+  noindex?: boolean;
 }) {
+  const url = `${SITE_URL}${path}`;
+  const desc = description ?? DEFAULT_DESCRIPTION;
+
   return (
-    <Head>
-      {/* keywords tags */}
-      <meta name="keywords" content={keywords} />
+    <>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={desc} key="description" />
+        <link rel="canonical" href={url} />
+        {noindex && <meta name="robots" content="noindex,nofollow" />}
 
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta
-        name="description"
-        content={description ? description : "Explore East Africa with custom-designed safaris and tours from Tazama Africa"}
-      />
-      <link rel="shortcut icon" href="/assets/images/logos/favicon.ico" />
-      {/* Open Graph stuff */}
-      <meta
-        property="og:image"
-        content="https://res.cloudinary.com/drhl0yu7y/image/upload/v1708505897/family_safari/frzvpsec6tiivi2aeszm.jpg"
-      />
+        <link rel="shortcut icon" href="/assets/images/logos/favicon.ico" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
 
-      <meta property="og:type" content="website" />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Tazama Africa Tours and Safaris" />
+        <meta property="og:title" content={title} key="og:title" />
+        <meta property="og:description" content={desc} key="og:description" />
+        <meta property="og:url" content={url} key="og:url" />
+        <meta property="og:image" content={image} key="og:image" />
+        <meta property="og:locale" content="en_US" />
 
-      <meta property="og:site_name" content="Tazama Africa Tours and Safaris" />
-      <meta property="og:title" content="Tazama Africa Tours and Safaris" />
-      <meta property="og:url" content="https://www.tazamaafricasafari.com" />
-      <meta property="og:type" content="website" />
-      <meta
-        property="og:description"
-        content={description ? description : "Helping you design the safari of your dreams. Tazama Africa designs unique travel experiences throughout East Africa, giving you the trip of a lifetime."}
-      />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} key="twitter:title" />
+        <meta name="twitter:description" content={desc} key="twitter:description" />
+        <meta name="twitter:image" content={image} key="twitter:image" />
+      </Head>
 
-      <meta name="twitter:title" content="Tazama Africa Tours and Safaris" />
-      <meta name="twitter:url" content="https://www.tazamaafricasafari.com" />
-      <meta name="twitter:card" content="summary" />
-      <meta
-        property="twitter:image"
-        content="https://www.tazamaafricasafari.com/assets/images/gallery/family-trip.webp"
-      />
-      <meta
-        name="twitter:description"
-        content="Helping you design the safari of your dreams. Tazama Africa designs unique travel experiences throughout East Africa, giving you the trip of a lifetime."
-      />
-      <meta
-        name="description"
-        content={description ? description : "Helping you design the safari of your dreams. Tazama Africa designs unique travel experiences throughout East Africa, giving you the trip of a lifetime."}
-      />
-      <title>{title}</title>
-      <script
+      <Script
         src="https://assets.usestyle.ai/seonajsplugin"
-        defer
+        strategy="afterInteractive"
         id="seona-js-plugin"
-      ></script>
-
-      {/* <script src="/lightbox-form.js"></script> */}
-    </Head>
+      />
+    </>
   );
 }

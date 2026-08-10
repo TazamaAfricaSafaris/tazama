@@ -15,7 +15,6 @@ const Page = ({ itineraries }: { itineraries: SanityDocument[] }) => {
     <>
       <HeadSEO
         title="Tanzania Safaris | Tazama Africa Safari Adventures"
-        keywords={`${base_keywords}, Tanzania safari, Serengeti safari, Ngorongoro Crater, wildlife viewing, Big Five, game drives, luxury safari, Tanzania national parks, African wildlife, safari experiences, Tarangire, sustainable safari`}
         description="Experience the ultimate Tanzania safari with Tazama Africa. Our expertly guided tours through Serengeti, Ngorongoro, and other iconic parks offer unforgettable wildlife encounters while supporting conservation and local communities."
       />
       <PrimaryHeader

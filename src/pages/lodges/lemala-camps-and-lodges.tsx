@@ -43,7 +43,6 @@ const Page = () => {
         <>
             <HeadSEO 
                 title='Lemala Camps and Lodges | Tazama Africa Safari' 
-                keywords={`${base_keywords}, Lemala safari camps, luxury tented camps Tanzania, Serengeti accommodation, Ngorongoro luxury lodges, wildlife viewing camps, boutique safari accommodation, migration camps Tanzania, eco-friendly safari lodges, exclusive Tanzania camps, authentic safari experience`}
                 description="Experience the wilderness in style with Lemala Camps and Lodges. These intimate, luxury tented camps and lodges offer exceptional wildlife viewing, gourmet dining, and authentic safari experiences in Tanzania's most spectacular locations."
             />
             <PrimaryHeader title="Lemala Camps and Lodge" image='lodges/lemala-camps/lemala-nanyukie-bonfire.jpg' />

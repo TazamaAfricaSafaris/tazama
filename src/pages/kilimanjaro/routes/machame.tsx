@@ -20,7 +20,7 @@ import { Kilimanjaro_keywords } from '~/lib/constants';
 const Page = ({ itineraries }: { itineraries: SanityDocument[] }) => {
   return (
     <>
-      <HeadSEO title="Tazama Africa Safaris | Kilimanjaro Machame Route" keywords={Kilimanjaro_keywords} />
+      <HeadSEO title="Tazama Africa Safaris | Kilimanjaro Machame Route"  />
       <PrimaryHeader title='Machame Route' imageUrl='https://res.cloudinary.com/drhl0yu7y/image/upload/v1759229204/kilimanjaro/main-page/kilimanjaro17_li5ca1.webp' />
 
       <section className='mx-auto max-w-5xl px-4 md:px-8 mt-20'>

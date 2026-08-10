@@ -40,7 +40,7 @@ const ItineraryExcludes = [
 const Page = () => {
     return (
         <>
-            <HeadSEO title='Tazama Itinerary | Uganda Gorilla Safari Fly In' keywords='' />
+            <HeadSEO title='Tazama Itinerary | Uganda Gorilla Safari Fly In' />
 
             <div className="relative h-screen">
                 <div className="absolute bottom-0 left-0 right-0 top-0 flex flex-col items-start justify-center bg-black/60 text-white overflow-hidden">
