@@ -13,15 +13,18 @@ export default function HeadSEO({
   path = "",
   image = DEFAULT_IMAGE,
   noindex = false,
+  jsonLd
 }: {
   title: string;
   description?: string;
   path?: string;
   image?: string;
   noindex?: boolean;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }) {
   const url = `${SITE_URL}${path}`;
   const desc = description ?? DEFAULT_DESCRIPTION;
+  const schemas = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
   return (
     <>
@@ -49,6 +52,15 @@ export default function HeadSEO({
         <meta name="twitter:title" content={title} key="twitter:title" />
         <meta name="twitter:description" content={desc} key="twitter:description" />
         <meta name="twitter:image" content={image} key="twitter:image" />
+
+        {schemas.map((schema, i) => (
+          <script
+            key={`jsonld-${i}`}
+            type="application/ld+json"
+            // eslint-disable-next-line @typescript-eslint/naming-convention
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          />
+        ))}
       </Head>
 
       <Script
