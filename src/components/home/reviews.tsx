@@ -75,7 +75,7 @@ const Reviews = () => {
                                     <Image
                                         src={review.image}
                                         alt={review.name}
-                                        layout='fill'
+                                        fill
                                         className='object-cover w-full h-full'
                                     />
                                 </div>

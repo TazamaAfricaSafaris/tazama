@@ -43,7 +43,7 @@ const SafariTripadivsorReviews = () => {
                             <Image
                                 src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/eb/default-avatar-2020-27.jpg?w=100&h=100&s=1"
                                 alt="Gordon S"
-                                layout='fill'
+                                fill
                                 className='object-cover w-full h-full'
                             />
                         </div>
@@ -86,7 +86,7 @@ const SafariTripadivsorReviews = () => {
                             <Image
                                 src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/df/99/default-avatar-2020-40.jpg?w=100&h=100&s=1"
                                 alt="Essenia B"
-                                layout='fill'
+                                fill
                                 className='object-cover w-full h-full'
                             />
                         </div>
