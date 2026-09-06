@@ -154,7 +154,7 @@ const PrismsHike = () => {
                             <li><span className="font-semibold">Route:</span> 9-days Lemosho</li>
                             <li><span className="font-semibold">Duration:</span> 9 days (including ascent and descent)</li>
                             <li><span className="font-semibold">Group size:</span> Small, supported group</li>
-                            <li><span className="font-semibold">Dates:</span> 9 January 2027 – 20 January 2027</li>
+                            <li><span className="font-semibold">Dates:</span> 8 January 2027 – 19 January 2027</li>
                             <li><span className="font-semibold">Support:</span> Fully guided by experienced local mountain crew</li>
                         </ul>
                         <br />
